@@ -1,0 +1,5 @@
+# https://mirainthehub.github.io/hao-yu-academic-site/
+User-agent: *
+Allow: /
+
+Sitemap: https://mirainthehub.github.io/hao-yu-academic-site/sitemap.xml

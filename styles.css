@@ -742,8 +742,27 @@ main {
   border-top: 1px solid var(--line);
 }
 
-.site-footer p {
+.site-footer__line {
+  margin: 0 0 0.5rem;
+}
+
+.site-footer__meta {
   margin: 0;
+  max-width: 52ch;
+  line-height: 1.5;
+}
+
+.site-footer__meta a {
+  font-weight: 500;
+}
+
+.site-footer__sep {
+  margin: 0 0.35rem;
+  color: var(--line-strong);
+}
+
+.site-footer__hint {
+  color: var(--ink-faint);
 }
 
 .visually-hidden {

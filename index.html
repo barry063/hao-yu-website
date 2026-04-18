@@ -8,6 +8,44 @@
       name="description"
       content="Hao Yu — PhD researcher in Engineering at the University of Cambridge. Materials science, nanofabrication, photonic devices, and spectroscopy-led characterisation."
     />
+    <link
+      rel="canonical"
+      href="https://mirainthehub.github.io/hao-yu-academic-site/"
+    />
+    <meta name="theme-color" content="#fafaf8" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Hao Yu" />
+    <meta
+      property="og:title"
+      content="Hao Yu — Materials, Photonics &amp; Nanoengineering"
+    />
+    <meta
+      property="og:description"
+      content="PhD in Engineering (Cambridge). Materials, nanofabrication, photonic devices, publications, and contact."
+    />
+    <meta
+      property="og:url"
+      content="https://mirainthehub.github.io/hao-yu-academic-site/"
+    />
+    <meta
+      property="og:image"
+      content="https://mirainthehub.github.io/hao-yu-academic-site/assets/og-image.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Hao Yu — Materials, Photonics &amp; Nanoengineering"
+    />
+    <meta
+      name="twitter:description"
+      content="PhD in Engineering (Cambridge). Materials, nanofabrication, photonic devices, publications, and contact."
+    />
+    <meta
+      name="twitter:image"
+      content="https://mirainthehub.github.io/hao-yu-academic-site/assets/og-image.png"
+    />
     <!-- Favicon: replace favicon.svg with your own mark if desired -->
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -668,9 +706,37 @@
     </main>
 
     <footer class="site-footer">
-      <p>© <span id="y"></span> Hao Yu. All rights reserved.</p>
+      <p class="site-footer__line">
+        © <span id="y"></span> Hao Yu. All rights reserved.
+      </p>
+      <p class="site-footer__meta">
+        <a
+          href="https://github.com/Mirainthehub/hao-yu-academic-site"
+          rel="noopener noreferrer"
+          >Source on GitHub</a
+        >
+        <span class="site-footer__sep" aria-hidden="true">·</span>
+        <span class="site-footer__hint"
+          >Star the repo if this layout is useful for your own academic site.</span
+        >
+      </p>
     </footer>
 
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Hao Yu",
+        "url": "https://mirainthehub.github.io/hao-yu-academic-site/",
+        "email": "mailto:hy377@cam.ac.uk",
+        "jobTitle": "PhD Candidate in Engineering",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "University of Cambridge"
+        },
+        "sameAs": ["https://github.com/barry063"]
+      }
+    </script>
     <script>
       document.getElementById("y").textContent = new Date().getFullYear();
     </script>

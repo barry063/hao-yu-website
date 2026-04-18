@@ -1,57 +1,103 @@
-# Hao Yu — Academic Website
+# Hao Yu — Academic website
 
-Static, single-page academic portfolio for GitHub Pages (or any static host). Content is grounded in the provided CV only.
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-live-1e3a5f?logo=github)](https://mirainthehub.github.io/hao-yu-academic-site/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-1e3a5f)](LICENSE)
 
-## Local preview
+**Live site:** [mirainthehub.github.io/hao-yu-academic-site](https://mirainthehub.github.io/hao-yu-academic-site/)
 
-From this directory:
+A minimal, text-forward academic portfolio: PhD research (Cambridge), publications, projects, and contact—built as static HTML/CSS/JS and hosted on **GitHub Pages**. Designed for clarity on desktop and mobile, with sensible defaults for accessibility and social link previews.
+
+---
+
+## Why this repo exists
+
+- **Single page** — fast to load, easy to maintain, no build step.
+- **Portable** — drop the files on any static host (Pages, Netlify, Cloudflare Pages, etc.).
+- **Fork-friendly** — MIT-licensed layout you can adapt for your own profile (see [CONTRIBUTING.md](CONTRIBUTING.md)).
+
+If you find the structure useful, consider **starring** the repo—it helps others discover it.
+
+---
+
+## Highlights
+
+| Area | Details |
+|------|---------|
+| **Sections** | About, research themes, publications (with DOIs), projects, experience, education, skills, leadership, awards, CV, contact |
+| **Stack** | Semantic HTML, CSS custom properties, a small amount of JS for navigation |
+| **Sharing** | Open Graph / Twitter meta tags + `assets/og-image.png` for link previews |
+| **Extras** | `robots.txt` + `sitemap.xml` for basic discoverability |
+
+---
+
+## Quick start (local)
 
 ```bash
+git clone https://github.com/Mirainthehub/hao-yu-academic-site.git
+cd hao-yu-academic-site
 python3 -m http.server 8080
 ```
 
-Open `http://localhost:8080` in a browser.
+Open [http://localhost:8080](http://localhost:8080).
 
-## Before publishing
+---
 
-1. **CV PDF** — Add your latest CV as `assets/Hao_Yu_CV.pdf`. The download button in the **CV** section points to this path.
-2. **Headshot** — Replace the placeholder in `index.html` (search for `Headshot:` in comments) with an `<img>` pointing to your photo (for example `assets/hao-yu.jpg`).
-3. **External links** — Set real URLs for LinkedIn and Google Scholar in the hero link row (marked with `TODO` comments in `index.html`).
-4. **Favicon** — Optionally replace `favicon.svg` with your own icon.
+## Before you publish
 
-## Deploy on GitHub Pages
+1. **`assets/Hao_Yu_CV.pdf`** — add your CV so the download button works.
+2. **Headshot** — replace the placeholder in `index.html` (see comments near `headshot`).
+3. **Profile links** — set LinkedIn / Google Scholar URLs in the hero (marked `TODO`).
+4. **Canonical & OG URL** — if you fork to another account or use a custom domain, update the `<link rel="canonical">` and `og:url` / `og:image` absolute URLs in `index.html`.
 
-### Option A — Project site (`username.github.io/repo-name`)
+---
 
-1. Push this folder (or the whole repository) to a GitHub repository.
-2. In the repository on GitHub: **Settings → Pages**.
-3. Under **Build and deployment**, set **Source** to **Deploy from a branch**.
-4. Choose the branch and folder:
-   - **Root**: if these files sit at the repository root, select `/ (root)`.
-   - **Subfolder**: if you keep the site under `hao-yu-academic-site/`, either move the contents to root or set the publishing folder to `/hao-yu-academic-site` when GitHub allows subfolder publishing (or use a branch that only contains the site at root).
-5. Save. The site will be available at `https://<user>.github.io/<repo>/` (paths to CSS/JS are relative, so they resolve correctly under a subpath).
+## Deploy (GitHub Pages)
 
-### Option B — User/org site (`username.github.io`)
+1. Push this repository to GitHub.
+2. **Settings → Pages → Build and deployment**
+3. **Source:** *Deploy from a branch* → **Branch:** `main`, **Folder:** `/ (root)` → Save.
+4. Site URL: `https://<username>.github.io/<repo>/`
 
-1. Create a repository named `<username>.github.io`.
-2. Place `index.html`, `styles.css`, `script.js`, `favicon.svg`, and `assets/` at the **root** of that repository (or publish from `/docs` with the same file layout).
-3. Enable Pages from the default branch (`main`/`master`) and `/ (root)` or `/docs` as appropriate.
+Relative asset paths work under a project URL (e.g. `/hao-yu-academic-site/`).
 
-### Custom domain (optional)
+---
 
-In **Pages** settings, add your domain and follow GitHub’s DNS instructions. No change is required to relative asset paths if the site is deployed at the domain root.
+## Repository layout
 
-## File layout
+```
+hao-yu-academic-site/
+├── index.html          # Page structure & content
+├── styles.css          # Layout & typography
+├── script.js           # Nav + smooth scroll
+├── favicon.svg
+├── robots.txt
+├── sitemap.xml
+├── LICENSE             # MIT (site code)
+├── CONTRIBUTING.md
+└── assets/
+    ├── og-image.png    # Social preview (Open Graph)
+    └── Hao_Yu_CV.pdf   # Add your CV here
+```
 
-| File | Purpose |
-|------|---------|
-| `index.html` | Single-page site (sections + semantics + placeholders) |
-| `styles.css` | Typography, layout, responsive nav, cards |
-| `script.js` | Mobile navigation, smooth scrolling, header state |
-| `favicon.svg` | Placeholder favicon |
-| `assets/` | `Hao_Yu_CV.pdf` (you add this) and optional images |
+---
 
-## Notes
+## Suggested GitHub metadata (optional)
 
-- Replace placeholder `href="#"` links only when you have real URLs; until then they intentionally stay inert.
-- All publication DOIs and the GitHub username come from the CV used to build this site.
+On the repo **About** pane (gear icon), you can add:
+
+**Website:** `https://mirainthehub.github.io/hao-yu-academic-site/`
+
+**Topics (examples):**  
+`academic-website` `github-pages` `portfolio` `materials-science` `photonics` `nanofabrication` `research` `static-site` `html` `phd`
+
+---
+
+## License
+
+Site **code** (HTML/CSS/JS) is released under the [MIT License](LICENSE). **Biographical and research text** remains the author’s; forks should replace content with their own.
+
+---
+
+## Acknowledgements
+
+Fonts: [Google Fonts](https://fonts.google.com/) — Inter & Source Serif 4.
