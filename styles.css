@@ -340,6 +340,15 @@ main {
   max-width: 220px;
 }
 
+.headshot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
 @media (max-width: 768px) {
   .headshot {
     justify-self: start;

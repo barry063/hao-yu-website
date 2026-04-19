@@ -3,7 +3,7 @@
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-live-1e3a5f?logo=github)](https://mirainthehub.github.io/hao-yu-academic-site/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-1e3a5f)](LICENSE)
 
-**Live site:** [mirainthehub.github.io/hao-yu-academic-site](https://mirainthehub.github.io/hao-yu-academic-site/)
+**Live site:** [barry063.github.io/hao-yu-website](https://barry063.github.io/hao-yu-website/)
 
 A minimal, text-forward academic portfolio: PhD research (Cambridge), publications, projects, and contact—built as static HTML/CSS/JS and hosted on **GitHub Pages**. Designed for clarity on desktop and mobile, with sensible defaults for accessibility and social link previews.
 
@@ -33,9 +33,9 @@ If you find the structure useful, consider **starring** the repo—it helps othe
 ## Quick start (local)
 
 ```bash
-git clone https://github.com/Mirainthehub/hao-yu-academic-site.git
-cd hao-yu-academic-site
-python3 -m http.server 8080
+git clone https://github.com/barry063/hao-yu-website.git
+cd hao-yu-website
+py -m http.server 8080
 ```
 
 Open [http://localhost:8080](http://localhost:8080).
