@@ -1,7 +1,7 @@
 # Website update plan and verification contract
 
 Created: 5 October 2026. Baseline: website commit `2c3ba49`.
-Plan version: 1.2. Current milestone: `PUBLICATION_IN_PROGRESS`.
+Plan version: 1.2. Current milestone: `LIVE_CONTENT_VERIFIED_BROWSER_QA_DEFERRED`.
 
 ## Objective
 
@@ -98,7 +98,7 @@ decision. `DONE` requires every listed acceptance criterion to pass with evidenc
 | W06 | Prepare approved CV and optimise assets | W01 | DONE | New two-page public derivative inspected; CV/portrait/OG hashes in report |
 | W07 | Accessibility and responsive behaviour | W03, W04, W05 | DEFERRED | User accepted browser preview; detailed automated UI matrix deferred for this release; regressions pass |
 | W08 | Verify release 1 locally | W02–W07 | DONE | Passing local checks plus user-confirmed preview accepted for today's release; remaining audit gaps documented |
-| W09 | Publish and verify release 1 | W08; deployment authority | IN_PROGRESS | Explicit user authority; Pages source inspected: main, root; deployment report started |
+| W09 | Publish and verify release 1 | W08; deployment authority | DONE | Release 4537e5e deployed successfully; all nine live visitor files match; deployment report records amended gate and deferred browser QA |
 | W10 | Introduce repeatable content build and validation | W08; initial refresh accepted | DEFERRED | User requests discussing one-edit propagation later |
 | W11 | Verify release 2 and document routine updates | W10 | DEFERRED | Follows deferred generator phase |
 
@@ -321,6 +321,35 @@ completes at W08. Release 2 completes at W11 with its readiness/live status stat
 - Milestone: LOCAL_CHECKS_PASSED_BROWSER_QA_PENDING. No commit/push/deployment.
 - Next executable work: W07 browser checks after access is restored, then W08
   readiness audit. W10 follows initial refresh acceptance.
+
+### 5 October 2026 — publication session
+
+- Scope change: user confirmed the preview and explicitly requested publication
+  before discussing one-edit propagation. The release-specific amendment above
+  accepts that preview and local checks; W07's detailed automated matrix and
+  W10/W11 remain DEFERRED. No generator was introduced.
+- Sources: rechecked the five canonical fingerprints in `content/site.json`;
+  PASS, unchanged. Private source files were not copied or modified.
+- Pre-publication commands: `npm run check`, `node scripts/check-preview.mjs`,
+  `scripts/check_public_cv.py` with the bundled Python runtime, and
+  `git diff --check` — PASS. Browser runtime connection — unavailable; detailed
+  browser checks NOT RUN. User's manual preview confirmation retained.
+- Changed: added `.nojekyll` and read-only Pages/live-check helpers; documented
+  release authority and evidence. Prepared site files committed and pushed as
+  `4537e5ed41f61f95ea45ea5d76a6f3d6e220b760`; no unrelated changes discarded.
+- W09-A → inspect Pages API settings and deployment workflow → PASS, `main` root
+  deployment succeeded at 14:16:25 UTC, 5 October 2026; workflow 37323277704.
+- W09-B → `node scripts/check-live.mjs` → PASS at 14:16:36.090 UTC; all nine
+  visitor files return 200 and match the release, including the public CV bytes.
+  This satisfies the amended HTTP scope; detailed live browser QA is DEFERRED.
+- W09-C → deployed revision and live file evidence → PASS under the amendment.
+  Evidence: `docs/releases/2026-10-05-deployment.md`; historical preparation
+  evidence remains in `docs/releases/2026-10-05-release-1.md`.
+- Final URL: `https://barry063.github.io/hao-yu-website/`.
+- Milestone: `LIVE_CONTENT_VERIFIED_BROWSER_QA_DEFERRED`. W09 complete; W07's
+  detailed audit remains deferred, not claimed as passing. W10/W11 await the
+  requested later workflow discussion. Documentation-only follow-up records
+  these results without changing visitor files.
 
 ## Reusable continuation prompt
 
