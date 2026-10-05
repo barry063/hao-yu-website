@@ -1,8 +1,8 @@
 # Website update plan and verification contract
 
 Created: 5 October 2026. Baseline: website commit `2c3ba49`.
-Plan version: 1.3. Release-1 milestone: `LIVE_CONTENT_VERIFIED_BROWSER_QA_DEFERRED`.
-Workflow milestone: `PLAN_BASELINED_IMPLEMENTATION_NOT_STARTED`.
+Plan version: 1.4. Release-1 milestone: `LIVE_CONTENT_VERIFIED_BROWSER_QA_DEFERRED`.
+Workflow milestone: `P01_P02_COMPLETE_AWAITING_REVIEW`.
 
 ## Objective
 
@@ -22,6 +22,12 @@ committing and pushing that documentation to `main`. Workflow implementation and
 future publication of changed visitor content require their own instructions.
 See [CONTENT_PROPAGATION_PLAN.md](CONTENT_PROPAGATION_PLAN.md) for P01–P08, their
 dependencies, acceptance targets and the review/publication boundary.
+
+Current instruction, 5 October 2026: local P01–P02 implementation on a separate
+branch, with verification/progress records and unchanged canonical CV files.
+The user subsequently authorised committing and pushing this checkpoint to the
+implementation branch before P03–P06. No merge to main, publication, canonical
+edits or watcher is authorised by this checkpoint action.
 
 ## Baseline and source map
 
@@ -116,7 +122,7 @@ decision. `DONE` requires every listed acceptance criterion to pass with evidenc
 | W07 | Accessibility and responsive behaviour | W03, W04, W05 | DEFERRED | User accepted browser preview; detailed automated UI matrix deferred for this release; regressions pass |
 | W08 | Verify release 1 locally | W02–W07 | DONE | Passing local checks plus user-confirmed preview accepted for today's release; remaining audit gaps documented |
 | W09 | Publish and verify release 1 | W08; deployment authority | DONE | Release 4537e5e deployed successfully; all nine live visitor files match; deployment report records amended gate and deferred browser QA |
-| W10 | Introduce repeatable content build and validation | W08; initial refresh accepted; implementation instruction | NOT_STARTED | Detailed P01–P05 contract in CONTENT_PROPAGATION_PLAN.md; planning recorded, implementation not started |
+| W10 | Introduce repeatable content build and validation | W08; initial refresh accepted; implementation instruction | IN_PROGRESS | P01/P02 complete and verified locally; P03–P05 remain; checkpoint report records all eight P01/P02 criteria |
 | W11 | Verify release 2 and document routine updates | W10; publication authority for live checks | NOT_STARTED | Detailed P05/P06 operating/release contract; no new deployment authorised by planning |
 
 ## Acceptance criteria
@@ -414,13 +420,66 @@ completes at W08. Release 2 completes at W11 with its readiness/live status stat
 - Milestone: `PLAN_BASELINED_IMPLEMENTATION_NOT_STARTED`. Next implementation
   checkpoint after an instruction: P01–P02 on a separate local branch, then review.
 
+### 5 October 2026 — P01/P02 implementation checkpoint
+
+- Latest user scope: implement P01–P02 on a separate local branch, preserve
+  canonical CV files and stop for review. Commit/push/publication/watcher are
+  explicitly prohibited for this session. This supersedes the documentation-only
+  planning instruction; earlier release-1 authority does not extend to this work.
+- Starting tree clean; baseline `17d4ad2`; local branch `implementation/p01-p02`.
+  No commits made. All ten root visitor files remain the released snapshot.
+- Canonical AGENTS and five source fingerprints rechecked: PASS, unchanged.
+  No writes to canonical workspace. Unrelated broader workspace additions were
+  observed and preserved; whole-workspace hash equality is not claimed.
+- P01-A–D: PASS — typed public contract, 199-field ownership coverage, source
+  precedence/editorial exclusions and thirteen valid/invalid synthetic fixtures.
+- P02-A–D: PASS — shared isolated HTML/CV/metadata generator, visitor allowlist,
+  negative boundary tests, reproducible PDF/card builds and baseline parity QA.
+  22 propagation tests and 7 navigation tests pass; candidate HTML has zero
+  errors/warnings, 26 records and 24 IDs; ten HTTP files match candidate bytes.
+  Two-page PDF content/links/privacy/margins and baseline text/link parity pass.
+  Three-width HTML text/link/meta/ID/layout parity and visual inspection pass,
+  using fresh headless Chrome after in-app Browser bootstrap failed.
+- Checks/commands/hashes: `docs/releases/2026-10-05-p01-p02.md` and machine
+  `-checks.json`; public field map in `docs/CONTENT_SOURCE_MAP.md`; candidate and
+  captures remain ignored under `tmp/`. `git diff --check`: PASS.
+- Full accessibility, 200% zoom and P05 browser/keyboard matrix: NOT RUN.
+  W07 remains DEFERRED; release-2 readiness/live status is not claimed.
+- W10 now IN_PROGRESS (P01/P02 DONE, P03–P05 remain); W11 NOT_STARTED.
+  Workflow milestone: `P01_P02_COMPLETE_AWAITING_REVIEW`. No source dependency
+  blocks the completed tasks. Stop for review; P03 follows a continuation
+  instruction, P06 requires release authority, P07/P08 remain optional/deferred.
+
+### 5 October 2026 — P01/P02 checkpoint commit/push session
+
+- Latest authority: commit and push the completed P01/P02 checkpoint to its
+  separate implementation branch before later work. No merge or live publication.
+- Starting branch `implementation/p01-p02`, HEAD `17d4ad2`; reviewed uncommitted
+  changes preserved. Canonical workspace is read-only; visitor root files and
+  ignored candidates/captures are excluded from the commit's changed file set.
+- Public exposure reviewed for all proposed new files: public derivative and
+  provenance, source map/schema, synthetic fixtures, licensed fonts, generator,
+  checks and reports. No private source snapshots or canonical files included.
+- Pre-commit: existing HTML/content/7 navigation checks and all 22 propagation
+  tests pass, zero skipped; dataset/template/five canonical fingerprints match
+  the verification record; `git diff --check` passes. Remote `main` is `17d4ad2`;
+  no prior implementation branch exists on origin.
+- Staged diff review found inherited whitespace in the copied font licence;
+  whitespace was normalised, licence wording preserved and the check rerun.
+- The commit containing this entry is the versioned implementation checkpoint;
+  Git history identifies its revision. Push/remote hash verification follows the
+  commit and is reported in the handoff; no earlier success is inferred.
+- P03–P06 remain NOT_STARTED, P07/P08 DEFERRED; W10 IN_PROGRESS. The commit/push
+  action does not approve a candidate for publication or close deferred browser QA.
+
 ## Reusable continuation prompt
 
 > Continue the website update using AGENTS.md and docs/WEBSITE_UPDATE_PLAN.md.
 > Inspect the working tree and latest canonical evidence, then complete the next
 > available tasks within the authorised scope.
 > For the one-edit workflow, also read docs/CONTENT_PROPAGATION_PLAN.md and use its
-> P-task tracker; implementation starts at P01 only when requested. Verify criteria
+> P-task tracker; the current checkpoint is P01/P02 complete awaiting review,
+> with P03 next after a continuation instruction. Verify criteria
 > and update the task tracker and session record with actual results. Continue
 > independent tasks if one dependency is unresolved. Report the resulting
 > readiness milestone and remaining task IDs; deploy only when authorised by the

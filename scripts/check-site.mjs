@@ -3,10 +3,12 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+import { loadPublic, normalise } from './public-content.mjs';
+const repo = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const root = process.argv[2] ? path.resolve(process.argv[2]) : repo;
 const read = name => fs.readFileSync(path.join(root, name), 'utf8');
 const html = read('index.html');
-const data = JSON.parse(read('content/site.json'));
+const data = normalise(loadPublic(process.argv[3] ? path.resolve(process.argv[3]) : path.join(repo,'content/site.json')));
 const decode = text => text.replaceAll('&amp;', '&').replaceAll('&lt;', '<').replaceAll('&gt;', '>').replaceAll('&quot;', '"').replaceAll('&#39;', "'");
 const visitorText = decode(html.replace(/<script[\s\S]*?<\/script>/g, '').replace(/<\/?(?:strong|em|span|time)(?:\s[^>]*)?>/g, '').replace(/<[^>]+>/g, ' ')).replace(/\s+/g, ' ');
 const ids = [...html.matchAll(/\bid="([^"<>]+)"/g)].map(m => m[1]);
@@ -27,7 +29,7 @@ for (const meta of ['og:url', 'og:image', 'twitter:image']) {
 }
 assert.ok(read('sitemap.xml').includes(`<loc>${data.site.url}</loc>`));
 assert.ok(read('robots.txt').includes(`${data.site.url}sitemap.xml`));
-assert.ok(read('README.md').includes(data.site.url), 'README URL mismatch');
+assert.ok(fs.readFileSync(path.join(repo,'README.md'),'utf8').includes(data.site.url), 'README URL mismatch');
 assert.equal(new Set(data.records.map(x => x.id)).size, data.records.length, 'Duplicate evidence IDs');
 for (const record of data.records) {
   assert.ok(['VERIFIED', 'APPLICANT_CONFIRMED'].includes(record.evidence_status), `Uncleared record ${record.id}`);
@@ -39,9 +41,10 @@ for (const record of data.records) {
   }
   for (const link of record.links) assert.ok(new URL(link.url).protocol === 'https:', `Unsafe URL ${record.id}`);
 }
-assert.equal(data.records.filter(x => /^J\d$/.test(x.id)).length, 4);
-assert.equal(data.records.filter(x => x.id === 'S1').length, 1);
-assert.equal(data.records.filter(x => x.id === 'P1').length, 1);
+for (const status of new Set(data.outputs.map(o => o.status))) {
+  const group = data.outputs.filter(o => o.status === status);
+  assert.ok(group.every(o => html.includes('data-record="' + o.id + '"')), 'Missing output group record');
+}
 const png = fs.readFileSync(path.join(root, 'assets/og-image.png'));
 assert.equal(png.readUInt32BE(16), 1200); assert.equal(png.readUInt32BE(20), 630);
 assert.ok(fs.statSync(path.join(root, data.site.portrait)).size <= 250000, 'Portrait too large');

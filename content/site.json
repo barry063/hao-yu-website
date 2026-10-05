@@ -1,40 +1,6 @@
 {
-  "reviewed": "2026-10-05",
-  "site": {
-    "name": "Hao Yu",
-    "url": "https://barry063.github.io/hao-yu-website/",
-    "repository": "https://github.com/barry063/hao-yu-website",
-    "title": "Hao Yu — Low-dimensional materials & spectroscopy",
-    "email": "hy377@cam.ac.uk",
-    "location": "Cambridge, United Kingdom",
-    "role": "PhD researcher in Engineering",
-    "institution": "University of Cambridge",
-    "description": "Hao Yu, PhD researcher in Engineering at Cambridge. Vapour-phase synthesis of low-dimensional materials, Raman/PL spectroscopy and Python analysis. Thesis submitted 30 September 2026.",
-    "cv": "assets/Hao_Yu_CV.pdf",
-    "portrait": "assets/hao-yu-portrait.jpg"
-  },
-  "profiles": [
-    {
-      "label": "Email",
-      "url": "mailto:hy377@cam.ac.uk"
-    },
-    {
-      "label": "LinkedIn",
-      "url": "https://www.linkedin.com/in/hao-yu-barry"
-    },
-    {
-      "label": "Google Scholar",
-      "url": "https://scholar.google.com/citations?user=XgJBN04AAAAJ&hl=en"
-    },
-    {
-      "label": "ORCID",
-      "url": "https://orcid.org/0000-0003-1722-7909"
-    },
-    {
-      "label": "GitHub",
-      "url": "https://github.com/barry063"
-    }
-  ],
+  "schema_version": 2,
+  "release_date": "2026-10-05",
   "sources": [
     {
       "id": "EB",
@@ -62,248 +28,166 @@
       "sha256": "90a10f9d7ad7367924d99e484902cfe04e1ac0367f4830c3f6851fd4a6696bc5"
     }
   ],
-  "records": [
-    {
-      "id": "PROFILE",
-      "destination": "top",
-      "title": "Materials growth, understood through measurement.",
-      "dates": "",
-      "text": [
-        "I study how precursor chemistry and confined vapour transport shape low-dimensional materials. My work connects close-space growth experiments with Raman and photoluminescence spectroscopy, collaborative characterisation, and Python analysis."
-      ],
-      "source": "EB §§1.1,2.1; PROFILE §2",
+  "profile": {
+    "id": "PERSON",
+    "selected": true,
+    "name": "Hao Yu",
+    "role": "PhD researcher in Engineering",
+    "institution": "University of Cambridge",
+    "institution_short": "Cambridge",
+    "discipline": "Engineering",
+    "group": "Hofmann Group",
+    "email": "hy377@cam.ac.uk",
+    "location": "Cambridge, United Kingdom",
+    "provenance": {
+      "source": "EB §§1.1,1.2,2.1",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
-      "reviewed": "2026-10-05",
-      "links": []
+      "reviewed": "2026-10-05"
+    }
+  },
+  "qualification_events": [
+    {
+      "id": "THESIS-SUBMITTED",
+      "qualification_id": "EDU-CAM",
+      "kind": "THESIS_SUBMITTED",
+      "date": "2026-09-30",
+      "selected": true,
+      "provenance": {
+        "source": "EB §2.1",
+        "evidence_status": "APPLICANT_CONFIRMED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      }
+    }
+  ],
+  "links": [
+    {
+      "id": "LINKEDIN",
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/hao-yu-barry",
+      "selected": true,
+      "provenance": {
+        "source": "EB §1.1",
+        "evidence_status": "APPLICANT_CONFIRMED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      }
     },
     {
-      "id": "STATUS",
-      "destination": "top",
-      "title": "Thesis submitted",
-      "dates": "30 September 2026",
-      "text": [
-        "PhD researcher in Engineering at the University of Cambridge. Thesis submitted on 30 September 2026."
-      ],
-      "source": "EB §2.1; PROFILE §1",
-      "evidence_status": "APPLICANT_CONFIRMED",
-      "visibility": "PUBLIC",
-      "reviewed": "2026-10-05",
-      "links": []
+      "id": "SCHOLAR",
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/citations?user=XgJBN04AAAAJ&hl=en",
+      "selected": true,
+      "provenance": {
+        "source": "EB §1.1",
+        "evidence_status": "APPLICANT_CONFIRMED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      }
     },
     {
-      "id": "ABOUT",
-      "destination": "about",
-      "title": "Research profile",
-      "dates": "",
-      "text": [
-        "I am a PhD researcher in the Hofmann Group at Cambridge, working on tungsten oxides and transition-metal dichalcogenides. My doctoral research examines how source chemistry, source–substrate geometry and processing conditions influence material formation.",
-        "My approach combines controlled growth experiments with quantitative Raman/PL analysis and complementary evidence from collaborators. I also develop RamanPL_2D to turn spectroscopy datasets into fitted parameters, spatial maps and structured outputs.",
-        "Earlier work at Oxford connected photonic-device measurements with design and simulation. Alongside research, I have experience in technology assessment and deep-tech commercialisation."
-      ],
-      "source": "EB §§1.1,2.1,3.1–3.6,4; PROFILE §2",
-      "evidence_status": "APPLICANT_CONFIRMED",
-      "visibility": "PUBLIC",
-      "reviewed": "2026-10-05",
-      "links": []
+      "id": "ORCID",
+      "label": "ORCID",
+      "url": "https://orcid.org/0000-0003-1722-7909",
+      "selected": true,
+      "provenance": {
+        "source": "EB §1.1",
+        "evidence_status": "APPLICANT_CONFIRMED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      }
     },
     {
-      "id": "THEME-1",
-      "destination": "research",
-      "title": "Vapour-phase synthesis",
-      "dates": "",
-      "text": [
-        "Close-space sublimation and oxide-to-sulphide conversion: relating precursor chemistry and confined transport to the morphology of low-dimensional materials."
-      ],
-      "source": "EB §§2.1,3.1–3.2",
-      "evidence_status": "APPLICANT_CONFIRMED",
-      "visibility": "PUBLIC",
-      "reviewed": "2026-10-05",
-      "links": []
+      "id": "GITHUB",
+      "label": "GitHub",
+      "url": "https://github.com/barry063",
+      "selected": true,
+      "provenance": {
+        "source": "EB §1.1",
+        "evidence_status": "APPLICANT_CONFIRMED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      }
     },
     {
-      "id": "THEME-2",
-      "destination": "research",
-      "title": "Spectroscopy and characterisation",
-      "dates": "",
-      "text": [
-        "Raman/PL measurements and spatial mapping, interpreted alongside collaborative structural and chemical characterisation to connect processing with material response."
-      ],
-      "source": "EB §§2.1,3.1,3.4–3.5",
-      "evidence_status": "APPLICANT_CONFIRMED",
-      "visibility": "PUBLIC",
-      "reviewed": "2026-10-05",
-      "links": []
-    },
-    {
-      "id": "THEME-3",
-      "destination": "research",
-      "title": "Research software and analysis",
-      "dates": "",
-      "text": [
-        "Python workflows for preprocessing, peak fitting, mapping and batch export of spectroscopy data, developed around experimental materials questions."
-      ],
-      "source": "EB §3.3; PUB SW1",
-      "evidence_status": "APPLICANT_CONFIRMED",
-      "visibility": "PUBLIC",
-      "reviewed": "2026-10-05",
-      "links": []
-    },
-    {
-      "id": "PROJECT-CSS",
-      "destination": "projects",
-      "title": "Close-space growth of tungsten oxide and sulphide nanostructures",
-      "dates": "Feb 2023 – Jan 2025",
-      "text": [
-        "How does a confined vapour geometry influence oxide and sulphide nanostructure formation?",
-        "I designed and conducted CSS-facilitated CVD growth and Raman/PL measurements, and co-wrote the first-author paper with Stephan Hofmann. The study connects precursor delivery and growth conditions with material formation.",
-        "Operando SEM, TEM/EDX and XPS measurements in this study were performed by collaborators."
-      ],
-      "source": "EB §3.1; PUB J1",
-      "evidence_status": "VERIFIED",
-      "visibility": "PUBLIC",
-      "reviewed": "2026-10-05",
-      "links": [
-        {
-          "label": "First-author paper · Nanoscale",
-          "url": "https://doi.org/10.1039/D5NR01458A"
-        }
-      ]
-    },
-    {
-      "id": "PROJECT-WS2",
-      "destination": "projects",
-      "title": "NaCl-assisted close-space growth of WS₂",
-      "dates": "Jun 2025 – Apr 2026",
-      "text": [
-        "How can source treatment and source–substrate geometry guide planar WS₂ growth?",
-        "I investigated salt-assisted close-space growth using paired source–substrate analysis and Raman/PL measurements to examine precursor evolution alongside deposition outcomes.",
-        "This work forms part of my submitted thesis; a first-author manuscript is in preparation."
-      ],
-      "source": "EB §§2.1,3.2,5.2; PROFILE §3",
-      "evidence_status": "APPLICANT_CONFIRMED",
-      "visibility": "PUBLIC",
-      "reviewed": "2026-10-05",
-      "links": []
-    },
-    {
-      "id": "PROJECT-MOS2",
-      "destination": "projects",
-      "title": "Optical characterisation of directly written MoS₂",
-      "dates": "Jun – Aug 2025",
-      "text": [
-        "How can spectroscopy assess the layer structure and optical response of directly written 2D material?",
-        "I contributed Raman and photoluminescence measurements and analysis to a collaborative closed-loop crystal-layer writing study. The growth platform and complementary measurements were led by other co-authors.",
-        "The co-authored manuscript is under review."
-      ],
-      "source": "EB §§3.5,5.2; PUB S1",
-      "evidence_status": "APPLICANT_CONFIRMED",
-      "visibility": "PUBLIC",
-      "reviewed": "2026-10-05",
-      "links": []
-    },
-    {
-      "id": "PROJECT-SOFTWARE",
-      "destination": "projects",
-      "title": "RamanPL_2D",
-      "dates": "Research software",
-      "text": [
-        "From raw spectra to fitted parameters and spatial maps.",
-        "I developed a Python toolkit for Raman and photoluminescence preprocessing, peak fitting, spatial mapping, batch workflows and metadata-aware export.",
-        "The software provides reusable analysis workflows for experimental spectroscopy datasets."
-      ],
-      "source": "EB §3.3; PUB SW1",
-      "evidence_status": "APPLICANT_CONFIRMED",
-      "visibility": "PUBLIC",
-      "reviewed": "2026-10-05",
-      "links": [
-        {
-          "label": "Explore the software on GitHub",
-          "url": "https://github.com/barry063/RamanPL_2D"
-        }
-      ]
-    },
-    {
-      "id": "PROJECT-PHOTONICS",
-      "destination": "projects",
-      "title": "Photonic resonance trimming",
-      "dates": "Sep 2021 – Jun 2022",
-      "text": [
-        "Earlier research · University of Oxford",
-        "My MEng research concerned micro-ring resonator tuning. I contributed measurements, design and simulations to the subsequent Nano Letters paper on photonic-resonance trimming.",
-        "This work connects my materials background with photonic-device analysis."
-      ],
-      "source": "EB §3.6; PUB J3",
-      "evidence_status": "VERIFIED",
-      "visibility": "PUBLIC",
-      "reviewed": "2026-10-05",
-      "links": [
-        {
-          "label": "Paper · Nano Letters",
-          "url": "https://doi.org/10.1021/acs.nanolett.3c00220"
-        },
-        {
-          "label": "Associated correction · 2024",
-          "url": "https://doi.org/10.1021/acs.nanolett.4c03363"
-        }
-      ]
-    },
+      "id": "GROUP",
+      "label": "Hofmann Group",
+      "url": "https://hofmann-group.eng.cam.ac.uk/",
+      "selected": true,
+      "provenance": {
+        "source": "EB §§1.1,2.1",
+        "evidence_status": "APPLICANT_CONFIRMED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      }
+    }
+  ],
+  "outputs": [
     {
       "id": "J1",
-      "destination": "publications",
+      "selected": true,
+      "provenance": {
+        "source": "EB §§3.1,5.1; PUB J1",
+        "evidence_status": "VERIFIED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
+      "kind": "ARTICLE",
+      "status": "PUBLISHED",
       "title": "A close-space sublimation approach to tungsten oxide and sulfide nanostructure formation",
-      "dates": "2025",
-      "text": [
-        "Hao Yu, Jinfeng Yang, Bernhard Fickl, Shaoliang Guan, Oliver J. Burton, Gwenhivir Wyatt-Moon, Andrew Flewitt, Bernhard C. Bayer and Stephan Hofmann.",
-        "Nanoscale 17(36), 21070–21082.",
-        "First author. Designed and conducted CSS-CVD growth and Raman/PL measurements; co-wrote the manuscript with Stephan Hofmann."
-      ],
-      "source": "EB §§3.1,5.1; PUB J1",
-      "evidence_status": "VERIFIED",
-      "visibility": "PUBLIC",
-      "reviewed": "2026-10-05",
+      "year": 2025,
+      "authors": "Hao Yu, Jinfeng Yang, Bernhard Fickl, Shaoliang Guan, Oliver J. Burton, Gwenhivir Wyatt-Moon, Andrew Flewitt, Bernhard C. Bayer and Stephan Hofmann.",
+      "venue": "Nanoscale 17(36), 21070–21082.",
+      "contribution": "First author. Designed and conducted CSS-CVD growth and Raman/PL measurements; co-wrote the manuscript with Stephan Hofmann.",
       "links": [
         {
           "label": "DOI",
           "url": "https://doi.org/10.1039/D5NR01458A"
         }
-      ]
+      ],
+      "cv_authors": "{{profile.name}} et al. (first author)."
     },
     {
       "id": "J2",
-      "destination": "publications",
+      "selected": true,
+      "provenance": {
+        "source": "EB §§3.4,5.1; PUB J2",
+        "evidence_status": "APPLICANT_CONFIRMED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
+      "kind": "ARTICLE",
+      "status": "PUBLISHED",
       "title": "Se nanowire crystal formation via oxidation of 2D HfSe₂: A solid-state, in situ reaction coupling for heterogeneous integration technologies",
-      "dates": "2025",
-      "text": [
-        "Sunvir Sahota, Irina Chircă, Oliver J. Burton, Hao Yu, Max Rimmer, Jinfeng Yang, Kyungseo Park, Arthur Summers, Siddika Mertdinc-Ulkuseven, Matthew Lindley, Sarah J. Haigh and Stephan Hofmann.",
-        "ACS Applied Nano Materials 8(15), 7608–7615.",
-        "Co-author. Raman and SEM data acquisition and analysis."
-      ],
-      "source": "EB §§3.4,5.1; PUB J2",
-      "evidence_status": "APPLICANT_CONFIRMED",
-      "visibility": "PUBLIC",
-      "reviewed": "2026-10-05",
+      "year": 2025,
+      "authors": "Sunvir Sahota, Irina Chircă, Oliver J. Burton, Hao Yu, Max Rimmer, Jinfeng Yang, Kyungseo Park, Arthur Summers, Siddika Mertdinc-Ulkuseven, Matthew Lindley, Sarah J. Haigh and Stephan Hofmann.",
+      "venue": "ACS Applied Nano Materials 8(15), 7608–7615.",
+      "contribution": "Co-author. Raman and SEM data acquisition and analysis.",
       "links": [
         {
           "label": "DOI",
           "url": "https://doi.org/10.1021/acsanm.5c00308"
         }
-      ]
+      ],
+      "cv_authors": "Sunvir Sahota et al., including {{profile.name}}."
     },
     {
       "id": "J3",
-      "destination": "publications",
+      "selected": true,
+      "provenance": {
+        "source": "EB §§3.6,5.1; PUB J3",
+        "evidence_status": "VERIFIED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
+      "kind": "ARTICLE",
+      "status": "PUBLISHED",
       "title": "Scalable high-precision trimming of photonic resonances by polymer exposure to energetic beams",
-      "dates": "2023",
-      "text": [
-        "Nikolaos Farmakidis, Hao Yu, June Sang Lee, Johannes Feldmann, Mengyun Wang, Yuhan He, Samarth Aggarwal, Bowei Dong, Wolfram H. P. Pernice and Harish Bhaskaran.",
-        "Nano Letters 23(11), 4800–4806.",
-        "Second author. Measurements, design and simulations. Associated correction: Nano Letters 24(41), 13103–13104 (2024)."
-      ],
-      "source": "EB §§3.6,5.1; PUB J3",
-      "evidence_status": "VERIFIED",
-      "visibility": "PUBLIC",
-      "reviewed": "2026-10-05",
+      "year": 2023,
+      "authors": "Nikolaos Farmakidis, Hao Yu, June Sang Lee, Johannes Feldmann, Mengyun Wang, Yuhan He, Samarth Aggarwal, Bowei Dong, Wolfram H. P. Pernice and Harish Bhaskaran.",
+      "venue": "Nano Letters 23(11), 4800–4806.",
+      "contribution": "Second author. Measurements, design and simulations. Associated correction: Nano Letters 24(41), 13103–13104 (2024).",
       "links": [
         {
           "label": "DOI",
@@ -313,185 +197,446 @@
           "label": "Correction",
           "url": "https://doi.org/10.1021/acs.nanolett.4c03363"
         }
-      ]
+      ],
+      "cv_authors": "Nikolaos Farmakidis, {{profile.name}} et al. (second author)."
     },
     {
       "id": "J4",
-      "destination": "publications",
+      "selected": true,
+      "provenance": {
+        "source": "EB §5.1; PUB J4",
+        "evidence_status": "VERIFIED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
+      "kind": "ARTICLE",
+      "status": "PUBLISHED",
       "title": "How do microplastics adsorb metals? A preliminary study under simulated wetland conditions",
-      "dates": "2022",
-      "text": [
-        "Minfei Jian, Jiarui Niu, Wenhua Li, Yuyue Huang, Hao Yu, Zheng Lai, Shuli Liu and Elvis Genbo Xu.",
-        "Chemosphere 309, Part 1, 136547.",
-        "Co-author. Published CRediT contribution: data analysis."
-      ],
-      "source": "EB §5.1; PUB J4",
-      "evidence_status": "VERIFIED",
-      "visibility": "PUBLIC",
-      "reviewed": "2026-10-05",
+      "year": 2022,
+      "authors": "Minfei Jian, Jiarui Niu, Wenhua Li, Yuyue Huang, Hao Yu, Zheng Lai, Shuli Liu and Elvis Genbo Xu.",
+      "venue": "Chemosphere 309, Part 1, 136547.",
+      "contribution": "Co-author. Published CRediT contribution: data analysis.",
       "links": [
         {
           "label": "DOI",
           "url": "https://doi.org/10.1016/j.chemosphere.2022.136547"
         }
-      ]
+      ],
+      "cv_authors": "Minfei Jian et al., including {{profile.name}}."
     },
     {
       "id": "S1",
-      "destination": "publications",
+      "selected": true,
+      "provenance": {
+        "source": "EB §§3.5,5.2; PUB S1",
+        "evidence_status": "APPLICANT_CONFIRMED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
+      "kind": "ARTICLE",
+      "status": "UNDER_REVIEW",
       "title": "Closed-loop crystal layer writing of atomically thin semiconductor",
-      "dates": "Under review",
-      "text": [
-        "Co-authored manuscript. Contribution: Raman/PL measurements and analysis."
-      ],
-      "source": "EB §§3.5,5.2; PUB S1",
-      "evidence_status": "APPLICANT_CONFIRMED",
-      "visibility": "PUBLIC",
-      "reviewed": "2026-10-05",
-      "links": []
+      "year": null,
+      "authors": null,
+      "venue": null,
+      "contribution": "Co-authored manuscript. Contribution: Raman/PL measurements and analysis.",
+      "links": [],
+      "cv_authors": null
     },
     {
       "id": "P1",
-      "destination": "publications",
+      "selected": true,
+      "provenance": {
+        "source": "EB §§3.2,5.2; PUB P1",
+        "evidence_status": "APPLICANT_CONFIRMED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
+      "kind": "ARTICLE",
+      "status": "IN_PREPARATION",
       "title": "Salt-assisted close-space growth of monolayer WS₂",
-      "dates": "In preparation",
-      "text": [
-        "First-author manuscript in preparation on source–transport–growth relationships. Topic description; final title to follow."
-      ],
-      "source": "EB §§3.2,5.2; PUB P1",
-      "evidence_status": "APPLICANT_CONFIRMED",
-      "visibility": "PUBLIC",
-      "reviewed": "2026-10-05",
-      "links": []
+      "year": null,
+      "authors": null,
+      "venue": null,
+      "contribution": "First-author manuscript {{status:P1:lower}} on source–transport–growth relationships. Topic description; final title to follow.",
+      "links": [],
+      "cv_authors": null
     },
     {
       "id": "SW1",
-      "destination": "publications",
+      "selected": true,
+      "provenance": {
+        "source": "EB §§3.3,5.3; PUB SW1",
+        "evidence_status": "APPLICANT_CONFIRMED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
+      "kind": "SOFTWARE",
+      "status": "RESEARCH_SOFTWARE",
       "title": "RamanPL_2D",
-      "dates": "Research software",
-      "text": [
-        "Python toolkit for Raman/PL preprocessing, peak fitting, spatial mapping, batch workflows and metadata-aware export. BSD 3-Clause License."
-      ],
-      "source": "EB §§3.3,5.3; PUB SW1",
-      "evidence_status": "APPLICANT_CONFIRMED",
-      "visibility": "PUBLIC",
-      "reviewed": "2026-10-05",
+      "year": null,
+      "authors": null,
+      "venue": null,
+      "contribution": "Python toolkit for Raman/PL preprocessing, peak fitting, spatial mapping, batch workflows and metadata-aware export. BSD 3-Clause License.",
       "links": [
         {
           "label": "GitHub repository",
           "url": "https://github.com/barry063/RamanPL_2D"
         }
-      ]
-    },
+      ],
+      "cv_authors": null
+    }
+  ],
+  "experience": [
     {
       "id": "EXP-INNO",
-      "destination": "experience",
-      "title": "Investment Analyst Intern · InnoAngel Fund",
-      "dates": "Jun – Aug 2026",
+      "selected": true,
+      "provenance": {
+        "source": "EB §4.1",
+        "evidence_status": "APPLICANT_CONFIRMED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
       "text": [
         "Completed the Little Angel Programme, with experience in early-stage deep-tech investment, sector research and technology assessment.",
         "Conducted compute-in-memory chip sector research covering technical routes, value chains and application scenarios."
       ],
-      "source": "EB §4.1",
-      "evidence_status": "APPLICANT_CONFIRMED",
-      "visibility": "PUBLIC",
-      "reviewed": "2026-10-05",
-      "links": []
+      "role": "Investment Analyst Intern",
+      "organisation": "InnoAngel Fund",
+      "start_month": "2026-06",
+      "end_month": "2026-08"
     },
     {
       "id": "EXP-JUDGE",
-      "destination": "experience",
-      "title": "EnterpriseTECH Analyst · Cambridge Judge Business School",
-      "dates": "Jan – Apr 2026",
+      "selected": true,
+      "provenance": {
+        "source": "EB §4.2",
+        "evidence_status": "APPLICANT_CONFIRMED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
       "text": [
         "Conducted market sizing, application analysis and competitor mapping for photonic photovoltaic technology targeting indoor solar and ambient IoT.",
         "Supported a TRL 2-to-TRL 4 roadmap and IP licensing strategy, including MVP and scale-up considerations."
       ],
-      "source": "EB §4.2",
-      "evidence_status": "APPLICANT_CONFIRMED",
-      "visibility": "PUBLIC",
-      "reviewed": "2026-10-05",
-      "links": []
+      "role": "EnterpriseTECH Analyst",
+      "organisation": "Cambridge Judge Business School",
+      "start_month": "2026-01",
+      "end_month": "2026-04"
     },
     {
       "id": "EXP-BOE",
-      "destination": "experience",
-      "title": "School Ambassador · BOE Technology Group",
-      "dates": "Jan 2023 – Dec 2025",
+      "selected": true,
+      "provenance": {
+        "source": "EB §4.3",
+        "evidence_status": "APPLICANT_CONFIRMED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
       "text": [
         "Organised online and in-person career events at UK universities and identified potential research collaborators for MicroLED technology."
       ],
-      "source": "EB §4.3",
-      "evidence_status": "APPLICANT_CONFIRMED",
-      "visibility": "PUBLIC",
-      "reviewed": "2026-10-05",
-      "links": []
-    },
+      "role": "School Ambassador",
+      "organisation": "BOE Technology Group",
+      "start_month": "2023-01",
+      "end_month": "2025-12"
+    }
+  ],
+  "qualifications": [
     {
       "id": "EDU-CAM",
-      "destination": "education",
-      "title": "University of Cambridge · PhD in Engineering",
+      "selected": true,
+      "provenance": {
+        "source": "EB §§1.1,2.1",
+        "evidence_status": "APPLICANT_CONFIRMED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
+      "title": "{{profile.institution}} · PhD in {{profile.discipline}}",
       "dates": "Oct 2022 – present",
       "text": [
-        "Thesis submitted 30 September 2026.",
+        "{{event:THESIS-SUBMITTED:sentence}}",
         "Close-space sublimation as a platform for accelerated process discovery in low-dimensional material growth.",
         "Hofmann Group, Department of Engineering. Supervisor: Professor Stephan Hofmann."
-      ],
-      "source": "EB §§1.1,2.1",
-      "evidence_status": "APPLICANT_CONFIRMED",
-      "visibility": "PUBLIC",
-      "reviewed": "2026-10-05",
-      "links": []
+      ]
     },
     {
       "id": "EDU-OX",
-      "destination": "education",
+      "selected": true,
+      "provenance": {
+        "source": "EB §2.2",
+        "evidence_status": "APPLICANT_CONFIRMED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
       "title": "University of Oxford · MEng in Materials Science",
       "dates": "Oct 2018 – Jul 2022",
       "text": [
         "Trinity College. Research project on photonic micro-ring resonator tuning."
-      ],
-      "source": "EB §2.2",
-      "evidence_status": "APPLICANT_CONFIRMED",
-      "visibility": "PUBLIC",
-      "reviewed": "2026-10-05",
-      "links": []
-    },
+      ]
+    }
+  ],
+  "awards": [
     {
       "id": "A1",
-      "destination": "awards",
+      "selected": true,
+      "provenance": {
+        "source": "EB §10",
+        "evidence_status": "APPLICANT_CONFIRMED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
       "title": "Cambridge Philosophical Society Studentship",
-      "dates": "2025–2026",
-      "text": [],
-      "source": "EB §10",
-      "evidence_status": "APPLICANT_CONFIRMED",
-      "visibility": "PUBLIC",
-      "reviewed": "2026-10-05",
-      "links": []
+      "dates": "2025–2026"
     },
     {
       "id": "A2",
-      "destination": "awards",
+      "selected": true,
+      "provenance": {
+        "source": "EB §§2.2,10",
+        "evidence_status": "APPLICANT_CONFIRMED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
       "title": "Exhibition Scholar · Trinity College, Oxford",
-      "dates": "2020–2022",
-      "text": [],
-      "source": "EB §§2.2,10",
-      "evidence_status": "APPLICANT_CONFIRMED",
-      "visibility": "PUBLIC",
-      "reviewed": "2026-10-05",
-      "links": []
+      "dates": "2020–2022"
     },
     {
       "id": "A3",
-      "destination": "awards",
+      "selected": true,
+      "provenance": {
+        "source": "EB §10",
+        "evidence_status": "APPLICANT_CONFIRMED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
       "title": "Singapore Ministry of Education SM1 scholarship",
-      "dates": "2014–2017",
-      "text": [],
-      "source": "EB §10",
-      "evidence_status": "APPLICANT_CONFIRMED",
-      "visibility": "PUBLIC",
-      "reviewed": "2026-10-05",
-      "links": []
+      "dates": "2014–2017"
     }
-  ]
+  ],
+  "narratives": [
+    {
+      "id": "PROFILE",
+      "selected": true,
+      "provenance": {
+        "source": "EB §§1.1,2.1; PROFILE §2",
+        "evidence_status": "APPLICANT_CONFIRMED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
+      "destination": "top",
+      "title": "Materials growth, understood through measurement.",
+      "dates": "",
+      "text": [
+        "I study how precursor chemistry and confined vapour transport shape low-dimensional materials. My work connects close-space growth experiments with Raman and photoluminescence spectroscopy, collaborative characterisation, and Python analysis."
+      ],
+      "links": [],
+      "output_id": null
+    },
+    {
+      "id": "ABOUT",
+      "selected": true,
+      "provenance": {
+        "source": "EB §§1.1,2.1,3.1–3.6,4; PROFILE §2",
+        "evidence_status": "APPLICANT_CONFIRMED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
+      "destination": "about",
+      "title": "Research profile",
+      "dates": "",
+      "text": [
+        "I am a {{profile.role_short}} in the {{profile.group}} at {{profile.institution_short}}, working on tungsten oxides and transition-metal dichalcogenides. My doctoral research examines how source chemistry, source–substrate geometry and processing conditions influence material formation.",
+        "My approach combines controlled growth experiments with quantitative Raman/PL analysis and complementary evidence from collaborators. I also develop RamanPL_2D to turn spectroscopy datasets into fitted parameters, spatial maps and structured outputs.",
+        "Earlier work at Oxford connected photonic-device measurements with design and simulation. Alongside research, I have experience in technology assessment and deep-tech commercialisation."
+      ],
+      "links": [],
+      "output_id": null
+    },
+    {
+      "id": "THEME-1",
+      "selected": true,
+      "provenance": {
+        "source": "EB §§2.1,3.1–3.2",
+        "evidence_status": "APPLICANT_CONFIRMED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
+      "destination": "research",
+      "title": "Vapour-phase synthesis",
+      "dates": "",
+      "text": [
+        "Close-space sublimation and oxide-to-sulphide conversion: relating precursor chemistry and confined transport to the morphology of low-dimensional materials."
+      ],
+      "links": [],
+      "output_id": null
+    },
+    {
+      "id": "THEME-2",
+      "selected": true,
+      "provenance": {
+        "source": "EB §§2.1,3.1,3.4–3.5",
+        "evidence_status": "APPLICANT_CONFIRMED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
+      "destination": "research",
+      "title": "Spectroscopy and characterisation",
+      "dates": "",
+      "text": [
+        "Raman/PL measurements and spatial mapping, interpreted alongside collaborative structural and chemical characterisation to connect processing with material response."
+      ],
+      "links": [],
+      "output_id": null
+    },
+    {
+      "id": "THEME-3",
+      "selected": true,
+      "provenance": {
+        "source": "EB §3.3; PUB SW1",
+        "evidence_status": "APPLICANT_CONFIRMED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
+      "destination": "research",
+      "title": "Research software and analysis",
+      "dates": "",
+      "text": [
+        "Python workflows for preprocessing, peak fitting, mapping and batch export of spectroscopy data, developed around experimental materials questions."
+      ],
+      "links": [],
+      "output_id": null
+    },
+    {
+      "id": "PROJECT-CSS",
+      "selected": true,
+      "provenance": {
+        "source": "EB §3.1; PUB J1",
+        "evidence_status": "VERIFIED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
+      "destination": "projects",
+      "title": "Close-space growth of tungsten oxide and sulphide nanostructures",
+      "dates": "Feb 2023 – Jan 2025",
+      "text": [
+        "How does a confined vapour geometry influence oxide and sulphide nanostructure formation?",
+        "I designed and conducted CSS-facilitated CVD growth and Raman/PL measurements, and co-wrote the first-author paper with Stephan Hofmann. The study connects precursor delivery and growth conditions with material formation.",
+        "Operando SEM, TEM/EDX and XPS measurements in this study were performed by collaborators."
+      ],
+      "links": [
+        {
+          "label": "First-author paper · Nanoscale",
+          "output_link_index": 0
+        }
+      ],
+      "output_id": "J1"
+    },
+    {
+      "id": "PROJECT-WS2",
+      "selected": true,
+      "provenance": {
+        "source": "EB §§2.1,3.2,5.2; PROFILE §3",
+        "evidence_status": "APPLICANT_CONFIRMED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
+      "destination": "projects",
+      "title": "NaCl-assisted close-space growth of WS₂",
+      "dates": "Jun 2025 – Apr 2026",
+      "text": [
+        "How can source treatment and source–substrate geometry guide planar WS₂ growth?",
+        "I investigated salt-assisted close-space growth using paired source–substrate analysis and Raman/PL measurements to examine precursor evolution alongside deposition outcomes.",
+        "This work forms part of my {{qualification:EDU-CAM:thesis}}; a first-author manuscript is {{status:P1:lower}}."
+      ],
+      "links": [],
+      "output_id": "P1"
+    },
+    {
+      "id": "PROJECT-MOS2",
+      "selected": true,
+      "provenance": {
+        "source": "EB §§3.5,5.2; PUB S1",
+        "evidence_status": "APPLICANT_CONFIRMED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
+      "destination": "projects",
+      "title": "Optical characterisation of directly written MoS₂",
+      "dates": "Jun – Aug 2025",
+      "text": [
+        "How can spectroscopy assess the layer structure and optical response of directly written 2D material?",
+        "I contributed Raman and photoluminescence measurements and analysis to a collaborative closed-loop crystal-layer writing study. The growth platform and complementary measurements were led by other co-authors.",
+        "The co-authored manuscript is {{status:S1:lower}}."
+      ],
+      "links": [],
+      "output_id": "S1"
+    },
+    {
+      "id": "PROJECT-SOFTWARE",
+      "selected": true,
+      "provenance": {
+        "source": "EB §3.3; PUB SW1",
+        "evidence_status": "APPLICANT_CONFIRMED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
+      "destination": "projects",
+      "title": "RamanPL_2D",
+      "dates": "Research software",
+      "text": [
+        "From raw spectra to fitted parameters and spatial maps.",
+        "I developed a Python toolkit for Raman and photoluminescence preprocessing, peak fitting, spatial mapping, batch workflows and metadata-aware export.",
+        "The software provides reusable analysis workflows for experimental spectroscopy datasets."
+      ],
+      "links": [
+        {
+          "label": "Explore the software on GitHub",
+          "output_link_index": 0
+        }
+      ],
+      "output_id": "SW1"
+    },
+    {
+      "id": "PROJECT-PHOTONICS",
+      "selected": true,
+      "provenance": {
+        "source": "EB §3.6; PUB J3",
+        "evidence_status": "VERIFIED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
+      "destination": "projects",
+      "title": "Photonic resonance trimming",
+      "dates": "Sep 2021 – Jun 2022",
+      "text": [
+        "Earlier research · University of Oxford",
+        "My MEng research concerned micro-ring resonator tuning. I contributed measurements, design and simulations to the subsequent Nano Letters paper on photonic-resonance trimming.",
+        "This work connects my materials background with photonic-device analysis."
+      ],
+      "links": [
+        {
+          "label": "Paper · Nano Letters",
+          "output_link_index": 0
+        },
+        {
+          "label": "Associated correction · 2024",
+          "output_link_index": 1
+        }
+      ],
+      "output_id": "J3"
+    }
+  ],
+  "presentation": {
+    "url": "https://barry063.github.io/hao-yu-website/",
+    "repository": "https://github.com/barry063/hao-yu-website",
+    "title": "{{profile.name}} — Low-dimensional materials & spectroscopy",
+    "description": "{{profile.name}}, {{profile.role}} at {{profile.institution_short}}. Vapour-phase synthesis of low-dimensional materials, Raman/PL spectroscopy and Python analysis. {{event:THESIS-SUBMITTED:sentence}}",
+    "cv": "assets/Hao_Yu_CV.pdf",
+    "portrait": "assets/hao-yu-portrait.jpg",
+    "social": {
+      "topic": "Low-dimensional materials | Synthesis | Spectroscopy",
+      "alt": "{{profile.name}}. {{profile.role_short}} at {{profile.institution_short}}. Low-dimensional materials, synthesis and spectroscopy."
+    }
+  }
 }

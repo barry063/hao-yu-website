@@ -1,9 +1,9 @@
 # One-edit content propagation — implementation and acceptance plan
 
-Created: 5 October 2026. Version: 1.0.
-State: PLAN_BASELINED_IMPLEMENTATION_NOT_STARTED.
+Created: 5 October 2026. Version: 1.1 (implementation checkpoint).
+State: P01_P02_COMPLETE_AWAITING_REVIEW.
 Parent contract: [WEBSITE_UPDATE_PLAN.md](WEBSITE_UPDATE_PLAN.md), W10/W11.
-Implementation baseline: website revision `f5f5f92`; recheck before starting.
+Implementation baseline: website revision `17d4ad2` (versioned planning baseline).
 
 ## Outcome and authority
 
@@ -19,6 +19,12 @@ implementation, canonical-source migration, a watcher, new credentials, hosting
 changes or publication of new visitor content. The earlier publication authority
 applied to release 1, not all future changes. Follow later explicit instructions
 without asking again for authority already supplied for the relevant action.
+
+Current instruction, 5 October 2026: implement P01–P02 on a separate local branch,
+verify each criterion, update records, leave canonical CV files unchanged and stop
+after P02 for review. The user subsequently authorised committing and pushing
+this checkpoint to the implementation branch before P03–P06. No merge to main,
+publication, canonical edits or watcher is authorised by this checkpoint action.
 
 Locking means preserving version 1.0 as a traceable Git baseline, not making the
 plan read-only. Record implementation progress and justified amendments in later
@@ -124,12 +130,13 @@ it still invalidates an older approval whose source fingerprints no longer match
 ## Task tracker
 
 Only this table owns the P-task states; the parent W10/W11 rows are roll-ups.
-All core tasks are NOT_STARTED; optional extensions remain DEFERRED.
+P01/P02 are complete locally; P03–P06 are NOT_STARTED. Optional extensions remain
+DEFERRED. Stop at this checkpoint for the user's review.
 
 | ID | Deliverable | Dependencies | State | Completion evidence |
 | --- | --- | --- | --- | --- |
-| P01 | Source ownership map and public data contract | Implementation instruction | NOT_STARTED | Schema, mapping, fixtures and coverage report |
-| P02 | Deterministic shared public-output generator | P01 | NOT_STARTED | Build scripts/templates and baseline parity report |
+| P01 | Source ownership map and public data contract | Implementation instruction | DONE | CONTENT_SOURCE_MAP.md; schema/199-field register; 13 fixtures; P01-A–D report |
+| P02 | Deterministic shared public-output generator | P01 | DONE | Isolated generator; 22 passing tests; three-width HTML/2-page PDF parity and visual review; P02-A–D report |
 | P03 | Local canonical adapters and change detection | P01, P02 | NOT_STARTED | Prepare command, safe export and reconciliation tests |
 | P04 | Review package and stale-approval gate | P03 | NOT_STARTED | Manifest, review UI/summary and gate tests |
 | P05 | End-to-end one-edit proof and operator guide | P02–P04 | NOT_STARTED | Acceptance report and reproducible dry-run |
@@ -293,6 +300,14 @@ Implementation should expose real package/CLI commands and update this section
 and README. Configuration must not contain credentials or machine-specific paths
 in tracked public files. Preparing a candidate never stages or commits files.
 
+Implemented at P02: `npm run build -- --out tmp/candidates/<name>`,
+`npm run test:propagation`, `npm run check:candidate -- <candidate directory>`,
+and `node scripts/preview.mjs <port> <candidate directory>`. Use an existing Python
+runtime via `SITE_PYTHON` or `--python`; exact packages are in `requirements-build.txt`.
+These commands build/check public reviewed data only. They do not yet accept a
+canonical source root or a candidate ID. Prepare/approval/publication commands
+remain proposals for P03–P06, not usable or authorised actions.
+
 ## Evidence and resumption
 
 For every completed task, record acceptance ID, command/manual check, actual result,
@@ -300,8 +315,9 @@ candidate/source fingerprints and public-safe evidence location. Private details
 remain in the private workspace. Use `docs/releases/` for safe implementation and
 release reports. Preserve NOT RUN/INCONCLUSIVE results and dependencies.
 
-Next executable task after implementation is requested: P01. Then P02 -> P03 ->
-P04 -> P05. P06 needs release authority; P07/P08 stay deferred until opted into.
+Current checkpoint: P01/P02 complete, awaiting the requested review. Next task
+after an instruction to continue: P03 -> P04 -> P05. P06 needs release authority;
+P07/P08 stay deferred until opted into.
 Parent W10 completes with P01–P05; parent W11 covers the operating guide/release-2
 checks and P06's readiness/live status. A deferred deployment is not a completed P06.
 
@@ -339,12 +355,76 @@ checks and P06's readiness/live status. A deferred deployment is not a completed
 - Next implementation checkpoint when requested: P01–P02 on a separate local
   branch, followed by review. P01–P06 remain NOT_STARTED; P07/P08 remain DEFERRED.
 
+### 5 October 2026 — P01/P02 local implementation session
+
+- Scope change: user explicitly requested P01–P02 on a separate local branch,
+  with per-criterion verification/progress records, canonical files unchanged,
+  and a stop after P02 for review. No commit/push/publication/watcher authority.
+- Started clean on `main` at `17d4ad2`; created `implementation/p01-p02`.
+  HEAD remains that baseline and all changes remain uncommitted. Canonical AGENTS
+  and all five recorded website source hashes rechecked; no source drift.
+- P01-A/B/C/D → strict typed data, 199-field source coverage, thirteen synthetic
+  fixtures, source-state/visibility tests and source-integrity review → PASS.
+  Documentation records reviewed prose, conflict policy and coverage exclusions.
+- P02-A/B/C/D → shared isolated generator, actual PDF/status propagation,
+  boundary/escaping tests, repeated builds, existing candidate checks and
+  baseline HTML/PDF parity/visual review → PASS. Tests: 22/22 propagation and
+  7/7 navigation; no skips. HTML: zero errors/warnings; 26 records and 24 IDs.
+  HTTP: ten visitor files byte-equal and nonvisitor paths 404. PDF: two pages,
+  selected fields/links/privacy/bounds pass; text/link parity pass.
+- Browser: in-app bootstrap unavailable; fresh isolated headless Chrome used
+  instead. PASS at 375/768/1440 for text/link/meta/JSON-LD/ID/layout parity, no
+  overflow, menu/Escape and no-JS anchors. HTML sections and both PDF pages
+  inspected. Full accessibility/200% zoom/P05 matrix NOT RUN. W07 stays deferred.
+- Normal builds read only the public dataset; no canonical writers, adapters,
+  approval gate, deploy command or persistent process were added. All ten root
+  visitor files equal HEAD (binary bytes; normalised text line endings).
+- Canonical integrity: five used source files remain byte-identical and this task
+  wrote no canonical files. Broader workspace count changed from 45 to 51 with
+  unrelated career-market files appearing; aggregate equality is not claimed.
+  Concurrent files were preserved and do not affect website inputs.
+- Evidence: `docs/CONTENT_SOURCE_MAP.md`, `schemas/field-ownership.json`,
+  `docs/releases/2026-10-05-p01-p02.md` and its `-checks.json`; candidate under
+  ignored `tmp/candidates/p01-p02-review/`; browser/PDF captures under `tmp/`.
+  Exact dataset/template/output/source hashes are in the machine summary.
+- Commands: `npm run test:propagation`, `npm run build`, `npm run check`,
+  `npm run check:candidate`, Python PDF check/parity and sitemap parse,
+  `pdftoppm`, `scripts/review-candidate.mjs`, `npm ls --depth=0`, integrity
+  comparisons and `git diff --check` → PASS. Loopback/junction checks passed
+  with sandbox restrictions removed; earlier sandbox failures are recorded.
+- Milestone: `P01_P02_COMPLETE_AWAITING_REVIEW`. W10 IN_PROGRESS; P03–P06
+  NOT_STARTED; P07/P08 DEFERRED. No factual dependency blocks P01/P02. Stop now
+  for the requested review; P03 is next only after an instruction to continue.
+
+### 5 October 2026 — P01/P02 versioning session
+
+- User requested the implementation checkpoint be committed and pushed before
+  starting P03–P06. Scope: `implementation/p01-p02`, preserving `main`, released
+  visitor files and canonical CV sources; no later P-task started.
+- Starting HEAD `17d4ad2`; worktree contains only the reviewed P01/P02 files.
+  Temporary candidates/captures remain ignored and outside the staged file set.
+- Rechecked public exposure of proposed source records, schemas, fixtures, fonts,
+  scripts and reports. Only the public derivative, public-safe provenance and
+  synthetic fixtures are included; no private evidence-bank snapshots or records.
+- Pre-commit checks: `npm run check` (26 records, 24 IDs, 7 navigation tests),
+  `npm run test:propagation` (22/22, zero skipped), dataset/template/five-source
+  fingerprint comparison and `git diff --check` → PASS. Remote `main` remains
+  `17d4ad2`; the implementation branch did not previously exist on origin.
+- Staged diff check caught trailing whitespace inherited from the bundled font
+  licence. Normalised whitespace without changing its wording; staged check rerun.
+- The commit containing this entry is the P01/P02 implementation checkpoint.
+  Identify its revision with Git history; the push result and remote branch hash
+  are verified after commit and reported in the chat handoff. This entry itself
+  does not claim that a push has succeeded before it is attempted.
+- P01/P02 remain DONE; P03–P06 NOT_STARTED and P07/P08 DEFERRED. The local
+  acceptance report remains a dated verification record, not release approval.
+
 ## Continuation prompt
 
 > Read both repositories' AGENTS.md, docs/WEBSITE_UPDATE_PLAN.md and
 > docs/CONTENT_PROPAGATION_PLAN.md. Recheck Git status and relevant canonical
 > sources. Within the current user-authorised scope, implement the next available
-> P-task, beginning with P01. Preserve the evidence bank's authority and keep
+> P-task, currently P03 after the P01/P02 review checkpoint. Preserve the evidence bank's authority and keep
 > private material outside the public repository. Verify each acceptance ID, save
 > safe evidence, update this tracker and the parent's W10/W11 roll-up, and report
 > remaining tasks. Do not publish, migrate canonical ownership, install a watcher

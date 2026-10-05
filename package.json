@@ -4,8 +4,16 @@
   "scripts": {
     "check": "html-validate index.html && node scripts/check-site.mjs && node --test scripts/navigation.test.mjs",
     "preview": "node scripts/preview.mjs",
-    "check:links": "node scripts/check-links.mjs"
+    "check:links": "node scripts/check-links.mjs",
+    "build": "node scripts/build-site.mjs",
+    "test:propagation": "node --test tests/propagation/*.test.mjs",
+    "check:candidate": "node scripts/check-candidate.mjs"
   },
-  "engines": { "node": ">=22" },
-  "devDependencies": { "html-validate": "^10.0.0" }
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "ajv": "8.20.0",
+    "html-validate": "10.17.0"
+  }
 }
