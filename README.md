@@ -10,6 +10,10 @@ is served directly from the repository root by GitHub Pages.
 
 Start with [AGENTS.md](AGENTS.md) and the [website update plan](docs/WEBSITE_UPDATE_PLAN.md).
 The plan records numbered tasks, acceptance criteria, dependencies and progress.
+[One-edit propagation plan](docs/CONTENT_PROPAGATION_PLAN.md) defines the next
+phase: canonical edit → public-safe candidate → your review → approved release.
+It records P01–P08 and verifiable targets; it is a plan, not an installed workflow
+or standing permission to publish.
 [Public content decisions](docs/CONTENT_DECISIONS.md) records reconciliations and
 omissions. [Release reports](docs/releases/) record actual verification results.
 

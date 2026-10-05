@@ -1,7 +1,8 @@
 # Website update plan and verification contract
 
 Created: 5 October 2026. Baseline: website commit `2c3ba49`.
-Plan version: 1.2. Current milestone: `LIVE_CONTENT_VERIFIED_BROWSER_QA_DEFERRED`.
+Plan version: 1.3. Release-1 milestone: `LIVE_CONTENT_VERIFIED_BROWSER_QA_DEFERRED`.
+Workflow milestone: `PLAN_BASELINED_IMPLEMENTATION_NOT_STARTED`.
 
 ## Objective
 
@@ -15,13 +16,20 @@ This document authorises no external action by itself. On 5 October 2026 the use
 requested implementation of the modifications. Local implementation is now in
 scope. The user subsequently confirmed the browser preview and explicitly
 requested publication of today's changes. Commit, push and live verification of
-release 1 are authorised. The one-edit propagation workflow remains for later.
+release 1 were authorised and completed. The user has since verified the update
+and requested an actionable one-edit propagation plan, then explicitly authorised
+committing and pushing that documentation to `main`. Workflow implementation and
+future publication of changed visitor content require their own instructions.
+See [CONTENT_PROPAGATION_PLAN.md](CONTENT_PROPAGATION_PLAN.md) for P01–P08, their
+dependencies, acceptance targets and the review/publication boundary.
 
 ## Baseline and source map
 
-The website currently contains `index.html`, `styles.css`, `script.js`, metadata
-files and assets. It has no build step or automated validation. All public content
-is embedded in the HTML. The separate CV workspace is named `0 Core CV Infra`;
+At the original baseline, the website contained `index.html`, `styles.css`,
+`script.js`, metadata files and assets, without a build step or automated validation.
+Release 1 added a public JSON inventory, automated checks and a public CV builder;
+HTML content still has no generator and remains maintained separately. The
+separate CV workspace is named `0 Core CV Infra`;
 locate it among the provided workspace roots rather than hard-coding a user's
 machine path into a public build.
 
@@ -70,6 +78,15 @@ user's manual preview confirmation and the passing local checks as the release
 gate. Defer the detailed automated viewport/accessibility matrix, which was not
 performed. This changes today's gate; it does not convert NOT RUN checks into PASS.
 
+Workflow decision, 5 October 2026: source changes should prepare a public-safe
+proposal, not publish automatically. Implement the shared generator and local
+canonical bridge before considering an opt-in watcher. Bind review to an exact
+candidate; subsequent changes invalidate approval. Keep the evidence bank private
+and authoritative; do not create a competing factual record. The latest request
+is to version and push the planning baseline only. P01–P06 describe the core implementation/release sequence;
+P07/P08 are optional extensions. The release-1 browser exception is not a standing
+exception for generated releases.
+
 ## Public page target
 
 The page should follow this order: hero and profile links; concise research profile;
@@ -99,8 +116,8 @@ decision. `DONE` requires every listed acceptance criterion to pass with evidenc
 | W07 | Accessibility and responsive behaviour | W03, W04, W05 | DEFERRED | User accepted browser preview; detailed automated UI matrix deferred for this release; regressions pass |
 | W08 | Verify release 1 locally | W02–W07 | DONE | Passing local checks plus user-confirmed preview accepted for today's release; remaining audit gaps documented |
 | W09 | Publish and verify release 1 | W08; deployment authority | DONE | Release 4537e5e deployed successfully; all nine live visitor files match; deployment report records amended gate and deferred browser QA |
-| W10 | Introduce repeatable content build and validation | W08; initial refresh accepted | DEFERRED | User requests discussing one-edit propagation later |
-| W11 | Verify release 2 and document routine updates | W10 | DEFERRED | Follows deferred generator phase |
+| W10 | Introduce repeatable content build and validation | W08; initial refresh accepted; implementation instruction | NOT_STARTED | Detailed P01–P05 contract in CONTENT_PROPAGATION_PLAN.md; planning recorded, implementation not started |
+| W11 | Verify release 2 and document routine updates | W10; publication authority for live checks | NOT_STARTED | Detailed P05/P06 operating/release contract; no new deployment authorised by planning |
 
 ## Acceptance criteria
 
@@ -239,6 +256,12 @@ the detailed live browser UI audit as deferred. Use the milestone
 
 ### W10 — Repeatable static content build
 
+Implementation breakdown: P01–P05 in
+[CONTENT_PROPAGATION_PLAN.md](CONTENT_PROPAGATION_PLAN.md). Those tasks add the
+canonical-source bridge and version-bound review gate to these original criteria;
+the P-task tracker owns detailed progress. Do not mark W10 DONE before both sets
+of criteria are verified.
+
 - W10-A: Move approved content into small JSON files under `content/`, with stable
   claim/output IDs, public-safe source references, evidence status, visibility and
   review dates. Use a template and a dependency-light build script to emit static
@@ -257,6 +280,10 @@ the detailed live browser UI audit as deferred. Use the milestone
   is required to build the public site. Record any hosting-process change.
 
 ### W11 — Release 2 and routine updates
+
+Use P05/P06 in [CONTENT_PROPAGATION_PLAN.md](CONTENT_PROPAGATION_PLAN.md) for
+end-to-end proof, the operator guide and approved-release deployment. Optional
+watching and extra public destinations are P07/P08, not release-2 prerequisites.
 
 - W11-A: Repeat relevant W08 browser/content checks after generation is introduced.
   The generated site preserves the approved release-1 content and accessibility.
@@ -351,11 +378,49 @@ completes at W08. Release 2 completes at W11 with its readiness/live status stat
   requested later workflow discussion. Documentation-only follow-up records
   these results without changing visitor files.
 
+### 5 October 2026 — propagation planning session
+
+- Scope: user verified the live update, discussed the review-gated workflow and
+  requested an actionable plan in a proper location. Documentation only; no new
+  implementation, canonical-source changes, commits/pushes or deployment.
+- Read: both repositories' AGENTS.md, current parent plan, README, public inventory
+  and CV-builder interface. Git status initially clean; no user edits overwritten.
+- Saved `docs/CONTENT_PROPAGATION_PLAN.md`: P01–P08, dependencies, 31 acceptance
+  targets, explicit source ownership, private/public allowlists, deterministic
+  outputs, candidate-bound approval and stale-input rejection. Linked from README.
+- W10/W11 now NOT_STARTED with a recorded implementation contract rather than
+  deferred for lack of discussion. P07/P08 remain optional and DEFERRED. No
+  implementation acceptance criterion is marked passing by this planning work.
+- Verification: PASS — inline Node assertions via PowerShell here-string checked
+  eight unique tasks, 31 unique acceptance IDs, sections for all tasks, ordered
+  dependencies, six NOT_STARTED/two DEFERRED states, resolving local Markdown
+  links, authority/privacy controls and no absolute machine paths in the new plan.
+  `git diff --check`: PASS. Evidence is this entry and the new plan's recording
+  entry. Workflow runtime checks NOT RUN; no implementation results are claimed.
+- Next task after an implementation instruction: P01. Release 1 remains live;
+  detailed automated browser QA remains deferred, not retroactively passed.
+
+### 5 October 2026 — planning baseline commit/push session
+
+- User explicitly requested commit/push to `main`. This versions the three
+  documentation files only; implementation and new visitor content are out of scope.
+- Git: fetched origin/main; starting revision `f5f5f92`, zero ahead/behind.
+- PASS: inline Node assertions for eight tasks, 31 unique acceptance IDs,
+  dependencies/states and local links. `npm run check`: PASS, HTML/content checks
+  and all seven navigation regressions. `git diff --check`: PASS.
+- The commit containing this entry is the planning baseline; Git history and the
+  chat handoff identify its revision and actual push result. No canonical files
+  or visitor assets changed. Runtime propagation checks remain NOT RUN.
+- Milestone: `PLAN_BASELINED_IMPLEMENTATION_NOT_STARTED`. Next implementation
+  checkpoint after an instruction: P01–P02 on a separate local branch, then review.
+
 ## Reusable continuation prompt
 
 > Continue the website update using AGENTS.md and docs/WEBSITE_UPDATE_PLAN.md.
 > Inspect the working tree and latest canonical evidence, then complete the next
-> available tasks within the authorised scope. Verify their acceptance criteria
+> available tasks within the authorised scope.
+> For the one-edit workflow, also read docs/CONTENT_PROPAGATION_PLAN.md and use its
+> P-task tracker; implementation starts at P01 only when requested. Verify criteria
 > and update the task tracker and session record with actual results. Continue
 > independent tasks if one dependency is unresolved. Report the resulting
 > readiness milestone and remaining task IDs; deploy only when authorised by the
