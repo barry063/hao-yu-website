@@ -1,103 +1,109 @@
 # Hao Yu — Academic website
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-live-1e3a5f?logo=github)](https://mirainthehub.github.io/hao-yu-academic-site/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-1e3a5f)](LICENSE)
+Website: [barry063.github.io/hao-yu-website](https://barry063.github.io/hao-yu-website/).
 
-**Live site:** [barry063.github.io/hao-yu-website](https://barry063.github.io/hao-yu-website/)
+A static academic portfolio covering low-dimensional materials growth, spectroscopy,
+research software, publications and professional experience. HTML/CSS/JavaScript
+is served directly from the repository root by GitHub Pages.
 
-A minimal, text-forward academic portfolio: PhD research (Cambridge), publications, projects, and contact—built as static HTML/CSS/JS and hosted on **GitHub Pages**. Designed for clarity on desktop and mobile, with sensible defaults for accessibility and social link previews.
+## Update plan and evidence
 
----
+Start with [AGENTS.md](AGENTS.md) and the [website update plan](docs/WEBSITE_UPDATE_PLAN.md).
+The plan records numbered tasks, acceptance criteria, dependencies and progress.
+[Public content decisions](docs/CONTENT_DECISIONS.md) records reconciliations and
+omissions. [Release reports](docs/releases/) record actual verification results.
 
-## Why this repo exists
+`content/site.json` is the public claim inventory. Its source references point into
+the separate canonical CV workspace; the private evidence files are not copied
+into this repository. Every published record has a source, evidence status and
+review date. This first refresh keeps HTML editable directly; a repeatable HTML
+generator is planned as the next phase.
 
-- **Single page** — fast to load, easy to maintain, no build step.
-- **Portable** — drop the files on any static host (Pages, Netlify, Cloudflare Pages, etc.).
-- **Fork-friendly** — MIT-licensed layout you can adapt for your own profile (see [CONTRIBUTING.md](CONTRIBUTING.md)).
+## Local checks and preview
 
-If you find the structure useful, consider **starring** the repo—it helps others discover it.
+Node.js 22 or later is required for development checks, not for visitors or hosting.
 
----
-
-## Highlights
-
-| Area | Details |
-|------|---------|
-| **Sections** | About, research themes, publications (with DOIs), projects, experience, education, skills, leadership, awards, CV, contact |
-| **Stack** | Semantic HTML, CSS custom properties, a small amount of JS for navigation |
-| **Sharing** | Open Graph / Twitter meta tags + `assets/og-image.png` for link previews |
-| **Extras** | `robots.txt` + `sitemap.xml` for basic discoverability |
-
----
-
-## Quick start (local)
-
-```bash
-git clone https://github.com/barry063/hao-yu-website.git
-cd hao-yu-website
-py -m http.server 8080
+```powershell
+npm ci --ignore-scripts
+npm run check
+npm run preview
 ```
 
-Open [http://localhost:8080](http://localhost:8080).
+Open [the project-path preview](http://localhost:8080/hao-yu-website/).
+The preview also works at the server root and serves only public website files.
 
----
+`npm run check` validates HTML and checks claim provenance, exact rendered wording,
+fragment targets, assets, metadata, output counts and image dimensions, and runs
+seven navigation behaviour regressions. Those regressions do not replace browser
+inspection of focus, responsive layout or accessibility.
+`npm run check:links` checks public destinations; bot blocking and network errors
+are reported as inconclusive.
 
-## Before you publish
+The public CV builder requires Python with `reportlab`; its check additionally uses
+`pdfplumber`. These are included in the Codex bundled Python runtime.
 
-1. **`assets/Hao_Yu_CV.pdf`** — add your CV so the download button works.
-2. **Headshot** — replace the placeholder in `index.html` (see comments near `headshot`).
-3. **Profile links** — set LinkedIn / Google Scholar URLs in the hero (marked `TODO`).
-4. **Canonical & OG URL** — if you fork to another account or use a custom domain, update the `<link rel="canonical">` and `og:url` / `og:image` absolute URLs in `index.html`.
-
----
-
-## Deploy (GitHub Pages)
-
-1. Push this repository to GitHub.
-2. **Settings → Pages → Build and deployment**
-3. **Source:** *Deploy from a branch* → **Branch:** `main`, **Folder:** `/ (root)` → Save.
-4. Site URL: `https://<username>.github.io/<repo>/`
-
-Relative asset paths work under a project URL (e.g. `/hao-yu-academic-site/`).
-
----
-
-## Repository layout
-
-```
-hao-yu-academic-site/
-├── index.html          # Page structure & content
-├── styles.css          # Layout & typography
-├── script.js           # Nav + smooth scroll
-├── favicon.svg
-├── robots.txt
-├── sitemap.xml
-├── LICENSE             # MIT (site code)
-├── CONTRIBUTING.md
-└── assets/
-    ├── og-image.png    # Social preview (Open Graph)
-    └── Hao_Yu_CV.pdf   # Add your CV here
+```powershell
+python scripts/build_public_cv.py
+python scripts/check_public_cv.py
 ```
 
----
+After rebuilding the CV, render and visually inspect both pages, then update its
+source/PDF hashes in the release report. The builder reads public records only.
+It does not modify the master CV or publish an internal review export.
 
-## Suggested GitHub metadata (optional)
+On Windows, `scripts/prepare_assets.ps1` resizes the original portrait into the
+public portrait and draws the social card. Inspect both assets after regenerating.
+The original portrait remains available in `assets/hao-yu.jpg`.
 
-On the repo **About** pane (gear icon), you can add:
+## Routine content updates
 
-**Website:** `https://mirainthehub.github.io/hao-yu-academic-site/`
+1. Recheck the current canonical evidence and its verification holds.
+2. Update public records in `content/site.json` and corresponding `index.html`
+   wording. Keep thesis submission, viva and degree award separate.
+3. Rebuild the public CV if the affected facts appear there.
+4. Run checks, inspect the browser at mobile/tablet/desktop widths, and exercise
+   keyboard navigation and reduced motion.
+5. Record source hashes, asset hashes, actual results and remaining issues in
+   `docs/releases/`; update the plan tracker.
+6. Publish when authorised, then verify the deployed revision and CV.
 
-**Topics (examples):**  
-`academic-website` `github-pages` `portfolio` `materials-science` `photonics` `nanofabrication` `research` `static-site` `html` `phd`
+Trigger a review after a PhD milestone, manuscript decision, new publication,
+software release, changed affiliation/contact details or completed experience.
+The review date is a historical timestamp, not a promise of continuously current
+publication or qualification status.
 
----
+## Publishing with GitHub Pages
 
-## License
+Use the existing repository's Pages configuration. For branch-based hosting,
+select `main` and `/ (root)`. Relative assets support the
+`/hao-yu-website/` project prefix. `.nojekyll` keeps the checked-in website files
+served as static assets. No production build is required.
 
-Site **code** (HTML/CSS/JS) is released under the [MIT License](LICENSE). **Biographical and research text** remains the author’s; forks should replace content with their own.
+Before pushing, check the public content inventory and release report. Local
+verification does not establish that the deployed site has changed. Record the
+deployed commit and verify the live page, assets, canonical metadata and CV hash.
 
----
+`node scripts/check-live.mjs` compares the live visitor files with the local release
+(exact bytes for PDF/images; normalised line endings for text).
+`node scripts/github-pages-status.mjs` reads Pages settings and workflow status
+using the configured Git credential helper without logging credentials.
 
-## Acknowledgements
+## Files
 
-Fonts: [Google Fonts](https://fonts.google.com/) — Inter & Source Serif 4.
+| Path | Purpose |
+| --- | --- |
+| `index.html` | Static page structure and visitor content |
+| `styles.css` | Responsive layout, typography and focus styles |
+| `script.js` | Progressive navigation and scrolling enhancements |
+| `content/site.json` | Public claim inventory and canonical source fingerprints |
+| `assets/` | Public CV, portrait, social card and original portrait |
+| `scripts/` | Validation, preview, link checking, CV and asset preparation |
+| `docs/` | Plan, content decisions and release evidence |
+| `sitemap.xml`, `robots.txt` | Discoverability metadata |
+
+## Licence and acknowledgements
+
+Site code is released under the [MIT licence](LICENSE). Biographical and research
+text remains the author's. The earlier layout originated from
+[hao-yu-academic-site](https://github.com/Mirainthehub/hao-yu-academic-site).
+Fonts: Inter and Source Serif 4 via Google Fonts.
