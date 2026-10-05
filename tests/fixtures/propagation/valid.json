@@ -1,0 +1,622 @@
+{
+  "schema_version": 2,
+  "release_date": "2026-10-05",
+  "sources": [
+    {
+      "id": "EB",
+      "path": "1 Master Academic CV/Evidence_Bank.md",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  ],
+  "profile": {
+    "id": "PERSON",
+    "selected": true,
+    "name": "Example Researcher",
+    "role": "Research student in Engineering",
+    "institution": "Example University",
+    "institution_short": "Example",
+    "discipline": "Engineering",
+    "group": "Example Group",
+    "email": "example@example.org",
+    "location": "Example City",
+    "provenance": {
+      "source": "EB synthetic record",
+      "evidence_status": "VERIFIED",
+      "visibility": "PUBLIC",
+      "reviewed": "2026-10-05"
+    }
+  },
+  "qualification_events": [
+    {
+      "id": "THESIS-SUBMITTED",
+      "qualification_id": "EDU-CAM",
+      "kind": "THESIS_SUBMITTED",
+      "date": "2026-09-30",
+      "selected": true,
+      "provenance": {
+        "source": "EB synthetic record",
+        "evidence_status": "VERIFIED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      }
+    }
+  ],
+  "links": [
+    {
+      "id": "LINKEDIN",
+      "label": "LinkedIn",
+      "url": "https://example.org/linkedin",
+      "selected": true,
+      "provenance": {
+        "source": "EB synthetic record",
+        "evidence_status": "VERIFIED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      }
+    },
+    {
+      "id": "SCHOLAR",
+      "label": "Google Scholar",
+      "url": "https://example.org/scholar",
+      "selected": true,
+      "provenance": {
+        "source": "EB synthetic record",
+        "evidence_status": "VERIFIED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      }
+    },
+    {
+      "id": "ORCID",
+      "label": "ORCID",
+      "url": "https://example.org/orcid",
+      "selected": true,
+      "provenance": {
+        "source": "EB synthetic record",
+        "evidence_status": "VERIFIED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      }
+    },
+    {
+      "id": "GITHUB",
+      "label": "GitHub",
+      "url": "https://example.org/github",
+      "selected": true,
+      "provenance": {
+        "source": "EB synthetic record",
+        "evidence_status": "VERIFIED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      }
+    },
+    {
+      "id": "GROUP",
+      "label": "Hofmann Group",
+      "url": "https://example.org/group",
+      "selected": true,
+      "provenance": {
+        "source": "EB synthetic record",
+        "evidence_status": "VERIFIED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "id": "J1",
+      "selected": true,
+      "provenance": {
+        "source": "EB synthetic record",
+        "evidence_status": "VERIFIED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
+      "kind": "ARTICLE",
+      "status": "PUBLISHED",
+      "title": "Synthetic J1",
+      "year": 2025,
+      "authors": "Example Researcher and Example Collaborator.",
+      "venue": "Example Journal 1, 1-2.",
+      "contribution": "Synthetic public contribution.",
+      "links": [
+        {
+          "label": "Synthetic link",
+          "url": "https://example.org/J1/0"
+        }
+      ],
+      "cv_authors": "Example Researcher et al."
+    },
+    {
+      "id": "J2",
+      "selected": true,
+      "provenance": {
+        "source": "EB synthetic record",
+        "evidence_status": "VERIFIED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
+      "kind": "ARTICLE",
+      "status": "PUBLISHED",
+      "title": "Synthetic J2",
+      "year": 2025,
+      "authors": "Example Researcher and Example Collaborator.",
+      "venue": "Example Journal 1, 1-2.",
+      "contribution": "Synthetic public contribution.",
+      "links": [
+        {
+          "label": "Synthetic link",
+          "url": "https://example.org/J2/0"
+        }
+      ],
+      "cv_authors": "Example Researcher et al."
+    },
+    {
+      "id": "J3",
+      "selected": true,
+      "provenance": {
+        "source": "EB synthetic record",
+        "evidence_status": "VERIFIED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
+      "kind": "ARTICLE",
+      "status": "PUBLISHED",
+      "title": "Synthetic J3",
+      "year": 2023,
+      "authors": "Example Researcher and Example Collaborator.",
+      "venue": "Example Journal 1, 1-2.",
+      "contribution": "Synthetic public contribution.",
+      "links": [
+        {
+          "label": "Synthetic link",
+          "url": "https://example.org/J3/0"
+        },
+        {
+          "label": "Synthetic link",
+          "url": "https://example.org/J3/1"
+        }
+      ],
+      "cv_authors": "Example Researcher et al."
+    },
+    {
+      "id": "J4",
+      "selected": true,
+      "provenance": {
+        "source": "EB synthetic record",
+        "evidence_status": "VERIFIED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
+      "kind": "ARTICLE",
+      "status": "PUBLISHED",
+      "title": "Synthetic J4",
+      "year": 2022,
+      "authors": "Example Researcher and Example Collaborator.",
+      "venue": "Example Journal 1, 1-2.",
+      "contribution": "Synthetic public contribution.",
+      "links": [
+        {
+          "label": "Synthetic link",
+          "url": "https://example.org/J4/0"
+        }
+      ],
+      "cv_authors": "Example Researcher et al."
+    },
+    {
+      "id": "S1",
+      "selected": true,
+      "provenance": {
+        "source": "EB synthetic record",
+        "evidence_status": "VERIFIED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
+      "kind": "ARTICLE",
+      "status": "UNDER_REVIEW",
+      "title": "Synthetic S1",
+      "year": null,
+      "authors": null,
+      "venue": null,
+      "contribution": "Synthetic public contribution.",
+      "links": [],
+      "cv_authors": null
+    },
+    {
+      "id": "P1",
+      "selected": true,
+      "provenance": {
+        "source": "EB synthetic record",
+        "evidence_status": "VERIFIED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
+      "kind": "ARTICLE",
+      "status": "IN_PREPARATION",
+      "title": "Synthetic P1",
+      "year": null,
+      "authors": null,
+      "venue": null,
+      "contribution": "Synthetic public contribution.",
+      "links": [],
+      "cv_authors": null
+    },
+    {
+      "id": "SW1",
+      "selected": true,
+      "provenance": {
+        "source": "EB synthetic record",
+        "evidence_status": "VERIFIED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
+      "kind": "SOFTWARE",
+      "status": "RESEARCH_SOFTWARE",
+      "title": "Synthetic SW1",
+      "year": null,
+      "authors": null,
+      "venue": null,
+      "contribution": "Synthetic public contribution.",
+      "links": [
+        {
+          "label": "Synthetic link",
+          "url": "https://example.org/SW1/0"
+        }
+      ],
+      "cv_authors": null
+    }
+  ],
+  "experience": [
+    {
+      "id": "EXP-INNO",
+      "selected": true,
+      "provenance": {
+        "source": "EB synthetic record",
+        "evidence_status": "VERIFIED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
+      "text": [
+        "Synthetic public wording EXP-INNO 0.",
+        "Synthetic public wording EXP-INNO 1."
+      ],
+      "role": "Synthetic research role",
+      "organisation": "Example organisation",
+      "start_month": "2026-06",
+      "end_month": "2026-08"
+    },
+    {
+      "id": "EXP-JUDGE",
+      "selected": true,
+      "provenance": {
+        "source": "EB synthetic record",
+        "evidence_status": "VERIFIED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
+      "text": [
+        "Synthetic public wording EXP-JUDGE 0.",
+        "Synthetic public wording EXP-JUDGE 1."
+      ],
+      "role": "Synthetic research role",
+      "organisation": "Example organisation",
+      "start_month": "2026-01",
+      "end_month": "2026-04"
+    },
+    {
+      "id": "EXP-BOE",
+      "selected": true,
+      "provenance": {
+        "source": "EB synthetic record",
+        "evidence_status": "VERIFIED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
+      "text": [
+        "Synthetic public wording EXP-BOE 0."
+      ],
+      "role": "Synthetic research role",
+      "organisation": "Example organisation",
+      "start_month": "2023-01",
+      "end_month": "2025-12"
+    }
+  ],
+  "qualifications": [
+    {
+      "id": "EDU-CAM",
+      "selected": true,
+      "provenance": {
+        "source": "EB synthetic record",
+        "evidence_status": "VERIFIED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
+      "title": "Synthetic EDU-CAM",
+      "dates": "Oct 2022 – present",
+      "text": [
+        "Synthetic public wording EDU-CAM 0.",
+        "Synthetic public wording EDU-CAM 1.",
+        "Synthetic public wording EDU-CAM 2."
+      ]
+    },
+    {
+      "id": "EDU-OX",
+      "selected": true,
+      "provenance": {
+        "source": "EB synthetic record",
+        "evidence_status": "VERIFIED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
+      "title": "Synthetic EDU-OX",
+      "dates": "Oct 2018 – Jul 2022",
+      "text": [
+        "Synthetic public wording EDU-OX 0."
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "id": "A1",
+      "selected": true,
+      "provenance": {
+        "source": "EB synthetic record",
+        "evidence_status": "VERIFIED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
+      "title": "Synthetic A1",
+      "dates": "2025–2026"
+    },
+    {
+      "id": "A2",
+      "selected": true,
+      "provenance": {
+        "source": "EB synthetic record",
+        "evidence_status": "VERIFIED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
+      "title": "Synthetic A2",
+      "dates": "2020–2022"
+    },
+    {
+      "id": "A3",
+      "selected": true,
+      "provenance": {
+        "source": "EB synthetic record",
+        "evidence_status": "VERIFIED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
+      "title": "Synthetic A3",
+      "dates": "2014–2017"
+    }
+  ],
+  "narratives": [
+    {
+      "id": "PROFILE",
+      "selected": true,
+      "provenance": {
+        "source": "EB synthetic record",
+        "evidence_status": "VERIFIED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
+      "destination": "top",
+      "title": "Synthetic PROFILE",
+      "dates": "",
+      "text": [
+        "Synthetic public wording PROFILE 0."
+      ],
+      "links": [],
+      "output_id": null
+    },
+    {
+      "id": "ABOUT",
+      "selected": true,
+      "provenance": {
+        "source": "EB synthetic record",
+        "evidence_status": "VERIFIED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
+      "destination": "about",
+      "title": "Synthetic ABOUT",
+      "dates": "",
+      "text": [
+        "Synthetic public wording ABOUT 0.",
+        "Synthetic public wording ABOUT 1.",
+        "Synthetic public wording ABOUT 2."
+      ],
+      "links": [],
+      "output_id": null
+    },
+    {
+      "id": "THEME-1",
+      "selected": true,
+      "provenance": {
+        "source": "EB synthetic record",
+        "evidence_status": "VERIFIED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
+      "destination": "research",
+      "title": "Synthetic THEME-1",
+      "dates": "",
+      "text": [
+        "Synthetic public wording THEME-1 0."
+      ],
+      "links": [],
+      "output_id": null
+    },
+    {
+      "id": "THEME-2",
+      "selected": true,
+      "provenance": {
+        "source": "EB synthetic record",
+        "evidence_status": "VERIFIED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
+      "destination": "research",
+      "title": "Synthetic THEME-2",
+      "dates": "",
+      "text": [
+        "Synthetic public wording THEME-2 0."
+      ],
+      "links": [],
+      "output_id": null
+    },
+    {
+      "id": "THEME-3",
+      "selected": true,
+      "provenance": {
+        "source": "EB synthetic record",
+        "evidence_status": "VERIFIED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
+      "destination": "research",
+      "title": "Synthetic THEME-3",
+      "dates": "",
+      "text": [
+        "Synthetic public wording THEME-3 0."
+      ],
+      "links": [],
+      "output_id": null
+    },
+    {
+      "id": "PROJECT-CSS",
+      "selected": true,
+      "provenance": {
+        "source": "EB synthetic record",
+        "evidence_status": "VERIFIED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
+      "destination": "projects",
+      "title": "Synthetic PROJECT-CSS",
+      "dates": "Feb 2023 – Jan 2025",
+      "text": [
+        "Synthetic public wording PROJECT-CSS 0.",
+        "Synthetic public wording PROJECT-CSS 1.",
+        "Synthetic public wording PROJECT-CSS 2."
+      ],
+      "links": [
+        {
+          "label": "Synthetic link",
+          "output_link_index": 0
+        }
+      ],
+      "output_id": "J1"
+    },
+    {
+      "id": "PROJECT-WS2",
+      "selected": true,
+      "provenance": {
+        "source": "EB synthetic record",
+        "evidence_status": "VERIFIED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
+      "destination": "projects",
+      "title": "Synthetic PROJECT-WS2",
+      "dates": "Jun 2025 – Apr 2026",
+      "text": [
+        "Synthetic public wording PROJECT-WS2 0.",
+        "Synthetic public wording PROJECT-WS2 1.",
+        "Synthetic public wording PROJECT-WS2 2."
+      ],
+      "links": [],
+      "output_id": "P1"
+    },
+    {
+      "id": "PROJECT-MOS2",
+      "selected": true,
+      "provenance": {
+        "source": "EB synthetic record",
+        "evidence_status": "VERIFIED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
+      "destination": "projects",
+      "title": "Synthetic PROJECT-MOS2",
+      "dates": "Jun – Aug 2025",
+      "text": [
+        "Synthetic public wording PROJECT-MOS2 0.",
+        "Synthetic public wording PROJECT-MOS2 1.",
+        "Synthetic public wording PROJECT-MOS2 2."
+      ],
+      "links": [],
+      "output_id": "S1"
+    },
+    {
+      "id": "PROJECT-SOFTWARE",
+      "selected": true,
+      "provenance": {
+        "source": "EB synthetic record",
+        "evidence_status": "VERIFIED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
+      "destination": "projects",
+      "title": "Synthetic PROJECT-SOFTWARE",
+      "dates": "Research software",
+      "text": [
+        "Synthetic public wording PROJECT-SOFTWARE 0.",
+        "Synthetic public wording PROJECT-SOFTWARE 1.",
+        "Synthetic public wording PROJECT-SOFTWARE 2."
+      ],
+      "links": [
+        {
+          "label": "Synthetic link",
+          "output_link_index": 0
+        }
+      ],
+      "output_id": "SW1"
+    },
+    {
+      "id": "PROJECT-PHOTONICS",
+      "selected": true,
+      "provenance": {
+        "source": "EB synthetic record",
+        "evidence_status": "VERIFIED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-10-05"
+      },
+      "destination": "projects",
+      "title": "Synthetic PROJECT-PHOTONICS",
+      "dates": "Sep 2021 – Jun 2022",
+      "text": [
+        "Synthetic public wording PROJECT-PHOTONICS 0.",
+        "Synthetic public wording PROJECT-PHOTONICS 1.",
+        "Synthetic public wording PROJECT-PHOTONICS 2."
+      ],
+      "links": [
+        {
+          "label": "Synthetic link",
+          "output_link_index": 0
+        },
+        {
+          "label": "Synthetic link",
+          "output_link_index": 1
+        }
+      ],
+      "output_id": "J3"
+    }
+  ],
+  "presentation": {
+    "url": "https://example.org/site/",
+    "repository": "https://example.org/source",
+    "title": "{{profile.name}} — Low-dimensional materials & spectroscopy",
+    "description": "{{profile.name}}, {{profile.role}} at {{profile.institution_short}}. Vapour-phase synthesis of low-dimensional materials, Raman/PL spectroscopy and Python analysis. {{event:THESIS-SUBMITTED:sentence}}",
+    "cv": "assets/Hao_Yu_CV.pdf",
+    "portrait": "assets/hao-yu-portrait.jpg",
+    "social": {
+      "topic": "Low-dimensional materials | Synthesis | Spectroscopy",
+      "alt": "{{profile.name}}. PhD researcher at {{profile.institution_short}}. Low-dimensional materials, synthesis and spectroscopy."
+    }
+  }
+}

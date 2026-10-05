@@ -1,0 +1,130 @@
+{
+  "baseline": "17d4ad20076b340b273f34b5e0f4d5eb90de608a",
+  "branch": "implementation/p01-p02",
+  "release_date": "2026-10-05",
+  "dataset_sha256": "526cbe1e6555ced163047f25e3424dc5b19a4a8c0ce072b292171119a677e671",
+  "template_sha256": "707778fdf2dc5ba3b26b7e25a88e6b072bd10baf2700ef3476b648376502f22d",
+  "candidate_directory": "tmp/candidates/p01-p02-review",
+  "output_sha256": {
+    ".nojekyll": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "index.html": "ff7bd486d272449f9e0f8fbbbec461a2e8504d4f53b8f8b45b986fbf9074b3a2",
+    "styles.css": "ca8344bf6244aba31ca0c6211e9fa3e0cadf2a0cb53c4b9ba5f16de063e8b5d7",
+    "script.js": "30be027c19866039d11ef3d3fe04c49b5d2df1f38b053cf92911f3eb0804cfdb",
+    "favicon.svg": "0ed347d5da206ffa193f82c372d6e9abc5d2be1813744cbbfa0211da4e17bd37",
+    "robots.txt": "5f76f3d777d3616e02b73917ce737d9f130097ef96be6deeb6aa9c11f5c9eb38",
+    "sitemap.xml": "daa26c49e447d8f14d6d311b6644fe13cc623f034b6e76ac0106698e1c72a6a2",
+    "assets/Hao_Yu_CV.pdf": "c4602559102210790b60596217bc167914384f24bd12df749f1dec9a73b8a5c7",
+    "assets/hao-yu-portrait.jpg": "46303d6d9724e6a39504ec0d3cf4a1333e5bc2d6a98d7ae527c4bc0d25326280",
+    "assets/og-image.png": "19d42cc64c0751580ad51c7b0b2d9e846701010524d097918ffb401837dd0801"
+  },
+  "sources": [
+    {
+      "id": "EB",
+      "path": "1 Master Academic CV/Evidence_Bank.md",
+      "sha256": "3c42d0e6cea1f8468e9142347be7487911cf871394383af0c80ae2c94bb63e65"
+    },
+    {
+      "id": "PUB",
+      "path": "4 Publication list/Master_Publication_List.md",
+      "sha256": "fc76452713464119758fbe9fdadbd3516f176ad9a5c9bfb8f55370b6a1d45dd9"
+    },
+    {
+      "id": "CONTRIB",
+      "path": "4 Publication list/Publication_Contributions.json",
+      "sha256": "ae05ab7c15ee1f9a02b834af1b35d18e468bb56b3a604d8f4f488b7675abc876"
+    },
+    {
+      "id": "PROFILE",
+      "path": "3 Research Profile/Hao_Yu_Application_Evidence_Wording.md",
+      "sha256": "7337f5442b2445d7042c05099bdf983ca63f5a09f015def53682ef441790b9ba"
+    },
+    {
+      "id": "EXPORT",
+      "path": "1 Master Academic CV/Current_Export_Record.json",
+      "sha256": "90a10f9d7ad7367924d99e484902cfe04e1ac0367f4830c3f6851fd4a6696bc5"
+    }
+  ],
+  "canonical_integrity": {
+    "used_sources": "PASS (all five byte-identical to initial fingerprints)",
+    "writes_by_this_task": 0,
+    "broader_workspace": {
+      "initial_file_count": 45,
+      "final_file_count": 52,
+      "initial_sha256": "163c6d3b3b7a885ed0d1dee16acf3ce7d877ef741b3fa4c8446b1ff4e970301d",
+      "final_sha256": "a1b76dad76e76e6329f91807de29b5ba7ef10520879eb0d20a38e8a1c21dab3a",
+      "result": "CHANGED (unrelated career-market files appeared during the session; whole-workspace equality is not claimed)"
+    }
+  },
+  "root_visitor_files_unchanged": "PASS (binary bytes equal to HEAD; text line endings normalised)",
+  "browser": {
+    "browser": "154.0.8037.93",
+    "results": [
+      {
+        "width": 375,
+        "result": "PASS",
+        "parity": [
+          "visible text",
+          "all anchor links",
+          "metadata",
+          "JSON-LD",
+          "title",
+          "canonical URL",
+          "24 IDs"
+        ],
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "result": "PASS",
+        "parity": [
+          "visible text",
+          "all anchor links",
+          "metadata",
+          "JSON-LD",
+          "title",
+          "canonical URL",
+          "24 IDs"
+        ],
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "result": "PASS",
+        "parity": [
+          "visible text",
+          "all anchor links",
+          "metadata",
+          "JSON-LD",
+          "title",
+          "canonical URL",
+          "24 IDs"
+        ],
+        "overflow": false
+      }
+    ],
+    "no_js": "PASS",
+    "full_accessibility_audit": "NOT RUN",
+    "zoom_200_percent": "NOT RUN"
+  },
+  "checks": {
+    "contract_and_generator": {
+      "result": "PASS",
+      "tests": 22,
+      "skipped": 0
+    },
+    "existing_navigation": {
+      "result": "PASS",
+      "tests": 7
+    },
+    "candidate_html": "PASS (zero errors/warnings)",
+    "project_path_http": "PASS (10 files, bytes equal; nonvisitor paths 404)",
+    "pdf": "PASS (2 pages; selected data, hyperlinks, privacy and margins)",
+    "pdf_baseline_parity": "PASS (normalised text and hyperlink URI equality)",
+    "visual_review": "PASS (HTML sections and both PDF pages inspected; no generator-induced layout change)",
+    "determinism": "PASS (two baseline builds and two changed-card/status builds have identical hashes)",
+    "social_card": "REUSED (displayed fields unchanged)",
+    "release_readiness": "NOT CLAIMED",
+    "publication": "NOT RUN (outside authorised scope)",
+    "watcher": "NOT INSTALLED"
+  }
+}

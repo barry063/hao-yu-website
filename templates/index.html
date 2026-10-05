@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{HEAD}}
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="header-inner">
+<a class="brand" href="#top">{{NAME}}<span>Research &amp; work</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" hidden><span>Menu</span><span class="nav-toggle-mark" aria-hidden="true">+</span></button>
+<nav id="site-nav" class="site-nav" aria-label="Primary">
+<a href="#about">Profile</a><a href="#projects">Research</a><a href="#publications">Outputs</a><a href="#experience">Experience</a><a href="#cv">CV</a><a href="#contact">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<section id="top" class="hero" aria-labelledby="hero-heading">
+<div class="hero-copy">
+{{HERO}}
+</div>
+{{PORTRAIT}}
+</section>
+<section id="about" class="section section-split" aria-labelledby="about-heading">
+<div class="section-intro"><p class="eyebrow">01 / Profile</p><h2 id="about-heading">Connecting growth,<br>structure and response.</h2></div>
+{{ABOUT}}
+</section>
+<section id="research" class="section" aria-labelledby="research-heading">
+<p class="eyebrow">02 / Research approach</p><h2 id="research-heading">Synthesis, measurement, analysis.</h2>
+{{THEMES}}
+<div id="skills" class="anchor-alias" tabindex="-1" aria-label="Research capabilities"></div>
+</section>
+<section id="projects" class="section" aria-labelledby="projects-heading">
+<div class="section-heading"><div><p class="eyebrow">03 / Selected research</p><h2 id="projects-heading">From materials growth to optical data.</h2></div><p>Current doctoral work, research software<br>and earlier photonic-device research.</p></div>
+{{PROJECTS}}
+</section>
+<section id="publications" class="section" aria-labelledby="publications-heading">
+<p class="eyebrow">04 / Research outputs</p><h2 id="publications-heading">Publications &amp; software</h2>
+{{OUTPUTS}}
+</section>
+<section id="experience" class="section section-split" aria-labelledby="experience-heading">
+<div class="section-intro"><p class="eyebrow">05 / Experience</p><h2 id="experience-heading">Research in a<br>wider context.</h2><p>Technology assessment, commercialisation<br>and university engagement.</p></div>
+{{EXPERIENCE}}
+<div id="leadership" class="anchor-alias" tabindex="-1" aria-label="University engagement"></div>
+</section>
+<section id="education" class="section section-split" aria-labelledby="education-heading">
+<div class="section-intro"><p class="eyebrow">06 / Education</p><h2 id="education-heading">Academic background</h2></div>
+{{EDUCATION}}
+</section>
+<section id="cv" class="section" aria-labelledby="cv-heading">
+{{CV}}
+</section>
+<section id="contact" class="section section-split" aria-labelledby="contact-heading">
+<div class="section-intro"><p class="eyebrow">07 / Contact</p><h2 id="contact-heading">Let's compare notes.</h2></div>
+{{CONTACT}}
+</section>
+</main>
+{{FOOTER}}
+</body>
+</html>
