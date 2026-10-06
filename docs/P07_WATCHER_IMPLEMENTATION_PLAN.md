@@ -1,6 +1,6 @@
 # P07 — local watcher implementation and installation plan
 
-Agreed design: 6 October 2026. Status: `PLANNED_NOT_IMPLEMENTED`.
+Agreed design: 6 October 2026. Status: `COMPLETE_INSTALLED_VERIFIED`.
 Parent acceptance contract: [CONTENT_PROPAGATION_PLAN.md](CONTENT_PROPAGATION_PLAN.md#p07--optional-local-watcher), P07-A–C.
 Progress record: [WEBSITE_UPDATE_PLAN.md](WEBSITE_UPDATE_PLAN.md).
 
@@ -18,7 +18,26 @@ migrate private state or change visitor content. The continuation prompt below e
 implementation and installation when the user submits it in the next session.
 Existing authority must be followed without another request to repeat it.
 
-P01–P06 are complete. The current local baseline is main commit
+Implementation instruction, 6 October 2026: the user requested carrying out this
+plan with proper verification. The continuation scope is now invoked. A separate
+`implementation/p07` branch contains the implementation; native per-user task
+installation and private-state migration have passed lifecycle checks. P07-A–C
+are PASS, including physical Modern Standby/sign-in and actual OneDrive-directory
+read-access recovery. The recorded idle run passes with a disclosed console-host
+classification correction and conservative CPU bound. Remote cloud sync,
+banner appearance, process trace, battery energy and revised four-process
+measurement remain outside the verified scope, as detailed in the report.
+Actual interfaces and results: [README watcher guide](../README.md#local-windows-watcher-p07)
+and [P07 report](releases/2026-10-06-p07.md). The historical checklist and handoff
+prompt below remain the original acceptance contract, not current results.
+
+Delivery instruction after implementation, 6 October 2026: the user accepted P07
+and requested a branch/PR step. Commit and push the verified implementation and
+open a PR to `main` for review; merging and Pages deployment remain subsequent
+actions. The original implementation-only authority above is superseded for this
+delivery scope.
+
+P01–P06 are complete. At plan creation, the local baseline was main commit
 `f0721b08a95ea09abcacd7ac4cdd1966aaae311e`. Its final Pages run `37455061073`
 succeeded and candidate-bound live verification returned `LIVE_VERIFIED`; the
 user subsequently confirmed the website. Recheck current Git/source state at
@@ -215,7 +234,8 @@ node scripts/preview.mjs 4173 tmp/candidates/<full-id>/visitor
 
 ## Acceptance and verification checklist
 
-Every check below is **NOT RUN for P07** at plan creation. Record the command or
+Every check below was **NOT RUN for P07** at plan creation. Current results are in
+the linked P07 report. Record the command or
 manual procedure, actual result, date and evidence location when implementing.
 
 | Contract | Checks required before completion |

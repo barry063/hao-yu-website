@@ -2,7 +2,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { ROOT, loadPublic, VISITOR_FILES } from './public-content.mjs';
-import { digest, json, sha, stable, readState, readSources, inputHashes, runtimeInfo, writeJSON } from './workflow-core.mjs';
+import { digest, json, sha, stable, readState, readSources, inputHashes, runtimeInfo, writeJSON, privateRecordHash } from './workflow-core.mjs';
 export const PACKAGES=path.join(ROOT,'tmp/candidates');
 export function packageFor(id) {
   if(!/^[a-f0-9]{64}$/.test(id))throw new Error('EXACT_CANDIDATE_REQUIRED');
@@ -29,9 +29,9 @@ export function gate({id,sourceRoot,stateRoot,target,requireApproval=true}) {
   if(stable(readSources(state.source,state.config.sources).fingerprints)!==stable(p.manifest.sources))throw new Error('STALE_SOURCES');
   if(stable(inputHashes())!==stable(p.manifest.inputs))throw new Error('STALE_INPUTS');
   if(stable(runtimeInfo())!==stable(p.manifest.runtime))throw new Error('STALE_RUNTIME');
-  if(sha(fs.readFileSync(state.policyFile))!==p.manifest.policy)throw new Error('STALE_POLICY');
+  if(privateRecordHash(state.policyFile)!==p.manifest.policy)throw new Error('STALE_POLICY');
   if(sha(fs.readFileSync(path.join(ROOT,'content/site.json')))!==p.manifest.repository_dataset)throw new Error('STALE_REPOSITORY_DATASET');
-  if(sha(fs.readFileSync(path.join(state.state,'published.json')))!==p.manifest.published)throw new Error('STALE_PUBLISHED_BASELINE');
+  if(privateRecordHash(state.publishedFile)!==p.manifest.published)throw new Error('STALE_PUBLISHED_BASELINE');
   if(requireApproval){const file=path.join(state.state,'approvals',id+'.json');if(!fs.existsSync(file))throw new Error('APPROVAL_REQUIRED');const a=json(file);
     if(a.decision!=='APPROVE'||a.candidate!==id||a.target!==target||!a.actor||!a.statement||!a.time)throw new Error('APPROVAL_REQUIRED');}
   return {...p,state};

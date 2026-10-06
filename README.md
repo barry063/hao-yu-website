@@ -173,6 +173,87 @@ software release, changed affiliation/contact details or completed experience.
 The review date is a historical timestamp, not a promise of continuously current
 publication or qualification status.
 
+## Local Windows watcher (P07)
+
+The opt-in watcher checks the five declared canonical files every 120 seconds
+while Windows is awake and you are signed in. It waits at least ten seconds for
+changed inputs to settle before preparing a checked website/CV proposal. Windows
+notifications use the existing PowerShell notification identity and contain only
+generic review/attention instructions. `NO_CHANGE` remains quiet.
+
+The installed task is `HaoYuWebsiteWatcher`. Its private configuration and history
+live in `HaoYuWebsiteWatcherNative` under your local application data, outside
+OneDrive and both repositories. Configuration records explicit executable paths.
+The native signed-in account must create the installation files: tool-created
+encrypted files on this machine were inaccessible to the scheduled task. The
+original temporary state and verified interim copy remain preserved.
+
+From this repository in PowerShell, use these actual controls:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/manage-watcher.ps1 -Action Status
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/manage-watcher.ps1 -Action Stop
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/manage-watcher.ps1 -Action Start
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/manage-watcher.ps1 -Action Disable
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/manage-watcher.ps1 -Action Uninstall
+```
+
+`Start` also enables a disabled task. `Uninstall` removes the task and launcher,
+preserving private calibration, approvals, published baseline and rollback history.
+Use `Install`, then `Start`, to reinstall from that retained configuration. Pass
+`-Config <absolute-private-config>` when using another reviewed private location.
+`NotifyTest` sends a labelled test notice and checks Windows notification history.
+
+For a foreground session use `npm --silent run watcher -- run --config
+<absolute-private-config>`; Ctrl+C stops it. All manual workflow CLI operations
+share an ownership lock with watcher preparation. A second watcher refuses to
+start. Exited owners are recoverable; an incomplete lock without a trustworthy
+owner record requires inspection. Never delete a live owner's lock.
+
+`Status` gives the exact pending candidate and target. Review its `review.json`,
+`visitor/` preview and public CV using the existing workflow commands. Source
+changes supersede pending review. Code, policy, configuration or publication
+baseline changes pause the watcher with `REVALIDATION_REQUIRED`; run the relevant
+tests, inspect the changes, then use `-Action Revalidate` to stop, bind the reviewed
+inputs and restart. Revalidation never forces a candidate or approves a release.
+
+The watcher makes no wake or sleep-prevention request. It runs while locked if
+Windows remains awake, stops at sign-out/shutdown and catches up after resume or
+restart once file writes settle. Actual sign-in, physical sleep/resume and live
+OneDrive synchronisation verification remain distinct from synthetic tests; see
+the [P07 verification report](docs/releases/2026-10-06-p07.md).
+
+State records use atomic replacement where available and two bounded checksummed
+recovery slots where Windows refuses replacement. Preserve `.slot-0`/`.slot-1`
+alongside their JSON mirrors when backing up private state. The Node commands read
+the latest valid committed slot. No evidence text or raw diagnostics enter desktop
+notices or normal watcher status. Preparation failures retry at most three times
+with backoff; notification delivery retries at most three times per identity.
+
+Verification commands reuse the existing Python, Playwright and Chrome settings:
+
+```text
+npm run test:watcher
+npm run test:propagation
+node scripts/verify-watcher-lifecycle.mjs
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/verify-installed-watcher.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/verify-installed-source-read.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/measure-watcher.ps1
+```
+
+The installed lifecycle verifier is an explicit disruptive trial: it expects no
+existing task, installs/stops/disables/uninstalls/reinstalls it and preserves private
+history. Run it only when intentionally verifying an installation. The
+source-read verifier temporarily holds a read-only exclusive handle on the declared
+EXPORT file to verify installed access recovery, then verifies unchanged bytes.
+Run it only as an intentional availability test. The resource measurement
+requires at least ten minutes and includes Node, its hidden PowerShell launcher
+and the detached WScript wrapper, plus the pre-existing native console host.
+Launch counts use explicit watcher telemetry and Windows process snapshots;
+native process-trace subscription was unavailable.
+The existing explicit `workflow -- prepare` command remains the manual fallback.
+The watcher never approves, promotes, stages, commits, pushes or publishes.
+
 ## Publishing with GitHub Pages
 
 Use the existing repository's Pages configuration. For branch-based hosting,

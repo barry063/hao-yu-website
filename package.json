@@ -8,7 +8,9 @@
     "build": "node scripts/build-site.mjs",
     "test:propagation": "node --test --test-concurrency=1 tests/propagation/*.test.mjs",
     "check:candidate": "node scripts/check-candidate.mjs",
-    "workflow": "node scripts/workflow-cli.mjs"
+    "workflow": "node scripts/workflow-cli.mjs",
+    "watcher": "node scripts/watch-workflow.mjs",
+    "test:watcher": "node --test --test-concurrency=1 tests/propagation/durable-state.test.mjs tests/propagation/watcher.test.mjs"
   },
   "engines": {
     "node": ">=22"

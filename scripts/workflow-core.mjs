@@ -3,7 +3,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { spawnSync } from 'node:child_process';
-import { ROOT, loadPublic } from './public-content.mjs';
+import { ROOT, loadPublic, validatePublic } from './public-content.mjs';
+import { readJSON, saveJSON } from './durable-json.mjs';
 
 export const sha = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
 export function stable(value) {
@@ -14,12 +15,11 @@ export function stable(value) {
 export const digest = value => sha(stable(value));
 export function runtimeInfo(){const r=spawnSync(process.env.SITE_PYTHON||'python',['-c','import sys,reportlab,PIL,json;print(json.dumps({"python":sys.version.split()[0],"reportlab":reportlab.Version,"pillow":PIL.__version__}))'],{encoding:'utf8'});
   if(r.status!==0)throw new Error('RUNTIME_MANIFEST');return {node:process.version,...JSON.parse(r.stdout)};}
-export const json = file => JSON.parse(fs.readFileSync(file,'utf8'));
-export function writeJSON(file,value) {
-  fs.mkdirSync(path.dirname(file),{recursive:true});
-  const temp=file+'.writing-'+crypto.randomUUID();
-  fs.writeFileSync(temp,JSON.stringify(value,null,2)+'\n',{flag:'wx'});fs.renameSync(temp,file);
-}
+export const json = readJSON;
+export const writeJSON = saveJSON;
+// Bind both the committed private record and its readable mirror. A torn/stale
+// mirror cannot conceal a newer calibration or published-baseline change.
+export const privateRecordHash = file => digest({record:json(file),mirror:fs.existsSync(file)?sha(fs.readFileSync(file)):null});
 export function inside(parent,child) {
   const rel=path.relative(path.resolve(parent),path.resolve(child));
   return !rel.startsWith('..') && !path.isAbsolute(rel);
@@ -69,7 +69,7 @@ export function readState(stateRoot,sourceRoot) {
   if(state.version!==1||state.source_root!==roots.source)throw new Error('STATE_SOURCE');
   const policyFile=path.join(roots.state,state.policy_file||'reviewed.json'),baselineRoot=path.join(roots.state,state.baseline_dir||'baseline'),publishedFile=path.join(roots.state,'published.json');
   if(!inside(roots.state,resolved(policyFile))||!inside(roots.state,resolved(baselineRoot)))throw new Error('STATE_LOCATION');
-  return {...roots,policyFile,publishedFile,policy:loadPublic(policyFile),published:loadPublic(publishedFile),
+  return {...roots,policyFile,publishedFile,policy:validatePublic(json(policyFile)),published:validatePublic(json(publishedFile)),
     baseline:readSources(baselineRoot,state.sources),config:state};
 }
 export function issue(stateRoot,code,details={}) {
@@ -78,6 +78,8 @@ export function issue(stateRoot,code,details={}) {
   return {state:'NEEDS_RECONCILIATION',code};
 }
 export const INPUT_FILES = Object.freeze(['scripts/workflow-core.mjs','scripts/canonical-adapters.mjs','scripts/review-workflow.mjs',
+  'scripts/workflow-lock.mjs',
+  'scripts/durable-json.mjs',
   'scripts/prepare-update.mjs','scripts/release-workflow.mjs','scripts/workflow-cli.mjs','scripts/browser-qa.mjs',
   'scripts/build-site.mjs','scripts/render-site.mjs','scripts/public-content.mjs','scripts/build_public_cv.py','scripts/build_social_card.py',
   'scripts/check-candidate.mjs','scripts/check-site.mjs','scripts/check-preview.mjs','scripts/navigation.test.mjs','scripts/check_public_cv.py',
