@@ -1,0 +1,371 @@
+{
+  "date": "2026-10-06",
+  "verified_at": "2026-10-06T16:08:46.128Z",
+  "state": "P07_COMPLETE_INSTALLED_VERIFIED",
+  "branch": "implementation/p07",
+  "starting_commit": "fe263723f9357ce1844127b8a094ad0d095eaa71",
+  "authority": "Implementation acceptance snapshot. User subsequently requested branch delivery: commit/push and open PR are authorised; no merge or Pages deployment in this step.",
+  "timing": {
+    "interval_ms": 120000,
+    "settle_ms": 10000
+  },
+  "source_count": 5,
+  "sources": [
+    {
+      "id": "EB",
+      "path": "1 Master Academic CV/Evidence_Bank.md",
+      "sha256": "3c42d0e6cea1f8468e9142347be7487911cf871394383af0c80ae2c94bb63e65"
+    },
+    {
+      "id": "PUB",
+      "path": "4 Publication list/Master_Publication_List.md",
+      "sha256": "fc76452713464119758fbe9fdadbd3516f176ad9a5c9bfb8f55370b6a1d45dd9"
+    },
+    {
+      "id": "CONTRIB",
+      "path": "4 Publication list/Publication_Contributions.json",
+      "sha256": "ae05ab7c15ee1f9a02b834af1b35d18e468bb56b3a604d8f4f488b7675abc876"
+    },
+    {
+      "id": "PROFILE",
+      "path": "3 Research Profile/Hao_Yu_Application_Evidence_Wording.md",
+      "sha256": "7337f5442b2445d7042c05099bdf983ca63f5a09f015def53682ef441790b9ba"
+    },
+    {
+      "id": "EXPORT",
+      "path": "1 Master Academic CV/Current_Export_Record.json",
+      "sha256": "90a10f9d7ad7367924d99e484902cfe04e1ac0367f4830c3f6851fd4a6696bc5"
+    }
+  ],
+  "source_integrity": "PASS",
+  "visitor_integrity": "PASS",
+  "output_sha256": {
+    ".nojekyll": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "index.html": "6633e0ad9797e30b316c81f78bf0201f565e7703b3e36e0cec08d362ee286093",
+    "styles.css": "ca8344bf6244aba31ca0c6211e9fa3e0cadf2a0cb53c4b9ba5f16de063e8b5d7",
+    "script.js": "30be027c19866039d11ef3d3fe04c49b5d2df1f38b053cf92911f3eb0804cfdb",
+    "favicon.svg": "6a46b9954d260fe38356c2915e8d12f68c056bc346e593c3e3fc5f882f6cdf24",
+    "robots.txt": "5f76f3d777d3616e02b73917ce737d9f130097ef96be6deeb6aa9c11f5c9eb38",
+    "sitemap.xml": "ff950ef626ddfd0d78c1b0cc7a9898bf44c72c632a12e997b2dc1ce350923bf2",
+    "assets/Hao_Yu_CV.pdf": "5ec21a59255085d07ae385f514a1ec1facd9ed7a7ebdbd38c969884a5bfe2bee",
+    "assets/hao-yu-portrait.jpg": "46303d6d9724e6a39504ec0d3cf4a1333e5bc2d6a98d7ae527c4bc0d25326280",
+    "assets/og-image.png": "19d42cc64c0751580ad51c7b0b2d9e846701010524d097918ffb401837dd0801",
+    "content/site.json": "36818f40cf8c5be80eae60f60ada46331af07bc8c58a5054c3d92dda1a40cbb0"
+  },
+  "implementation_sha256": {
+    "scripts/workflow-core.mjs": "9a3fd1d3edfd5f7c0a9ebc2faa39c3d9a0e6602d93fe35017f9a8b359b027010",
+    "scripts/canonical-adapters.mjs": "e4b6d37d3b611632ec37fc6205b5ad2499f93682d252e6fff3e60b6864e2e53c",
+    "scripts/review-workflow.mjs": "9bc19236f891def50d7a1eddfca922bfe32556288f52c59ac11f29bc832574f3",
+    "scripts/workflow-lock.mjs": "0021c37224606f9b67b2f90c27a1d6d59e50fe7e93c54b7beba96d2cb57ed10a",
+    "scripts/durable-json.mjs": "6f1a65657bed5921cd156c04ec2d9a51b3db0ec61058f7439feeda11a3864f08",
+    "scripts/prepare-update.mjs": "c207b62bbbc02c51ac0c8a32c7904d476b57d8a30fe56480f94e3ce042898270",
+    "scripts/release-workflow.mjs": "7a47d04704149cd5c83491696a2fdcc6a17461184eecc59a4c06392ff8ab0491",
+    "scripts/workflow-cli.mjs": "8b9020f8e757e1e9c99cb36df8ba273e2f3e34e270506f0d25334262d65d4777",
+    "scripts/browser-qa.mjs": "54321e58e1f9bd3c0905f5b9fcf192b3aabfc455b8402cc886173a965c812e62",
+    "scripts/build-site.mjs": "6107d2622978e271bf68713ba5d016ad3b1fbdc3db4c2c224543ab5c2d7ce62f",
+    "scripts/render-site.mjs": "9ad6f94c1909bf1a4be10e96697c197c200c495405a09dce555c80b78c273469",
+    "scripts/public-content.mjs": "7938455b7c86c9cc91d2f05ceb521b4ead3ef7a779a24207900a57ea12b4eafa",
+    "scripts/build_public_cv.py": "b314888a9b45bdd917c72647816b4720900d5c5699c85dd4e2883a24a0243df0",
+    "scripts/build_social_card.py": "f4f97457dca5232a504ff7bc9cc10758dc1f592e6469e7f7714bdd600e4b1c71",
+    "scripts/check-candidate.mjs": "05e1e5a67e24678095b8d7abb73d08cb27e01cac41677e784456492bb31526f6",
+    "scripts/check-site.mjs": "6e5101e0c2673ce75042aa3f2334514c4c5b357301405201e2364cad22f60374",
+    "scripts/check-preview.mjs": "ff2dc5948fddd8ce36a57b43760f71e032418cf9d0d51751bfb15d79752e2736",
+    "scripts/navigation.test.mjs": "a6949931ffffb14819bd608121d7351de0dde0335832b9e85e6604b2ab57a003",
+    "scripts/check_public_cv.py": "b382506691674624e1694578ced1a0160f4761632fd9fdc99eba057e4e1900a6",
+    "scripts/preview.mjs": "d2cea847e781ac24fc11300c49a91920522ef289050c2f3d4ad7b76fadf2100d",
+    "templates/index.html": "09b8f44a85c2a127e95f80348601f763152843d4e79940ee2ac6198dc689fb8a",
+    "schemas/public-content.schema.json": "b93b93aab777e27ec4ed1125388bacc836354f91b8697a4c1e63ecbed22aa57f",
+    ".htmlvalidate.json": "23be03f08ab2e8ca2cccbb64c1940c1be06e5b744114a64c76720c4ac9624888",
+    "requirements-build.txt": "e755c3450748495e6e54aade45b37e56fec9f6bf614377bc694d6af7400954f2",
+    "package.json": "3411740a68100daa7c403dab4c4106d2836e0547d4e02d2b3213e0f0d169b05d",
+    "package-lock.json": "f3e2b23e8224c8d1d8115e68e16edbbda5f6260f21813416f5873331c8a3809a",
+    "build-resources/fonts/Vera.ttf": "c4c45690b345435b2cba52ecabe275f05e49b389b39fe68ad03afbb551288d3d",
+    "build-resources/fonts/VeraBd.ttf": "cc037385e4d55bfde89b13e03091ee93bf40c0c52ddd391ff031ab276f13b8e9",
+    "build-resources/fonts/hashes.json": "d991154abf540d6a21b3f20335e5d0908df20906771fe54791d00fc91d28baed",
+    "build-resources/social-baseline.json": "f0d115ebcd872a8c04c18a09c80cee03ae2451afa352c528d66365244ac1a706",
+    ".nojekyll": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "styles.css": "ca8344bf6244aba31ca0c6211e9fa3e0cadf2a0cb53c4b9ba5f16de063e8b5d7",
+    "script.js": "30be027c19866039d11ef3d3fe04c49b5d2df1f38b053cf92911f3eb0804cfdb",
+    "favicon.svg": "0ed347d5da206ffa193f82c372d6e9abc5d2be1813744cbbfa0211da4e17bd37",
+    "assets/hao-yu-portrait.jpg": "46303d6d9724e6a39504ec0d3cf4a1333e5bc2d6a98d7ae527c4bc0d25326280",
+    "assets/og-image.png": "19d42cc64c0751580ad51c7b0b2d9e846701010524d097918ffb401837dd0801",
+    "scripts/watch-workflow.mjs": "015ebeaca38bfe55e632332e12f27e0e7d85f33fe3eafb3b2f1cc262f7232e67",
+    "scripts/watcher-core.mjs": "ad3630425b4e83b681b7439679c0aa34c6b290a1cda0e81660e6fbc2be734553",
+    "scripts/watcher-notify.ps1": "7b17bc464baf7c83b2818ee6e9df23b9be88432a768d0b52572e1561a7b1741f",
+    "scripts/manage-watcher.ps1": "e5397fbdef1246e22b6caf6fcdcf6f412278b853d414c69d1f55cc100bfa7364",
+    "scripts/measure-watcher.ps1": "6517e383a8aa53cd8650ff42671cfd017a5ceac3d62421c1792bd17d493cb1fa",
+    "scripts/install-watcher-state.ps1": "a25e5e62ebd878555ad6f44abe31c2fbf842387e89df44af1afa3639d0adeb32",
+    "scripts/migrate-watcher-state.mjs": "01303be471d1b859074e33e35c52ea69c11a000be526d0cc9f067307fb0a8a61",
+    "scripts/verify-installed-watcher.ps1": "332168fa0898e370857432583e20c97e376774aa008cfba87e653b354a2fc942",
+    "scripts/verify-installed-source-read.ps1": "69ba891303c0e08133e6f151809a2d92cacf5e04aa2eb524729d9494b015085b",
+    "scripts/verify-watcher-lifecycle.mjs": "4dd096f8c9faa004c77041e28683340723a2357739ec03492381e988213e2714",
+    "tests/propagation/watcher.test.mjs": "e9ccbe55755474432cc77053a29f25e6cb1f553d0c13cd34105baea3755ef7d1",
+    "tests/propagation/durable-state.test.mjs": "aee69f9c7df1fdf1eb2bc4d244c039c798ff322dfe9636dc228f7635b9240ef5"
+  },
+  "migration": {
+    "result": "PASS",
+    "files": 23,
+    "inventory": "114478fb731bb40bf10dd71bd7b2488eb2a58fd69684a952816dcf5fb0b55950",
+    "original_preserved": true,
+    "historical_records_still_identical": true,
+    "backup_repair": "One missing public rollback favicon restored from hash-verified active copy without overwrite; original inventory reverified"
+  },
+  "automated": {
+    "final_coverage": {
+      "result": "PASS_ON_RETRY",
+      "distinct_tests": 55
+    },
+    "full_propagation": {
+      "result": "FAIL",
+      "tests": 55,
+      "passed": 54,
+      "failed": 1,
+      "skipped": 0,
+      "code": "FILESYSTEM_EPERM",
+      "log": "tmp/p07-final-regressions.log",
+      "scope": "Complete suite on final code"
+    },
+    "targeted_retry": {
+      "result": "PASS",
+      "tests": 1,
+      "skipped": 0,
+      "log": "tmp/p07-final-workflow-retry.log",
+      "scope": "Failed real review/PDF/determinism/approval/rollback test; no code changes"
+    },
+    "final_watcher": {
+      "result": "PASS",
+      "tests": 24,
+      "skipped": 0,
+      "log": "tmp/p07-final-watcher-tests.log"
+    },
+    "site": {
+      "result": "PASS",
+      "navigation_tests": 7,
+      "log": "tmp/p07-final-site-checks.log"
+    }
+  },
+  "foreground": {
+    "state": "FOREGROUND_VERIFIED",
+    "checks": [
+      {
+        "id": "FOREGROUND_NO_CHANGE",
+        "result": "PASS"
+      },
+      {
+        "id": "DUPLICATE_PROCESS",
+        "result": "PASS"
+      },
+      {
+        "id": "GRACEFUL_STOP",
+        "result": "PASS"
+      },
+      {
+        "id": "FOREGROUND_READY_NATIVE_NOTICE",
+        "result": "PASS",
+        "receipt": {
+          "time": "2026-10-06T14:40:28.1865239Z",
+          "kind": "READY",
+          "tag": "000e3efedbef8507",
+          "state": "WINDOWS_HISTORY_CONFIRMED"
+        }
+      },
+      {
+        "id": "RESTART_DEDUPLICATION",
+        "result": "PASS"
+      },
+      {
+        "id": "PROCESS_INTERRUPTION_RECOVERY",
+        "result": "PASS"
+      },
+      {
+        "id": "FOREGROUND_CONFLICT_NATIVE_NOTICE",
+        "result": "PASS",
+        "receipt": {
+          "time": "2026-10-06T14:40:44.5951377Z",
+          "kind": "PROBLEM",
+          "tag": "692c8dabcf5bf264",
+          "state": "WINDOWS_HISTORY_CONFIRMED"
+        }
+      }
+    ],
+    "time": "2026-10-06T14:40:45.811Z"
+  },
+  "installed": {
+    "time": "2026-10-06T15:03:48.5593778Z",
+    "checks": [
+      {
+        "id": "INSTALLED_START",
+        "result": "PASS"
+      },
+      {
+        "id": "TASK_SETTINGS",
+        "on_battery": true,
+        "network_required": false,
+        "instances": "IgnoreNew",
+        "execution_timeout": "PT0S",
+        "logon": "Interactive",
+        "wake_to_run": false,
+        "privilege": "Limited",
+        "trigger": "Current-user sign-in",
+        "restart_count": 3,
+        "result": "PASS"
+      },
+      {
+        "id": "INSTALLED_DUPLICATE_SUPPRESSION",
+        "result": "PASS"
+      },
+      {
+        "id": "INSTALLED_STOP_RESTART",
+        "result": "PASS"
+      },
+      {
+        "id": "INSTALLED_INTERRUPTION_RECOVERY",
+        "result": "PASS"
+      },
+      {
+        "id": "INSTALLED_DISABLE",
+        "result": "PASS"
+      },
+      {
+        "id": "INSTALLED_UNINSTALL_PRESERVES_HISTORY",
+        "result": "PASS"
+      },
+      {
+        "id": "INSTALLED_REINSTALL",
+        "result": "PASS"
+      },
+      {
+        "id": "INSTALLED_NOTIFICATION_HISTORY",
+        "result": "PASS"
+      }
+    ]
+  },
+  "resources": {
+    "result": "PASS",
+    "started": "2026-10-06T15:33:38.3565053Z",
+    "finished": "2026-10-06T15:43:45.7686305Z",
+    "seconds": 607.418225,
+    "cpu_seconds": 1.359375,
+    "average_cpu_percent_one_core": 0.22379555700687118,
+    "polls": 5,
+    "preparations": 0,
+    "child_launches": 0,
+    "observed_child_snapshots": 20,
+    "max_working_set_bytes": 164745216,
+    "max_private_bytes": 110682112,
+    "sample_count": 20,
+    "includes": "Node watcher, hidden PowerShell launcher and detached WScript wrapper",
+    "launch_measurement": "Counters at both watcher launch sites, plus 30-second Windows process snapshots",
+    "os_process_trace": "NOT RUN: native trace subscription rejected",
+    "battery_energy": "NOT RUN",
+    "raw_collector_result": "FAIL",
+    "assessment": {
+      "time": "2026-10-06T15:46:59.7021493Z",
+      "result": "PASS",
+      "console_host_cpu_lifetime_bound": 0.109375,
+      "unexpected_processes": 0,
+      "cpu_seconds_three_processes": 1.359375,
+      "preparations": 0,
+      "console_host_peak_memory": "NOT MEASURED",
+      "started": "2026-10-06T15:33:38.3565053Z",
+      "console_host_private_bytes_at_assessment": 1769472,
+      "finished": "2026-10-06T15:43:45.7686305Z",
+      "console_host_working_set_at_assessment": 4100096,
+      "cpu_seconds_upper_bound": 1.46875,
+      "existing_console_verified_in_samples": 20,
+      "seconds": 607.418225,
+      "average_cpu_percent_one_core_upper_bound": 0.24180209607638953,
+      "polls": 5,
+      "child_launches": 0,
+      "method": "Reclassification of pre-existing native console host; original collector failure retained"
+    }
+  },
+  "hardware": {
+    "physical_sleep_resume": {
+      "result": "PASS",
+      "user_confirmation": "Sleep and wake completed normally",
+      "sleep_utc": "2026-10-06T15:45:15.853Z",
+      "wake_utc": "2026-10-06T15:46:18.455Z",
+      "system_events": [
+        506,
+        507
+      ],
+      "provider": "Microsoft-Windows-Kernel-Power",
+      "same_instance": true,
+      "first_observed_postwake_poll": "2026-10-06T15:46:27.559Z",
+      "poll_delta": 1,
+      "additional_preparations": 0,
+      "additional_notifications": 0,
+      "status": "NO_CHANGE"
+    },
+    "signout_signin": {
+      "result": "PASS",
+      "user_confirmation": "Sign-out and sign-in completed normally",
+      "signout_utc": "2026-10-06T15:48:59.361Z",
+      "signin_utc": "2026-10-06T15:49:05.776Z",
+      "system_events": [
+        7002,
+        7001
+      ],
+      "provider": "Microsoft-Windows-Winlogon",
+      "automatic_new_instance": true,
+      "started": "2026-10-06T15:49:48.353Z",
+      "preparations": 0,
+      "notifications": 0,
+      "retained_processed_fingerprint": true,
+      "status_at_initial_check": "NO_CHANGE"
+    }
+  },
+  "installed_source_read_recovery": {
+    "started": "2026-10-06T15:53:04.8582344Z",
+    "same_processed_fingerprint": true,
+    "retry_observed": "2026-10-06T15:54:41.6825347Z",
+    "same_instance": true,
+    "additional_notifications": 0,
+    "live_remote_sync": "NOT RUN",
+    "additional_preparations": 0,
+    "method": "Read-only exclusive access to declared EXPORT source in the actual OneDrive workspace; no source writes",
+    "status": "NO_CHANGE",
+    "recovered": "2026-10-06T15:56:42.6089471Z",
+    "source_sha256": "90a10f9d7ad7367924d99e484902cfe04e1ac0367f4830c3f6851fd4a6696bc5",
+    "result": "PASS"
+  },
+  "final_handoff": {
+    "result": "PASS",
+    "task": "HaoYuWebsiteWatcher",
+    "running": true,
+    "status": "NO_CHANGE",
+    "pending": null,
+    "started": "2026-10-06T15:49:48.353Z",
+    "last_poll": "2026-10-06T16:08:42.962Z",
+    "polls": 10,
+    "preparations": 0,
+    "notifications": 0,
+    "exact_instance_count": 1,
+    "temporary_task_removed": true,
+    "identity_count_method": "Final PowerShell CIM executable/script/config match and Task Scheduler inspection"
+  },
+  "acceptance": {
+    "P07-A": "PASS",
+    "P07-B": "PASS",
+    "P07-C": "PASS"
+  },
+  "unavailable": {
+    "live_remote_OneDrive_sync": "NOT RUN: no real canonical fact edits or remote synchronisation trial",
+    "native_banner_visual_inspection": "NOT RUN: computer-use runtime unavailable; actual Windows notification history confirmed",
+    "os_process_trace": "NOT RUN: native trace subscription rejected",
+    "battery_energy": "NOT RUN: idle CPU/memory measured separately",
+    "revised_four_process_measurement": "NOT RUN: recorded three-process run assessed with verified existing console identity and whole-lifetime CPU upper bound; console peak memory not measured"
+  },
+  "publication": {
+    "snapshot_scope": "Before authorised branch commit/push and open PR; delivered revision is recorded in Git history and PR",
+    "staged": false,
+    "committed": false,
+    "pushed": false,
+    "published": false
+  },
+  "remaining_tasks": [
+    "P08 DEFERRED",
+    "W07 full accessibility audit DEFERRED"
+  ]
+}

@@ -1,8 +1,9 @@
 # Website update plan and verification contract
 
 Created: 5 October 2026. Baseline: website commit `2c3ba49`.
-Plan version: 1.4. Release-1 milestone: `LIVE_CONTENT_VERIFIED_BROWSER_QA_DEFERRED`.
+Plan version: 1.6. Release-1 milestone: `LIVE_CONTENT_VERIFIED_BROWSER_QA_DEFERRED`.
 Workflow milestone: `P01_P06_COMPLETE_LIVE_VERIFIED`.
+Watcher milestone: `P07_COMPLETE_INSTALLED_VERIFIED`.
 
 ## Objective
 
@@ -108,6 +109,21 @@ Pages route. The clarification supplies current release authority; the user does
 not need to repeat the full hash. Record their statement in private approval state,
 create a PR, merge the release, and verify the actual deployment. Canonical files
 remain unchanged; no watcher or hosting migration is included.
+
+P07 instruction, 6 October 2026: after checking the saved plan, the user requested
+"Carry out the plan with proper verification tests". This invokes the agreed local
+implementation, private-state copy and tested per-user sign-in installation.
+Work on `implementation/p07`; preserve canonical and released visitor files.
+Commit/push/publication and P08 are outside this instruction. The user agreed to
+perform sleep/wake and sign-out/sign-in after the idle measurement. Record actual
+results before completing P07; prior publication authority is not reused here.
+
+P07 delivery instruction, 6 October 2026: after accepting the completed watcher,
+the user asked to push/publish the branch or create a PR. Proceed with a commit
+and push of the verified `implementation/p07` changes and an open PR to `main`.
+The PR is the selected review checkpoint; merge and Pages deployment are not
+performed by this instruction. Recheck public exposure and source/output integrity
+before delivery. Visitor content and canonical files remain unchanged.
 
 ## Public page target
 
@@ -570,14 +586,86 @@ completes at W08. Release 2 completes at W11 with its readiness/live status stat
 - P07/P08 remain DEFERRED; all P07 implementation checks NOT RUN. P01–P06 remain
   complete. The next session uses the P07 document's explicit continuation prompt.
 
+### 6 October 2026 — P07 implementation and installed verification
+
+- Started with a clean tree at `fe26372`; created `implementation/p07`. Read both
+  workspaces' instructions and all three plans; five canonical sources rechecked,
+  matching current public provenance. No writes to those sources or visitor files.
+- Implemented the opted-in watcher and management/verification scripts, safe
+  Windows notices, durable private state, shared manual-operation locking and
+  recovery. Copied all 23 original private history files with exact inventory/hash
+  verification; preserved the temporary original and verified interim copy.
+- Trials exposed sandbox TEMP restrictions, encrypted-file replacement and task
+  access failures, an interruption-test wait bug, console lifetime and helper
+  battery settings. Fixed and reran affected checks. Native installation uses
+  the signed-in account and a detached hidden WScript launcher; actual task
+  start/stop/duplicate/interruption/disable/uninstall/reinstall and Windows
+  notification history checks pass. Wake requests remain disabled.
+- Full regression: 54 propagation tests and seven navigation tests PASS, zero
+  skips, including recovered-state approval bindings. Final idle/physical checks
+  are recorded in `docs/releases/2026-10-06-p07.md` and `-checks.json`. Required
+  pending checks remain pending; P07 is IN_PROGRESS. Full W07 accessibility remains
+  DEFERRED and no new deployment/live verification is claimed by this work.
+- P01–P06/W10/W11 remain DONE; P08 DEFERRED. No staging, commit, push, merge,
+  canonical migration or publication. Installed operational state and remaining
+  specific machine checks are the next handoff dependencies.
+- Final affected regression: 24 watcher tests PASS, zero skips; seven navigation
+  tests and HTML/content checks PASS. Syntax checks PASS for 25 JavaScript and
+  five PowerShell scripts; 22 documentation links and exposure checks PASS.
+  Source/visitor/history integrity PASS. One missing public favicon in the original
+  rollback backup was restored from its exact verified active copy, then the
+  full 23-file original inventory was rechecked. Temporary bootstrap task removed.
+
+### 6 October 2026 — P07 final acceptance and handoff
+
+- P07-A/B/C PASS; P07 DONE for the verified local-file scope. One current-user
+  sign-in task and one functioning watcher remain at `NO_CHANGE`; temporary
+  bootstrap task removed. Physical Modern Standby and sign-out/sign-in PASS,
+  confirmed by the user, Windows events and actual identity/poll/work counters.
+- Actual read-only OneDrive-directory availability/recovery PASS with unchanged
+  EXPORT hash, no new preparation/notice and unchanged processed fingerprint.
+  Synthetic save/rename/coalescing tests complement this; live remote sync NOT RUN.
+- Final full suite: 54/55 PASS, one FILESYSTEM_EPERM failure; targeted rerun of
+  that proposal/PDF/determinism/approval/rollback test PASS without code changes.
+  All 55 distinct tests passed with the retry disclosed. Final watcher 24/24,
+  HTML/content and seven navigation checks PASS; JavaScript syntax 25, PowerShell
+  syntax six, 22 documentation links/exposure and whitespace checks PASS.
+- Recorded idle run 607.42 seconds: five polls, zero preparations/launches,
+  1.359 CPU seconds for Node/PowerShell/WScript. Initial classification failed on
+  an existing console host; retained raw failure and verified its pre-measurement
+  identity in all 20 snapshots. Separate assessment PASS with entire console CPU
+  lifetime bound: 1.469 seconds total, <=0.242% of one core. Three-process peak
+  memory recorded; console peak and revised four-process collector rerun NOT RUN.
+- Final source/visitor/23-record history hashes PASS. Evidence and limitations:
+  `docs/releases/2026-10-06-p07.md` and `-checks.json`. Windows notification history
+  PASS; banner visual inspection, OS process trace and battery energy NOT RUN.
+  P08/W07 remain DEFERRED; no dependency blocks the completed local watcher scope.
+- Branch `implementation/p07` remains uncommitted and unstaged. Canonical source
+  bytes and released visitor files unchanged; no push/merge/publication. Prior
+  LIVE_VERIFIED refers to release 2, not this local implementation.
+
+### 6 October 2026 — P07 branch delivery and PR
+
+- User accepted the completed local watcher and requested the next branch/PR
+  step. Selected commit/push and an open PR to `main`, preserving a reviewable
+  checkpoint. No main merge or Pages deployment in this delivery session.
+- Existing final runtime tests, physical checks, retry disclosure and resource
+  assessment remain the acceptance evidence. Fresh source/output/history hashes,
+  staged file scope, public exposure and whitespace are checked before commit.
+- The commit containing this entry versions the 25 intended P07 implementation,
+  test and documentation files. Push revision comparison and PR identity follow
+  the commit and are verified in the chat handoff; they are not asserted here in
+  advance. P07 remains DONE; P08/W07 DEFERRED. Private state stays outside Git.
+
 ## Reusable continuation prompt
 
 > Continue the website update using AGENTS.md and docs/WEBSITE_UPDATE_PLAN.md.
 > Inspect the working tree and latest canonical evidence, then complete the next
 > available tasks within the authorised scope.
 > For the one-edit workflow, also read docs/CONTENT_PROPAGATION_PLAN.md and use its
-> P-task tracker; P01–P06 are complete and release 2 is LIVE_VERIFIED. P07/P08
-> remain deferred and require separate scope instructions. Verify criteria
+> P-task tracker; P01–P06 are complete and release 2 is LIVE_VERIFIED.
+> P07 is complete and locally installed/verified; P08 remains deferred.
+> Verify criteria
 > and update the task tracker and session record with actual results. Continue
 > independent tasks if one dependency is unresolved. Report the resulting
 > readiness milestone and remaining task IDs; deploy only when authorised by the

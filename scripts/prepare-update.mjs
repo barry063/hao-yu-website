@@ -4,7 +4,7 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import { spawnSync } from 'node:child_process';
 import { ROOT, loadPublic, validatePublic, VISITOR_FILES } from './public-content.mjs';
-import { privateState, readSources, readState, unchanged, writeJSON, publicChanges, sha, digest, inputHashes, runtimeInfo, issue, removeOwnedDirectory } from './workflow-core.mjs';
+import { privateState, readSources, readState, unchanged, writeJSON, publicChanges, sha, digest, inputHashes, runtimeInfo, issue, removeOwnedDirectory, privateRecordHash } from './workflow-core.mjs';
 import { derivePublic } from './canonical-adapters.mjs';
 import { buildSite } from './build-site.mjs';
 import { PACKAGES, packageFor } from './review-workflow.mjs';
@@ -42,7 +42,7 @@ export async function prepare({sourceRoot,stateRoot,releaseDate,force=false,chec
   let state,stage;
   try {
     state=readState(stateRoot,sourceRoot);const snapshot=readSources(state.source,state.config.sources),inputs=inputHashes();
-    const bindings={policy:sha(fs.readFileSync(state.policyFile)),published:sha(fs.readFileSync(state.publishedFile)),repository_dataset:sha(fs.readFileSync(path.join(ROOT,'content/site.json')))},runtime=runtimeInfo();
+    const bindings={policy:privateRecordHash(state.policyFile),published:privateRecordHash(state.publishedFile),repository_dataset:sha(fs.readFileSync(path.join(ROOT,'content/site.json')))},runtime=runtimeInfo();
     if(afterSnapshot)await afterSnapshot();
     const data=derivePublic(state.policy,snapshot.texts,state.baseline.texts),changes=publicChanges(state.published,data);
     if(!unchanged(snapshot.fingerprints,readSources(state.source,state.config.sources).fingerprints))throw new Error('CONCURRENT_SOURCE_EDIT');
@@ -56,7 +56,7 @@ export async function prepare({sourceRoot,stateRoot,releaseDate,force=false,chec
     if(!Array.isArray(results)||results.length<2||results.some(c=>c.result!=='PASS'))throw new Error('FAILED_CHECKS');
     if(afterBuild)await afterBuild();
     if(!unchanged(snapshot.fingerprints,readSources(state.source,state.config.sources).fingerprints)||!unchanged(inputs,inputHashes()))throw new Error('CONCURRENT_INPUT_EDIT');
-    if(bindings.policy!==sha(fs.readFileSync(state.policyFile))||bindings.published!==sha(fs.readFileSync(state.publishedFile))||bindings.repository_dataset!==sha(fs.readFileSync(path.join(ROOT,'content/site.json')))||!unchanged(runtime,runtimeInfo())||!unchanged(state.config,readState(stateRoot,sourceRoot).config))throw new Error('CONCURRENT_DATASET_EDIT');
+    if(bindings.policy!==privateRecordHash(state.policyFile)||bindings.published!==privateRecordHash(state.publishedFile)||bindings.repository_dataset!==sha(fs.readFileSync(path.join(ROOT,'content/site.json')))||!unchanged(runtime,runtimeInfo())||!unchanged(state.config,readState(stateRoot,sourceRoot).config))throw new Error('CONCURRENT_DATASET_EDIT');
     const affected=VISITOR_FILES.filter(f=>!fs.existsSync(path.join(ROOT,f))||sha(fs.readFileSync(path.join(ROOT,f)))!==built.hashes[f]);
     const review={state:'READY_FOR_REVIEW',changes,affected_files:affected,
       affected_sections:changes.length?['profile','research','projects','publications','education','metadata','public CV']:['update labels','generated public CV','sitemap'],

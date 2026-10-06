@@ -1,7 +1,7 @@
 # One-edit content propagation — implementation and acceptance plan
 
 Created: 5 October 2026. Version: 1.1 (implementation checkpoint).
-State: P01_P06_COMPLETE_LIVE_VERIFIED.
+State: P01_P06_COMPLETE_LIVE_VERIFIED; P07_COMPLETE_INSTALLED_VERIFIED.
 Parent contract: [WEBSITE_UPDATE_PLAN.md](WEBSITE_UPDATE_PLAN.md), W10/W11.
 Implementation baseline: website revision `17d4ad2` (versioned planning baseline).
 
@@ -150,7 +150,7 @@ it still invalidates an older approval whose source fingerprints no longer match
 Only this table owns the P-task states; the parent W10/W11 rows are roll-ups.
 P01/P02 are merged and manually verified by the user. P03–P06 are implemented,
 merged and live verified under the clarified publication instruction. Optional
-extensions remain DEFERRED.
+P07 is now explicitly invoked; P08 remains DEFERRED.
 
 | ID | Deliverable | Dependencies | State | Completion evidence |
 | --- | --- | --- | --- | --- |
@@ -160,7 +160,7 @@ extensions remain DEFERRED.
 | P04 | Review package and stale-approval gate | P03 | DONE | P04-A–D: immutable manifest/public preview, exact decision gate and seven drift scenarios; 2026-10-06 acceptance report |
 | P05 | End-to-end one-edit proof and operator guide | P02–P04 | DONE | P05-A–E: 31 regressions, actual PDF propagation, native browser zoom/keyboard matrix, visual inspection and README; 2026-10-06 report |
 | P06 | Approved-release deployment and live verification | P05; specific release/hosting authority | DONE | P06-A–D PASS: exact contextual approval/promotion, PR #2 merged, successful Pages run 37454512658, candidate-bound live file/PDF/browser checks, rollback backup dry-run; release-2 deployment report |
-| P07 | Optional local change watcher | P05; explicit opt-in | DEFERRED | Two-minute design agreed; P07_WATCHER_IMPLEMENTATION_PLAN.md contains implementation/install handoff; no watcher implemented or installed |
+| P07 | Optional local change watcher | P05; explicit opt-in | DONE | P07-A–C PASS: installed task/settings/lifecycle, physical standby/sign-in, local OneDrive access recovery, 55 distinct regression checks with one disclosed retry, idle resource assessment; docs/releases/2026-10-06-p07.md |
 | P08 | Optional additional public website adapters | P05; named target and authority | DEFERRED | Per-target mapping, review and verification reports |
 
 ### P01 — Source ownership map and public data contract
@@ -285,9 +285,10 @@ Do not promise hosted PR previews without choosing and testing a preview mechani
 
 Detailed agreed design and next-session prompt:
 [P07_WATCHER_IMPLEMENTATION_PLAN.md](P07_WATCHER_IMPLEMENTATION_PLAN.md).
-The user accepted a 120-second interval and requested documentation for a new
-session. This session remains documentation-only; implementation/installation
-starts under the explicit continuation instruction, not merely this file's presence.
+The user accepted a 120-second interval, versioned the plan, and on 6 October
+explicitly requested carrying it out with proper verification. That instruction
+invokes implementation and installation. Commit/push/publication remain outside
+this P07 instruction. See the implementation report for actual results.
 
 - P07-A: Opt-in only, with documented start/stop and computer-running requirements.
   Watch declared sources; debounce bursts, wait for stable file writes and recover
@@ -345,11 +346,11 @@ candidate/source fingerprints and public-safe evidence location. Private details
 remain in the private workspace. Use `docs/releases/` for safe implementation and
 release reports. Preserve NOT RUN/INCONCLUSIVE results and dependencies.
 
-Current checkpoint: P01–P05 complete, P06 local release machinery verified. The
-candidate in the 6 October acceptance report awaits exact release approval;
-P06-C deployment/live checks are NOT RUN. P07/P08 stay deferred until opted into.
-Parent W10 completes with P01–P05; parent W11 covers the operating guide/release-2
-checks and P06's readiness/live status. A deferred deployment is not a completed P06.
+Current checkpoint: P01–P06 are complete and release 2 is LIVE_VERIFIED.
+P07 is implemented and installed under the current opt-in instruction, with its
+final measurements and physical-machine checks in progress. P08 stays deferred.
+The released visitor files and canonical evidence remain unchanged by P07.
+Parent W10/W11 remain complete; this local extension does not publish a release.
 
 ### 5 October 2026 — plan recording session
 
@@ -533,12 +534,80 @@ checks and P06's readiness/live status. A deferred deployment is not a completed
   commit and is reported in the session handoff. P07 checks remain NOT RUN and
   P07/P08 remain DEFERRED.
 
+### 6 October 2026 — P07 implementation and opt-in installation
+
+- Latest user instruction: carry out the agreed P07 plan with proper verification.
+  Includes native per-user installation and private-state copy; no commit, push,
+  merge, publication, P08 or canonical restructuring.
+- Started clean on `main` at `fe26372`; separate `implementation/p07` branch.
+  Five current canonical fingerprints match the released public inventory.
+- Implemented 120-second polling, ten-second settling, safe notifications,
+  persistent deduplication/date/status, manual CLI ownership locks, exited-owner
+  recovery, drift pause and actual lifecycle controls. Historical packages and
+  approval/calibration/published/rollback records are preserved privately.
+- Full suite: 54 propagation tests and seven navigation tests PASS, zero skips.
+  Actual fixture/browser/PDF/foreground checks and nine installed lifecycle
+  checks pass. The detached hidden WScript launcher survives installer exit and
+  operates on battery. Trials exposed and repaired encryption/access, console
+  lifetime, helper battery settings and recovery-record binding failures.
+- Final idle measurement in progress. User agreed to physical sleep/wake and
+  sign-out/sign-in afterwards. P07 remains IN_PROGRESS until required evidence
+  is complete. Live remote OneDrive mutation, a visible banner screenshot and
+  battery energy benchmarking are NOT RUN; synthetic sync recovery is separate.
+- Commands, actual results and safe evidence:
+  `docs/releases/2026-10-06-p07.md` and `-checks.json`. Private installation
+  records remain under local application data; raw fixture checks stay ignored.
+- Follow-up: 24 final watcher tests PASS after fixing transient ready/read
+  recovery; `npm run check` PASS with seven navigation tests. All five sources,
+  visitor files and 23 historical records match their inventories. Restored one
+  missing public rollback favicon in the original backup from the verified active
+  copy and rechecked all original hashes. Temporary bootstrap task removed.
+
+### 6 October 2026 — P07 completed local acceptance
+
+- P07-A/B/C PASS, P07 DONE. Physical sleep/wake and sign-out/sign-in confirmed by
+  the user and Windows events; actual watcher preserved/restarted as expected,
+  retained its processed fingerprint and produced no additional builds/notices.
+- Read-only exclusive access to the actual declared OneDrive EXPORT source proved
+  retry/recovery without changing source bytes or creating public work. Remote
+  OneDrive service sync NOT RUN; local recovery and synthetic save/rename coverage
+  are distinct from a cloud service reliability claim.
+- Final complete suite: 54 of 55 PASS, one FILESYSTEM_EPERM; affected real
+  proposal/PDF/determinism/approval/rollback test rerun PASS without code changes.
+  All 55 distinct tests passed with this retry retained in evidence. Final watcher
+  24/24, HTML/content and seven navigation tests PASS. Syntax, links, exposure,
+  whitespace and final canonical/visitor/private-history hashes PASS.
+- Recorded idle run: 607.42 seconds, five polls, zero preparation/launches.
+  Raw collector FAIL was an existing console host classified as new activity;
+  verified host identity predates measurement and occurs in all 20 snapshots.
+  Separate assessment PASS uses an entire-lifetime console CPU upper bound:
+  <=1.469 CPU seconds / <=0.242% of one core. Memory scope and unavailable
+  revised measurement/banner/process-trace/energy checks are explicit in report.
+- One functioning `HaoYuWebsiteWatcher` task remains; temporary bootstrap removed.
+  README contains actual controls. `implementation/p07` is unstaged/uncommitted;
+  no push or publication. Evidence: `docs/releases/2026-10-06-p07.md` and
+  `-checks.json`. P08/W07 remain DEFERRED; prior P01–P06 LIVE_VERIFIED unchanged.
+
+### 6 October 2026 — P07 commit/push and PR checkpoint
+
+- The user accepted P07 and asked to push/publish the branch or create a PR.
+  Commit/push the verified implementation and open a PR from `implementation/p07`
+  to `main`; no merge or Pages deployment in this delivery step.
+- Recheck declared-source, visitor-file and retained-history hashes, public-safe
+  staged scope and whitespace before commit. Existing P07 evidence, including
+  the targeted filesystem retry and console-host measurement assessment, is
+  preserved. The delivering revision is in Git history; remote/PR confirmation
+  is checked after the action and reported in the chat handoff.
+- P07 remains DONE; P08/W07 DEFERRED. No private state or raw evidence enters the
+  PR, and no academic source or released visitor bytes change.
+
 ## Continuation prompt
 
 > Read both repositories' AGENTS.md, docs/WEBSITE_UPDATE_PLAN.md and
 > docs/CONTENT_PROPAGATION_PLAN.md. Recheck Git status and relevant canonical
 > sources. Within the current user-authorised scope, implement the next available
-> P-task; P01–P06 are now complete and P07/P08 remain deferred. Preserve the evidence bank's authority and keep
+> P-task; P01–P06 are complete, P07 is complete and locally installed/verified,
+> and P08 remains deferred. Preserve the evidence bank's authority and keep
 > private material outside the public repository. Verify each acceptance ID, save
 > safe evidence, update this tracker and the parent's W10/W11 roll-up, and report
 > remaining tasks. Do not publish, migrate canonical ownership, install a watcher
