@@ -12,9 +12,10 @@ Start with [AGENTS.md](AGENTS.md) and the [website update plan](docs/WEBSITE_UPD
 The plan records numbered tasks, acceptance criteria, dependencies and progress.
 [One-edit propagation plan](docs/CONTENT_PROPAGATION_PLAN.md) defines the next
 phase: canonical edit → public-safe candidate → your review → approved release.
-It records P01–P08 and verifiable targets. P01/P02 now provide a local public-data
-contract and candidate generator; canonical preparation and approval gates await
-P03–P05. It is not standing permission to publish.
+It records P01–P08 and verifiable targets. P01–P05 provide the public-data contract,
+shared generator, canonical preparation, review gate and operator guide. P06 adds
+authorised publication and verification of the deployed candidate. The plan is
+not standing permission to publish.
 [Public content decisions](docs/CONTENT_DECISIONS.md) records reconciliations and
 omissions. [Release reports](docs/releases/) record actual verification results.
 
@@ -83,19 +84,89 @@ available in `assets/hao-yu.jpg`.
 ## Routine content updates
 
 1. Recheck the current canonical evidence and its verification holds.
-2. Until P03 exists, reconcile changes into reviewed `content/site.json`, preserving
-   stable IDs and provenance. Refresh `schemas/field-ownership.json` when fields
-   change. Authored scientific prose needs editorial review; source disagreement
-   stops the affected proposal. Keep thesis submission, viva and award separate.
-3. Build an isolated candidate with the command above; HTML, CV and metadata share
-   the dataset. Do not edit root visitor files during preparation.
-4. Run checks, inspect the browser at mobile/tablet/desktop widths, and exercise
-   keyboard navigation and reduced motion.
-5. Record source hashes, asset hashes, actual results and remaining issues in
-   `docs/releases/`; update the plan tracker.
-6. Stop for review. P04's immutable candidate/approval gate and P06's publication
-   checks are not implemented. Publishing still needs explicit current authority
-   and a reviewed exact set of files; local build success is not release readiness.
+2. Use the explicit local workflow below. Contact name/email/location, approved
+   profile URLs, qualified milestones and cleared output metadata/status have
+   adapters. Scientific prose, roles, contributions, experience and honours require
+   editorial review. The ownership map describes the boundary. Existing canonical
+   publication statuses are duplicated: disagreements stop for reconciliation;
+   the adapters do not silently treat a stale mirror as authoritative.
+3. Review the public change list, HTML and PDF, then approve the exact candidate
+   and target. Never edit generated files to fix a factual discrepancy.
+4. Record source/asset hashes and actual checks in `docs/releases/` and the plans.
+   Local readiness and a verified live deployment are separate states.
+
+Set `SITE_PYTHON` to a runtime satisfying `requirements-build.txt`. Browser checks
+also need an existing Playwright module at `SITE_PLAYWRIGHT_MODULE` and Chrome at
+`SITE_BROWSER_EXECUTABLE`. They use disposable profiles, not a signed-in session.
+No watcher or new credentials are installed. Preparation runs HTML/content,
+navigation, project-path HTTP, PDF, keyboard, three-width, reduced-motion, no-JS
+and native browser 200% zoom checks. Inspect the captured screenshots and render
+the PDF with `pdftoppm` before approving it; automated success does not replace
+visual review. A full accessibility audit is a separate check.
+
+Provide both local roots explicitly; do not save machine paths in this repository.
+The private state root must be outside the website **and** canonical workspace.
+It contains raw calibration snapshots, private reconciliation instructions,
+approvals and rollback backups. Preserve it securely across releases.
+
+```text
+npm --silent run workflow -- calibrate --source-root <canonical-root> --state-root <private-state>
+npm --silent run workflow -- prepare --source-root <canonical-root> --state-root <private-state> --release-date YYYY-MM-DD
+```
+
+Calibration requires the five hashes in an explicitly reviewed public dataset to
+match current sources, and the adapters to reproduce that dataset exactly. To
+initialise state, verify that the root `content/site.json` is the last published
+inventory; it seeds the published comparison baseline, independently of any
+pending reviewed policy. Keep private state through local promotion and release.
+To
+resolve an editorial hold or clear a new record, review a public-only dataset
+against authoritative evidence, then use `calibrate --data <reviewed-public.json>
+--refresh-reviewed-calibration` with the same roots. This retains the published
+baseline and historical calibrations; it invalidates older approvals. Refresh
+field ownership when the public shape changes. Do not clear unknown records by
+editing raw source visibility flags alone. `HOLD`/`PRIVATE` remove previously
+cleared records and dependent project prose; unresolved PUBLIC evidence stops.
+`CONTRIB` owner-reference rows are supported for an explicitly approved canonical
+ownership format; the synthetic one-edit proof uses this format. Real sources
+remain unchanged and continue to require duplicate-status reconciliation.
+
+Unchanged/private-only edits return `NO_CHANGE`. For an intentional generator
+release with unchanged facts, add `--force-candidate` and a fixed release date.
+Failed/ambiguous inputs produce private `reconciliation.json` instructions and
+safe error codes; no partial dataset becomes a candidate. Preparation reads only
+five declared canonical files and performs no canonical writes or network calls.
+
+Successful preparation returns a full SHA-256 candidate ID. Its public package is
+`tmp/candidates/<id>/`: `data.json`, `manifest.json`, `review.json` and `visitor/`.
+The manifest binds source hashes, reviewed/published/repository datasets, generator
+inputs, dependencies/runtime versions, date, target, checks and all ten outputs.
+The package contains public facts only and is ignored by Git. Preview exposes
+only the visitor allowlist, including at the GitHub Pages project path:
+
+```text
+node scripts/preview.mjs 4173 tmp/candidates/<id>/visitor
+npm --silent run workflow -- qa --candidate <full-id>
+```
+
+The actual approval action is a user's explicit decision identifying the candidate
+and target, either directly or through unambiguous conversation context. The
+operator records the user's decision verbatim against the full ID and target;
+the user need not repeat a hash already supplied in the conversation. An agent
+must not approve its own draft. A JSON record is an audit aid, not a credential
+or authority. All commands below take the same `--source-root` and `--state-root`.
+
+```text
+npm --silent run workflow -- approve --candidate <full-id> --target <site-url> --decision APPROVE --actor <user> --statement <explicit-user-decision>
+npm --silent run workflow -- gate --candidate <full-id> --target <site-url>
+npm --silent run workflow -- promote --candidate <full-id> --target <site-url> --authorise-publication
+```
+
+Promotion requires current explicit release authority as well as an unchanged
+approved package. Source, policy, template, config, dataset, runtime or output
+drift refuses promotion. It copies approved bytes and data into the root, saves
+a hash-verified private rollback snapshot, and records `PROMOTED_LOCALLY`; it
+does not rebuild, commit or push. Reprepare and obtain fresh approval after drift.
 
 Trigger a review after a PhD milestone, manuscript decision, new publication,
 software release, changed affiliation/contact details or completed experience.
@@ -113,10 +184,32 @@ Before pushing, check the public content inventory and release report. Local
 verification does not establish that the deployed site has changed. Record the
 deployed commit and verify the live page, assets, canonical metadata and CV hash.
 
-`node scripts/check-live.mjs` compares the live visitor files with the local release
-(exact bytes for PDF/images; normalised line endings for text).
+After separately authorised commit/push to `main`, verify the exact deployed
+commit with the candidate-bound command (same local roots required):
+
+```text
+npm --silent run workflow -- verify-live --candidate <full-id> --target <site-url> --commit <40-character-commit>
+```
+
+This checks the current main revision, successful Pages deployment, committed and
+live visitor files (binary bytes; normalised text line endings), metadata through
+the approved HTML, public PDF and live browser/navigation layout. `.nojekyll` is
+verified in the commit because Pages may not serve it. The published dataset is
+advanced only after all checks pass. Failures never become `LIVE_VERIFIED`.
+The older `check-live.mjs` remains a baseline comparator, not release approval.
 `node scripts/github-pages-status.mjs` reads Pages settings and workflow status
 using the configured Git credential helper without logging credentials.
+
+Rollback first selects and validates the exact saved previous release:
+
+```text
+npm --silent run workflow -- rollback --rollback <rollback-id> --source-root <canonical-root> --state-root <private-state>
+```
+
+With explicit restoration authority, add `--authorise-restoration` to restore
+local files. Then review and use a new authorised commit/push; never force-push or
+rewrite public history. Remote rollback also needs live verification. Missing or
+tampered backups refuse restoration. A failed local promotion restores its backup.
 
 ## Files
 

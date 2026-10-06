@@ -108,7 +108,9 @@ The following is explicitly outside the first deterministic fact coverage:
 - Published author and venue formatting, contribution descriptions, abbreviated
   CV author wording, unpublished topic titles, qualification detail and honours
   wording remain reviewed source-backed strings. The generator shares them across
-  outputs; P03 still needs explicit canonical extraction/reconciliation rules.
+  outputs. The P03 adapter extracts complete published author/venue/title/DOI
+  fields from CONTRIB and checks status mirrors; contributions and abbreviated CV
+  authors remain reviewed wording. Changed contributions require reconciliation.
 - Template headings, section numbers, navigation labels, calls to action, the
   contact invitation and the profile/research/experience introduction headings
   are presentation prose. They are not claims parsed from the evidence bank.
@@ -124,6 +126,17 @@ The following is explicitly outside the first deterministic fact coverage:
   unpublished quantitative results, provisional authorship and confidential
   commercial details never enter the public dataset or candidate.
 
-No canonical restructuring is proposed or performed. P01/P02 establish reviewed
-public rendering, not a completed canonical one-edit workflow. P03–P05 are the
-remaining bridge, review-gate and end-to-end proof tasks.
+No canonical restructuring is performed. P03–P05 add read-only adapters and an
+explicit local review workflow. Initial calibration must exactly reproduce this
+reviewed dataset from current sources. Private snapshots live outside both roots.
+Mapped contact/link/milestone edits can propagate once; statuses in the current
+canonical layout remain duplicated and must agree before propagation. The
+synthetic proof uses explicit `CONTRIB` owner-reference rows, a documented format
+that must be separately approved before any real canonical migration.
+
+Unsupported public-source prose, changed contributions, missing evidence, unknown
+records and stale status mirrors stop for private reconciliation. New records
+require a reviewed public slot and refreshed calibration, never raw-record spread.
+The published baseline survives recalibration. PRIVATE/HOLD removal cascades to
+dependent project prose. Actual one-edit coverage is the mapped tested fields;
+this does not claim automatic maintenance of the whole evidence bank.

@@ -158,7 +158,10 @@ export function normalise(data) {
   for (const key of ['experience','qualifications','awards']) records.push(...data[key].filter(r => r.selected).map(r => {
     if (key === 'experience') r = {...r,title:r.role + ' · ' + r.organisation,
       dates:monthLabel(r.start_month,r.start_month.slice(0,4)!==r.end_month.slice(0,4)) + ' – ' + monthLabel(r.end_month)};
-    return record(r,{experience:'experience',qualifications:'education',awards:'awards'}[key]);
+    const item=record(r,{experience:'experience',qualifications:'education',awards:'awards'}[key]);
+    if(key==='qualifications')for(const event of data.qualification_events.filter(e=>e.selected&&e.qualification_id===r.id&&e.kind!=='THESIS_SUBMITTED'))
+      item.text.push(`${{VIVA_COMPLETED:'Viva completed',DEGREE_AWARDED:'Degree awarded'}[event.kind]} ${formatDate(event.date)}.`);
+    return item;
   }));
   return {reviewed:data.release_date,site:{...p,...config,title:render(config.title),description:render(config.description)},
     profiles:[{id:'EMAIL',label:'Email',url:`mailto:${p.email}`},...data.links.filter(l => l.selected && l.id !== 'GROUP')],
