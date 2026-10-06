@@ -2,7 +2,7 @@
 
 Created: 5 October 2026. Baseline: website commit `2c3ba49`.
 Plan version: 1.4. Release-1 milestone: `LIVE_CONTENT_VERIFIED_BROWSER_QA_DEFERRED`.
-Workflow milestone: `P01_P05_COMPLETE_P06_RELEASE_AUTHORISED`.
+Workflow milestone: `P01_P06_COMPLETE_LIVE_VERIFIED`.
 
 ## Objective
 
@@ -139,7 +139,7 @@ decision. `DONE` requires every listed acceptance criterion to pass with evidenc
 | W08 | Verify release 1 locally | W02–W07 | DONE | Passing local checks plus user-confirmed preview accepted for today's release; remaining audit gaps documented |
 | W09 | Publish and verify release 1 | W08; deployment authority | DONE | Release 4537e5e deployed successfully; all nine live visitor files match; deployment report records amended gate and deferred browser QA |
 | W10 | Introduce repeatable content build and validation | W08; initial refresh accepted; implementation instruction | DONE | P01–P05 verified; 31 regressions, real-source NO_CHANGE, immutable review/gate and operator guide; 2026-10-06 acceptance report |
-| W11 | Verify release 2 and document routine updates | W10; publication authority for live checks | IN_PROGRESS | Candidate approved and promoted under clarified publication instruction; P06-C deployment/live verification pending; release-2 deployment report |
+| W11 | Verify release 2 and document routine updates | W10; publication authority for live checks | DONE | W11-A/B/C and P06-A–D verified; PR #2 merged, Pages run 37454512658 successful, exact live assets/PDF/browser PASS; release-2 deployment report |
 
 ## Acceptance criteria
 
@@ -522,12 +522,19 @@ completes at W08. Release 2 completes at W11 with its readiness/live status stat
   Pages/authentication/main rechecked; existing `main`/root hosting retained.
 - Regression rerun: 31/31 PASS, zero skips. Candidate input/source/runtime gate
   PASS; approval recorded; approved gate PASS; exact immutable files promoted.
-- P06-A/B/D local PASS: actual previous-release backup saved and its dry-run
-  validates. P06-C remains NOT RUN until publication and live verification occur.
-  Evidence: `docs/releases/2026-10-06-release-2-deployment.md`.
-- No canonical edits, watcher, new credentials or hosting changes. Next: review
-  staged exposure, commit/push/create PR, merge authorised release, verify the
-  exact deployed revision and record the actual P06-C result.
+- P06-A/B/C/D and W11-A/B/C PASS: exact promotion/commit/live file and PDF
+  hashes match; actual rollback backup dry-run validates. PR #2 merged commit
+  `05f18e2289cb9d0b41698c47fa28dab3fb7c7a58`; successful Pages run
+  `37454512658`. Live Chrome 375/768/1440, native 200% zoom, keyboard, reduced
+  motion and no-JS checks PASS; live captures visually inspected. Verifier
+  returned LIVE_VERIFIED and then advanced the private published baseline.
+  Evidence: `docs/releases/2026-10-06-release-2-deployment.md` and `-checks.json`.
+- Staged public exposure/whitespace review PASS; no private working records
+  committed. Five canonical sources unchanged. No watcher, new credentials or
+  hosting changes. P01–P06/W10/W11 DONE; P07/P08 remain DEFERRED. Full W07
+  accessibility audit remains deferred; restricted external links INCONCLUSIVE.
+- Record verification in a documentation-only follow-up commit, preserving the
+  approved artifact, and verify the resulting main deployment before handoff.
 
 ## Reusable continuation prompt
 
@@ -535,8 +542,8 @@ completes at W08. Release 2 completes at W11 with its readiness/live status stat
 > Inspect the working tree and latest canonical evidence, then complete the next
 > available tasks within the authorised scope.
 > For the one-edit workflow, also read docs/CONTENT_PROPAGATION_PLAN.md and use its
-> P-task tracker; P01–P05 are complete and P06 awaits exact release approval,
-> publication and live verification. Verify criteria
+> P-task tracker; P01–P06 are complete and release 2 is LIVE_VERIFIED. P07/P08
+> remain deferred and require separate scope instructions. Verify criteria
 > and update the task tracker and session record with actual results. Continue
 > independent tasks if one dependency is unresolved. Report the resulting
 > readiness milestone and remaining task IDs; deploy only when authorised by the

@@ -1,7 +1,7 @@
 # One-edit content propagation — implementation and acceptance plan
 
 Created: 5 October 2026. Version: 1.1 (implementation checkpoint).
-State: P01_P05_COMPLETE_P06_RELEASE_AUTHORISED.
+State: P01_P06_COMPLETE_LIVE_VERIFIED.
 Parent contract: [WEBSITE_UPDATE_PLAN.md](WEBSITE_UPDATE_PLAN.md), W10/W11.
 Implementation baseline: website revision `17d4ad2` (versioned planning baseline).
 
@@ -148,8 +148,9 @@ it still invalidates an older approval whose source fingerprints no longer match
 ## Task tracker
 
 Only this table owns the P-task states; the parent W10/W11 rows are roll-ups.
-P01/P02 are merged and manually verified by the user. P03–P06 are the current
-implementation scope. Optional extensions remain DEFERRED.
+P01/P02 are merged and manually verified by the user. P03–P06 are implemented,
+merged and live verified under the clarified publication instruction. Optional
+extensions remain DEFERRED.
 
 | ID | Deliverable | Dependencies | State | Completion evidence |
 | --- | --- | --- | --- | --- |
@@ -158,7 +159,7 @@ implementation scope. Optional extensions remain DEFERRED.
 | P03 | Local canonical adapters and change detection | P01, P02 | DONE | P03-A–D: real calibration/NO_CHANGE, read-only adapters and synthetic boundary/concurrency tests; 2026-10-06 acceptance report |
 | P04 | Review package and stale-approval gate | P03 | DONE | P04-A–D: immutable manifest/public preview, exact decision gate and seven drift scenarios; 2026-10-06 acceptance report |
 | P05 | End-to-end one-edit proof and operator guide | P02–P04 | DONE | P05-A–E: 31 regressions, actual PDF propagation, native browser zoom/keyboard matrix, visual inspection and README; 2026-10-06 report |
-| P06 | Approved-release deployment and live verification | P05; specific release/hosting authority | IN_PROGRESS | Exact contextual approval recorded, immutable candidate promoted and actual rollback backup checked; publication/P06-C live evidence pending |
+| P06 | Approved-release deployment and live verification | P05; specific release/hosting authority | DONE | P06-A–D PASS: exact contextual approval/promotion, PR #2 merged, successful Pages run 37454512658, candidate-bound live file/PDF/browser checks, rollback backup dry-run; release-2 deployment report |
 | P07 | Optional local change watcher | P05; explicit opt-in | DEFERRED | Watcher lifecycle, debounce and no-publication tests |
 | P08 | Optional additional public website adapters | P05; named target and authority | DEFERRED | Per-target mapping, review and verification reports |
 
@@ -475,12 +476,35 @@ checks and P06's readiness/live status. A deferred deployment is not a completed
   exact candidate approval, authorised release and live evidence. Local state is
   READY_FOR_REVIEW, not LIVE_VERIFIED.
 
+### 6 October 2026 — authorised release 2 and live verification
+
+- The user clarified that the request to publish authorised push/PR and release
+  of the exact candidate already discussed. Recorded that decision verbatim in
+  private state, bound to candidate `a43d917ca7f32dd605a2d4dcd60bad40db468d42078828f015a8d94306265e48`
+  and the existing site target. No repeated full-hash confirmation was required.
+- Reran 31 propagation tests: all PASS, zero skips. Input/source/runtime gate,
+  exact promoted and committed file/dataset comparison, HTML/content and seven
+  navigation regressions PASS. Five canonical sources unchanged.
+- P06-A/B/C/D PASS: approved immutable promotion and rollback backup/dry-run;
+  implementation commit `f92e081`; PR #2 merged release `05f18e2`; successful
+  Pages run `37454512658`; all committed/served files and public PDF match;
+  live mobile/tablet/desktop, keyboard, no-JS, reduced-motion and native 200%
+  zoom checks PASS. Deployment rechecked after browser work, then the private
+  published baseline advanced. Live captures visually inspected.
+- Public evidence: `docs/releases/2026-10-06-release-2-deployment.md` and
+  `-checks.json`. P01–P06/W10/W11 DONE; LIVE_VERIFIED. Record results in a
+  documentation-only follow-up and verify that final main deployment as well.
+- No canonical writes, watcher, new credentials or hosting change. P07/P08
+  remain DEFERRED. Full accessibility audit NOT RUN; five external destinations
+  remain INCONCLUSIVE due to access restrictions. Neither prevents the scoped
+  P06 checks recorded in this release; no broader audit pass is claimed.
+
 ## Continuation prompt
 
 > Read both repositories' AGENTS.md, docs/WEBSITE_UPDATE_PLAN.md and
 > docs/CONTENT_PROPAGATION_PLAN.md. Recheck Git status and relevant canonical
 > sources. Within the current user-authorised scope, implement the next available
-> P-task, currently P06's exact-release approval/deployment/live checks. Preserve the evidence bank's authority and keep
+> P-task; P01–P06 are now complete and P07/P08 remain deferred. Preserve the evidence bank's authority and keep
 > private material outside the public repository. Verify each acceptance ID, save
 > safe evidence, update this tracker and the parent's W10/W11 roll-up, and report
 > remaining tasks. Do not publish, migrate canonical ownership, install a watcher

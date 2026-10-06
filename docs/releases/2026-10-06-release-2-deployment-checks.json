@@ -1,0 +1,167 @@
+{
+  "date": "2026-10-06",
+  "verified_at": "2026-10-06T11:11:18.860Z",
+  "state": "LIVE_VERIFIED",
+  "candidate": "a43d917ca7f32dd605a2d4dcd60bad40db468d42078828f015a8d94306265e48",
+  "target": "https://barry063.github.io/hao-yu-website/",
+  "commit": "05f18e2289cb9d0b41698c47fa28dab3fb7c7a58",
+  "run_id": 37454512658,
+  "run_url": "https://github.com/barry063/hao-yu-website/actions/runs/37454512658",
+  "pr": "https://github.com/barry063/hao-yu-website/pull/2",
+  "implementation_commit": "f92e0817a5c158c1cf5e6fa71368073537502223",
+  "release_date": "2026-10-06",
+  "dataset_sha256": "36818f40cf8c5be80eae60f60ada46331af07bc8c58a5054c3d92dda1a40cbb0",
+  "output_sha256": {
+    ".nojekyll": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "index.html": "6633e0ad9797e30b316c81f78bf0201f565e7703b3e36e0cec08d362ee286093",
+    "styles.css": "ca8344bf6244aba31ca0c6211e9fa3e0cadf2a0cb53c4b9ba5f16de063e8b5d7",
+    "script.js": "30be027c19866039d11ef3d3fe04c49b5d2df1f38b053cf92911f3eb0804cfdb",
+    "favicon.svg": "0ed347d5da206ffa193f82c372d6e9abc5d2be1813744cbbfa0211da4e17bd37",
+    "robots.txt": "5f76f3d777d3616e02b73917ce737d9f130097ef96be6deeb6aa9c11f5c9eb38",
+    "sitemap.xml": "ff950ef626ddfd0d78c1b0cc7a9898bf44c72c632a12e997b2dc1ce350923bf2",
+    "assets/Hao_Yu_CV.pdf": "5ec21a59255085d07ae385f514a1ec1facd9ed7a7ebdbd38c969884a5bfe2bee",
+    "assets/hao-yu-portrait.jpg": "46303d6d9724e6a39504ec0d3cf4a1333e5bc2d6a98d7ae527c4bc0d25326280",
+    "assets/og-image.png": "19d42cc64c0751580ad51c7b0b2d9e846701010524d097918ffb401837dd0801"
+  },
+  "checks": [
+    {
+      "file": ".nojekyll",
+      "result": "PASS",
+      "method": "COMMIT"
+    },
+    {
+      "file": "index.html",
+      "result": "PASS",
+      "method": "COMMIT_AND_LIVE"
+    },
+    {
+      "file": "styles.css",
+      "result": "PASS",
+      "method": "COMMIT_AND_LIVE"
+    },
+    {
+      "file": "script.js",
+      "result": "PASS",
+      "method": "COMMIT_AND_LIVE"
+    },
+    {
+      "file": "favicon.svg",
+      "result": "PASS",
+      "method": "COMMIT_AND_LIVE"
+    },
+    {
+      "file": "robots.txt",
+      "result": "PASS",
+      "method": "COMMIT_AND_LIVE"
+    },
+    {
+      "file": "sitemap.xml",
+      "result": "PASS",
+      "method": "COMMIT_AND_LIVE"
+    },
+    {
+      "file": "assets/Hao_Yu_CV.pdf",
+      "result": "PASS",
+      "method": "COMMIT_AND_LIVE"
+    },
+    {
+      "file": "assets/hao-yu-portrait.jpg",
+      "result": "PASS",
+      "method": "COMMIT_AND_LIVE"
+    },
+    {
+      "file": "assets/og-image.png",
+      "result": "PASS",
+      "method": "COMMIT_AND_LIVE"
+    }
+  ],
+  "browser": {
+    "browser": "154.0.8037.93",
+    "checks": [
+      {
+        "width": 375,
+        "result": "PASS",
+        "keyboard": "PASS",
+        "reduced_motion": "PASS"
+      },
+      {
+        "width": 768,
+        "result": "PASS",
+        "keyboard": "PASS",
+        "reduced_motion": "PASS"
+      },
+      {
+        "width": 1440,
+        "result": "PASS",
+        "keyboard": "PASS",
+        "reduced_motion": "PASS"
+      },
+      {
+        "width": 1440,
+        "zoom_200_percent": "PASS",
+        "result": "PASS",
+        "keyboard": "PASS",
+        "reduced_motion": "PASS",
+        "anchors": "PASS",
+        "dimensions": {
+          "inner": 712,
+          "outer": 1440,
+          "dpr": 2,
+          "cssZoom": "1",
+          "overflow": false
+        },
+        "capture_method": "Physical viewport via CDP after keyboard navigation and paint; CSS zoom remains 1"
+      }
+    ],
+    "no_js": "PASS",
+    "full_accessibility_audit": "NOT RUN"
+  },
+  "canonical_integrity": [
+    {
+      "id": "EB",
+      "sha256": "3c42d0e6cea1f8468e9142347be7487911cf871394383af0c80ae2c94bb63e65",
+      "unchanged": true
+    },
+    {
+      "id": "PUB",
+      "sha256": "fc76452713464119758fbe9fdadbd3516f176ad9a5c9bfb8f55370b6a1d45dd9",
+      "unchanged": true
+    },
+    {
+      "id": "CONTRIB",
+      "sha256": "ae05ab7c15ee1f9a02b834af1b35d18e468bb56b3a604d8f4f488b7675abc876",
+      "unchanged": true
+    },
+    {
+      "id": "PROFILE",
+      "sha256": "7337f5442b2445d7042c05099bdf983ca63f5a09f015def53682ef441790b9ba",
+      "unchanged": true
+    },
+    {
+      "id": "EXPORT",
+      "sha256": "90a10f9d7ad7367924d99e484902cfe04e1ac0367f4830c3f6851fd4a6696bc5",
+      "unchanged": true
+    }
+  ],
+  "pre_release_tests": {
+    "propagation": {
+      "passed": 31,
+      "failed": 0,
+      "skipped": 0
+    },
+    "navigation": {
+      "passed": 7,
+      "failed": 0,
+      "skipped": 0
+    },
+    "html_content": "PASS",
+    "staged_exposure": "PASS"
+  },
+  "rollback": {
+    "id": "02be734738b6f3ef62a55725c5b5ada5fbd2f3a253ccafee1579b6f78e95d034",
+    "dry_run": "PASS",
+    "remote_restoration": "NOT RUN"
+  },
+  "watcher": "NOT INSTALLED",
+  "hosting_change": "NONE"
+}
