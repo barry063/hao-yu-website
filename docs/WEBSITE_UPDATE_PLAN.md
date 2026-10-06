@@ -536,6 +536,40 @@ completes at W08. Release 2 completes at W11 with its readiness/live status stat
 - Record verification in a documentation-only follow-up commit, preserving the
   approved artifact, and verify the resulting main deployment before handoff.
 
+### 6 October 2026 — P07 documentation handoff
+
+- Latest user instruction: consolidate the agreed watcher plan for a new Codex
+  session; two-minute polling accepted. This is documentation-only scope.
+- Started clean on `main`, HEAD `f0721b0`. Saved
+  `docs/P07_WATCHER_IMPLEMENTATION_PLAN.md` and linked it from the propagation
+  contract. The document includes resource/sleep behaviour, durable private
+  state, lifecycle/notifications, acceptance checks and an explicit next-session
+  implementation/installation prompt. P07 checks remain NOT RUN.
+- No watcher or scheduled task installed, no canonical or visitor-file changes,
+  no private-state migration, staging, commit, push or publication. P01–P06 remain
+  DONE/LIVE_VERIFIED; P07/P08 remain DEFERRED until separately invoked.
+- Documentation verification: Node read-only checks PASS for nine local links/
+  anchors, required scope/timer/sleep/acceptance/prompt wording, public exposure
+  patterns and documentation-only changed-file scope. `git diff --check` PASS;
+  all three documents checked for trailing whitespace and final newlines. No
+  code changed; runtime/watcher checks NOT RUN. Evidence is these documents and
+  the recorded check output in this session; nothing staged or committed.
+
+### 6 October 2026 — P07 plan commit/push checkpoint
+
+- Latest user instruction requests pushing the P07 planning checkpoint. Scope is
+  the three planning documents only, on existing `main`; it does not implement or
+  install the watcher, migrate private state or publish changed visitor content.
+- Starting HEAD `f0721b0`, with only the prior P07 documentation changes present.
+  Public exposure, relative links/anchors, required scope/120-second/sleep wording
+  and whitespace are checked before commit. Root visitor files and the public
+  dataset remain the approved release; no canonical files are touched.
+- The commit containing this entry versions the reviewed plan and handoff prompt.
+  Its revision is identified by Git history; push and remote revision comparison
+  follow the commit and are reported in the chat handoff, not inferred in advance.
+- P07/P08 remain DEFERRED; all P07 implementation checks NOT RUN. P01–P06 remain
+  complete. The next session uses the P07 document's explicit continuation prompt.
+
 ## Reusable continuation prompt
 
 > Continue the website update using AGENTS.md and docs/WEBSITE_UPDATE_PLAN.md.
@@ -548,3 +582,6 @@ completes at W08. Release 2 completes at W11 with its readiness/live status stat
 > independent tasks if one dependency is unresolved. Report the resulting
 > readiness milestone and remaining task IDs; deploy only when authorised by the
 > conversation, and verify the deployed revision before claiming it is live.
+
+For P07, the specific agreed design and implementation/installation prompt are in
+[P07_WATCHER_IMPLEMENTATION_PLAN.md](P07_WATCHER_IMPLEMENTATION_PLAN.md).

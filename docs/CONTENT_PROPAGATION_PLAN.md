@@ -160,7 +160,7 @@ extensions remain DEFERRED.
 | P04 | Review package and stale-approval gate | P03 | DONE | P04-A–D: immutable manifest/public preview, exact decision gate and seven drift scenarios; 2026-10-06 acceptance report |
 | P05 | End-to-end one-edit proof and operator guide | P02–P04 | DONE | P05-A–E: 31 regressions, actual PDF propagation, native browser zoom/keyboard matrix, visual inspection and README; 2026-10-06 report |
 | P06 | Approved-release deployment and live verification | P05; specific release/hosting authority | DONE | P06-A–D PASS: exact contextual approval/promotion, PR #2 merged, successful Pages run 37454512658, candidate-bound live file/PDF/browser checks, rollback backup dry-run; release-2 deployment report |
-| P07 | Optional local change watcher | P05; explicit opt-in | DEFERRED | Watcher lifecycle, debounce and no-publication tests |
+| P07 | Optional local change watcher | P05; explicit opt-in | DEFERRED | Two-minute design agreed; P07_WATCHER_IMPLEMENTATION_PLAN.md contains implementation/install handoff; no watcher implemented or installed |
 | P08 | Optional additional public website adapters | P05; named target and authority | DEFERRED | Per-target mapping, review and verification reports |
 
 ### P01 — Source ownership map and public data contract
@@ -282,6 +282,12 @@ and [workflow triggers](https://docs.github.com/en/actions/reference/workflows-a
 Do not promise hosted PR previews without choosing and testing a preview mechanism.
 
 ### P07 — Optional local watcher
+
+Detailed agreed design and next-session prompt:
+[P07_WATCHER_IMPLEMENTATION_PLAN.md](P07_WATCHER_IMPLEMENTATION_PLAN.md).
+The user accepted a 120-second interval and requested documentation for a new
+session. This session remains documentation-only; implementation/installation
+starts under the explicit continuation instruction, not merely this file's presence.
 
 - P07-A: Opt-in only, with documented start/stop and computer-running requirements.
   Watch declared sources; debounce bursts, wait for stable file writes and recover
@@ -499,6 +505,34 @@ checks and P06's readiness/live status. A deferred deployment is not a completed
   remain INCONCLUSIVE due to access restrictions. Neither prevents the scoped
   P06 checks recorded in this release; no broader audit pass is claimed.
 
+### 6 October 2026 — P07 plan consolidation for a new session
+
+- User confirmed release 2, reviewed the watcher proposal and accepted a
+  two-minute interval after clarification of resource cost/sign-in/sleep behaviour.
+  Latest instruction: consolidate the design in a document for a new session.
+- Saved `docs/P07_WATCHER_IMPLEMENTATION_PLAN.md`: declared sources, 120-second
+  polling/settling, private-state preservation, notifications/deduplication,
+  installed lifecycle, measurements and P07-A–C acceptance checklist. Includes
+  an explicit implementation/installation prompt for the user to submit next.
+- Current baseline `f0721b0`; tree clean before this documentation work. Preserved
+  P01–P06 DONE/LIVE_VERIFIED and P08 DEFERRED. P07 remains DEFERRED until the
+  implementation session; all P07 implementation checks are NOT RUN.
+- No implementation, scheduled task, watcher, state migration, canonical edits,
+  staging, commit, push or publication in this session. Documentation validation
+  results are recorded in the parent website plan.
+
+### 6 October 2026 — versioned P07 planning checkpoint
+
+- User subsequently requested commit/push of the consolidated P07 plan. Only
+  `P07_WATCHER_IMPLEMENTATION_PLAN.md` and the two parent planning records are
+  included. The handoff prompt now preserves planning documents regardless of
+  whether they are committed. Implementation and installation remain for the
+  next explicitly invoked P07 session; no watcher is installed by this action.
+- Public-safe documentation checks and staged file-scope review precede commit.
+  The checkpoint revision is in Git history; push/remote confirmation follows
+  commit and is reported in the session handoff. P07 checks remain NOT RUN and
+  P07/P08 remain DEFERRED.
+
 ## Continuation prompt
 
 > Read both repositories' AGENTS.md, docs/WEBSITE_UPDATE_PLAN.md and
@@ -509,3 +543,6 @@ checks and P06's readiness/live status. A deferred deployment is not a completed
 > safe evidence, update this tracker and the parent's W10/W11 roll-up, and report
 > remaining tasks. Do not publish, migrate canonical ownership, install a watcher
 > or add destinations merely because this plan exists.
+
+For the agreed P07 implementation and installation scope, use the explicit
+handoff prompt at the end of [P07_WATCHER_IMPLEMENTATION_PLAN.md](P07_WATCHER_IMPLEMENTATION_PLAN.md).
