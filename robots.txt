@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://barry063.github.io/hao-yu-website/sitemap.xml

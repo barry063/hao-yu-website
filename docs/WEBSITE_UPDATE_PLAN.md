@@ -2,7 +2,7 @@
 
 Created: 5 October 2026. Baseline: website commit `2c3ba49`.
 Plan version: 1.4. Release-1 milestone: `LIVE_CONTENT_VERIFIED_BROWSER_QA_DEFERRED`.
-Workflow milestone: `P01_P02_COMPLETE_AWAITING_REVIEW`.
+Workflow milestone: `P01_P05_COMPLETE_P06_RELEASE_AUTHORISED`.
 
 ## Objective
 
@@ -93,6 +93,22 @@ is to version and push the planning baseline only. P01–P06 describe the core i
 P07/P08 are optional extensions. The release-1 browser exception is not a standing
 exception for generated releases.
 
+Continuation decision, 6 October 2026: user reports merged/rebased P01/P02 and
+manual website verification and requests P03–P06. Continue on a separate local
+branch, preserving canonical CV files. Prepare the concrete candidate before
+requesting exact release approval; no watcher/hosting migration is included.
+The current P-task tracker supersedes earlier checkpoint-only scope statements.
+
+Release instruction, 6 October 2026: the user clarified that "ok so should we
+publish now?" was an instruction to push/create a PR and publish the candidate
+already discussed. Proceed with candidate
+`a43d917ca7f32dd605a2d4dcd60bad40db468d42078828f015a8d94306265e48`
+at `https://barry063.github.io/hao-yu-website/`, using the existing main/root
+Pages route. The clarification supplies current release authority; the user does
+not need to repeat the full hash. Record their statement in private approval state,
+create a PR, merge the release, and verify the actual deployment. Canonical files
+remain unchanged; no watcher or hosting migration is included.
+
 ## Public page target
 
 The page should follow this order: hero and profile links; concise research profile;
@@ -122,8 +138,8 @@ decision. `DONE` requires every listed acceptance criterion to pass with evidenc
 | W07 | Accessibility and responsive behaviour | W03, W04, W05 | DEFERRED | User accepted browser preview; detailed automated UI matrix deferred for this release; regressions pass |
 | W08 | Verify release 1 locally | W02–W07 | DONE | Passing local checks plus user-confirmed preview accepted for today's release; remaining audit gaps documented |
 | W09 | Publish and verify release 1 | W08; deployment authority | DONE | Release 4537e5e deployed successfully; all nine live visitor files match; deployment report records amended gate and deferred browser QA |
-| W10 | Introduce repeatable content build and validation | W08; initial refresh accepted; implementation instruction | IN_PROGRESS | P01/P02 complete and verified locally; P03–P05 remain; checkpoint report records all eight P01/P02 criteria |
-| W11 | Verify release 2 and document routine updates | W10; publication authority for live checks | NOT_STARTED | Detailed P05/P06 operating/release contract; no new deployment authorised by planning |
+| W10 | Introduce repeatable content build and validation | W08; initial refresh accepted; implementation instruction | DONE | P01–P05 verified; 31 regressions, real-source NO_CHANGE, immutable review/gate and operator guide; 2026-10-06 acceptance report |
+| W11 | Verify release 2 and document routine updates | W10; publication authority for live checks | IN_PROGRESS | Candidate approved and promoted under clarified publication instruction; P06-C deployment/live verification pending; release-2 deployment report |
 
 ## Acceptance criteria
 
@@ -472,14 +488,55 @@ completes at W08. Release 2 completes at W11 with its readiness/live status stat
 - P03–P06 remain NOT_STARTED, P07/P08 DEFERRED; W10 IN_PROGRESS. The commit/push
   action does not approve a candidate for publication or close deferred browser QA.
 
+### 6 October 2026 — P03–P06 local implementation session
+
+- Started clean from merged `fc335e5` on `implementation/p03-p06`; user reports
+  manually verifying the merged website. No canonical files edited.
+- W10-A–E and P03-A–D/P04-A–D/P05-A–E: PASS. Source bridge, shared static output,
+  immutable review, drift gate and actual operator guide complete. Full tests
+  31/31; workflow guard checks 9/9; navigation 7/7. Final candidate HTML/content,
+  HTTP/PDF, three-width keyboard/reduced-motion/no-JS/native-zoom checks pass.
+  Both PDF pages and normal/zoomed layouts inspected. Full accessibility audit
+  NOT RUN, preserving W07's deferred scope rather than claiming a pass.
+- W11-A/B local generated-content checks and guide complete. W11-C release
+  readiness recorded; P06-C publication/live evidence remains pending exact
+  candidate approval and authority. P06-A/B/D local gate/rollback tests pass.
+- Candidate `a43d917ca7f32dd605a2d4dcd60bad40db468d42078828f015a8d94306265e48`
+  targets `https://barry063.github.io/hao-yu-website/`; READY_FOR_REVIEW. Current
+  main/root Pages deployment is merged `fc335e5`, not this new candidate.
+- Evidence: `docs/releases/2026-10-06-p03-p06.md` and `-checks.json`; exact hashes,
+  scoped one-edit coverage, remaining private-source duplicate-status constraint,
+  link results (8 PASS/5 INCONCLUSIVE/0 FAIL) and actual NOT RUN checks retained.
+- Five source files unchanged; ten root visitor files plus public dataset equal
+  HEAD. Real prepare returns NO_CHANGE; forced generator candidate changes labels
+  and generated files only. No staging, commit/push/publication or watcher.
+- W10 DONE; W11/P06 IN_PROGRESS; P01–P05 DONE, P07/P08 DEFERRED. The remaining
+  dependency is exact release approval/authority and actual deployment/live checks.
+
+### 6 October 2026 — authorised release 2 publication session
+
+- User clarified the earlier publication request as an instruction to push/create
+  a PR and publish the reviewed candidate. Recorded explicit contextual approval
+  against the full candidate ID/target; no repeated hash confirmation is required.
+- Started with only the intended P03–P06 changes on `implementation/p03-p06`.
+  Pages/authentication/main rechecked; existing `main`/root hosting retained.
+- Regression rerun: 31/31 PASS, zero skips. Candidate input/source/runtime gate
+  PASS; approval recorded; approved gate PASS; exact immutable files promoted.
+- P06-A/B/D local PASS: actual previous-release backup saved and its dry-run
+  validates. P06-C remains NOT RUN until publication and live verification occur.
+  Evidence: `docs/releases/2026-10-06-release-2-deployment.md`.
+- No canonical edits, watcher, new credentials or hosting changes. Next: review
+  staged exposure, commit/push/create PR, merge authorised release, verify the
+  exact deployed revision and record the actual P06-C result.
+
 ## Reusable continuation prompt
 
 > Continue the website update using AGENTS.md and docs/WEBSITE_UPDATE_PLAN.md.
 > Inspect the working tree and latest canonical evidence, then complete the next
 > available tasks within the authorised scope.
 > For the one-edit workflow, also read docs/CONTENT_PROPAGATION_PLAN.md and use its
-> P-task tracker; the current checkpoint is P01/P02 complete awaiting review,
-> with P03 next after a continuation instruction. Verify criteria
+> P-task tracker; P01–P05 are complete and P06 awaits exact release approval,
+> publication and live verification. Verify criteria
 > and update the task tracker and session record with actual results. Continue
 > independent tasks if one dependency is unresolved. Report the resulting
 > readiness milestone and remaining task IDs; deploy only when authorised by the

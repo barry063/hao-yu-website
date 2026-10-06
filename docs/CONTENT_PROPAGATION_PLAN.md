@@ -1,7 +1,7 @@
 # One-edit content propagation — implementation and acceptance plan
 
 Created: 5 October 2026. Version: 1.1 (implementation checkpoint).
-State: P01_P02_COMPLETE_AWAITING_REVIEW.
+State: P01_P05_COMPLETE_P06_RELEASE_AUTHORISED.
 Parent contract: [WEBSITE_UPDATE_PLAN.md](WEBSITE_UPDATE_PLAN.md), W10/W11.
 Implementation baseline: website revision `17d4ad2` (versioned planning baseline).
 
@@ -25,6 +25,21 @@ verify each criterion, update records, leave canonical CV files unchanged and st
 after P02 for review. The user subsequently authorised committing and pushing
 this checkpoint to the implementation branch before P03–P06. No merge to main,
 publication, canonical edits or watcher is authorised by this checkpoint action.
+
+Current instruction, 6 October 2026: the user reports rebasing/merging P01/P02 and
+manually verifying the website, and requests continuation through P03–P06. Work
+locally on `implementation/p03-p06` from merged `fc335e5`. Preserve canonical
+files. Prepare the complete release candidate and gate/rollback checks; P06's
+actual publication awaits explicit approval of the exact new candidate/target.
+No watcher, hosting migration or additional destination is in scope.
+
+Latest release instruction, 6 October 2026: the user clarified that their request
+to publish meant proceed with pushing/creating a PR and publication of the exact
+candidate already discussed. Bind that explicit contextual decision to candidate
+`a43d917ca7f32dd605a2d4dcd60bad40db468d42078828f015a8d94306265e48`
+and `https://barry063.github.io/hao-yu-website/`. Commit/push, PR and release through
+the existing main/root route are authorised. Canonical edits and a watcher remain
+outside scope. Repeating the hash is not an additional user requirement.
 
 Locking means preserving version 1.0 as a traceable Git baseline, not making the
 plan read-only. Record implementation progress and justified amendments in later
@@ -117,6 +132,9 @@ The review package contains old/new public facts, affected sections/files, factu
 holds, check results, HTML preview, PDF and a candidate ID derived from the manifest.
 Approval must record the user's explicit decision, candidate ID, time and target.
 An agent cannot approve its own draft or infer future approval from this plan.
+An explicit decision can identify the candidate through unambiguous conversation
+context; the operator binds the full ID and target in the approval record without
+requiring the user to repeat them.
 An approval record is an audit aid, not a credential or a substitute for current
 deployment authority. Until a separately authorised automated gate exists, release
 remains a manual, authorised operation.
@@ -130,17 +148,17 @@ it still invalidates an older approval whose source fingerprints no longer match
 ## Task tracker
 
 Only this table owns the P-task states; the parent W10/W11 rows are roll-ups.
-P01/P02 are complete locally; P03–P06 are NOT_STARTED. Optional extensions remain
-DEFERRED. Stop at this checkpoint for the user's review.
+P01/P02 are merged and manually verified by the user. P03–P06 are the current
+implementation scope. Optional extensions remain DEFERRED.
 
 | ID | Deliverable | Dependencies | State | Completion evidence |
 | --- | --- | --- | --- | --- |
 | P01 | Source ownership map and public data contract | Implementation instruction | DONE | CONTENT_SOURCE_MAP.md; schema/199-field register; 13 fixtures; P01-A–D report |
 | P02 | Deterministic shared public-output generator | P01 | DONE | Isolated generator; 22 passing tests; three-width HTML/2-page PDF parity and visual review; P02-A–D report |
-| P03 | Local canonical adapters and change detection | P01, P02 | NOT_STARTED | Prepare command, safe export and reconciliation tests |
-| P04 | Review package and stale-approval gate | P03 | NOT_STARTED | Manifest, review UI/summary and gate tests |
-| P05 | End-to-end one-edit proof and operator guide | P02–P04 | NOT_STARTED | Acceptance report and reproducible dry-run |
-| P06 | Approved-release deployment and live verification | P05; specific release/hosting authority | NOT_STARTED | Deployment configuration, negative tests and live release report |
+| P03 | Local canonical adapters and change detection | P01, P02 | DONE | P03-A–D: real calibration/NO_CHANGE, read-only adapters and synthetic boundary/concurrency tests; 2026-10-06 acceptance report |
+| P04 | Review package and stale-approval gate | P03 | DONE | P04-A–D: immutable manifest/public preview, exact decision gate and seven drift scenarios; 2026-10-06 acceptance report |
+| P05 | End-to-end one-edit proof and operator guide | P02–P04 | DONE | P05-A–E: 31 regressions, actual PDF propagation, native browser zoom/keyboard matrix, visual inspection and README; 2026-10-06 report |
+| P06 | Approved-release deployment and live verification | P05; specific release/hosting authority | IN_PROGRESS | Exact contextual approval recorded, immutable candidate promoted and actual rollback backup checked; publication/P06-C live evidence pending |
 | P07 | Optional local change watcher | P05; explicit opt-in | DEFERRED | Watcher lifecycle, debounce and no-publication tests |
 | P08 | Optional additional public website adapters | P05; named target and authority | DEFERRED | Per-target mapping, review and verification reports |
 
@@ -214,7 +232,7 @@ builds must also work from an already approved dataset without private-source ac
   config, dataset and generated PDF/HTML invalidate approval. Repeated approval of
   the same unchanged candidate is idempotent; reject ambiguous candidate selection.
 - P04-D: Document the actual approval action and authority check. In the manual
-  version, the user approves a named candidate and explicitly authorises release;
+  version, the user approves an identified candidate and explicitly authorises release;
   a JSON `approved: true` flag written by the builder is never sufficient.
 
 ### P05 — End-to-end proof and operator guide
@@ -282,31 +300,36 @@ Do not promise hosted PR previews without choosing and testing a preview mechani
 - P08-C: Track deployment/verification per target; a failed target is not hidden
   by another target's success. Rollback does not change canonical evidence.
 
-## Proposed command interface — not implemented
+## Implemented command interface
 
-These names describe the intended operator experience, not available commands:
+Use `npm --silent run workflow -- <operation>` with explicit roots outside public configuration:
 
 ```text
-prepare --source-root <local canonical workspace>
-build --candidate <id>
-check --candidate <id>
-preview --candidate <id>
-approve --candidate <id>       # explicit user decision, not builder approval
-publish --candidate <id>       # separate current authority; refuses stale inputs
-verify-live --candidate <id>
+calibrate --source-root <canonical> --state-root <private-state>
+prepare --source-root <canonical> --state-root <private-state> --release-date YYYY-MM-DD
+qa --candidate <full-id>
+approve --candidate <full-id> --target <url> --decision APPROVE --actor <user> --statement <explicit-decision>
+gate --candidate <full-id> --target <url>
+promote --candidate <full-id> --target <url> --authorise-publication
+verify-live --candidate <full-id> --target <url> --commit <exact-commit>
+rollback --rollback <full-id>  # dry-run; add --authorise-restoration only with authority
 ```
 
-Implementation should expose real package/CLI commands and update this section
-and README. Configuration must not contain credentials or machine-specific paths
-in tracked public files. Preparing a candidate never stages or commits files.
+Except `qa`, operations also require the explicit source/state roots. README
+documents arguments, browser runtimes, reviewed recalibration and publication
+authority. `promote` copies existing approved bytes locally; commit/push is a
+separate authorised manual action. No command starts a watcher or remote write.
+Configuration contains no credentials or machine paths. Preview uses
+`node scripts/preview.mjs <port> tmp/candidates/<id>/visitor` and exposes only
+visitor files. Full candidate IDs are mandatory; there is no ambiguous "latest".
 
 Implemented at P02: `npm run build -- --out tmp/candidates/<name>`,
 `npm run test:propagation`, `npm run check:candidate -- <candidate directory>`,
 and `node scripts/preview.mjs <port> <candidate directory>`. Use an existing Python
 runtime via `SITE_PYTHON` or `--python`; exact packages are in `requirements-build.txt`.
-These commands build/check public reviewed data only. They do not yet accept a
-canonical source root or a candidate ID. Prepare/approval/publication commands
-remain proposals for P03–P06, not usable or authorised actions.
+The public-only P02 build/check commands remain usable without canonical access.
+The new workflow layers private adapters, immutable review and manual release
+checks over those builds. An implemented command alone supplies no authority.
 
 ## Evidence and resumption
 
@@ -315,9 +338,9 @@ candidate/source fingerprints and public-safe evidence location. Private details
 remain in the private workspace. Use `docs/releases/` for safe implementation and
 release reports. Preserve NOT RUN/INCONCLUSIVE results and dependencies.
 
-Current checkpoint: P01/P02 complete, awaiting the requested review. Next task
-after an instruction to continue: P03 -> P04 -> P05. P06 needs release authority;
-P07/P08 stay deferred until opted into.
+Current checkpoint: P01–P05 complete, P06 local release machinery verified. The
+candidate in the 6 October acceptance report awaits exact release approval;
+P06-C deployment/live checks are NOT RUN. P07/P08 stay deferred until opted into.
 Parent W10 completes with P01–P05; parent W11 covers the operating guide/release-2
 checks and P06's readiness/live status. A deferred deployment is not a completed P06.
 
@@ -419,12 +442,45 @@ checks and P06's readiness/live status. A deferred deployment is not a completed
 - P01/P02 remain DONE; P03–P06 NOT_STARTED and P07/P08 DEFERRED. The local
   acceptance report remains a dated verification record, not release approval.
 
+### 6 October 2026 — P03–P06 local implementation session
+
+- User reports merged/rebased P01/P02 and manual website verification; requests
+  P03–P06 continuation. Started clean from `fc335e5` on `implementation/p03-p06`.
+- P03-A–D, P04-A–D and P05-A–E: PASS. Commands/results, scope, hashes and
+  per-criterion evidence are in `docs/releases/2026-10-06-p03-p06.md` and its
+  `-checks.json`. Full regressions 31/31; workflow guard tests 9/9; navigation
+  7/7, zero skips. Final candidate/browser/native-zoom/PDF checks and visual
+  inspection pass. Full accessibility audit NOT RUN; W07 remains deferred.
+- Real calibration reproduces reviewed data exactly; ordinary preparation gives
+  NO_CHANGE. Intentional fixed-date generator release has no semantic fact change.
+- Current exact candidate:
+  `a43d917ca7f32dd605a2d4dcd60bad40db468d42078828f015a8d94306265e48`.
+  Target `https://barry063.github.io/hao-yu-website/`. Package under ignored
+  `tmp/candidates/<id>/`; preview serves ten public visitor files only.
+- Final binding gate PASS; actual missing approval refuses with APPROVAL_REQUIRED.
+  No actual approval record created. Failed QA draft remained non-READY; final
+  physical-viewport zoom captures and actual section targets pass.
+- P06-A/B/D local implementation/tests PASS. Hosting remains legacy Pages from
+  main/root; run 37338747444 deploys merged `fc335e5`. P06-C new deployment and
+  live browser/hash verification NOT RUN pending exact release approval/authority.
+- Five canonical source hashes unchanged; ten root visitor files and repository
+  public dataset equal starting HEAD (binary bytes; normalised text line endings).
+  No canonical write, staging, commit, push, publication, hosting migration or
+  watcher. Unrelated changes preserved. Private state remains outside both roots
+  in the unsandboxed user's temporary directory; sandbox TEMP differs.
+- Real canonical duplicate statuses still require reconciliation. Synthetic
+  CONTRIB owner-reference rows prove mapped one-edit behaviour without migration.
+  Links: eight PASS, five INCONCLUSIVE, zero FAIL.
+- W10 DONE; W11/P06 IN_PROGRESS. P01–P05 DONE; P07/P08 DEFERRED. Next step is
+  exact candidate approval, authorised release and live evidence. Local state is
+  READY_FOR_REVIEW, not LIVE_VERIFIED.
+
 ## Continuation prompt
 
 > Read both repositories' AGENTS.md, docs/WEBSITE_UPDATE_PLAN.md and
 > docs/CONTENT_PROPAGATION_PLAN.md. Recheck Git status and relevant canonical
 > sources. Within the current user-authorised scope, implement the next available
-> P-task, currently P03 after the P01/P02 review checkpoint. Preserve the evidence bank's authority and keep
+> P-task, currently P06's exact-release approval/deployment/live checks. Preserve the evidence bank's authority and keep
 > private material outside the public repository. Verify each acceptance ID, save
 > safe evidence, update this tracker and the parent's W10/W11 roll-up, and report
 > remaining tasks. Do not publish, migrate canonical ownership, install a watcher

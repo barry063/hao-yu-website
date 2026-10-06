@@ -1,0 +1,406 @@
+{
+  "date": "2026-10-06",
+  "state": "READY_FOR_REVIEW",
+  "branch": "implementation/p03-p06",
+  "baseline_commit": "fc335e5e5502803d6e76a88852aba6c8836d91e8",
+  "candidate": "a43d917ca7f32dd605a2d4dcd60bad40db468d42078828f015a8d94306265e48",
+  "target": "https://barry063.github.io/hao-yu-website/",
+  "manifest": {
+    "version": 1,
+    "sources": [
+      {
+        "id": "EB",
+        "path": "1 Master Academic CV/Evidence_Bank.md",
+        "sha256": "3c42d0e6cea1f8468e9142347be7487911cf871394383af0c80ae2c94bb63e65"
+      },
+      {
+        "id": "PUB",
+        "path": "4 Publication list/Master_Publication_List.md",
+        "sha256": "fc76452713464119758fbe9fdadbd3516f176ad9a5c9bfb8f55370b6a1d45dd9"
+      },
+      {
+        "id": "CONTRIB",
+        "path": "4 Publication list/Publication_Contributions.json",
+        "sha256": "ae05ab7c15ee1f9a02b834af1b35d18e468bb56b3a604d8f4f488b7675abc876"
+      },
+      {
+        "id": "PROFILE",
+        "path": "3 Research Profile/Hao_Yu_Application_Evidence_Wording.md",
+        "sha256": "7337f5442b2445d7042c05099bdf983ca63f5a09f015def53682ef441790b9ba"
+      },
+      {
+        "id": "EXPORT",
+        "path": "1 Master Academic CV/Current_Export_Record.json",
+        "sha256": "90a10f9d7ad7367924d99e484902cfe04e1ac0367f4830c3f6851fd4a6696bc5"
+      }
+    ],
+    "dataset": "36818f40cf8c5be80eae60f60ada46331af07bc8c58a5054c3d92dda1a40cbb0",
+    "inputs": {
+      "scripts/workflow-core.mjs": "196f752f70d9631b44cb0b2c0eca7900c220e3c9190393e77c5d54026f421144",
+      "scripts/canonical-adapters.mjs": "3fd9bc490ef892fa80f190aeb9a598e220d6a9dc6d4c6e56b0fe242c5a0b7629",
+      "scripts/review-workflow.mjs": "10aa5f4358d74871b89ca4a4f9a49d2a8f486103c1b0b28adcd62ac8136e8aed",
+      "scripts/prepare-update.mjs": "5c9f6a59a563a815de87f818fa67037f1c6e9a9a11f83241c74151bc5127d9f1",
+      "scripts/release-workflow.mjs": "ca7be8bdaf8895a8caa83b4b99849e93f4b5c1c09459354ed00dcc10eaab7d2f",
+      "scripts/workflow-cli.mjs": "c1a7a5f57e20c42a2db8716f806682c4020fd4e879fca702dcd3425047ec74f5",
+      "scripts/browser-qa.mjs": "ee077136763ad10a60d76d51c39d6a3fc7b8a03c525edbf219a14e54ecd9bdbb",
+      "scripts/build-site.mjs": "c879a71cf5a6f5425d20ae3084373d432ed352a350895bb55212825064553fb9",
+      "scripts/render-site.mjs": "b809ffdc84469d86bb6fc79a49774693e4fc6dacccda31a1d73a5a1e95e2ad47",
+      "scripts/public-content.mjs": "ad2ebd558b7142083edf9ce956a55a5975d9585abb1bb9a2e8414f697d1368ad",
+      "scripts/build_public_cv.py": "91794c711336b70ededb2eed03ba7548dc267516884ba02fef80341893c24fd2",
+      "scripts/build_social_card.py": "6d5d1a7464966908b0ed4fd80174680ac1c8b9b821c03af12cff3df5989f10a1",
+      "scripts/check-candidate.mjs": "70ebbe4c530d520927fe2ef055365c41cee2ce4dcfbe8d8d5afb450b26629fbd",
+      "scripts/check-site.mjs": "ec1fd2e2a60f167746165c7477d9b07584d94ccd3bf83f09dfc85285cc87e6f7",
+      "scripts/check-preview.mjs": "6e9841a78a697f8521e26ccf7ed6714a6389ee5447f7b174e84d9d76f9dfa448",
+      "scripts/navigation.test.mjs": "a6949931ffffb14819bd608121d7351de0dde0335832b9e85e6604b2ab57a003",
+      "scripts/check_public_cv.py": "4667e9e94e2454ee6d5ec6fa6a1b27bbacdcd80fd918512eb22bfa23b6dbb9fa",
+      "scripts/preview.mjs": "361a0630e55eab9103cb9e175227b118ebffacbb9c2230908e00a72e44e0b960",
+      "templates/index.html": "707778fdf2dc5ba3b26b7e25a88e6b072bd10baf2700ef3476b648376502f22d",
+      "schemas/public-content.schema.json": "3580df4a831bb4b84400fa16796d275fca44b34cf60cbbdbfe343a59ab8db28e",
+      ".htmlvalidate.json": "23be03f08ab2e8ca2cccbb64c1940c1be06e5b744114a64c76720c4ac9624888",
+      "requirements-build.txt": "3d96531f99c2f0bd8cf32feb694c01696d9a30ae245cc93c77f7683ac6a20b2a",
+      "package.json": "fa75371fcba8c60a31ff25771d82dcd556fc7efd27f58e682f3420ab3401680d",
+      "package-lock.json": "e219977df9348e3a87bac10f14386abc543cd8b0e522e34a45ec0b9fd6be82f0",
+      "build-resources/fonts/Vera.ttf": "c4c45690b345435b2cba52ecabe275f05e49b389b39fe68ad03afbb551288d3d",
+      "build-resources/fonts/VeraBd.ttf": "cc037385e4d55bfde89b13e03091ee93bf40c0c52ddd391ff031ab276f13b8e9",
+      "build-resources/fonts/hashes.json": "0a387ff20eb212a848b603038c4b4fd0066814dbd372635a609868c9fa0cfc11",
+      "build-resources/social-baseline.json": "831f58cda9c57bc1acf2db685ed0d542e0dc33c0203529e27ba996704f0075cf",
+      ".nojekyll": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "styles.css": "ca8344bf6244aba31ca0c6211e9fa3e0cadf2a0cb53c4b9ba5f16de063e8b5d7",
+      "script.js": "30be027c19866039d11ef3d3fe04c49b5d2df1f38b053cf92911f3eb0804cfdb",
+      "favicon.svg": "0ed347d5da206ffa193f82c372d6e9abc5d2be1813744cbbfa0211da4e17bd37",
+      "assets/hao-yu-portrait.jpg": "46303d6d9724e6a39504ec0d3cf4a1333e5bc2d6a98d7ae527c4bc0d25326280",
+      "assets/og-image.png": "19d42cc64c0751580ad51c7b0b2d9e846701010524d097918ffb401837dd0801"
+    },
+    "runtime": {
+      "node": "v24.14.1",
+      "python": "3.12.14",
+      "reportlab": "4.4.9",
+      "pillow": "12.3.0"
+    },
+    "release_date": "2026-10-06",
+    "target": "https://barry063.github.io/hao-yu-website/",
+    "outputs": {
+      ".nojekyll": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "index.html": "6633e0ad9797e30b316c81f78bf0201f565e7703b3e36e0cec08d362ee286093",
+      "styles.css": "ca8344bf6244aba31ca0c6211e9fa3e0cadf2a0cb53c4b9ba5f16de063e8b5d7",
+      "script.js": "30be027c19866039d11ef3d3fe04c49b5d2df1f38b053cf92911f3eb0804cfdb",
+      "favicon.svg": "0ed347d5da206ffa193f82c372d6e9abc5d2be1813744cbbfa0211da4e17bd37",
+      "robots.txt": "5f76f3d777d3616e02b73917ce737d9f130097ef96be6deeb6aa9c11f5c9eb38",
+      "sitemap.xml": "ff950ef626ddfd0d78c1b0cc7a9898bf44c72c632a12e997b2dc1ce350923bf2",
+      "assets/Hao_Yu_CV.pdf": "5ec21a59255085d07ae385f514a1ec1facd9ed7a7ebdbd38c969884a5bfe2bee",
+      "assets/hao-yu-portrait.jpg": "46303d6d9724e6a39504ec0d3cf4a1333e5bc2d6a98d7ae527c4bc0d25326280",
+      "assets/og-image.png": "19d42cc64c0751580ad51c7b0b2d9e846701010524d097918ffb401837dd0801"
+    },
+    "review": "ed9170782100e4dedb8e8c900090ffc25e312102e018474fa15c8c41f7a5caef",
+    "policy": "526cbe1e6555ced163047f25e3424dc5b19a4a8c0ce072b292171119a677e671",
+    "published": "526cbe1e6555ced163047f25e3424dc5b19a4a8c0ce072b292171119a677e671",
+    "repository_dataset": "526cbe1e6555ced163047f25e3424dc5b19a4a8c0ce072b292171119a677e671"
+  },
+  "review": {
+    "state": "READY_FOR_REVIEW",
+    "changes": [],
+    "affected_files": [
+      "index.html",
+      "robots.txt",
+      "sitemap.xml",
+      "assets/Hao_Yu_CV.pdf"
+    ],
+    "affected_sections": [
+      "update labels",
+      "generated public CV",
+      "sitemap"
+    ],
+    "holds": [],
+    "checks": [
+      {
+        "id": "HTML_CONTENT_NAVIGATION_HTTP",
+        "result": "PASS"
+      },
+      {
+        "id": "PUBLIC_PDF",
+        "result": "PASS"
+      },
+      {
+        "id": "BROWSER_KEYBOARD_ZOOM_MOTION",
+        "result": "PASS",
+        "evidence": {
+          "browser": "154.0.8037.93",
+          "checks": [
+            {
+              "width": 375,
+              "result": "PASS",
+              "keyboard": "PASS",
+              "reduced_motion": "PASS"
+            },
+            {
+              "width": 768,
+              "result": "PASS",
+              "keyboard": "PASS",
+              "reduced_motion": "PASS"
+            },
+            {
+              "width": 1440,
+              "result": "PASS",
+              "keyboard": "PASS",
+              "reduced_motion": "PASS"
+            },
+            {
+              "width": 1440,
+              "zoom_200_percent": "PASS",
+              "result": "PASS",
+              "keyboard": "PASS",
+              "reduced_motion": "PASS",
+              "anchors": "PASS",
+              "dimensions": {
+                "inner": 712,
+                "outer": 1440,
+                "dpr": 2,
+                "cssZoom": "1",
+                "overflow": false
+              },
+              "capture_method": "Physical viewport via CDP after keyboard navigation and paint; CSS zoom remains 1"
+            }
+          ],
+          "no_js": "PASS",
+          "full_accessibility_audit": "NOT RUN"
+        }
+      }
+    ],
+    "publication": "Requires explicit approval of this exact candidate and current authority; preparation never publishes."
+  },
+  "criteria": {
+    "P03-A": "PASS",
+    "P03-B": "PASS",
+    "P03-C": "PASS",
+    "P03-D": "PASS",
+    "P04-A": "PASS",
+    "P04-B": "PASS",
+    "P04-C": "PASS",
+    "P04-D": "PASS",
+    "P05-A": "PASS",
+    "P05-B": "PASS",
+    "P05-C": "PASS",
+    "P05-D": "PASS",
+    "P05-E": "PASS",
+    "P06-A": "PASS locally",
+    "P06-B": "PASS locally",
+    "P06-C": "NOT RUN",
+    "P06-D": "PASS locally"
+  },
+  "tests": {
+    "propagation": {
+      "passed": 31,
+      "failed": 0,
+      "skipped": 0
+    },
+    "workflow_after_guard_refinements": {
+      "passed": 8,
+      "failed": 0,
+      "skipped": 0
+    },
+    "navigation": {
+      "passed": 7,
+      "failed": 0
+    },
+    "final_workflow_subtests": {
+      "passed": 9,
+      "failed": 0,
+      "skipped": 0,
+      "included_in_full_suite": true
+    }
+  },
+  "canonical_integrity": {
+    "result": "PASS",
+    "sources": [
+      {
+        "id": "EB",
+        "path": "1 Master Academic CV/Evidence_Bank.md",
+        "sha256": "3c42d0e6cea1f8468e9142347be7487911cf871394383af0c80ae2c94bb63e65"
+      },
+      {
+        "id": "PUB",
+        "path": "4 Publication list/Master_Publication_List.md",
+        "sha256": "fc76452713464119758fbe9fdadbd3516f176ad9a5c9bfb8f55370b6a1d45dd9"
+      },
+      {
+        "id": "CONTRIB",
+        "path": "4 Publication list/Publication_Contributions.json",
+        "sha256": "ae05ab7c15ee1f9a02b834af1b35d18e468bb56b3a604d8f4f488b7675abc876"
+      },
+      {
+        "id": "PROFILE",
+        "path": "3 Research Profile/Hao_Yu_Application_Evidence_Wording.md",
+        "sha256": "7337f5442b2445d7042c05099bdf983ca63f5a09f015def53682ef441790b9ba"
+      },
+      {
+        "id": "EXPORT",
+        "path": "1 Master Academic CV/Current_Export_Record.json",
+        "sha256": "90a10f9d7ad7367924d99e484902cfe04e1ac0367f4830c3f6851fd4a6696bc5"
+      }
+    ],
+    "canonical_writes": 0
+  },
+  "root_integrity": {
+    ".nojekyll": {
+      "result": "PASS",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "index.html": {
+      "result": "PASS",
+      "sha256": "044f3be80c0a537a298382e05d47b087a8d6922f282cf97a7ff697d0b364d4fc"
+    },
+    "styles.css": {
+      "result": "PASS",
+      "sha256": "ca8344bf6244aba31ca0c6211e9fa3e0cadf2a0cb53c4b9ba5f16de063e8b5d7"
+    },
+    "script.js": {
+      "result": "PASS",
+      "sha256": "30be027c19866039d11ef3d3fe04c49b5d2df1f38b053cf92911f3eb0804cfdb"
+    },
+    "favicon.svg": {
+      "result": "PASS",
+      "sha256": "0ed347d5da206ffa193f82c372d6e9abc5d2be1813744cbbfa0211da4e17bd37"
+    },
+    "robots.txt": {
+      "result": "PASS",
+      "sha256": "7f980273d443840faebdf48db5890ad437d7e980fac76c615c27cea16117a986"
+    },
+    "sitemap.xml": {
+      "result": "PASS",
+      "sha256": "29884cb83a43e5bf973bed944cf830782a2b2bf1ed2d4dcbdae21c1fb669adf0"
+    },
+    "assets/Hao_Yu_CV.pdf": {
+      "result": "PASS",
+      "sha256": "7d800400754ba18f2ed2f8c04b00d852c9ee835133502ba3f3da5df4dc5fc7e5"
+    },
+    "assets/hao-yu-portrait.jpg": {
+      "result": "PASS",
+      "sha256": "46303d6d9724e6a39504ec0d3cf4a1333e5bc2d6a98d7ae527c4bc0d25326280"
+    },
+    "assets/og-image.png": {
+      "result": "PASS",
+      "sha256": "19d42cc64c0751580ad51c7b0b2d9e846701010524d097918ffb401837dd0801"
+    },
+    "content/site.json": {
+      "result": "PASS",
+      "sha256": "526cbe1e6555ced163047f25e3424dc5b19a4a8c0ce072b292171119a677e671"
+    }
+  },
+  "gate": {
+    "bindings": "PASS",
+    "approval_refusal": "APPROVAL_REQUIRED",
+    "approval_record": "NOT CREATED"
+  },
+  "visual_review": {
+    "result": "PASS",
+    "pdf_pages": 2,
+    "pdf_render_input_outputs_equal_final": "PASS",
+    "normal_widths": [
+      375,
+      768,
+      1440
+    ],
+    "native_zoom": "200%",
+    "captures": "tmp/qa/a43d917ca7f32dd605a2d4dcd60bad40db468d42078828f015a8d94306265e48",
+    "full_accessibility_audit": "NOT RUN"
+  },
+  "external_links": [
+    {
+      "url": "https://barry063.github.io/hao-yu-website/",
+      "status": 200,
+      "destination": "https://barry063.github.io/hao-yu-website/",
+      "result": "PASS"
+    },
+    {
+      "url": "https://www.linkedin.com/in/hao-yu-barry",
+      "status": 999,
+      "destination": "https://www.linkedin.com/in/hao-yu-barry",
+      "result": "INCONCLUSIVE"
+    },
+    {
+      "url": "https://scholar.google.com/citations?user=XgJBN04AAAAJ&hl=en",
+      "status": 200,
+      "destination": "https://scholar.google.com/citations?user=XgJBN04AAAAJ&hl=en",
+      "result": "PASS"
+    },
+    {
+      "url": "https://orcid.org/0000-0003-1722-7909",
+      "status": 200,
+      "destination": "https://orcid.org/0000-0003-1722-7909",
+      "result": "PASS"
+    },
+    {
+      "url": "https://github.com/barry063",
+      "status": 200,
+      "destination": "https://github.com/barry063",
+      "result": "PASS"
+    },
+    {
+      "url": "https://hofmann-group.eng.cam.ac.uk/",
+      "status": 200,
+      "destination": "https://hofmann-group.eng.cam.ac.uk/",
+      "result": "PASS"
+    },
+    {
+      "url": "https://doi.org/10.1039/D5NR01458A",
+      "status": 403,
+      "destination": "https://pubs.rsc.org/nr/article/17/36/21070-21082/901141",
+      "result": "INCONCLUSIVE"
+    },
+    {
+      "url": "https://github.com/barry063/RamanPL_2D",
+      "status": 200,
+      "destination": "https://github.com/barry063/RamanPL_2D",
+      "result": "PASS"
+    },
+    {
+      "url": "https://doi.org/10.1021/acs.nanolett.3c00220",
+      "status": 403,
+      "destination": "https://pubs.acs.org/doi/10.1021/acs.nanolett.3c00220",
+      "result": "INCONCLUSIVE"
+    },
+    {
+      "url": "https://doi.org/10.1021/acs.nanolett.4c03363",
+      "status": 403,
+      "destination": "https://pubs.acs.org/doi/10.1021/acs.nanolett.4c03363",
+      "result": "INCONCLUSIVE"
+    },
+    {
+      "url": "https://doi.org/10.1021/acsanm.5c00308",
+      "status": 403,
+      "destination": "https://pubs.acs.org/doi/10.1021/acsanm.5c00308",
+      "result": "INCONCLUSIVE"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.chemosphere.2022.136547",
+      "status": 200,
+      "destination": "https://linkinghub.elsevier.com/retrieve/pii/S0045653522030405",
+      "result": "PASS"
+    },
+    {
+      "url": "https://github.com/barry063/hao-yu-website",
+      "status": 200,
+      "destination": "https://github.com/barry063/hao-yu-website",
+      "result": "PASS"
+    }
+  ],
+  "hosting": {
+    "target": "https://barry063.github.io/hao-yu-website/",
+    "build_type": "legacy",
+    "source": {
+      "branch": "main",
+      "path": "/"
+    },
+    "existing_deployed_commit": "fc335e5e5502803d6e76a88852aba6c8836d91e8",
+    "run": 37338747444
+  },
+  "new_deployment": "NOT RUN",
+  "publication": "NOT PERFORMED",
+  "watcher": "NOT INSTALLED",
+  "observed_refused_draft": {
+    "result": "REFUSED",
+    "code": "SOURCE_OR_BUILD_FAILURE",
+    "reproduced": false,
+    "diagnostics": "Private detailed diagnostics and safe filesystem codes added; focused and final full reruns pass. Cause not isolated."
+  }
+}

@@ -6,8 +6,9 @@
     "preview": "node scripts/preview.mjs",
     "check:links": "node scripts/check-links.mjs",
     "build": "node scripts/build-site.mjs",
-    "test:propagation": "node --test tests/propagation/*.test.mjs",
-    "check:candidate": "node scripts/check-candidate.mjs"
+    "test:propagation": "node --test --test-concurrency=1 tests/propagation/*.test.mjs",
+    "check:candidate": "node scripts/check-candidate.mjs",
+    "workflow": "node scripts/workflow-cli.mjs"
   },
   "engines": {
     "node": ">=22"
