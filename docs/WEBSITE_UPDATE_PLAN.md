@@ -5,6 +5,20 @@ Plan version: 1.6. Release-1 milestone: `LIVE_CONTENT_VERIFIED_BROWSER_QA_DEFERR
 Workflow milestone: `P01_P06_COMPLETE_LIVE_VERIFIED`.
 Watcher milestone: `P07_COMPLETE_INSTALLED_VERIFIED`.
 
+Current content review, 20 October 2026: `READY_TO_PUBLISH` locally;
+workflow `APPROVED` / `PROMOTED_LOCALLY`, not live.
+The user subsequently confirmed the manual check and instructed "create PR and
+approve it". Approval of the exact reviewed candidate is recorded; prepare,
+commit and push its release files on a dedicated PR branch and attempt the
+requested GitHub review. Merge and live deployment are separate from this PR
+delivery instruction.
+The user requested review and revision after updating the Evidence Bank on
+19 October. Prepare and verify a public-only page/CV candidate using the existing
+workflow. This authorises local content work; historical release approvals apply
+only to their recorded candidates. Preserve the released root dataset and visitor
+files until the revised candidate receives release authority. Do not change
+canonical records or the installed watcher as part of this content review.
+
 ## Objective
 
 Update Hao Yu's existing academic website from the canonical CV infrastructure,
@@ -156,6 +170,9 @@ decision. `DONE` requires every listed acceptance criterion to pass with evidenc
 | W09 | Publish and verify release 1 | W08; deployment authority | DONE | Release 4537e5e deployed successfully; all nine live visitor files match; deployment report records amended gate and deferred browser QA |
 | W10 | Introduce repeatable content build and validation | W08; initial refresh accepted; implementation instruction | DONE | P01–P05 verified; 31 regressions, real-source NO_CHANGE, immutable review/gate and operator guide; 2026-10-06 acceptance report |
 | W11 | Verify release 2 and document routine updates | W10; publication authority for live checks | DONE | W11-A/B/C and P06-A–D verified; PR #2 merged, Pages run 37454512658 successful, exact live assets/PDF/browser PASS; release-2 deployment report |
+| R01 | Review 19 October evidence and revise public wording | Current canonical sources | DONE | content/proposals/2026-10-20.json; W01-A–D, W02-C/D, W03-A/C, W04-C/E PASS; 20 October content-review report |
+| R02 | Build and verify revised page and public CV | R01 | DONE | W06-A/B, W08-A/B/D/E PASS; two-page PDF visual review, browser widths/keyboard/zoom and 199-field coverage; report/checks JSON |
+| R03 | Publish and verify revised candidate | R02; current release authority | IN_PROGRESS | Candidate approved and promoted locally for authorised PR delivery; merge/live verification remain pending |
 
 ## Acceptance criteria
 
@@ -656,6 +673,52 @@ completes at W08. Release 2 completes at W11 with its readiness/live status stat
   test and documentation files. Push revision comparison and PR identity follow
   the commit and are verified in the chat handoff; they are not asserted here in
   advance. P07 remains DONE; P08/W07 DEFERRED. Private state stays outside Git.
+
+### 20 October 2026 — R01/R02 evidence refresh and checked candidate
+
+- Scope: review/revise website content after the 19 October Evidence Bank update.
+  Initial tree clean on `implementation/p07` at `9c1ce7d`. Local candidate work;
+  no canonical writes, installed-watcher changes, staging, commit, push or release.
+- Rechecked five canonical sources and primary thesis contribution/salt-control
+  passages. Only EB's declared-source hash changed. Public revisions foreground
+  independent SEM/EDS, precise operando image-analysis attribution, practical SEM
+  training, salt-control elemental mapping and collaborative imaging support.
+- Files: public proposal under `content/proposals/`; content decisions and this
+  plan; `docs/releases/2026-10-20-content-review.md` and `-checks.json`.
+- W01-A–D/W02-C/D/W03-A/C/W04-C/E → source/claim/privacy review → PASS.
+  W06-A/B → generated public PDF, content/bounds/hyperlinks plus Poppler page
+  inspection → PASS, two pages. W08-A/B/D/E → HTML/content, seven navigation
+  regressions, project-path HTTP, browser at 375/768/1440, native 200% zoom,
+  reduced motion/no-JS and evidence review → PASS. Contract regressions 15/15 and
+  proposal 199-field coverage PASS. Sources, exact candidate and root-preservation
+  hashes PASS. Commands, hashes, screenshots and retry details are in the report.
+- Full accessibility audit and unchanged external destinations NOT RUN; W07
+  remains DEFERRED. W09/R03 NOT RUN; R03 depends on current release authority.
+  W/P historical completion and deployment claims remain tied to their releases.
+- Candidate `4eb30765381846dcc432ba923fe139623d700d372476e8f0a1c8f7ec51bb373f`.
+  R01/R02 DONE; local READY_TO_PUBLISH, workflow READY_FOR_REVIEW.
+  Root content/visitor files retain the previous release. Next action is user
+  review of the candidate; release uses its private manual-review state and
+  README's exact-candidate approval/gate/promotion workflow.
+
+### 20 October 2026 — approved candidate and PR delivery
+
+- User confirmed manual checking and requested PR creation and approval.
+  Recorded the exact statement against candidate
+  `4eb30765381846dcc432ba923fe139623d700d372476e8f0a1c8f7ec51bb373f`.
+- Fetched origin; the earlier P07 PR #3 is already merged. Current main
+  `5a83cf1` has the same tree as the candidate's implementation baseline.
+  Created `content/evidence-refresh-2026-10-20` from current main, preserving
+  local review records.
+- Exact-candidate approval gate PASS; source/runtime/input/output bindings
+  revalidated. Promoted the existing candidate bytes into root visitor files and
+  dataset, preserving a private rollback snapshot. Refreshed field ownership
+  provenance for the changed public records; no schema or generator change.
+- Local approval is the user's content decision. A GitHub approving review is a
+  separate operation and is not asserted before GitHub accepts it. PR identity,
+  remote revision and review outcome are verified after push in the handoff.
+- R01/R02 remain DONE. R03 IN_PROGRESS at PR delivery; no merge or live deployment
+  is claimed. Canonical files and installed-watcher state remain unchanged.
 
 ## Reusable continuation prompt
 

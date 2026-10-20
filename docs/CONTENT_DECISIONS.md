@@ -41,3 +41,15 @@ to a final title. No unsupported claim is converted into a verified claim here.
 
 The public CV is agent-reviewed for content and visual layout, not a declaration
 that the user has submitted or personally approved it. Review it before deployment.
+
+## 20 October 2026 — revised candidate
+
+The [content review](releases/2026-10-20-content-review.md) and
+[public-only proposal](../content/proposals/2026-10-20.json) supersede selected
+decisions above for the pending candidate, not the released root snapshot.
+After the user's manual review and PR instruction, that exact candidate has been
+approved and promoted into root files for PR delivery; live deployment is pending.
+Independent ex-situ SEM/SEM-EDS and thesis-specific operando image analysis now
+have precise evidence. Practical SEM training and NanoDTC demonstrations can be
+described within the applicant-confirmed scope; other teaching/service holds
+remain. The review records exact attribution, sources, exclusions and checks.

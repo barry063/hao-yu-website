@@ -5,6 +5,12 @@ Contract: [public-content.schema.json](../schemas/public-content.schema.json).
 Field register: [field-ownership.json](../schemas/field-ownership.json), 199 fields.
 Acceptance evidence: [P01–P02 report](releases/2026-10-05-p01-p02.md).
 
+20 October 2026 revision: the approved evidence-refresh candidate is promoted
+locally for PR delivery. The 199-field shape is unchanged; the field register
+now reflects updated EB locators and applicant-confirmed microscopy/mentoring
+provenance. See the [content review](releases/2026-10-20-content-review.md).
+Historical baseline descriptions below remain the P01 design record.
+
 ## Ownership and precedence
 
 `content/site.json` version 2 is a reviewed public derivative, never a second

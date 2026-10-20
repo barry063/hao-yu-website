@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "release_date": "2026-10-06",
+  "release_date": "2026-10-20",
   "sources": [
     {
       "id": "EB",
       "path": "1 Master Academic CV/Evidence_Bank.md",
-      "sha256": "3c42d0e6cea1f8468e9142347be7487911cf871394383af0c80ae2c94bb63e65"
+      "sha256": "e0934cab5a378f9766660b339587188bdcc9d38bcd85c6433817282fec59834f"
     },
     {
       "id": "PUB",
@@ -152,10 +152,10 @@
       "id": "J2",
       "selected": true,
       "provenance": {
-        "source": "EB §§3.4,5.1; PUB J2",
+        "source": "EB §§3.4,5.1,7.2.1; PUB J2; CONTRIB J2",
         "evidence_status": "APPLICANT_CONFIRMED",
         "visibility": "PUBLIC",
-        "reviewed": "2026-10-05"
+        "reviewed": "2026-10-20"
       },
       "kind": "ARTICLE",
       "status": "PUBLISHED",
@@ -163,7 +163,7 @@
       "year": 2025,
       "authors": "Sunvir Sahota, Irina Chircă, Oliver J. Burton, Hao Yu, Max Rimmer, Jinfeng Yang, Kyungseo Park, Arthur Summers, Siddika Mertdinc-Ulkuseven, Matthew Lindley, Sarah J. Haigh and Stephan Hofmann.",
       "venue": "ACS Applied Nano Materials 8(15), 7608–7615.",
-      "contribution": "Co-author. Raman and SEM data acquisition and analysis.",
+      "contribution": "Co-author. Raman/SEM acquisition and analysis; SEM imaging on charging-prone substrates.",
       "links": [
         {
           "label": "DOI",
@@ -419,16 +419,16 @@
       "id": "PROFILE",
       "selected": true,
       "provenance": {
-        "source": "EB §§1.1,2.1; PROFILE §2",
+        "source": "EB §§1.2,2.1,3.1–3.3,7.2.1,7.2.3",
         "evidence_status": "APPLICANT_CONFIRMED",
         "visibility": "PUBLIC",
-        "reviewed": "2026-10-05"
+        "reviewed": "2026-10-20"
       },
       "destination": "top",
       "title": "Materials growth, understood through measurement.",
       "dates": "",
       "text": [
-        "I study how precursor chemistry and confined vapour transport shape low-dimensional materials. My work connects close-space growth experiments with Raman and photoluminescence spectroscopy, collaborative characterisation, and Python analysis."
+        "I study how precursor chemistry and confined vapour transport shape low-dimensional materials. My work connects close-space growth experiments with independent SEM/EDS characterisation, Raman and photoluminescence spectroscopy, and Python analysis."
       ],
       "links": [],
       "output_id": null
@@ -437,18 +437,18 @@
       "id": "ABOUT",
       "selected": true,
       "provenance": {
-        "source": "EB §§1.1,2.1,3.1–3.6,4; PROFILE §2",
+        "source": "EB §§1.1,2.1,3.1–3.6,4,7.2.1–7.2.3,8",
         "evidence_status": "APPLICANT_CONFIRMED",
         "visibility": "PUBLIC",
-        "reviewed": "2026-10-05"
+        "reviewed": "2026-10-20"
       },
       "destination": "about",
       "title": "Research profile",
       "dates": "",
       "text": [
         "I am a {{profile.role_short}} in the {{profile.group}} at {{profile.institution_short}}, working on tungsten oxides and transition-metal dichalcogenides. My doctoral research examines how source chemistry, source–substrate geometry and processing conditions influence material formation.",
-        "My approach combines controlled growth experiments with quantitative Raman/PL analysis and complementary evidence from collaborators. I also develop RamanPL_2D to turn spectroscopy datasets into fitted parameters, spatial maps and structured outputs.",
-        "Earlier work at Oxford connected photonic-device measurements with design and simulation. Alongside research, I have experience in technology assessment and deep-tech commercialisation."
+        "I combine controlled growth experiments with independent ex-situ SEM imaging, SEM-EDS elemental analysis and quantitative Raman/PL measurements. I also analyse collaborator-acquired operando SEM images and develop RamanPL_2D to turn spectroscopy datasets into fitted parameters, spatial maps and structured outputs.",
+        "Alongside research, I deliver practical SEM training to new PhD researchers, support student imaging projects and have demonstrated SEM to two NanoDTC cohorts. Earlier work at Oxford connected photonic-device measurements with design and simulation; my broader experience includes technology assessment and deep-tech commercialisation."
       ],
       "links": [],
       "output_id": null
@@ -475,16 +475,16 @@
       "id": "THEME-2",
       "selected": true,
       "provenance": {
-        "source": "EB §§2.1,3.1,3.4–3.5",
+        "source": "EB §§3.1,3.4–3.5,7.2.1,7.2.3",
         "evidence_status": "APPLICANT_CONFIRMED",
         "visibility": "PUBLIC",
-        "reviewed": "2026-10-05"
+        "reviewed": "2026-10-20"
       },
       "destination": "research",
-      "title": "Spectroscopy and characterisation",
+      "title": "Microscopy and spectroscopy",
       "dates": "",
       "text": [
-        "Raman/PL measurements and spatial mapping, interpreted alongside collaborative structural and chemical characterisation to connect processing with material response."
+        "Independent SEM imaging and SEM-EDS elemental analysis, combined with Raman/PL mapping and collaborative structural and chemical evidence, connect processing conditions with morphology, composition and optical response."
       ],
       "links": [],
       "output_id": null
@@ -511,18 +511,18 @@
       "id": "PROJECT-CSS",
       "selected": true,
       "provenance": {
-        "source": "EB §3.1; PUB J1",
-        "evidence_status": "VERIFIED",
+        "source": "EB §§3.1,7.2.3; PUB J1",
+        "evidence_status": "APPLICANT_CONFIRMED",
         "visibility": "PUBLIC",
-        "reviewed": "2026-10-05"
+        "reviewed": "2026-10-20"
       },
       "destination": "projects",
       "title": "Close-space growth of tungsten oxide and sulphide nanostructures",
       "dates": "Feb 2023 – Jan 2025",
       "text": [
         "How does a confined vapour geometry influence oxide and sulphide nanostructure formation?",
-        "I designed and conducted CSS-facilitated CVD growth and Raman/PL measurements, and co-wrote the first-author paper with Stephan Hofmann. The study connects precursor delivery and growth conditions with material formation.",
-        "Operando SEM, TEM/EDX and XPS measurements in this study were performed by collaborators."
+        "I designed and conducted CSS-facilitated CVD growth and Raman/PL measurements, and co-wrote the first-author paper with Stephan Hofmann. My thesis also records my ex-situ SEM measurements and analysis of collaborator-acquired operando SEM images.",
+        "Operando SEM, TEM/EDX and XPS acquisition were performed by collaborators. Together, the growth and characterisation evidence links precursor delivery and growth conditions with material formation."
       ],
       "links": [
         {
@@ -536,17 +536,17 @@
       "id": "PROJECT-WS2",
       "selected": true,
       "provenance": {
-        "source": "EB §§2.1,3.2,5.2; PROFILE §3",
+        "source": "EB §§2.1,3.2,5.2,7.2.1,7.2.3",
         "evidence_status": "APPLICANT_CONFIRMED",
         "visibility": "PUBLIC",
-        "reviewed": "2026-10-05"
+        "reviewed": "2026-10-20"
       },
       "destination": "projects",
       "title": "NaCl-assisted close-space growth of WS₂",
       "dates": "Jun 2025 – Apr 2026",
       "text": [
         "How can source treatment and source–substrate geometry guide planar WS₂ growth?",
-        "I investigated salt-assisted close-space growth using paired source–substrate analysis and Raman/PL measurements to examine precursor evolution alongside deposition outcomes.",
+        "I investigated salt-assisted close-space growth through paired source–substrate analysis and Raman/PL measurements. I independently acquired SEM-EDS spectra and elemental maps on NaCl-treated SiO₂/Si controls to verify salt deposition before growth.",
         "This work forms part of my {{qualification:EDU-CAM:thesis}}; a first-author manuscript is {{status:P1:lower}}."
       ],
       "links": [],
@@ -559,14 +559,14 @@
         "source": "EB §§3.5,5.2; PUB S1",
         "evidence_status": "APPLICANT_CONFIRMED",
         "visibility": "PUBLIC",
-        "reviewed": "2026-10-05"
+        "reviewed": "2026-10-20"
       },
       "destination": "projects",
       "title": "Optical characterisation of directly written MoS₂",
       "dates": "Jun – Aug 2025",
       "text": [
         "How can spectroscopy assess the layer structure and optical response of directly written 2D material?",
-        "I contributed Raman and photoluminescence measurements and analysis to a collaborative closed-loop crystal-layer writing study. The growth platform and complementary measurements were led by other co-authors.",
+        "I contributed Raman/PL measurements and mapping to a collaborative closed-loop MoS₂ writing study, assessing local variations in layer structure and optical response. Other co-authors led the growth platform and complementary measurements.",
         "The co-authored manuscript is {{status:S1:lower}}."
       ],
       "links": [],
@@ -631,7 +631,7 @@
     "url": "https://barry063.github.io/hao-yu-website/",
     "repository": "https://github.com/barry063/hao-yu-website",
     "title": "{{profile.name}} — Low-dimensional materials & spectroscopy",
-    "description": "{{profile.name}}, {{profile.role}} at {{profile.institution_short}}. Vapour-phase synthesis of low-dimensional materials, Raman/PL spectroscopy and Python analysis. {{event:THESIS-SUBMITTED:sentence}}",
+    "description": "{{profile.name}}, {{profile.role}} at {{profile.institution_short}}. Vapour-phase synthesis of low-dimensional materials, electron microscopy, Raman/PL spectroscopy and Python analysis. {{event:THESIS-SUBMITTED:sentence}}",
     "cv": "assets/Hao_Yu_CV.pdf",
     "portrait": "assets/hao-yu-portrait.jpg",
     "social": {
