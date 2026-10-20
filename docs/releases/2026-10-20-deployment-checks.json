@@ -1,0 +1,106 @@
+{
+  "state": "LIVE_VERIFIED",
+  "candidate": "4eb30765381846dcc432ba923fe139623d700d372476e8f0a1c8f7ec51bb373f",
+  "commit": "80d851690d647c4f4c4499a3599fd24217d10578",
+  "run_id": 39403364494,
+  "run_url": "https://github.com/barry063/hao-yu-website/actions/runs/39403364494",
+  "target": "https://barry063.github.io/hao-yu-website/",
+  "checks": [
+    {
+      "file": ".nojekyll",
+      "result": "PASS",
+      "method": "COMMIT"
+    },
+    {
+      "file": "index.html",
+      "result": "PASS",
+      "method": "COMMIT_AND_LIVE"
+    },
+    {
+      "file": "styles.css",
+      "result": "PASS",
+      "method": "COMMIT_AND_LIVE"
+    },
+    {
+      "file": "script.js",
+      "result": "PASS",
+      "method": "COMMIT_AND_LIVE"
+    },
+    {
+      "file": "favicon.svg",
+      "result": "PASS",
+      "method": "COMMIT_AND_LIVE"
+    },
+    {
+      "file": "robots.txt",
+      "result": "PASS",
+      "method": "COMMIT_AND_LIVE"
+    },
+    {
+      "file": "sitemap.xml",
+      "result": "PASS",
+      "method": "COMMIT_AND_LIVE"
+    },
+    {
+      "file": "assets/Hao_Yu_CV.pdf",
+      "result": "PASS",
+      "method": "COMMIT_AND_LIVE"
+    },
+    {
+      "file": "assets/hao-yu-portrait.jpg",
+      "result": "PASS",
+      "method": "COMMIT_AND_LIVE"
+    },
+    {
+      "file": "assets/og-image.png",
+      "result": "PASS",
+      "method": "COMMIT_AND_LIVE"
+    }
+  ],
+  "browser": {
+    "browser": "155.0.8059.85",
+    "checks": [
+      {
+        "width": 375,
+        "result": "PASS",
+        "keyboard": "PASS",
+        "reduced_motion": "PASS"
+      },
+      {
+        "width": 768,
+        "result": "PASS",
+        "keyboard": "PASS",
+        "reduced_motion": "PASS"
+      },
+      {
+        "width": 1440,
+        "result": "PASS",
+        "keyboard": "PASS",
+        "reduced_motion": "PASS"
+      },
+      {
+        "width": 1440,
+        "zoom_200_percent": "PASS",
+        "result": "PASS",
+        "keyboard": "PASS",
+        "reduced_motion": "PASS",
+        "anchors": "PASS",
+        "dimensions": {
+          "inner": 712,
+          "outer": 1440,
+          "dpr": 2,
+          "cssZoom": "1",
+          "overflow": false
+        },
+        "capture_method": "Physical viewport via CDP after keyboard navigation and paint; CSS zoom remains 1"
+      }
+    ],
+    "no_js": "PASS",
+    "full_accessibility_audit": "NOT RUN"
+  },
+  "verified_at": "2026-10-20T09:50:04.612Z",
+  "pr": "https://github.com/barry063/hao-yu-website/pull/4",
+  "merge_method": "User-reported rebase and merge; merged state and commit verified through GitHub",
+  "visual_review": "PASS: live native-200-percent top and publications captures inspected",
+  "evidence": "tmp/qa/live-4eb30765381846dcc432ba923fe139623d700d372476e8f0a1c8f7ec51bb373f"
+}

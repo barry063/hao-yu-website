@@ -5,8 +5,9 @@ Plan version: 1.6. Release-1 milestone: `LIVE_CONTENT_VERIFIED_BROWSER_QA_DEFERR
 Workflow milestone: `P01_P06_COMPLETE_LIVE_VERIFIED`.
 Watcher milestone: `P07_COMPLETE_INSTALLED_VERIFIED`.
 
-Current content review, 20 October 2026: `READY_TO_PUBLISH` locally;
-workflow `APPROVED` / `PROMOTED_LOCALLY`, not live.
+Current content review, 20 October 2026: `LIVE_VERIFIED`.
+PR #4 was manually rebased and merged by the user. Deployment of `80d8516`
+passed exact-candidate live verification; R01–R03 are complete.
 The user subsequently confirmed the manual check and instructed "create PR and
 approve it". Approval of the exact reviewed candidate is recorded; prepare,
 commit and push its release files on a dedicated PR branch and attempt the
@@ -172,7 +173,7 @@ decision. `DONE` requires every listed acceptance criterion to pass with evidenc
 | W11 | Verify release 2 and document routine updates | W10; publication authority for live checks | DONE | W11-A/B/C and P06-A–D verified; PR #2 merged, Pages run 37454512658 successful, exact live assets/PDF/browser PASS; release-2 deployment report |
 | R01 | Review 19 October evidence and revise public wording | Current canonical sources | DONE | content/proposals/2026-10-20.json; W01-A–D, W02-C/D, W03-A/C, W04-C/E PASS; 20 October content-review report |
 | R02 | Build and verify revised page and public CV | R01 | DONE | W06-A/B, W08-A/B/D/E PASS; two-page PDF visual review, browser widths/keyboard/zoom and 199-field coverage; report/checks JSON |
-| R03 | Publish and verify revised candidate | R02; current release authority | IN_PROGRESS | Candidate approved and promoted locally for authorised PR delivery; merge/live verification remain pending |
+| R03 | Publish and verify revised candidate | R02; current release authority | DONE | User merged PR #4; W09-A–C PASS at 80d8516; Pages run 39403364494 and 2026-10-20 deployment checks |
 
 ## Acceptance criteria
 
@@ -727,6 +728,29 @@ completes at W08. Release 2 completes at W11 with its readiness/live status stat
   `Review Can not approve your own pull request`. The authenticated account and
   PR author are both `barry063`. Content approval remains recorded; formal PR
   approval needs a different reviewer account. No bypass or merge attempted.
+
+### 20 October 2026 — R03 merged and live verified
+
+- User reported manually rebasing and merging PR #4. GitHub confirms MERGED at
+  09:48:22 UTC, final commit `80d851690d647c4f4c4499a3599fd24217d10578`.
+  Clean local main fast-forwarded to origin/main.
+- `workflow-cli.mjs verify-live` with the exact approved candidate and merged
+  commit → LIVE_VERIFIED. W09-A: existing main/root Pages route and successful
+  deployment run `39403364494` PASS. W09-B: nine live visitor files and committed
+  `.nojekyll` match the candidate; text line endings normalised, binary files
+  including the CV compared exactly. Committed public dataset also matches.
+- W09-B/C: live Chrome 155.0.8059.85 checks PASS at 375/768/1440 pixels and
+  native 200% zoom, keyboard navigation, skip link, reduced motion, anchor
+  positions and no-JS operation. Live zoomed top/publications captures inspected.
+  Main/deployment revision rechecked after browser/network checks.
+- Evidence: `docs/releases/2026-10-20-deployment-checks.json`; local live
+  screenshots under `tmp/qa/live-<candidate>/`. Manual-review private published
+  baseline advanced only after successful verification; installed watcher state
+  remains unchanged.
+- R01–R03 DONE, LIVE_VERIFIED. Full accessibility audit W07 and optional P08
+  remain DEFERRED; no dependency blocks this content release. These verification
+  records are committed locally at the user's subsequent request for a clean
+  working tree; no additional push/deployment performed.
 
 ## Reusable continuation prompt
 
