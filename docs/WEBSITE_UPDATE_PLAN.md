@@ -719,6 +719,14 @@ completes at W08. Release 2 completes at W11 with its readiness/live status stat
   remote revision and review outcome are verified after push in the handoff.
 - R01/R02 remain DONE. R03 IN_PROGRESS at PR delivery; no merge or live deployment
   is claimed. Canonical files and installed-watcher state remain unchanged.
+- Delivery: [PR #4](https://github.com/barry063/hao-yu-website/pull/4) created
+  from `content/evidence-refresh-2026-10-20` to `main`; content commit `11e7b5a`.
+  Post-promotion `npm run check` PASS (seven navigation tests), contract suite
+  PASS (15 tests), exact visitor/data bytes PASS and staged whitespace PASS.
+  Requested GitHub approving review was attempted and rejected:
+  `Review Can not approve your own pull request`. The authenticated account and
+  PR author are both `barry063`. Content approval remains recorded; formal PR
+  approval needs a different reviewer account. No bypass or merge attempted.
 
 ## Reusable continuation prompt
 

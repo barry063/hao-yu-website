@@ -115,3 +115,12 @@ the original implementation baseline. The delivery branch is
 commit/push; the GitHub review outcome is distinct from local candidate approval.
 Canonical sources and the installed watcher remain unchanged. Live verification
 is pending a merge/deployment instruction.
+
+Delivery result: [PR #4](https://github.com/barry063/hao-yu-website/pull/4), content
+commit `11e7b5a`. Post-promotion HTML/content checks and seven navigation tests,
+15 contract tests, exact candidate-byte comparison and staged whitespace checks
+passed. GitHub rejected the requested approving review with
+`Review Can not approve your own pull request`: the connected account and PR
+author are both `barry063`. Local content approval is recorded, but no formal
+GitHub approval was submitted. That requires another reviewer account. The PR
+remains open; it has not been merged or deployed.
