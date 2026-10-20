@@ -1,0 +1,264 @@
+{
+  "date": "2026-10-20",
+  "state": "READY_FOR_REVIEW",
+  "local_milestone": "READY_TO_PUBLISH",
+  "candidate": "4eb30765381846dcc432ba923fe139623d700d372476e8f0a1c8f7ec51bb373f",
+  "target": "https://barry063.github.io/hao-yu-website/",
+  "baseline_commit": "9c1ce7db5e8df1062d585e56c1aba29efed36b27",
+  "sources": [
+    {
+      "id": "EB",
+      "path": "1 Master Academic CV/Evidence_Bank.md",
+      "sha256": "e0934cab5a378f9766660b339587188bdcc9d38bcd85c6433817282fec59834f"
+    },
+    {
+      "id": "PUB",
+      "path": "4 Publication list/Master_Publication_List.md",
+      "sha256": "fc76452713464119758fbe9fdadbd3516f176ad9a5c9bfb8f55370b6a1d45dd9"
+    },
+    {
+      "id": "CONTRIB",
+      "path": "4 Publication list/Publication_Contributions.json",
+      "sha256": "ae05ab7c15ee1f9a02b834af1b35d18e468bb56b3a604d8f4f488b7675abc876"
+    },
+    {
+      "id": "PROFILE",
+      "path": "3 Research Profile/Hao_Yu_Application_Evidence_Wording.md",
+      "sha256": "7337f5442b2445d7042c05099bdf983ca63f5a09f015def53682ef441790b9ba"
+    },
+    {
+      "id": "EXPORT",
+      "path": "1 Master Academic CV/Current_Export_Record.json",
+      "sha256": "90a10f9d7ad7367924d99e484902cfe04e1ac0367f4830c3f6851fd4a6696bc5"
+    }
+  ],
+  "primary_evidence": [
+    {
+      "source": "Thesis Chapter 3, contribution paragraph (line 40)",
+      "sha256": "eafe41d8c4c296bc19d322e4a0eef01b679cfdb428afd766857aa4faeb61fccb"
+    },
+    {
+      "source": "Thesis Chapter 4, salt-control subsection and figure caption (lines 248–257)",
+      "sha256": "eb38e4813c62795cfac785ec1fbe4d0735a84b4639198d1c53048cf602f521cd"
+    }
+  ],
+  "dataset_sha256": "3e21f3559e79f55579420ed1725fd35a3b65f907fa0ba65fff19ccaded63015f",
+  "outputs": {
+    ".nojekyll": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "index.html": "e540734219063d62c9b1f77a3e67c2b1ed82a67711ba27d93efb3ba4e8fe9db3",
+    "styles.css": "ca8344bf6244aba31ca0c6211e9fa3e0cadf2a0cb53c4b9ba5f16de063e8b5d7",
+    "script.js": "30be027c19866039d11ef3d3fe04c49b5d2df1f38b053cf92911f3eb0804cfdb",
+    "favicon.svg": "0ed347d5da206ffa193f82c372d6e9abc5d2be1813744cbbfa0211da4e17bd37",
+    "robots.txt": "5f76f3d777d3616e02b73917ce737d9f130097ef96be6deeb6aa9c11f5c9eb38",
+    "sitemap.xml": "f86cc56a0c74d6e10dcf48de5b92792c58bab69038650344f1b88737a056a6b9",
+    "assets/Hao_Yu_CV.pdf": "1624373d77f3f6178f7e9b85d41f426e515db0466734c65ade46f013caab690f",
+    "assets/hao-yu-portrait.jpg": "46303d6d9724e6a39504ec0d3cf4a1333e5bc2d6a98d7ae527c4bc0d25326280",
+    "assets/og-image.png": "19d42cc64c0751580ad51c7b0b2d9e846701010524d097918ffb401837dd0801"
+  },
+  "runtime": {
+    "node": "v24.14.1",
+    "python": "3.12.14",
+    "reportlab": "4.4.9",
+    "pillow": "12.3.0"
+  },
+  "changes": [
+    {
+      "field": "/outputs/J2/provenance/source",
+      "before": "EB §§3.4,5.1; PUB J2",
+      "after": "EB §§3.4,5.1,7.2.1; PUB J2; CONTRIB J2"
+    },
+    {
+      "field": "/outputs/J2/contribution",
+      "before": "Co-author. Raman and SEM data acquisition and analysis.",
+      "after": "Co-author. Raman/SEM acquisition and analysis; SEM imaging on charging-prone substrates."
+    },
+    {
+      "field": "/narratives/PROFILE/provenance/source",
+      "before": "EB §§1.1,2.1; PROFILE §2",
+      "after": "EB §§1.2,2.1,3.1–3.3,7.2.1,7.2.3"
+    },
+    {
+      "field": "/narratives/PROFILE/text",
+      "before": [
+        "I study how precursor chemistry and confined vapour transport shape low-dimensional materials. My work connects close-space growth experiments with Raman and photoluminescence spectroscopy, collaborative characterisation, and Python analysis."
+      ],
+      "after": [
+        "I study how precursor chemistry and confined vapour transport shape low-dimensional materials. My work connects close-space growth experiments with independent SEM/EDS characterisation, Raman and photoluminescence spectroscopy, and Python analysis."
+      ]
+    },
+    {
+      "field": "/narratives/ABOUT/provenance/source",
+      "before": "EB §§1.1,2.1,3.1–3.6,4; PROFILE §2",
+      "after": "EB §§1.1,2.1,3.1–3.6,4,7.2.1–7.2.3,8"
+    },
+    {
+      "field": "/narratives/ABOUT/text",
+      "before": [
+        "I am a {{profile.role_short}} in the {{profile.group}} at {{profile.institution_short}}, working on tungsten oxides and transition-metal dichalcogenides. My doctoral research examines how source chemistry, source–substrate geometry and processing conditions influence material formation.",
+        "My approach combines controlled growth experiments with quantitative Raman/PL analysis and complementary evidence from collaborators. I also develop RamanPL_2D to turn spectroscopy datasets into fitted parameters, spatial maps and structured outputs.",
+        "Earlier work at Oxford connected photonic-device measurements with design and simulation. Alongside research, I have experience in technology assessment and deep-tech commercialisation."
+      ],
+      "after": [
+        "I am a {{profile.role_short}} in the {{profile.group}} at {{profile.institution_short}}, working on tungsten oxides and transition-metal dichalcogenides. My doctoral research examines how source chemistry, source–substrate geometry and processing conditions influence material formation.",
+        "I combine controlled growth experiments with independent ex-situ SEM imaging, SEM-EDS elemental analysis and quantitative Raman/PL measurements. I also analyse collaborator-acquired operando SEM images and develop RamanPL_2D to turn spectroscopy datasets into fitted parameters, spatial maps and structured outputs.",
+        "Alongside research, I deliver practical SEM training to new PhD researchers, support student imaging projects and have demonstrated SEM to two NanoDTC cohorts. Earlier work at Oxford connected photonic-device measurements with design and simulation; my broader experience includes technology assessment and deep-tech commercialisation."
+      ]
+    },
+    {
+      "field": "/narratives/THEME-2/provenance/source",
+      "before": "EB §§2.1,3.1,3.4–3.5",
+      "after": "EB §§3.1,3.4–3.5,7.2.1,7.2.3"
+    },
+    {
+      "field": "/narratives/THEME-2/title",
+      "before": "Spectroscopy and characterisation",
+      "after": "Microscopy and spectroscopy"
+    },
+    {
+      "field": "/narratives/THEME-2/text",
+      "before": [
+        "Raman/PL measurements and spatial mapping, interpreted alongside collaborative structural and chemical characterisation to connect processing with material response."
+      ],
+      "after": [
+        "Independent SEM imaging and SEM-EDS elemental analysis, combined with Raman/PL mapping and collaborative structural and chemical evidence, connect processing conditions with morphology, composition and optical response."
+      ]
+    },
+    {
+      "field": "/narratives/PROJECT-CSS/provenance/source",
+      "before": "EB §3.1; PUB J1",
+      "after": "EB §§3.1,7.2.3; PUB J1"
+    },
+    {
+      "field": "/narratives/PROJECT-CSS/provenance/evidence_status",
+      "before": "VERIFIED",
+      "after": "APPLICANT_CONFIRMED"
+    },
+    {
+      "field": "/narratives/PROJECT-CSS/text",
+      "before": [
+        "How does a confined vapour geometry influence oxide and sulphide nanostructure formation?",
+        "I designed and conducted CSS-facilitated CVD growth and Raman/PL measurements, and co-wrote the first-author paper with Stephan Hofmann. The study connects precursor delivery and growth conditions with material formation.",
+        "Operando SEM, TEM/EDX and XPS measurements in this study were performed by collaborators."
+      ],
+      "after": [
+        "How does a confined vapour geometry influence oxide and sulphide nanostructure formation?",
+        "I designed and conducted CSS-facilitated CVD growth and Raman/PL measurements, and co-wrote the first-author paper with Stephan Hofmann. My thesis also records my ex-situ SEM measurements and analysis of collaborator-acquired operando SEM images.",
+        "Operando SEM, TEM/EDX and XPS acquisition were performed by collaborators. Together, the growth and characterisation evidence links precursor delivery and growth conditions with material formation."
+      ]
+    },
+    {
+      "field": "/narratives/PROJECT-WS2/provenance/source",
+      "before": "EB §§2.1,3.2,5.2; PROFILE §3",
+      "after": "EB §§2.1,3.2,5.2,7.2.1,7.2.3"
+    },
+    {
+      "field": "/narratives/PROJECT-WS2/text",
+      "before": [
+        "How can source treatment and source–substrate geometry guide planar WS₂ growth?",
+        "I investigated salt-assisted close-space growth using paired source–substrate analysis and Raman/PL measurements to examine precursor evolution alongside deposition outcomes.",
+        "This work forms part of my {{qualification:EDU-CAM:thesis}}; a first-author manuscript is {{status:P1:lower}}."
+      ],
+      "after": [
+        "How can source treatment and source–substrate geometry guide planar WS₂ growth?",
+        "I investigated salt-assisted close-space growth through paired source–substrate analysis and Raman/PL measurements. I independently acquired SEM-EDS spectra and elemental maps on NaCl-treated SiO₂/Si controls to verify salt deposition before growth.",
+        "This work forms part of my {{qualification:EDU-CAM:thesis}}; a first-author manuscript is {{status:P1:lower}}."
+      ]
+    },
+    {
+      "field": "/narratives/PROJECT-MOS2/text",
+      "before": [
+        "How can spectroscopy assess the layer structure and optical response of directly written 2D material?",
+        "I contributed Raman and photoluminescence measurements and analysis to a collaborative closed-loop crystal-layer writing study. The growth platform and complementary measurements were led by other co-authors.",
+        "The co-authored manuscript is {{status:S1:lower}}."
+      ],
+      "after": [
+        "How can spectroscopy assess the layer structure and optical response of directly written 2D material?",
+        "I contributed Raman/PL measurements and mapping to a collaborative closed-loop MoS₂ writing study, assessing local variations in layer structure and optical response. Other co-authors led the growth platform and complementary measurements.",
+        "The co-authored manuscript is {{status:S1:lower}}."
+      ]
+    },
+    {
+      "field": "/presentation/description",
+      "before": "{{profile.name}}, {{profile.role}} at {{profile.institution_short}}. Vapour-phase synthesis of low-dimensional materials, Raman/PL spectroscopy and Python analysis. {{event:THESIS-SUBMITTED:sentence}}",
+      "after": "{{profile.name}}, {{profile.role}} at {{profile.institution_short}}. Vapour-phase synthesis of low-dimensional materials, electron microscopy, Raman/PL spectroscopy and Python analysis. {{event:THESIS-SUBMITTED:sentence}}"
+    }
+  ],
+  "checks": [
+    {
+      "id": "HTML_CONTENT_NAVIGATION_HTTP",
+      "result": "PASS"
+    },
+    {
+      "id": "PUBLIC_PDF",
+      "result": "PASS"
+    },
+    {
+      "id": "BROWSER_KEYBOARD_ZOOM_MOTION",
+      "result": "PASS",
+      "evidence": {
+        "browser": "155.0.8059.85",
+        "checks": [
+          {
+            "width": 375,
+            "result": "PASS",
+            "keyboard": "PASS",
+            "reduced_motion": "PASS"
+          },
+          {
+            "width": 768,
+            "result": "PASS",
+            "keyboard": "PASS",
+            "reduced_motion": "PASS"
+          },
+          {
+            "width": 1440,
+            "result": "PASS",
+            "keyboard": "PASS",
+            "reduced_motion": "PASS"
+          },
+          {
+            "width": 1440,
+            "zoom_200_percent": "PASS",
+            "result": "PASS",
+            "keyboard": "PASS",
+            "reduced_motion": "PASS",
+            "anchors": "PASS",
+            "dimensions": {
+              "inner": 712,
+              "outer": 1440,
+              "dpr": 2,
+              "cssZoom": "1",
+              "overflow": false
+            },
+            "capture_method": "Physical viewport via CDP after keyboard navigation and paint; CSS zoom remains 1"
+          }
+        ],
+        "no_js": "PASS",
+        "full_accessibility_audit": "NOT RUN"
+      }
+    }
+  ],
+  "additional_checks": {
+    "contract_regressions": "PASS: 15/15",
+    "navigation_regressions": "PASS: 7/7",
+    "proposal_field_coverage": "PASS: 199 fields",
+    "source_and_candidate_integrity": "PASS",
+    "released_root_unchanged": "PASS",
+    "pdf_visual": "PASS: both pages rendered with Poppler and inspected",
+    "browser_visual": "PASS: desktop overview, mobile/tablet content, native 200% top/projects inspected",
+    "privacy_review": "PASS: public wording and source locators only",
+    "external_links": "NOT RUN: destinations unchanged",
+    "full_accessibility_audit": "NOT RUN",
+    "publication": "NOT RUN: no release instruction"
+  },
+  "limitations": [
+    "In-app browser bridge unavailable; existing repository headless Chrome QA used.",
+    "Initial localhost HTTP check failed with sandbox EACCES; approved execution outside sandbox passed.",
+    "Initial draft overflowed CV honours onto a third page; shortened J2 contribution, rebuilt and verified two pages."
+  ],
+  "evidence": {
+    "package": "tmp/candidates/4eb30765381846dcc432ba923fe139623d700d372476e8f0a1c8f7ec51bb373f",
+    "screenshots": "tmp/qa/4eb30765381846dcc432ba923fe139623d700d372476e8f0a1c8f7ec51bb373f",
+    "pdf_pages": "tmp/pdf-review-2026-10-20"
+  }
+}
