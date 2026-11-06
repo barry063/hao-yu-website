@@ -4,12 +4,14 @@ Created: 5 October 2026. Baseline: website commit `2c3ba49`.
 Plan version: 1.7. Release-1 milestone: `LIVE_CONTENT_VERIFIED_BROWSER_QA_DEFERRED`.
 Workflow milestone: `P01_P06_COMPLETE_LIVE_VERIFIED`.
 Watcher milestone: `P07_COMPLETE_INSTALLED_VERIFIED`.
+November content milestone: `LIVE_VERIFIED`; N01–N04 DONE.
 
 Current release instruction, 6 November 2026: after delivery of the checked
 candidate and identification of N04 as the remaining publication step, the user
 said “ok, now let's proceed to the next round”. Proceed with exact-candidate
 approval, PR delivery, merge/publication and live verification through the existing
-GitHub Pages main/root route. N04 is IN_PROGRESS; no new source or content changes.
+GitHub Pages main/root route. N04 is DONE: PR #5 merged, deployed and verified.
+See [the November deployment report](releases/2026-11-06-deployment.md).
 
 Previous implementation instruction, 6 November 2026: the user requested implementation
 of the content update and selected the newly refreshed four-page master CV as
@@ -195,7 +197,7 @@ decision. `DONE` requires every listed acceptance criterion to pass with evidenc
 | N01 | Track November evidence changes and propose content updates | Current sources and released inventory | DONE | N01-A–C PASS; November content plan and planning-checks JSON; planning only |
 | N02 | Prepare November public content candidate | N01; instruction to implement | DONE | November proposal; source/claim/privacy review PASS; latest Oxford/poster evidence and 232-field coverage |
 | N03 | Generate and verify November website and public CV | N02 | DONE | W06/W08/P05-D checks PASS; four-page master derivative, 58 regressions plus 18 affected checks; November verification report |
-| N04 | Deliver/publish and verify November candidate | N03; applicable release authority | IN_PROGRESS | Current go-ahead recorded for exact November candidate; PR, deployment and live verification pending |
+| N04 | Deliver/publish and verify November candidate | N03; applicable release authority | DONE | W09-A–C and P06 exact-release checks PASS; PR #5 merged at b14bb3e; Pages run 42274214563; November deployment report/checks |
 
 ## Acceptance criteria
 
@@ -838,6 +840,32 @@ completes at W08. Release 2 completes at W11 with its readiness/live status stat
   Ten visitor hashes, dataset/register byte equality, five source/two master
   hashes and changed-file exposure/whitespace checks PASS. Canonical sources
   remain unchanged. W08-A/B/D/E rechecked; W09-A–C await actual deployment.
+
+### 6 November 2026 — N04 merged and live verified
+
+- [PR #5](https://github.com/barry063/hao-yu-website/pull/5) delivered commit
+  `c5fa1a33c73c5235bb7cda6441414d22d258fae7`; GitHub reported CLEAN/MERGEABLE,
+  with no pending checks. Normal merge preserved the exact expected head and
+  produced `b14bb3e7844f31fb7696bab3dd205df4e3e45937` at 18:49:42 UTC.
+  Connector write permission was unavailable; used existing Git credentials in
+  memory through GitHub CLI. No new credential or review bypass was introduced.
+- W09-A–C/P06-A–C → `workflow-cli.mjs verify-live` → LIVE_VERIFIED. Existing
+  main/root hosting and successful Pages run `42274214563` confirmed. Nine live
+  visitor files, committed `.nojekyll` and public dataset match the approved
+  candidate; binaries exact, text line endings normalised. Public CV hash matches.
+- Live Chrome 157.0.8103.38 → 375/768/1440 pixels, keyboard/skip/mobile menu,
+  anchor positions, reduced motion, no-JS and native 200% zoom → PASS.
+  Zoomed hero/publications screenshots visually inspected. Main/deployment
+  revision rechecked after browser/network checks. Private published baseline
+  advanced only after successful verification.
+- P06-D → `rollback({dryRun:true})` → ROLLBACK_CHECKED for the actual pre-release
+  backup. Five canonical source/two master hashes unchanged. Evidence:
+  `releases/2026-11-06-deployment.md` and `-checks.json`; screenshots remain in
+  ignored `tmp/qa/live-<candidate>/`. Installed watcher was not reconfigured.
+- N01–N04 DONE/LIVE_VERIFIED. W07 full accessibility audit and optional P08 remain
+  DEFERRED; unchanged external destinations NOT RUN. No dependency blocks this
+  release. Commit/push this documentation-only follow-up, then verify its Pages
+  deployment against the same exact candidate before the final handoff.
 
 ## Reusable continuation prompt
 

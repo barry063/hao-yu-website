@@ -1,0 +1,186 @@
+{
+  "date": "2026-11-06",
+  "verified_at_utc": "2026-11-06T18:50:43Z",
+  "tasks": {
+    "N01": "DONE",
+    "N02": "DONE",
+    "N03": "DONE",
+    "N04": "DONE"
+  },
+  "state": "LIVE_VERIFIED",
+  "candidate": "07902d3ccd18204ded129d68dfd5171c6e6fc056c845e4d22a5a5fdaf59e807b",
+  "commit": "b14bb3e7844f31fb7696bab3dd205df4e3e45937",
+  "run_id": 42274214563,
+  "run_url": "https://github.com/barry063/hao-yu-website/actions/runs/42274214563",
+  "target": "https://barry063.github.io/hao-yu-website/",
+  "checks": [
+    {
+      "file": ".nojekyll",
+      "result": "PASS",
+      "method": "COMMIT"
+    },
+    {
+      "file": "index.html",
+      "result": "PASS",
+      "method": "COMMIT_AND_LIVE"
+    },
+    {
+      "file": "styles.css",
+      "result": "PASS",
+      "method": "COMMIT_AND_LIVE"
+    },
+    {
+      "file": "script.js",
+      "result": "PASS",
+      "method": "COMMIT_AND_LIVE"
+    },
+    {
+      "file": "favicon.svg",
+      "result": "PASS",
+      "method": "COMMIT_AND_LIVE"
+    },
+    {
+      "file": "robots.txt",
+      "result": "PASS",
+      "method": "COMMIT_AND_LIVE"
+    },
+    {
+      "file": "sitemap.xml",
+      "result": "PASS",
+      "method": "COMMIT_AND_LIVE"
+    },
+    {
+      "file": "assets/Hao_Yu_CV.pdf",
+      "result": "PASS",
+      "method": "COMMIT_AND_LIVE"
+    },
+    {
+      "file": "assets/hao-yu-portrait.jpg",
+      "result": "PASS",
+      "method": "COMMIT_AND_LIVE"
+    },
+    {
+      "file": "assets/og-image.png",
+      "result": "PASS",
+      "method": "COMMIT_AND_LIVE"
+    }
+  ],
+  "browser": {
+    "browser": "157.0.8103.38",
+    "checks": [
+      {
+        "width": 375,
+        "result": "PASS",
+        "keyboard": "PASS",
+        "reduced_motion": "PASS"
+      },
+      {
+        "width": 768,
+        "result": "PASS",
+        "keyboard": "PASS",
+        "reduced_motion": "PASS"
+      },
+      {
+        "width": 1440,
+        "result": "PASS",
+        "keyboard": "PASS",
+        "reduced_motion": "PASS"
+      },
+      {
+        "width": 1440,
+        "zoom_200_percent": "PASS",
+        "result": "PASS",
+        "keyboard": "PASS",
+        "reduced_motion": "PASS",
+        "anchors": "PASS",
+        "dimensions": {
+          "inner": 711,
+          "outer": 1440,
+          "dpr": 2,
+          "cssZoom": "1",
+          "overflow": false
+        },
+        "capture_method": "Physical viewport via CDP after keyboard navigation and paint; CSS zoom remains 1"
+      }
+    ],
+    "no_js": "PASS",
+    "full_accessibility_audit": "NOT RUN"
+  },
+  "pr": "https://github.com/barry063/hao-yu-website/pull/5",
+  "content_commit": "c5fa1a33c73c5235bb7cda6441414d22d258fae7",
+  "acceptance": [
+    "W06-A",
+    "W06-B",
+    "W08-A",
+    "W08-B",
+    "W08-D",
+    "W08-E",
+    "W09-A",
+    "W09-B",
+    "W09-C",
+    "P06-A",
+    "P06-B",
+    "P06-C",
+    "P06-D"
+  ],
+  "sources": [
+    {
+      "id": "EB",
+      "path": "1 Master Academic CV/Evidence_Bank.md",
+      "sha256": "1df8c61235c3238ac50e985588f7c6d94caa49c96194878e835b5e65304eb4d8"
+    },
+    {
+      "id": "PUB",
+      "path": "4 Publication list/Master_Publication_List.md",
+      "sha256": "ac01de99f3ebf343b36dc11b4416c34748332283a0ecc56731941b15542f8a72"
+    },
+    {
+      "id": "CONTRIB",
+      "path": "4 Publication list/Publication_Contributions.json",
+      "sha256": "8f0015b0774d94dc3769a68c2b64cbbdf1654b19aa1f4a4543c7e0950ab9f74a"
+    },
+    {
+      "id": "PROFILE",
+      "path": "3 Research Profile/Hao_Yu_Application_Evidence_Wording.md",
+      "sha256": "5fd5823bb0585b563563acc9cac325d2ae375746eef2ccb15113c02d5d603ff0"
+    },
+    {
+      "id": "EXPORT",
+      "path": "1 Master Academic CV/Current_Export_Record.json",
+      "sha256": "16fe126b7a5ff784f02e9d08a2109c0557097bba278efa3682f24ac5ef7472d3"
+    }
+  ],
+  "outputs": {
+    ".nojekyll": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "index.html": "521ac9f22ceb211b753b2f3eae79ae59913a1dcba56eb9c4944ba6feb0c75183",
+    "styles.css": "ca8344bf6244aba31ca0c6211e9fa3e0cadf2a0cb53c4b9ba5f16de063e8b5d7",
+    "script.js": "30be027c19866039d11ef3d3fe04c49b5d2df1f38b053cf92911f3eb0804cfdb",
+    "favicon.svg": "0ed347d5da206ffa193f82c372d6e9abc5d2be1813744cbbfa0211da4e17bd37",
+    "robots.txt": "5f76f3d777d3616e02b73917ce737d9f130097ef96be6deeb6aa9c11f5c9eb38",
+    "sitemap.xml": "e2fa2e477f3549ac67cfe574666bdc09207fbc5e595f4d5ac14cad77f2aea428",
+    "assets/Hao_Yu_CV.pdf": "5c3f21f01a544daa8e9b78a07a25d7561c3f0f9ebfbed1fe3680c76a1eccff02",
+    "assets/hao-yu-portrait.jpg": "46303d6d9724e6a39504ec0d3cf4a1333e5bc2d6a98d7ae527c4bc0d25326280",
+    "assets/og-image.png": "19d42cc64c0751580ad51c7b0b2d9e846701010524d097918ffb401837dd0801"
+  },
+  "additional_checks": {
+    "post_promotion_content": "PASS: 30 records, 24 anchors",
+    "navigation": "PASS: 7/7",
+    "contract": "PASS: 15/15",
+    "field_ownership": "PASS: 232/232",
+    "public_cv": "PASS: four pages, reviewed bytes, shared facts/statuses, links, privacy and bounds",
+    "visual_live": "PASS: native 200% hero/publications captures inspected",
+    "source_master_hash_preservation": "PASS",
+    "exposure_and_whitespace": "PASS",
+    "rollback_dry_run": "PASS: ROLLBACK_CHECKED"
+  },
+  "rollback": "80ab2a03cb1296ad1e9b38943f361a35a828a88858aefa85954015a3cd5e3cd7",
+  "not_run": [
+    "full accessibility audit (W07 deferred)",
+    "unchanged external destination checks",
+    "installed watcher revalidation (outside content release scope)"
+  ],
+  "evidence": {
+    "screenshots": "tmp/qa/live-07902d3ccd18204ded129d68dfd5171c6e6fc056c845e4d22a5a5fdaf59e807b",
+    "candidate_report": "docs/releases/2026-11-06-content-review.md"
+  }
+}
