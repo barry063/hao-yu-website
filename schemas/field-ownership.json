@@ -1,18 +1,18 @@
 {
   "version": 1,
-  "reviewed": "2026-10-20",
+  "reviewed": "2026-11-06",
+  "note": "Proposed field coverage; promote with matching dataset. PDF is a user-selected master derivative, not automatically regenerated from page prose.",
   "fields": [
     {
       "id": "release_date",
-      "owner": "Website presentation policy; reviewed public wording (EB §§1.1,1.2,2.1)",
+      "owner": "Website presentation policy; user-selected public CV (EXPORT)",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html (CV label/footer)",
-        "assets/Hao_Yu_CV.pdf (footer)",
-        "sitemap.xml"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -24,8 +24,7 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf",
-        "metadata"
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -37,8 +36,7 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf",
-        "metadata"
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -50,8 +48,7 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf",
-        "metadata"
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -63,8 +60,7 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf",
-        "metadata"
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -76,8 +72,7 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf",
-        "metadata"
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -89,8 +84,7 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf",
-        "metadata"
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -102,8 +96,7 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf",
-        "metadata"
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -115,8 +108,7 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf",
-        "metadata"
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -128,9 +120,7 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf",
-        "assets/og-image.png",
-        "metadata"
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -142,9 +132,7 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf",
-        "assets/og-image.png",
-        "metadata"
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -156,9 +144,7 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf",
-        "assets/og-image.png",
-        "metadata"
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -169,7 +155,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html (hero/contact/JSON-LD)"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -180,7 +167,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html (hero/contact/JSON-LD)"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -191,7 +179,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html (hero/contact/JSON-LD)"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -202,7 +191,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html (hero/contact/JSON-LD)"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -213,8 +203,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html (hero/contact/JSON-LD)",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -225,8 +215,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html (hero/contact/JSON-LD)",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -237,8 +227,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html (hero/contact/JSON-LD)",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -249,8 +239,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html (hero/contact/JSON-LD)",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -261,7 +251,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#about"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -272,7 +263,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#about"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -283,8 +275,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -295,9 +287,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf",
-        "index.html#projects (PROJECT-CSS)"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -308,8 +299,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -320,8 +311,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -332,8 +323,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -344,8 +335,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -356,8 +347,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -368,9 +359,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf",
-        "index.html#projects (PROJECT-CSS)"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -381,9 +371,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf",
-        "index.html#projects (PROJECT-CSS)"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -394,8 +383,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -406,8 +395,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -418,8 +407,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -430,8 +419,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -442,8 +431,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -454,8 +443,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -466,8 +455,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -478,8 +467,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -490,8 +479,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -502,8 +491,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -514,8 +503,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -526,8 +515,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -538,9 +527,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf",
-        "index.html#projects (PROJECT-PHOTONICS)"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -551,8 +539,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -563,8 +551,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -575,8 +563,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -587,8 +575,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -599,8 +587,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -611,9 +599,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf",
-        "index.html#projects (PROJECT-PHOTONICS)"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -624,9 +611,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf",
-        "index.html#projects (PROJECT-PHOTONICS)"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -637,9 +623,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf",
-        "index.html#projects (PROJECT-PHOTONICS)"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -650,9 +635,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf",
-        "index.html#projects (PROJECT-PHOTONICS)"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -663,8 +647,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -675,8 +659,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -687,8 +671,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -699,8 +683,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -711,8 +695,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -723,8 +707,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -735,8 +719,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -747,8 +731,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -759,8 +743,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -771,8 +755,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -783,8 +767,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -795,8 +779,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -807,9 +791,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf",
-        "index.html#projects (PROJECT-MOS2)"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -820,44 +803,44 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "S1.year",
       "owner": "EB §§3.5,5.2; PUB S1",
-      "type": "nullable",
+      "type": "null",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "S1.authors",
       "owner": "EB §§3.5,5.2; PUB S1",
-      "type": "nullable",
+      "type": "null",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "S1.venue",
       "owner": "EB §§3.5,5.2; PUB S1",
-      "type": "nullable",
+      "type": "null",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -868,117 +851,116 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "S1.cv_authors",
       "owner": "EB §§3.5,5.2; PUB S1",
-      "type": "nullable",
+      "type": "null",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "P1.kind",
-      "owner": "EB §§3.2,5.2; PUB P1",
+      "owner": "EB §§3.2,5.2; PUB P1; user-selected master CV",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "P1.status",
-      "owner": "EB §§3.2,5.2; PUB P1",
+      "owner": "EB §§3.2,5.2; PUB P1; user-selected master CV",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf",
-        "index.html#projects (PROJECT-WS2)"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "P1.title",
-      "owner": "EB §§3.2,5.2; PUB P1",
+      "owner": "EB §§3.2,5.2; PUB P1; user-selected master CV",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "P1.year",
-      "owner": "EB §§3.2,5.2; PUB P1",
-      "type": "nullable",
+      "owner": "EB §§3.2,5.2; PUB P1; user-selected master CV",
+      "type": "null",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "P1.authors",
-      "owner": "EB §§3.2,5.2; PUB P1",
-      "type": "nullable",
+      "owner": "EB §§3.2,5.2; PUB P1; user-selected master CV",
+      "type": "null",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "P1.venue",
-      "owner": "EB §§3.2,5.2; PUB P1",
-      "type": "nullable",
+      "owner": "EB §§3.2,5.2; PUB P1; user-selected master CV",
+      "type": "null",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "P1.contribution",
-      "owner": "EB §§3.2,5.2; PUB P1",
+      "owner": "EB §§3.2,5.2; PUB P1; user-selected master CV",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "P1.cv_authors",
-      "owner": "EB §§3.2,5.2; PUB P1",
-      "type": "nullable",
+      "owner": "EB §§3.2,5.2; PUB P1; user-selected master CV",
+      "type": "null",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -989,8 +971,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -1001,9 +983,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf",
-        "index.html#projects (PROJECT-SOFTWARE)"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -1014,44 +995,44 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "SW1.year",
       "owner": "EB §§3.3,5.3; PUB SW1",
-      "type": "nullable",
+      "type": "null",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "SW1.authors",
       "owner": "EB §§3.3,5.3; PUB SW1",
-      "type": "nullable",
+      "type": "null",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "SW1.venue",
       "owner": "EB §§3.3,5.3; PUB SW1",
-      "type": "nullable",
+      "type": "null",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -1062,8 +1043,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -1074,9 +1055,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf",
-        "index.html#projects (PROJECT-SOFTWARE)"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -1087,69 +1067,80 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf",
-        "index.html#projects (PROJECT-SOFTWARE)"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "SW1.cv_authors",
       "owner": "EB §§3.3,5.3; PUB SW1",
-      "type": "nullable",
+      "type": "null",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#publications",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
-      "id": "EXP-INNO.role",
-      "owner": "EB §4.1",
+      "id": "EXP-REP.text.0",
+      "owner": "EB §9.1",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
-      "mode": "SHARED",
+      "mode": "EDITORIAL",
       "outputs": [
-        "index.html#experience",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
-      "id": "EXP-INNO.organisation",
-      "owner": "EB §4.1",
+      "id": "EXP-REP.role",
+      "owner": "EB §9.1",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
-      "mode": "SHARED",
+      "mode": "EDITORIAL",
       "outputs": [
-        "index.html#experience",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
-      "id": "EXP-INNO.start_month",
-      "owner": "EB §4.1",
+      "id": "EXP-REP.organisation",
+      "owner": "EB §9.1",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
-      "mode": "SHARED",
+      "mode": "EDITORIAL",
       "outputs": [
-        "index.html#experience",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
-      "id": "EXP-INNO.end_month",
-      "owner": "EB §4.1",
+      "id": "EXP-REP.start_month",
+      "owner": "EB §9.1",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
-      "mode": "SHARED",
+      "mode": "EDITORIAL",
       "outputs": [
-        "index.html#experience",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+      ]
+    },
+    {
+      "id": "EXP-REP.end_month",
+      "owner": "EB §9.1",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -1160,8 +1151,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#experience",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -1172,56 +1163,56 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#experience",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
-      "id": "EXP-JUDGE.role",
-      "owner": "EB §4.2",
+      "id": "EXP-INNO.role",
+      "owner": "EB §4.1",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#experience",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
-      "id": "EXP-JUDGE.organisation",
-      "owner": "EB §4.2",
+      "id": "EXP-INNO.organisation",
+      "owner": "EB §4.1",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#experience",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
-      "id": "EXP-JUDGE.start_month",
-      "owner": "EB §4.2",
+      "id": "EXP-INNO.start_month",
+      "owner": "EB §4.1",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#experience",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
-      "id": "EXP-JUDGE.end_month",
-      "owner": "EB §4.2",
+      "id": "EXP-INNO.end_month",
+      "owner": "EB §4.1",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#experience",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -1232,8 +1223,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#experience",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -1244,68 +1235,128 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#experience",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
-      "id": "EXP-BOE.role",
-      "owner": "EB §4.3",
+      "id": "EXP-JUDGE.role",
+      "owner": "EB §4.2",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#experience",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
-      "id": "EXP-BOE.organisation",
-      "owner": "EB §4.3",
+      "id": "EXP-JUDGE.organisation",
+      "owner": "EB §4.2",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#experience",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
-      "id": "EXP-BOE.start_month",
-      "owner": "EB §4.3",
+      "id": "EXP-JUDGE.start_month",
+      "owner": "EB §4.2",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#experience",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
-      "id": "EXP-BOE.end_month",
-      "owner": "EB §4.3",
+      "id": "EXP-JUDGE.end_month",
+      "owner": "EB §4.2",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#experience",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "EXP-BOE.text.0",
-      "owner": "EB §4.3",
+      "owner": "EB §4.3; applicant confirmation 29 October 2026",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#experience",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+      ]
+    },
+    {
+      "id": "EXP-BOE.text.1",
+      "owner": "EB §4.3; applicant confirmation 29 October 2026",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+      ]
+    },
+    {
+      "id": "EXP-BOE.role",
+      "owner": "EB §4.3; applicant confirmation 29 October 2026",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "SHARED",
+      "outputs": [
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+      ]
+    },
+    {
+      "id": "EXP-BOE.organisation",
+      "owner": "EB §4.3; applicant confirmation 29 October 2026",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "SHARED",
+      "outputs": [
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+      ]
+    },
+    {
+      "id": "EXP-BOE.start_month",
+      "owner": "EB §4.3; applicant confirmation 29 October 2026",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "SHARED",
+      "outputs": [
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+      ]
+    },
+    {
+      "id": "EXP-BOE.end_month",
+      "owner": "EB §4.3; applicant confirmation 29 October 2026",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "SHARED",
+      "outputs": [
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -1316,8 +1367,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#education",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -1328,8 +1379,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#education",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -1340,8 +1391,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#education",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -1352,8 +1403,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#education",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -1364,44 +1415,44 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#education",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "EDU-OX.title",
-      "owner": "EB §2.2",
+      "owner": "EB §2.2; saved Oxford degree confirmation; project record",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#education",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "EDU-OX.dates",
-      "owner": "EB §2.2",
+      "owner": "EB §2.2; saved Oxford degree confirmation; project record",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#education",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "EDU-OX.text.0",
-      "owner": "EB §2.2",
+      "owner": "EB §2.2; saved Oxford degree confirmation; project record",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#education",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -1412,8 +1463,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#awards",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -1424,8 +1475,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#awards",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -1436,8 +1487,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#awards",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -1448,8 +1499,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#awards",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -1460,8 +1511,8 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#awards",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -1472,255 +1523,272 @@
       "visibility": "PUBLIC",
       "mode": "SHARED",
       "outputs": [
-        "index.html#awards",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "PROFILE.destination",
-      "owner": "EB §§1.2,2.1,3.1–3.3,7.2.1,7.2.3",
+      "owner": "EB §§1.2,2.1,3.1–3.3,7.2,7.4",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#top",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "PROFILE.title",
-      "owner": "EB §§1.2,2.1,3.1–3.3,7.2.1,7.2.3",
+      "owner": "EB §§1.2,2.1,3.1–3.3,7.2,7.4",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#top",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "PROFILE.dates",
-      "owner": "EB §§1.2,2.1,3.1–3.3,7.2.1,7.2.3",
+      "owner": "EB §§1.2,2.1,3.1–3.3,7.2,7.4",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#top",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "PROFILE.text.0",
-      "owner": "EB §§1.2,2.1,3.1–3.3,7.2.1,7.2.3",
+      "owner": "EB §§1.2,2.1,3.1–3.3,7.2,7.4",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#top",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "PROFILE.output_id",
-      "owner": "EB §§1.2,2.1,3.1–3.3,7.2.1,7.2.3",
-      "type": "nullable",
+      "owner": "EB §§1.2,2.1,3.1–3.3,7.2,7.4",
+      "type": "null",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#top",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "ABOUT.destination",
-      "owner": "EB §§1.1,2.1,3.1–3.6,4,7.2.1–7.2.3,8",
+      "owner": "EB §§1.2,2.1,3.1–3.6,7.2.1,7.2.4,7.2.6,7.4",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#about"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "ABOUT.title",
-      "owner": "EB §§1.1,2.1,3.1–3.6,4,7.2.1–7.2.3,8",
+      "owner": "EB §§1.2,2.1,3.1–3.6,7.2.1,7.2.4,7.2.6,7.4",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#about"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "ABOUT.dates",
-      "owner": "EB §§1.1,2.1,3.1–3.6,4,7.2.1–7.2.3,8",
+      "owner": "EB §§1.2,2.1,3.1–3.6,7.2.1,7.2.4,7.2.6,7.4",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#about"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "ABOUT.text.0",
-      "owner": "EB §§1.1,2.1,3.1–3.6,4,7.2.1–7.2.3,8",
+      "owner": "EB §§1.2,2.1,3.1–3.6,7.2.1,7.2.4,7.2.6,7.4",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#about"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "ABOUT.text.1",
-      "owner": "EB §§1.1,2.1,3.1–3.6,4,7.2.1–7.2.3,8",
+      "owner": "EB §§1.2,2.1,3.1–3.6,7.2.1,7.2.4,7.2.6,7.4",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#about"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "ABOUT.text.2",
-      "owner": "EB §§1.1,2.1,3.1–3.6,4,7.2.1–7.2.3,8",
+      "owner": "EB §§1.2,2.1,3.1–3.6,7.2.1,7.2.4,7.2.6,7.4",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#about"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "ABOUT.output_id",
-      "owner": "EB §§1.1,2.1,3.1–3.6,4,7.2.1–7.2.3,8",
-      "type": "nullable",
+      "owner": "EB §§1.2,2.1,3.1–3.6,7.2.1,7.2.4,7.2.6,7.4",
+      "type": "null",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#about"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "THEME-1.destination",
-      "owner": "EB §§2.1,3.1–3.2",
+      "owner": "EB §§2.1,3.1–3.2,7.4",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#research"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "THEME-1.title",
-      "owner": "EB §§2.1,3.1–3.2",
+      "owner": "EB §§2.1,3.1–3.2,7.4",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#research"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "THEME-1.dates",
-      "owner": "EB §§2.1,3.1–3.2",
+      "owner": "EB §§2.1,3.1–3.2,7.4",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#research"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "THEME-1.text.0",
-      "owner": "EB §§2.1,3.1–3.2",
+      "owner": "EB §§2.1,3.1–3.2,7.4",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#research"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "THEME-1.output_id",
-      "owner": "EB §§2.1,3.1–3.2",
-      "type": "nullable",
+      "owner": "EB §§2.1,3.1–3.2,7.4",
+      "type": "null",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#research"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "THEME-2.destination",
-      "owner": "EB §§3.1,3.4–3.5,7.2.1,7.2.3",
+      "owner": "EB §§7.2.1,7.2.4; EB §§3.1–3.2",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#research"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "THEME-2.title",
-      "owner": "EB §§3.1,3.4–3.5,7.2.1,7.2.3",
+      "owner": "EB §§7.2.1,7.2.4; EB §§3.1–3.2",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#research"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "THEME-2.dates",
-      "owner": "EB §§3.1,3.4–3.5,7.2.1,7.2.3",
+      "owner": "EB §§7.2.1,7.2.4; EB §§3.1–3.2",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#research"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "THEME-2.text.0",
-      "owner": "EB §§3.1,3.4–3.5,7.2.1,7.2.3",
+      "owner": "EB §§7.2.1,7.2.4; EB §§3.1–3.2",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#research"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "THEME-2.output_id",
-      "owner": "EB §§3.1,3.4–3.5,7.2.1,7.2.3",
-      "type": "nullable",
+      "owner": "EB §§7.2.1,7.2.4; EB §§3.1–3.2",
+      "type": "null",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#research"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -1731,7 +1799,8 @@
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#research"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -1742,7 +1811,8 @@
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#research"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -1753,7 +1823,8 @@
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#research"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -1764,18 +1835,20 @@
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#research"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "THEME-3.output_id",
       "owner": "EB §3.3; PUB SW1",
-      "type": "nullable",
+      "type": "null",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#research"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -1786,8 +1859,8 @@
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#projects",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -1798,8 +1871,8 @@
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#projects",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -1810,8 +1883,8 @@
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#projects",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -1822,8 +1895,8 @@
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#projects",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -1834,8 +1907,8 @@
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#projects",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -1846,8 +1919,8 @@
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#projects",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -1858,8 +1931,8 @@
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#projects",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -1870,8 +1943,8 @@
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#projects",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -1882,92 +1955,104 @@
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#projects",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "PROJECT-WS2.destination",
-      "owner": "EB §§2.1,3.2,5.2,7.2.1,7.2.3",
+      "owner": "EB §§2.1,3.2,5.2,7.2.3,7.4",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#projects",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "PROJECT-WS2.title",
-      "owner": "EB §§2.1,3.2,5.2,7.2.1,7.2.3",
+      "owner": "EB §§2.1,3.2,5.2,7.2.3,7.4",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#projects",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "PROJECT-WS2.dates",
-      "owner": "EB §§2.1,3.2,5.2,7.2.1,7.2.3",
+      "owner": "EB §§2.1,3.2,5.2,7.2.3,7.4",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#projects",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "PROJECT-WS2.text.0",
-      "owner": "EB §§2.1,3.2,5.2,7.2.1,7.2.3",
+      "owner": "EB §§2.1,3.2,5.2,7.2.3,7.4",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#projects",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "PROJECT-WS2.text.1",
-      "owner": "EB §§2.1,3.2,5.2,7.2.1,7.2.3",
+      "owner": "EB §§2.1,3.2,5.2,7.2.3,7.4",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#projects",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "PROJECT-WS2.text.2",
-      "owner": "EB §§2.1,3.2,5.2,7.2.1,7.2.3",
+      "owner": "EB §§2.1,3.2,5.2,7.2.3,7.4",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#projects",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+      ]
+    },
+    {
+      "id": "PROJECT-WS2.text.3",
+      "owner": "EB §§2.1,3.2,5.2,7.2.3,7.4",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "PROJECT-WS2.output_id",
-      "owner": "EB §§2.1,3.2,5.2,7.2.1,7.2.3",
+      "owner": "EB §§2.1,3.2,5.2,7.2.3,7.4",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#projects",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -1978,8 +2063,8 @@
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#projects",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -1990,8 +2075,8 @@
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#projects",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -2002,8 +2087,8 @@
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#projects",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -2014,8 +2099,8 @@
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#projects",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -2026,8 +2111,8 @@
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#projects",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -2038,8 +2123,8 @@
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#projects",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -2050,8 +2135,8 @@
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#projects",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -2062,8 +2147,8 @@
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#projects",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -2074,8 +2159,8 @@
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#projects",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -2086,8 +2171,8 @@
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#projects",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -2098,8 +2183,8 @@
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#projects",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -2110,8 +2195,8 @@
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#projects",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -2122,8 +2207,8 @@
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#projects",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -2134,8 +2219,8 @@
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#projects",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -2146,8 +2231,8 @@
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#projects",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -2158,8 +2243,8 @@
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#projects",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -2170,8 +2255,8 @@
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#projects",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -2182,8 +2267,8 @@
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#projects",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -2194,8 +2279,8 @@
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#projects",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -2206,8 +2291,8 @@
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#projects",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -2218,8 +2303,8 @@
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#projects",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -2230,8 +2315,8 @@
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#projects",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -2242,8 +2327,8 @@
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#projects",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -2254,8 +2339,8 @@
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#projects",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -2266,8 +2351,8 @@
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#projects",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -2278,8 +2363,8 @@
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#projects",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
@@ -2290,101 +2375,416 @@
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html#projects",
-        "assets/Hao_Yu_CV.pdf"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+      ]
+    },
+    {
+      "id": "PRACTICE.destination",
+      "owner": "EB §§5.4 PR2,7.1.1,7.2.2,7.5,8 T2–T8",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+      ]
+    },
+    {
+      "id": "PRACTICE.title",
+      "owner": "EB §§5.4 PR2,7.1.1,7.2.2,7.5,8 T2–T8",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+      ]
+    },
+    {
+      "id": "PRACTICE.dates",
+      "owner": "EB §§5.4 PR2,7.1.1,7.2.2,7.5,8 T2–T8",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+      ]
+    },
+    {
+      "id": "PRACTICE.text.0",
+      "owner": "EB §§5.4 PR2,7.1.1,7.2.2,7.5,8 T2–T8",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+      ]
+    },
+    {
+      "id": "PRACTICE.text.1",
+      "owner": "EB §§5.4 PR2,7.1.1,7.2.2,7.5,8 T2–T8",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+      ]
+    },
+    {
+      "id": "PRACTICE.output_id",
+      "owner": "EB §§5.4 PR2,7.1.1,7.2.2,7.5,8 T2–T8",
+      "type": "null",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+      ]
+    },
+    {
+      "id": "POSTER-TMD.destination",
+      "owner": "EB §6; verified primary poster and conference records",
+      "type": "string",
+      "evidence_status": "VERIFIED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+      ]
+    },
+    {
+      "id": "POSTER-TMD.title",
+      "owner": "EB §6; verified primary poster and conference records",
+      "type": "string",
+      "evidence_status": "VERIFIED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+      ]
+    },
+    {
+      "id": "POSTER-TMD.dates",
+      "owner": "EB §6; verified primary poster and conference records",
+      "type": "string",
+      "evidence_status": "VERIFIED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+      ]
+    },
+    {
+      "id": "POSTER-TMD.text.0",
+      "owner": "EB §6; verified primary poster and conference records",
+      "type": "string",
+      "evidence_status": "VERIFIED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+      ]
+    },
+    {
+      "id": "POSTER-TMD.text.1",
+      "owner": "EB §6; verified primary poster and conference records",
+      "type": "string",
+      "evidence_status": "VERIFIED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+      ]
+    },
+    {
+      "id": "POSTER-TMD.output_id",
+      "owner": "EB §6; verified primary poster and conference records",
+      "type": "null",
+      "evidence_status": "VERIFIED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+      ]
+    },
+    {
+      "id": "POSTER-IWEPNM.destination",
+      "owner": "EB §6; verified primary poster and conference records",
+      "type": "string",
+      "evidence_status": "VERIFIED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+      ]
+    },
+    {
+      "id": "POSTER-IWEPNM.title",
+      "owner": "EB §6; verified primary poster and conference records",
+      "type": "string",
+      "evidence_status": "VERIFIED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+      ]
+    },
+    {
+      "id": "POSTER-IWEPNM.dates",
+      "owner": "EB §6; verified primary poster and conference records",
+      "type": "string",
+      "evidence_status": "VERIFIED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+      ]
+    },
+    {
+      "id": "POSTER-IWEPNM.text.0",
+      "owner": "EB §6; verified primary poster and conference records",
+      "type": "string",
+      "evidence_status": "VERIFIED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+      ]
+    },
+    {
+      "id": "POSTER-IWEPNM.text.1",
+      "owner": "EB §6; verified primary poster and conference records",
+      "type": "string",
+      "evidence_status": "VERIFIED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+      ]
+    },
+    {
+      "id": "POSTER-IWEPNM.output_id",
+      "owner": "EB §6; verified primary poster and conference records",
+      "type": "null",
+      "evidence_status": "VERIFIED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "presentation.url",
-      "owner": "Website presentation policy; reviewed public wording (EB §§1.1,1.2,2.1)",
+      "owner": "Website presentation policy; user-selected public CV (EXPORT)",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html (canonical/social/JSON-LD)",
-        "assets/Hao_Yu_CV.pdf (website)",
-        "sitemap.xml",
-        "robots.txt"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "presentation.repository",
-      "owner": "Website presentation policy; reviewed public wording (EB §§1.1,1.2,2.1)",
+      "owner": "Website presentation policy; user-selected public CV (EXPORT)",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html (source link)"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "presentation.title",
-      "owner": "Website presentation policy; reviewed public wording (EB §§1.1,1.2,2.1)",
+      "owner": "Website presentation policy; user-selected public CV (EXPORT)",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html (head or assets)"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "presentation.description",
-      "owner": "Website presentation policy; reviewed public wording (EB §§1.1,1.2,2.1)",
+      "owner": "Website presentation policy; user-selected public CV (EXPORT)",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html (head or assets)"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "presentation.cv",
-      "owner": "Website presentation policy; reviewed public wording (EB §§1.1,1.2,2.1)",
+      "owner": "Website presentation policy; user-selected public CV (EXPORT)",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html (head or assets)"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "presentation.portrait",
-      "owner": "Website presentation policy; reviewed public wording (EB §§1.1,1.2,2.1)",
+      "owner": "Website presentation policy; user-selected public CV (EXPORT)",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html (head or assets)"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "presentation.social.topic",
-      "owner": "Website presentation policy; reviewed public wording (EB §§1.1,1.2,2.1)",
+      "owner": "Website presentation policy; user-selected public CV (EXPORT)",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html (OG alt)",
-        "assets/og-image.png (displayed fields only)"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
       ]
     },
     {
       "id": "presentation.social.alt",
-      "owner": "Website presentation policy; reviewed public wording (EB §§1.1,1.2,2.1)",
+      "owner": "Website presentation policy; user-selected public CV (EXPORT)",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html (OG alt)",
-        "assets/og-image.png (displayed fields only)"
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+      ]
+    },
+    {
+      "id": "presentation.cv_document.file",
+      "owner": "Website presentation policy; user-selected public CV (EXPORT)",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "REVIEWED_ASSET",
+      "outputs": [
+        "assets/Hao_Yu_CV.pdf (reviewed file; hash-checked copy)",
+        "index.html (CV date/link)"
+      ]
+    },
+    {
+      "id": "presentation.cv_document.sha256",
+      "owner": "Website presentation policy; user-selected public CV (EXPORT)",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "REVIEWED_ASSET",
+      "outputs": [
+        "assets/Hao_Yu_CV.pdf (reviewed file; hash-checked copy)",
+        "index.html (CV date/link)"
+      ]
+    },
+    {
+      "id": "presentation.cv_document.date",
+      "owner": "Website presentation policy; user-selected public CV (EXPORT)",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "REVIEWED_ASSET",
+      "outputs": [
+        "assets/Hao_Yu_CV.pdf (reviewed file; hash-checked copy)",
+        "index.html (CV date/link)"
+      ]
+    },
+    {
+      "id": "presentation.cv_document.pages",
+      "owner": "Website presentation policy; user-selected public CV (EXPORT)",
+      "type": "number",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "REVIEWED_ASSET",
+      "outputs": [
+        "assets/Hao_Yu_CV.pdf (reviewed file; hash-checked copy)",
+        "index.html (CV date/link)"
+      ]
+    },
+    {
+      "id": "presentation.cv_document.source_tex_sha256",
+      "owner": "Website presentation policy; user-selected public CV (EXPORT)",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "REVIEWED_ASSET",
+      "outputs": [
+        "assets/Hao_Yu_CV.pdf (reviewed file; hash-checked copy)",
+        "index.html (CV date/link)"
+      ]
+    },
+    {
+      "id": "presentation.cv_document.source_pdf_sha256",
+      "owner": "Website presentation policy; user-selected public CV (EXPORT)",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "REVIEWED_ASSET",
+      "outputs": [
+        "assets/Hao_Yu_CV.pdf (reviewed file; hash-checked copy)",
+        "index.html (CV date/link)"
+      ]
+    },
+    {
+      "id": "presentation.cv_document.export_sha256",
+      "owner": "Website presentation policy; user-selected public CV (EXPORT)",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "REVIEWED_ASSET",
+      "outputs": [
+        "assets/Hao_Yu_CV.pdf (reviewed file; hash-checked copy)",
+        "index.html (CV date/link)"
+      ]
+    },
+    {
+      "id": "presentation.cv_document.facts_sha256",
+      "owner": "Website presentation policy; user-selected public CV (EXPORT)",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "REVIEWED_ASSET",
+      "outputs": [
+        "assets/Hao_Yu_CV.pdf (reviewed file; hash-checked copy)",
+        "index.html (CV date/link)"
       ]
     }
   ]

@@ -4,9 +4,13 @@ import re
 import sys
 import json
 import pdfplumber
+from check_reviewed_cv import check_reviewed_cv
 
 root = Path(__file__).resolve().parents[1]
 data = json.loads((Path(sys.argv[2]) if len(sys.argv) > 2 else root / 'content/site.json').read_text(encoding='utf-8'))
+if data['presentation'].get('cv_document'):
+    check_reviewed_cv(Path(sys.argv[1]) if len(sys.argv) > 1 else root / 'assets/Hao_Yu_CV.pdf', data)
+    sys.exit(0)
 def plain(value):
     return str(value).replace('–', '-').replace('—', '-').replace('−', '-').replace('₂', '2').replace('₃', '3')
 with pdfplumber.open(Path(sys.argv[1]) if len(sys.argv) > 1 else root / "assets/Hao_Yu_CV.pdf") as pdf:

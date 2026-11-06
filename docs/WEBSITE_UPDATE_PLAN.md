@@ -1,9 +1,27 @@
 # Website update plan and verification contract
 
 Created: 5 October 2026. Baseline: website commit `2c3ba49`.
-Plan version: 1.6. Release-1 milestone: `LIVE_CONTENT_VERIFIED_BROWSER_QA_DEFERRED`.
+Plan version: 1.7. Release-1 milestone: `LIVE_CONTENT_VERIFIED_BROWSER_QA_DEFERRED`.
 Workflow milestone: `P01_P06_COMPLETE_LIVE_VERIFIED`.
 Watcher milestone: `P07_COMPLETE_INSTALLED_VERIFIED`.
+
+Current release instruction, 6 November 2026: after delivery of the checked
+candidate and identification of N04 as the remaining publication step, the user
+said “ok, now let's proceed to the next round”. Proceed with exact-candidate
+approval, PR delivery, merge/publication and live verification through the existing
+GitHub Pages main/root route. N04 is IN_PROGRESS; no new source or content changes.
+
+Previous implementation instruction, 6 November 2026: the user requested implementation
+of the content update and selected the newly refreshed four-page master CV as
+the public download. Remove its running “Academic CV” label; the user separately
+confirmed removal of the mobile number. Preserve the master files and other CV
+content. Local candidate preparation/verification is authorised; no new commit,
+push or publication instruction has been given. N02/N03 are complete:
+`READY_TO_PUBLISH` locally, `READY_FOR_REVIEW` in the workflow. See the
+[November verification report](releases/2026-11-06-content-review.md).
+See [the November content plan](2026-11-06_CONTENT_REFRESH_PLAN.md) for the source
+comparison, proposed wording, C01–C11 change map and N01–N04 sequence. Earlier
+authority and LIVE_VERIFIED statements below remain tied to their dated releases.
 
 Current content review, 20 October 2026: `LIVE_VERIFIED`.
 PR #4 was manually rebased and merged by the user. Deployment of `80d8516`
@@ -174,6 +192,10 @@ decision. `DONE` requires every listed acceptance criterion to pass with evidenc
 | R01 | Review 19 October evidence and revise public wording | Current canonical sources | DONE | content/proposals/2026-10-20.json; W01-A–D, W02-C/D, W03-A/C, W04-C/E PASS; 20 October content-review report |
 | R02 | Build and verify revised page and public CV | R01 | DONE | W06-A/B, W08-A/B/D/E PASS; two-page PDF visual review, browser widths/keyboard/zoom and 199-field coverage; report/checks JSON |
 | R03 | Publish and verify revised candidate | R02; current release authority | DONE | User merged PR #4; W09-A–C PASS at 80d8516; Pages run 39403364494 and 2026-10-20 deployment checks |
+| N01 | Track November evidence changes and propose content updates | Current sources and released inventory | DONE | N01-A–C PASS; November content plan and planning-checks JSON; planning only |
+| N02 | Prepare November public content candidate | N01; instruction to implement | DONE | November proposal; source/claim/privacy review PASS; latest Oxford/poster evidence and 232-field coverage |
+| N03 | Generate and verify November website and public CV | N02 | DONE | W06/W08/P05-D checks PASS; four-page master derivative, 58 regressions plus 18 affected checks; November verification report |
+| N04 | Deliver/publish and verify November candidate | N03; applicable release authority | IN_PROGRESS | Current go-ahead recorded for exact November candidate; PR, deployment and live verification pending |
 
 ## Acceptance criteria
 
@@ -751,6 +773,71 @@ completes at W08. Release 2 completes at W11 with its readiness/live status stat
   remain DEFERRED; no dependency blocks this content release. These verification
   records are committed locally at the user's subsequent request for a clean
   working tree; no additional push/deployment performed.
+
+### 6 November 2026 — evidence tracking and content plan
+
+- User requested change tracking and a website-content proposal, plan first.
+  Started clean on local main at `a242fb9`; canonical workspace has no Git
+  repository. Read both instruction sets, the current plan and canonical sources.
+- N01-A: current hashes compared with the 20 October public inventory; PASS,
+  EB/PUB/CONTRIB/PROFILE changed, EXPORT unchanged. Comparison is hash- and
+  claim-based; no complete 20 October canonical text diff is asserted.
+- N01-B: source review and C01–C11 destination/hold mapping PASS. Prioritise
+  model-informed growth, XRD, Raman SOP/training and dated academic service;
+  keep equipment/safety concise. Detailed photonics methods retain source holds.
+- N01-C: planning JSON/hash/link checks, documentation-only scope and
+  `git diff --check` PASS. Evidence: `2026-11-06_CONTENT_REFRESH_PLAN.md` and
+  `2026-11-06-content-planning-checks.json` in this directory.
+- N01 DONE; N02–N04 NOT_STARTED. Milestone PLAN_READY_FOR_REVIEW. No canonical,
+  dataset, visitor-file, watcher or calibration edits; no commit/push/publication.
+  Candidate/browser/PDF/live checks NOT RUN. Historical W/R/P completions are
+  unchanged; W07/P08 remain DEFERRED. Next task is N02 when implementation is
+  requested; unsupported optional photonics expansion does not block other work.
+
+### 6 November 2026 — implementation and selected master CV
+
+- User requested continuation and selected the updated master CV. They separately
+  confirmed removing the mobile number. This supersedes the short generated-CV
+  proposal. Source/master/export hashes match; canonical files remain unchanged.
+- Preserved planning changes and created local `content/evidence-refresh-2026-11-06`.
+  Current EB/EXPORT also include the separate master refresh and verified Oxford
+  classification/two posters. Added these to the proposed public page.
+- N02: W01-A–D/W02-C/D/W03-A/C/W04-C/E/W05-B/C → source, claim, privacy and
+  232-field ownership review → PASS. Evidence: November proposal, decisions,
+  source map and `releases/2026-11-06-content-review.md` / `-checks.json`.
+- N03: W06-A/B → separate public master derivative, four-page text/link equality,
+  no build warnings and all four rendered pages inspected → PASS. W08-A/B/D/E,
+  P05-D → HTML/content/project-path, keyboard/reflow at 375/768/1440 and native
+  200% zoom, reduced motion/no-JS and visual review → PASS. Full W07 and unchanged
+  external destinations NOT RUN. Details/retries are retained in the report.
+- 58/58 propagation tests PASS; final affected contract/CV tests 18/18 PASS after
+  adding shared-fact/clearance binding. Original root check/navigation PASS;
+  released visitor/data hashes unchanged. Current source/master hashes and exact
+  candidate gate (without approval) PASS. Installed watcher was not reconfigured.
+- Candidate `07902d3ccd18204ded129d68dfd5171c6e6fc056c845e4d22a5a5fdaf59e807b`.
+  N02/N03 DONE, local READY_TO_PUBLISH / workflow READY_FOR_REVIEW. N04
+  NOT_STARTED; awaiting applicable review/release instruction. No approval,
+  promotion, staging, commit, push or publication. W07/P08 remain DEFERRED.
+
+### 6 November 2026 — November release instruction and PR preparation
+
+- User instructed proceeding to the next round after delivery of N02/N03 and
+  identification of publication as N04. Recorded the exact instruction against
+  candidate `07902d3ccd18204ded129d68dfd5171c6e6fc056c845e4d22a5a5fdaf59e807b`.
+- Source, runtime, input, asset and private-policy bindings PASS before approval.
+  Origin/main remains at the October release; local history adds only its saved
+  deployment record. Existing Pages route confirmed as main/root at the same URL.
+- Approved and promoted exact candidate bytes into root visitor files/dataset,
+  preserving a private rollback snapshot. Promoted the matching 232-field register.
+- N04 IN_PROGRESS. Public exposure, staged scope, content/PDF/contract checks and
+  output hashes are checked before commit. PR identity, merge revision, deployment
+  and live result will be recorded after those operations; no advance success claim.
+- Post-promotion verification: `npm run check` PASS (30 records, 24 anchors,
+  seven navigation tests); contract tests 15/15 PASS; public CV checker PASS
+  (four pages, exact bytes, shared facts/statuses, links, privacy and bounds).
+  Ten visitor hashes, dataset/register byte equality, five source/two master
+  hashes and changed-file exposure/whitespace checks PASS. Canonical sources
+  remain unchanged. W08-A/B/D/E rechecked; W09-A–C await actual deployment.
 
 ## Reusable continuation prompt
 

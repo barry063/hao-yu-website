@@ -54,6 +54,26 @@ Vera fonts in `build-resources/fonts/`, invariant PDF metadata and an explicit
 `release_date` in the dataset. JavaScript check dependencies are pinned in the
 lockfile. No canonical workspace, credentials or network access is needed to build.
 
+The November proposal supports a user-selected master-derived PDF through
+`presentation.cv_document`. The only allowed source is the reviewed public file
+`build-resources/public-cv/Hao_Yu_CV.pdf`. Its SHA-256, page count, actual CV date,
+master source/PDF hashes and export-record hash are recorded in the proposal.
+The selected shared facts are also fingerprinted: additions, removals, visibility
+changes and changes to publication contributions require renewed CV review, so a
+withdrawn output cannot remain silently exposed in the frozen PDF.
+The builder copies those reviewed bytes; it does not replace them with a shorter
+generated CV. Existing datasets without this field retain the original renderer.
+The file and validation code are bound into candidate manifests/approval gates.
+
+The public PDF was compiled from the selected master with its running document
+label and mobile number removed; the source master remains private and unchanged.
+Do not place the private TeX source in this repository. The public CV and website
+now have separate editorial lifecycles: common identity, qualification milestones,
+output titles/statuses and links are checked for consistency, while free-form
+prose and additional master content require review. A changed master export or a
+shared-fact mismatch blocks preparation until a new public PDF is reviewed. The
+page's CV label uses the PDF's date, independently of the website review date.
+
 ```powershell
 $env:SITE_PYTHON = 'python'  # or the existing bundled Python executable
 npm run build -- --out tmp/candidates/my-review

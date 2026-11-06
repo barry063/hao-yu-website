@@ -59,6 +59,7 @@ export function validatePublic(data) {
   const all = entities(data), ids = new Set(all.map(r => r.id));
   if (all.length !== ids.size) throw new Error('Duplicate public ID');
   if (!data.profile.selected || !validDate(data.release_date)) throw new Error('Missing profile or invalid release date');
+  if (data.presentation.cv_document && !validDate(data.presentation.cv_document.date)) throw new Error('Invalid reviewed CV date');
   if (new Set(data.sources.map(s => s.id)).size !== data.sources.length) throw new Error('Duplicate source ID');
   for (const s of data.sources) {
     if (SOURCE_PATHS[s.id] !== s.path) throw new Error('Source outside public provenance allowlist');
