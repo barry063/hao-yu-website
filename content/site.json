@@ -1,31 +1,31 @@
 {
   "schema_version": 2,
-  "release_date": "2026-10-20",
+  "release_date": "2026-11-06",
   "sources": [
     {
       "id": "EB",
       "path": "1 Master Academic CV/Evidence_Bank.md",
-      "sha256": "e0934cab5a378f9766660b339587188bdcc9d38bcd85c6433817282fec59834f"
+      "sha256": "1df8c61235c3238ac50e985588f7c6d94caa49c96194878e835b5e65304eb4d8"
     },
     {
       "id": "PUB",
       "path": "4 Publication list/Master_Publication_List.md",
-      "sha256": "fc76452713464119758fbe9fdadbd3516f176ad9a5c9bfb8f55370b6a1d45dd9"
+      "sha256": "ac01de99f3ebf343b36dc11b4416c34748332283a0ecc56731941b15542f8a72"
     },
     {
       "id": "CONTRIB",
       "path": "4 Publication list/Publication_Contributions.json",
-      "sha256": "ae05ab7c15ee1f9a02b834af1b35d18e468bb56b3a604d8f4f488b7675abc876"
+      "sha256": "8f0015b0774d94dc3769a68c2b64cbbdf1654b19aa1f4a4543c7e0950ab9f74a"
     },
     {
       "id": "PROFILE",
       "path": "3 Research Profile/Hao_Yu_Application_Evidence_Wording.md",
-      "sha256": "7337f5442b2445d7042c05099bdf983ca63f5a09f015def53682ef441790b9ba"
+      "sha256": "5fd5823bb0585b563563acc9cac325d2ae375746eef2ccb15113c02d5d603ff0"
     },
     {
       "id": "EXPORT",
       "path": "1 Master Academic CV/Current_Export_Record.json",
-      "sha256": "90a10f9d7ad7367924d99e484902cfe04e1ac0367f4830c3f6851fd4a6696bc5"
+      "sha256": "16fe126b7a5ff784f02e9d08a2109c0557097bba278efa3682f24ac5ef7472d3"
     }
   ],
   "profile": {
@@ -247,18 +247,18 @@
       "id": "P1",
       "selected": true,
       "provenance": {
-        "source": "EB §§3.2,5.2; PUB P1",
+        "source": "EB §§3.2,5.2; PUB P1; user-selected master CV",
         "evidence_status": "APPLICANT_CONFIRMED",
         "visibility": "PUBLIC",
-        "reviewed": "2026-10-05"
+        "reviewed": "2026-11-06"
       },
       "kind": "ARTICLE",
       "status": "IN_PREPARATION",
-      "title": "Salt-assisted close-space growth of monolayer WS₂",
+      "title": "Resolving source–transport–growth relationships in salt-assisted close-space CVD of monolayer WS₂",
       "year": null,
       "authors": null,
       "venue": null,
-      "contribution": "First-author manuscript {{status:P1:lower}} on source–transport–growth relationships. Topic description; final title to follow.",
+      "contribution": "First-author manuscript {{status:P1:lower}}. Working title.",
       "links": [],
       "cv_authors": null
     },
@@ -289,6 +289,23 @@
   ],
   "experience": [
     {
+      "id": "EXP-REP",
+      "selected": true,
+      "provenance": {
+        "source": "EB §9.1",
+        "evidence_status": "APPLICANT_CONFIRMED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-11-06"
+      },
+      "text": [
+        "Represented postgraduate researchers in departmental discussions on teaching and examinations, AI tools, welfare and inclusion; communicated departmental information and decisions back to students."
+      ],
+      "role": "Academic Representative (Postgraduate Research)",
+      "organisation": "Department of Engineering, University of Cambridge",
+      "start_month": "2025-10",
+      "end_month": "2026-09"
+    },
+    {
       "id": "EXP-INNO",
       "selected": true,
       "provenance": {
@@ -313,11 +330,11 @@
         "source": "EB §4.2",
         "evidence_status": "APPLICANT_CONFIRMED",
         "visibility": "PUBLIC",
-        "reviewed": "2026-10-05"
+        "reviewed": "2026-11-06"
       },
       "text": [
         "Conducted market sizing, application analysis and competitor mapping for photonic photovoltaic technology targeting indoor solar and ambient IoT.",
-        "Supported a TRL 2-to-TRL 4 roadmap and IP licensing strategy, including MVP and scale-up considerations."
+        "Supported a proposed TRL 2-to-4 roadmap and IP licensing strategy, including MVP and scale-up considerations."
       ],
       "role": "EnterpriseTECH Analyst",
       "organisation": "Cambridge Judge Business School",
@@ -328,13 +345,14 @@
       "id": "EXP-BOE",
       "selected": true,
       "provenance": {
-        "source": "EB §4.3",
+        "source": "EB §4.3; applicant confirmation 29 October 2026",
         "evidence_status": "APPLICANT_CONFIRMED",
         "visibility": "PUBLIC",
-        "reviewed": "2026-10-05"
+        "reviewed": "2026-11-06"
       },
       "text": [
-        "Organised online and in-person career events at UK universities and identified potential research collaborators for MicroLED technology."
+        "Organised online and in-person career events at UK universities and identified potential research collaborators for MicroLED technology.",
+        "Initiated and maintained research–industry contacts to connect relevant academic expertise with next-generation display needs."
       ],
       "role": "School Ambassador",
       "organisation": "BOE Technology Group",
@@ -364,15 +382,15 @@
       "id": "EDU-OX",
       "selected": true,
       "provenance": {
-        "source": "EB §2.2",
+        "source": "EB §2.2; saved Oxford degree confirmation; project record",
         "evidence_status": "APPLICANT_CONFIRMED",
         "visibility": "PUBLIC",
-        "reviewed": "2026-10-05"
+        "reviewed": "2026-11-06"
       },
       "title": "University of Oxford · MEng in Materials Science",
       "dates": "Oct 2018 – Jul 2022",
       "text": [
-        "Trinity College. Research project on photonic micro-ring resonator tuning."
+        "Upper Second-Class Honours (2:1). Trinity College. Research project on photonic micro-ring resonator tuning."
       ]
     }
   ],
@@ -419,16 +437,16 @@
       "id": "PROFILE",
       "selected": true,
       "provenance": {
-        "source": "EB §§1.2,2.1,3.1–3.3,7.2.1,7.2.3",
+        "source": "EB §§1.2,2.1,3.1–3.3,7.2,7.4",
         "evidence_status": "APPLICANT_CONFIRMED",
         "visibility": "PUBLIC",
-        "reviewed": "2026-10-20"
+        "reviewed": "2026-11-06"
       },
       "destination": "top",
       "title": "Materials growth, understood through measurement.",
       "dates": "",
       "text": [
-        "I study how precursor chemistry and confined vapour transport shape low-dimensional materials. My work connects close-space growth experiments with independent SEM/EDS characterisation, Raman and photoluminescence spectroscopy, and Python analysis."
+        "I study how precursor chemistry and confined vapour transport shape low-dimensional materials. My work combines controlled growth experiments, transport modelling, microscopy and spectroscopy with reproducible Python analysis to connect processing conditions with material structure and optical response."
       ],
       "links": [],
       "output_id": null
@@ -437,18 +455,18 @@
       "id": "ABOUT",
       "selected": true,
       "provenance": {
-        "source": "EB §§1.1,2.1,3.1–3.6,4,7.2.1–7.2.3,8",
+        "source": "EB §§1.2,2.1,3.1–3.6,7.2.1,7.2.4,7.2.6,7.4",
         "evidence_status": "APPLICANT_CONFIRMED",
         "visibility": "PUBLIC",
-        "reviewed": "2026-10-20"
+        "reviewed": "2026-11-06"
       },
       "destination": "about",
       "title": "Research profile",
       "dates": "",
       "text": [
         "I am a {{profile.role_short}} in the {{profile.group}} at {{profile.institution_short}}, working on tungsten oxides and transition-metal dichalcogenides. My doctoral research examines how source chemistry, source–substrate geometry and processing conditions influence material formation.",
-        "I combine controlled growth experiments with independent ex-situ SEM imaging, SEM-EDS elemental analysis and quantitative Raman/PL measurements. I also analyse collaborator-acquired operando SEM images and develop RamanPL_2D to turn spectroscopy datasets into fitted parameters, spatial maps and structured outputs.",
-        "Alongside research, I deliver practical SEM training to new PhD researchers, support student imaging projects and have demonstrated SEM to two NanoDTC cohorts. Earlier work at Oxford connected photonic-device measurements with design and simulation; my broader experience includes technology assessment and deep-tech commercialisation."
+        "I independently acquire SEM/EDS and Raman/PL data. I have also collected and analysed Bruker XRD data for tungsten oxides and suboxides using reference-pattern matching, phase identification and lattice-parameter analysis.",
+        "I combine these measurements with local transport modelling and analysis of collaborator-acquired operando SEM images. I develop RamanPL_2D to turn spectroscopy datasets into fitted parameters, spatial maps and structured outputs. Earlier work at Oxford connected photonic-device measurements with design and simulation."
       ],
       "links": [],
       "output_id": null
@@ -457,16 +475,16 @@
       "id": "THEME-1",
       "selected": true,
       "provenance": {
-        "source": "EB §§2.1,3.1–3.2",
+        "source": "EB §§2.1,3.1–3.2,7.4",
         "evidence_status": "APPLICANT_CONFIRMED",
         "visibility": "PUBLIC",
-        "reviewed": "2026-10-05"
+        "reviewed": "2026-11-06"
       },
       "destination": "research",
-      "title": "Vapour-phase synthesis",
+      "title": "Growth and transport",
       "dates": "",
       "text": [
-        "Close-space sublimation and oxide-to-sulphide conversion: relating precursor chemistry and confined transport to the morphology of low-dimensional materials."
+        "Close-space CVD experiments and local transport modelling connect precursor chemistry and source–substrate geometry with low-dimensional oxide and sulphide formation."
       ],
       "links": [],
       "output_id": null
@@ -475,16 +493,16 @@
       "id": "THEME-2",
       "selected": true,
       "provenance": {
-        "source": "EB §§3.1,3.4–3.5,7.2.1,7.2.3",
+        "source": "EB §§7.2.1,7.2.4; EB §§3.1–3.2",
         "evidence_status": "APPLICANT_CONFIRMED",
         "visibility": "PUBLIC",
-        "reviewed": "2026-10-20"
+        "reviewed": "2026-11-06"
       },
       "destination": "research",
-      "title": "Microscopy and spectroscopy",
+      "title": "Microscopy, spectroscopy and structure",
       "dates": "",
       "text": [
-        "Independent SEM imaging and SEM-EDS elemental analysis, combined with Raman/PL mapping and collaborative structural and chemical evidence, connect processing conditions with morphology, composition and optical response."
+        "Independent SEM/EDS, Raman/PL and Bruker XRD measurements relate morphology, elemental composition, crystal structure and optical response to processing conditions."
       ],
       "links": [],
       "output_id": null
@@ -536,17 +554,18 @@
       "id": "PROJECT-WS2",
       "selected": true,
       "provenance": {
-        "source": "EB §§2.1,3.2,5.2,7.2.1,7.2.3",
+        "source": "EB §§2.1,3.2,5.2,7.2.3,7.4",
         "evidence_status": "APPLICANT_CONFIRMED",
         "visibility": "PUBLIC",
-        "reviewed": "2026-10-20"
+        "reviewed": "2026-11-06"
       },
       "destination": "projects",
       "title": "NaCl-assisted close-space growth of WS₂",
       "dates": "Jun 2025 – Apr 2026",
       "text": [
         "How can source treatment and source–substrate geometry guide planar WS₂ growth?",
-        "I investigated salt-assisted close-space growth through paired source–substrate analysis and Raman/PL measurements. I independently acquired SEM-EDS spectra and elemental maps on NaCl-treated SiO₂/Si controls to verify salt deposition before growth.",
+        "I designed a close-space growth configuration and combined local COMSOL flow modelling with controlled CVD comparisons to assess precursor delivery and source/substrate cross-contamination.",
+        "Paired source–substrate characterisation and Raman/PL measurements connect growth conditions with material formation. I independently acquired SEM-EDS spectra and maps on NaCl-treated SiO₂/Si controls to verify salt deposition before growth.",
         "This work forms part of my {{qualification:EDU-CAM:thesis}}; a first-author manuscript is {{status:P1:lower}}."
       ],
       "links": [],
@@ -625,18 +644,85 @@
         }
       ],
       "output_id": "J3"
+    },
+    {
+      "id": "PRACTICE",
+      "selected": true,
+      "provenance": {
+        "source": "EB §§5.4 PR2,7.1.1,7.2.2,7.5,8 T2–T8",
+        "evidence_status": "APPLICANT_CONFIRMED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-11-06"
+      },
+      "destination": "experience",
+      "title": "Training and laboratory contributions",
+      "dates": "Research practice",
+      "text": [
+        "I wrote a group SOP for Raman characterisation and analysis and trained researchers in SEM and Raman workflows. I also support student imaging projects and have demonstrated SEM imaging of two-dimensional MoS₂ to two NanoDTC cohorts.",
+        "My laboratory contributions include CVD reactor maintenance, pressure and precursor-delivery checks using mass-flow controllers and needle valves, and preparing departmental safety assessments."
+      ],
+      "links": [],
+      "output_id": null
+    },
+    {
+      "id": "POSTER-TMD",
+      "selected": true,
+      "provenance": {
+        "source": "EB §6; verified primary poster and conference records",
+        "evidence_status": "VERIFIED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-11-06"
+      },
+      "destination": "presentations",
+      "title": "2D TMDs 2026 · Singapore",
+      "dates": "28 Jun – 2 Jul 2026",
+      "text": [
+        "Poster: Flux-Resolved Growth Exploration in Close-Space CVD: From WO₃₋ₓ–WS₂ Core–Shell Nanotubes to WS₂–MoS₂ Heterostructures.",
+        "National University of Singapore. Dates shown are the conference dates."
+      ],
+      "links": [],
+      "output_id": null
+    },
+    {
+      "id": "POSTER-IWEPNM",
+      "selected": true,
+      "provenance": {
+        "source": "EB §6; verified primary poster and conference records",
+        "evidence_status": "VERIFIED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-11-06"
+      },
+      "destination": "presentations",
+      "title": "IWEPNM 2026 · Kirchberg in Tirol, Austria",
+      "dates": "1 Mar 2026",
+      "text": [
+        "Poster: Direct Fabrication of WS₂–WO₃₋ₓ Nanotube Devices on Si Substrate via a Close-space Sublimation Approach.",
+        "Final poster title; scheduled poster session on 1 March 2026."
+      ],
+      "links": [],
+      "output_id": null
     }
   ],
   "presentation": {
     "url": "https://barry063.github.io/hao-yu-website/",
     "repository": "https://github.com/barry063/hao-yu-website",
     "title": "{{profile.name}} — Low-dimensional materials & spectroscopy",
-    "description": "{{profile.name}}, {{profile.role}} at {{profile.institution_short}}. Vapour-phase synthesis of low-dimensional materials, electron microscopy, Raman/PL spectroscopy and Python analysis. {{event:THESIS-SUBMITTED:sentence}}",
+    "description": "{{profile.name}}, {{profile.role}} at {{profile.institution_short}}. Low-dimensional materials growth, transport modelling, microscopy, spectroscopy and Python analysis. {{event:THESIS-SUBMITTED:sentence}}",
     "cv": "assets/Hao_Yu_CV.pdf",
     "portrait": "assets/hao-yu-portrait.jpg",
     "social": {
       "topic": "Low-dimensional materials | Synthesis | Spectroscopy",
       "alt": "{{profile.name}}. {{profile.role_short}} at {{profile.institution_short}}. Low-dimensional materials, synthesis and spectroscopy."
+    },
+    "cv_document": {
+      "file": "build-resources/public-cv/Hao_Yu_CV.pdf",
+      "sha256": "5c3f21f01a544daa8e9b78a07a25d7561c3f0f9ebfbed1fe3680c76a1eccff02",
+      "date": "2026-11-06",
+      "pages": 4,
+      "source_tex_sha256": "436531be81345baaa5b0a5a63d2f8cf484c512f12ba4eed3a8d8b66227985087",
+      "source_pdf_sha256": "1e086cc931a0bc622643c923a016084429d2a87acc3b5010e11b0cdbde80b53f",
+      "export_sha256": "16fe126b7a5ff784f02e9d08a2109c0557097bba278efa3682f24ac5ef7472d3",
+      "facts_sha256": "f5c79c91979aa76133b365806a53096246ffda076bf3608739c30a3b28e73335"
     }
   }
 }

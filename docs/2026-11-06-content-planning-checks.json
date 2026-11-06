@@ -1,0 +1,114 @@
+{
+  "date": "2026-11-06",
+  "task": "N01",
+  "milestone": "PLAN_READY_FOR_REVIEW",
+  "baseline_commit": "a242fb9e950160060488e4af8ae387ee553e4d0d",
+  "comparison": "Released public claims and source fingerprints versus current canonical records; not a complete historical canonical text diff",
+  "sources": [
+    {
+      "id": "EB",
+      "path": "1 Master Academic CV/Evidence_Bank.md",
+      "baseline_sha256": "e0934cab5a378f9766660b339587188bdcc9d38bcd85c6433817282fec59834f",
+      "current_sha256": "f44649db24c25d4bb6fa321427bf6e7f9ba9939470aa0f53049c3fbbfb8f1e35",
+      "changed": true
+    },
+    {
+      "id": "PUB",
+      "path": "4 Publication list/Master_Publication_List.md",
+      "baseline_sha256": "fc76452713464119758fbe9fdadbd3516f176ad9a5c9bfb8f55370b6a1d45dd9",
+      "current_sha256": "ac01de99f3ebf343b36dc11b4416c34748332283a0ecc56731941b15542f8a72",
+      "changed": true
+    },
+    {
+      "id": "CONTRIB",
+      "path": "4 Publication list/Publication_Contributions.json",
+      "baseline_sha256": "ae05ab7c15ee1f9a02b834af1b35d18e468bb56b3a604d8f4f488b7675abc876",
+      "current_sha256": "8f0015b0774d94dc3769a68c2b64cbbdf1654b19aa1f4a4543c7e0950ab9f74a",
+      "changed": true
+    },
+    {
+      "id": "PROFILE",
+      "path": "3 Research Profile/Hao_Yu_Application_Evidence_Wording.md",
+      "baseline_sha256": "7337f5442b2445d7042c05099bdf983ca63f5a09f015def53682ef441790b9ba",
+      "current_sha256": "5fd5823bb0585b563563acc9cac325d2ae375746eef2ccb15113c02d5d603ff0",
+      "changed": true
+    },
+    {
+      "id": "EXPORT",
+      "path": "1 Master Academic CV/Current_Export_Record.json",
+      "baseline_sha256": "90a10f9d7ad7367924d99e484902cfe04e1ac0367f4830c3f6851fd4a6696bc5",
+      "current_sha256": "90a10f9d7ad7367924d99e484902cfe04e1ac0367f4830c3f6851fd4a6696bc5",
+      "changed": false
+    }
+  ],
+  "supplementary_sources": [
+    {
+      "id": "NARRATIVES",
+      "path": "6 Modular Research Directions/Reusable_Application_Narratives.md",
+      "sha256": "b32139a684ef802c5aaedfd9f060fe724d1e2ec23cc4de5229c0f165e1e1928b"
+    },
+    {
+      "id": "UPDATE",
+      "path": "7 Application Harvests/Cross_Application_Review_2026-11-06/UPDATE_REPORT.md",
+      "sha256": "d7b6ed45d19bf2ddc6a3e097523944116b2ce58de6137a40322eaea30cd07c3d"
+    },
+    {
+      "id": "XRD",
+      "path": "7 Application Harvests/Diffractive_Labs_OP-040/HARVEST_2026-11-06.md",
+      "sha256": "d0de4df45e35144d5fbd6fad903445a556947bf98a01e1b000a008278b259d0c"
+    },
+    {
+      "id": "CORRECTION_REVIEW",
+      "path": "7 Application Harvests/Cross_Application_Review_2026-11-06/photonics_correction_source_review.md",
+      "sha256": "adb1f1e4714639fa3b2884fdac486ce57c73fe8ee9ca1046e4775a3a18c836fd"
+    }
+  ],
+  "changes": [
+    "C01",
+    "C02",
+    "C03",
+    "C04",
+    "C05",
+    "C06",
+    "C07",
+    "C08",
+    "C09",
+    "C10",
+    "C11"
+  ],
+  "checks": [
+    {
+      "id": "N01-A",
+      "result": "PASS",
+      "method": "Get-FileHash -Algorithm SHA256; independently recomputed with Node crypto against content/site.json",
+      "actual": "4 changed; EXPORT unchanged; current hashes match the values captured during review"
+    },
+    {
+      "id": "N01-B",
+      "result": "PASS",
+      "method": "Editorial comparison of EB sections, PUB/CONTRIB, PROFILE and dated update reports against public records",
+      "actual": "11 change groups mapped; previous SEM/EDS coverage distinguished; photonics SUPPORTED/VERIFY scope held; statuses preserved at recorded confirmation dates"
+    },
+    {
+      "id": "N01-C",
+      "result": "PASS",
+      "method": "JSON parsing, source hash recheck, document link/whitespace/exposure inspection, git diff --name-only and git diff --check",
+      "actual": "Planning documents only; released dataset/visitor files unchanged"
+    }
+  ],
+  "not_run": [
+    "candidate build",
+    "browser/responsive/keyboard/zoom checks",
+    "PDF generation and visual review",
+    "external-link checks",
+    "new independent publication-status check",
+    "live deployment verification"
+  ],
+  "limitations": [
+    "Canonical workspace has no Git history",
+    "Full October canonical text diff not available in this review",
+    "Correction findings rely on the dated local indexed-primary-source review; no new original/SI audit",
+    "Historical live verification not repeated"
+  ],
+  "next_task": "N02 after an instruction to implement"
+}

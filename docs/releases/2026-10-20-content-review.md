@@ -1,5 +1,12 @@
 # Evidence Bank content review — 20 October 2026
 
+Final outcome: **LIVE_VERIFIED** at commit
+`80d851690d647c4f4c4499a3599fd24217d10578` after the user's rebase/merge of
+[PR #4](https://github.com/barry063/hao-yu-website/pull/4).
+[Deployment evidence](2026-10-20-deployment-checks.json) records the successful
+Pages run, exact live file comparisons and browser checks. R01–R03 are complete.
+The dated preparation and PR records below preserve the sequence of decisions.
+
 Local milestone: **READY_TO_PUBLISH**. Workflow state: **READY_FOR_REVIEW**.
 Publication and live verification: **NOT RUN**; this candidate has no release
 approval. Completed R01/R02; R03 requires the user's publication instruction.
@@ -124,3 +131,22 @@ passed. GitHub rejected the requested approving review with
 author are both `barry063`. Local content approval is recorded, but no formal
 GitHub approval was submitted. That requires another reviewer account. The PR
 remains open; it has not been merged or deployed.
+
+## Live verification after user merge
+
+GitHub confirmed PR #4 merged on 20 October 2026 at 09:48:22 UTC and the Pages
+workflow completed successfully for the merged commit. The exact-candidate
+`verify-live` command passed: committed dataset, nine live visitor files and
+committed `.nojekyll` match the approved candidate. Binary assets, including the
+public CV, match byte-for-byte; text comparisons normalise line endings.
+
+Live browser checks passed at 375, 768 and 1440 pixels and native 200% zoom,
+including keyboard navigation, mobile menu, skip link, reduced motion, anchors
+and no-JS behaviour. Live top/publications screenshots were visually inspected.
+The main/deployment revision was rechecked after browser checks. Full
+accessibility auditing remains NOT RUN as previously recorded.
+
+The private manual-review published baseline has advanced to this verified
+candidate. Installed watcher state is unchanged. Local main is synchronised to
+the merge; these final verification records are committed locally at the user's
+request. No additional push or deployment was performed.

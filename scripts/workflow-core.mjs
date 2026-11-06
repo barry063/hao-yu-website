@@ -82,6 +82,7 @@ export const INPUT_FILES = Object.freeze(['scripts/workflow-core.mjs','scripts/c
   'scripts/durable-json.mjs',
   'scripts/prepare-update.mjs','scripts/release-workflow.mjs','scripts/workflow-cli.mjs','scripts/browser-qa.mjs',
   'scripts/build-site.mjs','scripts/render-site.mjs','scripts/public-content.mjs','scripts/build_public_cv.py','scripts/build_social_card.py',
+  'scripts/reviewed-cv.mjs','scripts/check_reviewed_cv.py','build-resources/public-cv/Hao_Yu_CV.pdf',
   'scripts/check-candidate.mjs','scripts/check-site.mjs','scripts/check-preview.mjs','scripts/navigation.test.mjs','scripts/check_public_cv.py',
   'scripts/preview.mjs','templates/index.html','schemas/public-content.schema.json','.htmlvalidate.json','requirements-build.txt',
   'package.json','package-lock.json','build-resources/fonts/Vera.ttf','build-resources/fonts/VeraBd.ttf','build-resources/fonts/hashes.json',

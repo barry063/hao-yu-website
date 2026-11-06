@@ -53,3 +53,29 @@ Independent ex-situ SEM/SEM-EDS and thesis-specific operando image analysis now
 have precise evidence. Practical SEM training and NanoDTC demonstrations can be
 described within the applicant-confirmed scope; other teaching/service holds
 remain. The review records exact attribution, sources, exclusions and checks.
+
+## 6 November 2026 — implementation candidate
+
+The November proposal adds model-informed growth decisions, Bruker XRD,
+Raman SOP/training, laboratory contributions, academic representation and more
+specific BOE initiative. Current EB §2.2 resolves Oxford 2:1 from a saved degree
+confirmation; §6 supports two selected posters. These supersede the old blanket
+classification/presentation holds only for the named records. Full primary
+documents and application records stay outside this repository.
+
+The user selected the refreshed four-page master as the public CV and confirmed
+removing the mobile number. The public copy preserves its content and hyperlinks;
+the running “Academic CV” label is removed and PDF title metadata is neutral.
+This replaces the earlier proposed short CV. The user's explicit selection clears
+that supplied document's existing manuscript working title, co-author listing and
+broader research content for the download. It does not turn SUPPORTED master
+details into VERIFIED website claims. No private submission reference, referee
+record, named confidential company information or raw evidence is included.
+
+P1 now uses the master working title with an explicit in-preparation/working-title
+label. Published article counts, manuscript statuses and pending PhD status are
+unchanged. The page retains neutral photonics contributions; the correction's
+specific scope is documented in current canonical records, while detailed methods
+and performance remain outside this page update. Optional software-brand,
+frame-averaging and cleanroom detail remains in the selected CV without making
+the homepage an instrument inventory.

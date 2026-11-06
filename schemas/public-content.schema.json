@@ -440,7 +440,9 @@
               "top",
               "about",
               "research",
-              "projects"
+              "projects",
+              "experience",
+              "presentations"
             ]
           },
           "title": {
@@ -539,6 +541,54 @@
           "required": [
             "topic",
             "alt"
+          ],
+          "additionalProperties": false
+        },
+        "cv_document": {
+          "type": "object",
+          "properties": {
+            "file": {
+              "const": "build-resources/public-cv/Hao_Yu_CV.pdf"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "date": {
+              "type": "string",
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+            },
+            "pages": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 20
+            },
+            "source_tex_sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "source_pdf_sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "export_sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "facts_sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          },
+          "required": [
+            "file",
+            "sha256",
+            "date",
+            "pages",
+            "source_tex_sha256",
+            "source_pdf_sha256",
+            "export_sha256",
+            "facts_sha256"
           ],
           "additionalProperties": false
         }

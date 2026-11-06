@@ -1,0 +1,409 @@
+{
+  "date": "2026-11-06",
+  "state": "READY_FOR_REVIEW",
+  "local_milestone": "READY_TO_PUBLISH",
+  "candidate": "07902d3ccd18204ded129d68dfd5171c6e6fc056c845e4d22a5a5fdaf59e807b",
+  "target": "https://barry063.github.io/hao-yu-website/",
+  "baseline_commit": "a242fb9",
+  "tasks": {
+    "N02": "DONE",
+    "N03": "DONE",
+    "N04": "NOT_STARTED"
+  },
+  "sources": [
+    {
+      "id": "EB",
+      "path": "1 Master Academic CV/Evidence_Bank.md",
+      "sha256": "1df8c61235c3238ac50e985588f7c6d94caa49c96194878e835b5e65304eb4d8"
+    },
+    {
+      "id": "PUB",
+      "path": "4 Publication list/Master_Publication_List.md",
+      "sha256": "ac01de99f3ebf343b36dc11b4416c34748332283a0ecc56731941b15542f8a72"
+    },
+    {
+      "id": "CONTRIB",
+      "path": "4 Publication list/Publication_Contributions.json",
+      "sha256": "8f0015b0774d94dc3769a68c2b64cbbdf1654b19aa1f4a4543c7e0950ab9f74a"
+    },
+    {
+      "id": "PROFILE",
+      "path": "3 Research Profile/Hao_Yu_Application_Evidence_Wording.md",
+      "sha256": "5fd5823bb0585b563563acc9cac325d2ae375746eef2ccb15113c02d5d603ff0"
+    },
+    {
+      "id": "EXPORT",
+      "path": "1 Master Academic CV/Current_Export_Record.json",
+      "sha256": "16fe126b7a5ff784f02e9d08a2109c0557097bba278efa3682f24ac5ef7472d3"
+    }
+  ],
+  "master_cv": {
+    "file": "build-resources/public-cv/Hao_Yu_CV.pdf",
+    "sha256": "5c3f21f01a544daa8e9b78a07a25d7561c3f0f9ebfbed1fe3680c76a1eccff02",
+    "date": "2026-11-06",
+    "pages": 4,
+    "source_tex_sha256": "436531be81345baaa5b0a5a63d2f8cf484c512f12ba4eed3a8d8b66227985087",
+    "source_pdf_sha256": "1e086cc931a0bc622643c923a016084429d2a87acc3b5010e11b0cdbde80b53f",
+    "export_sha256": "16fe126b7a5ff784f02e9d08a2109c0557097bba278efa3682f24ac5ef7472d3",
+    "facts_sha256": "f5c79c91979aa76133b365806a53096246ffda076bf3608739c30a3b28e73335"
+  },
+  "runtime": {
+    "node": "v24.14.1",
+    "python": "3.12.14",
+    "reportlab": "4.4.9",
+    "pillow": "12.3.0"
+  },
+  "outputs": {
+    ".nojekyll": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "index.html": "521ac9f22ceb211b753b2f3eae79ae59913a1dcba56eb9c4944ba6feb0c75183",
+    "styles.css": "ca8344bf6244aba31ca0c6211e9fa3e0cadf2a0cb53c4b9ba5f16de063e8b5d7",
+    "script.js": "30be027c19866039d11ef3d3fe04c49b5d2df1f38b053cf92911f3eb0804cfdb",
+    "favicon.svg": "0ed347d5da206ffa193f82c372d6e9abc5d2be1813744cbbfa0211da4e17bd37",
+    "robots.txt": "5f76f3d777d3616e02b73917ce737d9f130097ef96be6deeb6aa9c11f5c9eb38",
+    "sitemap.xml": "e2fa2e477f3549ac67cfe574666bdc09207fbc5e595f4d5ac14cad77f2aea428",
+    "assets/Hao_Yu_CV.pdf": "5c3f21f01a544daa8e9b78a07a25d7561c3f0f9ebfbed1fe3680c76a1eccff02",
+    "assets/hao-yu-portrait.jpg": "46303d6d9724e6a39504ec0d3cf4a1333e5bc2d6a98d7ae527c4bc0d25326280",
+    "assets/og-image.png": "19d42cc64c0751580ad51c7b0b2d9e846701010524d097918ffb401837dd0801"
+  },
+  "changes": [
+    {
+      "field": "/outputs/P1/provenance/source",
+      "before": "EB §§3.2,5.2; PUB P1",
+      "after": "EB §§3.2,5.2; PUB P1; user-selected master CV"
+    },
+    {
+      "field": "/outputs/P1/title",
+      "before": "Salt-assisted close-space growth of monolayer WS₂",
+      "after": "Resolving source–transport–growth relationships in salt-assisted close-space CVD of monolayer WS₂"
+    },
+    {
+      "field": "/outputs/P1/contribution",
+      "before": "First-author manuscript {{status:P1:lower}} on source–transport–growth relationships. Topic description; final title to follow.",
+      "after": "First-author manuscript {{status:P1:lower}}. Working title."
+    },
+    {
+      "field": "/experience/EXP-JUDGE/text",
+      "before": [
+        "Conducted market sizing, application analysis and competitor mapping for photonic photovoltaic technology targeting indoor solar and ambient IoT.",
+        "Supported a TRL 2-to-TRL 4 roadmap and IP licensing strategy, including MVP and scale-up considerations."
+      ],
+      "after": [
+        "Conducted market sizing, application analysis and competitor mapping for photonic photovoltaic technology targeting indoor solar and ambient IoT.",
+        "Supported a proposed TRL 2-to-4 roadmap and IP licensing strategy, including MVP and scale-up considerations."
+      ]
+    },
+    {
+      "field": "/experience/EXP-BOE/provenance/source",
+      "before": "EB §4.3",
+      "after": "EB §4.3; applicant confirmation 29 October 2026"
+    },
+    {
+      "field": "/experience/EXP-BOE/text",
+      "before": [
+        "Organised online and in-person career events at UK universities and identified potential research collaborators for MicroLED technology."
+      ],
+      "after": [
+        "Organised online and in-person career events at UK universities and identified potential research collaborators for MicroLED technology.",
+        "Initiated and maintained research–industry contacts to connect relevant academic expertise with next-generation display needs."
+      ]
+    },
+    {
+      "field": "/experience/EXP-REP",
+      "before": null,
+      "after": {
+        "id": "EXP-REP",
+        "selected": true,
+        "provenance": {
+          "source": "EB §9.1",
+          "evidence_status": "APPLICANT_CONFIRMED",
+          "visibility": "PUBLIC"
+        },
+        "text": [
+          "Represented postgraduate researchers in departmental discussions on teaching and examinations, AI tools, welfare and inclusion; communicated departmental information and decisions back to students."
+        ],
+        "role": "Academic Representative (Postgraduate Research)",
+        "organisation": "Department of Engineering, University of Cambridge",
+        "start_month": "2025-10",
+        "end_month": "2026-09"
+      }
+    },
+    {
+      "field": "/qualifications/EDU-OX/provenance/source",
+      "before": "EB §2.2",
+      "after": "EB §2.2; saved Oxford degree confirmation; project record"
+    },
+    {
+      "field": "/qualifications/EDU-OX/text",
+      "before": [
+        "Trinity College. Research project on photonic micro-ring resonator tuning."
+      ],
+      "after": [
+        "Upper Second-Class Honours (2:1). Trinity College. Research project on photonic micro-ring resonator tuning."
+      ]
+    },
+    {
+      "field": "/narratives/PROFILE/provenance/source",
+      "before": "EB §§1.2,2.1,3.1–3.3,7.2.1,7.2.3",
+      "after": "EB §§1.2,2.1,3.1–3.3,7.2,7.4"
+    },
+    {
+      "field": "/narratives/PROFILE/text",
+      "before": [
+        "I study how precursor chemistry and confined vapour transport shape low-dimensional materials. My work connects close-space growth experiments with independent SEM/EDS characterisation, Raman and photoluminescence spectroscopy, and Python analysis."
+      ],
+      "after": [
+        "I study how precursor chemistry and confined vapour transport shape low-dimensional materials. My work combines controlled growth experiments, transport modelling, microscopy and spectroscopy with reproducible Python analysis to connect processing conditions with material structure and optical response."
+      ]
+    },
+    {
+      "field": "/narratives/ABOUT/provenance/source",
+      "before": "EB §§1.1,2.1,3.1–3.6,4,7.2.1–7.2.3,8",
+      "after": "EB §§1.2,2.1,3.1–3.6,7.2.1,7.2.4,7.2.6,7.4"
+    },
+    {
+      "field": "/narratives/ABOUT/text",
+      "before": [
+        "I am a {{profile.role_short}} in the {{profile.group}} at {{profile.institution_short}}, working on tungsten oxides and transition-metal dichalcogenides. My doctoral research examines how source chemistry, source–substrate geometry and processing conditions influence material formation.",
+        "I combine controlled growth experiments with independent ex-situ SEM imaging, SEM-EDS elemental analysis and quantitative Raman/PL measurements. I also analyse collaborator-acquired operando SEM images and develop RamanPL_2D to turn spectroscopy datasets into fitted parameters, spatial maps and structured outputs.",
+        "Alongside research, I deliver practical SEM training to new PhD researchers, support student imaging projects and have demonstrated SEM to two NanoDTC cohorts. Earlier work at Oxford connected photonic-device measurements with design and simulation; my broader experience includes technology assessment and deep-tech commercialisation."
+      ],
+      "after": [
+        "I am a {{profile.role_short}} in the {{profile.group}} at {{profile.institution_short}}, working on tungsten oxides and transition-metal dichalcogenides. My doctoral research examines how source chemistry, source–substrate geometry and processing conditions influence material formation.",
+        "I independently acquire SEM/EDS and Raman/PL data. I have also collected and analysed Bruker XRD data for tungsten oxides and suboxides using reference-pattern matching, phase identification and lattice-parameter analysis.",
+        "I combine these measurements with local transport modelling and analysis of collaborator-acquired operando SEM images. I develop RamanPL_2D to turn spectroscopy datasets into fitted parameters, spatial maps and structured outputs. Earlier work at Oxford connected photonic-device measurements with design and simulation."
+      ]
+    },
+    {
+      "field": "/narratives/THEME-1/provenance/source",
+      "before": "EB §§2.1,3.1–3.2",
+      "after": "EB §§2.1,3.1–3.2,7.4"
+    },
+    {
+      "field": "/narratives/THEME-1/title",
+      "before": "Vapour-phase synthesis",
+      "after": "Growth and transport"
+    },
+    {
+      "field": "/narratives/THEME-1/text",
+      "before": [
+        "Close-space sublimation and oxide-to-sulphide conversion: relating precursor chemistry and confined transport to the morphology of low-dimensional materials."
+      ],
+      "after": [
+        "Close-space CVD experiments and local transport modelling connect precursor chemistry and source–substrate geometry with low-dimensional oxide and sulphide formation."
+      ]
+    },
+    {
+      "field": "/narratives/THEME-2/provenance/source",
+      "before": "EB §§3.1,3.4–3.5,7.2.1,7.2.3",
+      "after": "EB §§7.2.1,7.2.4; EB §§3.1–3.2"
+    },
+    {
+      "field": "/narratives/THEME-2/title",
+      "before": "Microscopy and spectroscopy",
+      "after": "Microscopy, spectroscopy and structure"
+    },
+    {
+      "field": "/narratives/THEME-2/text",
+      "before": [
+        "Independent SEM imaging and SEM-EDS elemental analysis, combined with Raman/PL mapping and collaborative structural and chemical evidence, connect processing conditions with morphology, composition and optical response."
+      ],
+      "after": [
+        "Independent SEM/EDS, Raman/PL and Bruker XRD measurements relate morphology, elemental composition, crystal structure and optical response to processing conditions."
+      ]
+    },
+    {
+      "field": "/narratives/PROJECT-WS2/provenance/source",
+      "before": "EB §§2.1,3.2,5.2,7.2.1,7.2.3",
+      "after": "EB §§2.1,3.2,5.2,7.2.3,7.4"
+    },
+    {
+      "field": "/narratives/PROJECT-WS2/text",
+      "before": [
+        "How can source treatment and source–substrate geometry guide planar WS₂ growth?",
+        "I investigated salt-assisted close-space growth through paired source–substrate analysis and Raman/PL measurements. I independently acquired SEM-EDS spectra and elemental maps on NaCl-treated SiO₂/Si controls to verify salt deposition before growth.",
+        "This work forms part of my {{qualification:EDU-CAM:thesis}}; a first-author manuscript is {{status:P1:lower}}."
+      ],
+      "after": [
+        "How can source treatment and source–substrate geometry guide planar WS₂ growth?",
+        "I designed a close-space growth configuration and combined local COMSOL flow modelling with controlled CVD comparisons to assess precursor delivery and source/substrate cross-contamination.",
+        "Paired source–substrate characterisation and Raman/PL measurements connect growth conditions with material formation. I independently acquired SEM-EDS spectra and maps on NaCl-treated SiO₂/Si controls to verify salt deposition before growth.",
+        "This work forms part of my {{qualification:EDU-CAM:thesis}}; a first-author manuscript is {{status:P1:lower}}."
+      ]
+    },
+    {
+      "field": "/narratives/PRACTICE",
+      "before": null,
+      "after": {
+        "id": "PRACTICE",
+        "selected": true,
+        "provenance": {
+          "source": "EB §§5.4 PR2,7.1.1,7.2.2,7.5,8 T2–T8",
+          "evidence_status": "APPLICANT_CONFIRMED",
+          "visibility": "PUBLIC"
+        },
+        "destination": "experience",
+        "title": "Training and laboratory contributions",
+        "dates": "Research practice",
+        "text": [
+          "I wrote a group SOP for Raman characterisation and analysis and trained researchers in SEM and Raman workflows. I also support student imaging projects and have demonstrated SEM imaging of two-dimensional MoS₂ to two NanoDTC cohorts.",
+          "My laboratory contributions include CVD reactor maintenance, pressure and precursor-delivery checks using mass-flow controllers and needle valves, and preparing departmental safety assessments."
+        ],
+        "links": [],
+        "output_id": null
+      }
+    },
+    {
+      "field": "/narratives/POSTER-TMD",
+      "before": null,
+      "after": {
+        "id": "POSTER-TMD",
+        "selected": true,
+        "provenance": {
+          "source": "EB §6; verified primary poster and conference records",
+          "evidence_status": "VERIFIED",
+          "visibility": "PUBLIC"
+        },
+        "destination": "presentations",
+        "title": "2D TMDs 2026 · Singapore",
+        "dates": "28 Jun – 2 Jul 2026",
+        "text": [
+          "Poster: Flux-Resolved Growth Exploration in Close-Space CVD: From WO₃₋ₓ–WS₂ Core–Shell Nanotubes to WS₂–MoS₂ Heterostructures.",
+          "National University of Singapore. Dates shown are the conference dates."
+        ],
+        "links": [],
+        "output_id": null
+      }
+    },
+    {
+      "field": "/narratives/POSTER-IWEPNM",
+      "before": null,
+      "after": {
+        "id": "POSTER-IWEPNM",
+        "selected": true,
+        "provenance": {
+          "source": "EB §6; verified primary poster and conference records",
+          "evidence_status": "VERIFIED",
+          "visibility": "PUBLIC"
+        },
+        "destination": "presentations",
+        "title": "IWEPNM 2026 · Kirchberg in Tirol, Austria",
+        "dates": "1 Mar 2026",
+        "text": [
+          "Poster: Direct Fabrication of WS₂–WO₃₋ₓ Nanotube Devices on Si Substrate via a Close-space Sublimation Approach.",
+          "Final poster title; scheduled poster session on 1 March 2026."
+        ],
+        "links": [],
+        "output_id": null
+      }
+    },
+    {
+      "field": "/presentation/description",
+      "before": "{{profile.name}}, {{profile.role}} at {{profile.institution_short}}. Vapour-phase synthesis of low-dimensional materials, electron microscopy, Raman/PL spectroscopy and Python analysis. {{event:THESIS-SUBMITTED:sentence}}",
+      "after": "{{profile.name}}, {{profile.role}} at {{profile.institution_short}}. Low-dimensional materials growth, transport modelling, microscopy, spectroscopy and Python analysis. {{event:THESIS-SUBMITTED:sentence}}"
+    },
+    {
+      "field": "/presentation/cv_document",
+      "before": null,
+      "after": {
+        "file": "build-resources/public-cv/Hao_Yu_CV.pdf",
+        "sha256": "5c3f21f01a544daa8e9b78a07a25d7561c3f0f9ebfbed1fe3680c76a1eccff02",
+        "date": "2026-11-06",
+        "pages": 4,
+        "source_tex_sha256": "436531be81345baaa5b0a5a63d2f8cf484c512f12ba4eed3a8d8b66227985087",
+        "source_pdf_sha256": "1e086cc931a0bc622643c923a016084429d2a87acc3b5010e11b0cdbde80b53f",
+        "export_sha256": "16fe126b7a5ff784f02e9d08a2109c0557097bba278efa3682f24ac5ef7472d3",
+        "facts_sha256": "f5c79c91979aa76133b365806a53096246ffda076bf3608739c30a3b28e73335"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "HTML_CONTENT_NAVIGATION_HTTP",
+      "result": "PASS"
+    },
+    {
+      "id": "PUBLIC_PDF",
+      "result": "PASS"
+    },
+    {
+      "id": "BROWSER_KEYBOARD_ZOOM_MOTION",
+      "result": "PASS",
+      "evidence": {
+        "browser": "157.0.8103.38",
+        "checks": [
+          {
+            "width": 375,
+            "result": "PASS",
+            "keyboard": "PASS",
+            "reduced_motion": "PASS"
+          },
+          {
+            "width": 768,
+            "result": "PASS",
+            "keyboard": "PASS",
+            "reduced_motion": "PASS"
+          },
+          {
+            "width": 1440,
+            "result": "PASS",
+            "keyboard": "PASS",
+            "reduced_motion": "PASS"
+          },
+          {
+            "width": 1440,
+            "zoom_200_percent": "PASS",
+            "result": "PASS",
+            "keyboard": "PASS",
+            "reduced_motion": "PASS",
+            "anchors": "PASS",
+            "dimensions": {
+              "inner": 711,
+              "outer": 1440,
+              "dpr": 2,
+              "cssZoom": "1",
+              "overflow": false
+            },
+            "capture_method": "Physical viewport via CDP after keyboard navigation and paint; CSS zoom remains 1"
+          }
+        ],
+        "no_js": "PASS",
+        "full_accessibility_audit": "NOT RUN"
+      }
+    }
+  ],
+  "additional_checks": {
+    "propagation_regressions": "PASS: 58/58",
+    "final_affected_contract_and_reviewed_cv_regressions": "PASS: 18/18 after shared-fact clearance binding",
+    "navigation": "PASS: 7/7",
+    "field_coverage": "PASS: 232/232",
+    "pdf_visual": "PASS: all four public pages rendered with Poppler and inspected",
+    "pdf_text_and_links": "PASS: all four pages equal master after only heading/phone removal; hyperlink targets identical",
+    "browser_visual": "PASS: desktop overview, zoomed publications, focused profile/posters/mobile training/service captures inspected",
+    "immutable_package_gate_without_approval": "PASS",
+    "canonical_master_and_declared_sources": "PASS: hashes unchanged since review",
+    "visual_baseline_parity": "PASS: final visitor outputs byte-identical to inspected draft",
+    "root_preservation": "PASS: verified against Git baseline",
+    "documentation": "PASS: whitespace, source references and local links",
+    "privacy": "PASS: public dataset/PDF reviewed; no canonical source or application record copied into tracked files"
+  },
+  "not_run": [
+    "new external destination checks (links unchanged)",
+    "full accessibility audit",
+    "live deployment verification",
+    "commit/push/publication"
+  ],
+  "limitations": [
+    "In-app browser bridge was unavailable; existing repository Chromium QA used.",
+    "Initial local HTTP check was blocked by sandbox EACCES; authorised outside-sandbox rerun passed.",
+    "PDF text extraction was adjusted for LaTeX subscripts; Scholar URL comparison ignores only the optional language parameter.",
+    "Bundled Pillow is now 13.0.0; the available cached 12.3.0 package set was used through PYTHONPATH for pinned builds/tests, without changing the installed runtime.",
+    "An interim private calibration preceded the new CV facts fingerprint; it was preserved and superseded by a fresh final private calibration.",
+    "No candidate approval recorded; user selected the CV source and requested content implementation."
+  ],
+  "evidence": {
+    "candidate": "tmp/candidates/07902d3ccd18204ded129d68dfd5171c6e6fc056c845e4d22a5a5fdaf59e807b",
+    "screenshots": "tmp/qa/07902d3ccd18204ded129d68dfd5171c6e6fc056c845e4d22a5a5fdaf59e807b",
+    "pdf_pages": "tmp/pdf-master-public",
+    "field_register": "content/proposals/2026-11-06-field-ownership.json"
+  }
+}

@@ -11,6 +11,22 @@ now reflects updated EB locators and applicant-confirmed microscopy/mentoring
 provenance. See the [content review](releases/2026-10-20-content-review.md).
 Historical baseline descriptions below remain the P01 design record.
 
+6 November 2026 candidate: `content/proposals/2026-11-06.json` and its companion
+`2026-11-06-field-ownership.json` map 232 fields. Following the user's release
+instruction, that matching dataset/register pair is promoted for publication. New entries
+are PRACTICE (EB §§5.4,7–8), EXP-REP (EB §9.1), POSTER-TMD and POSTER-IWEPNM
+(EB §6 and verified primary records). Oxford classification follows EB §2.2.
+
+The user-selected public master derivative is a separately reviewed PDF asset,
+declared by `presentation.cv_document`; it is copied exactly, not generated from
+each narrative field. Shared identity, qualification events, output titles/statuses
+and hyperlinks receive consistency checks. Free-form claims require editorial
+comparison. The PDF's own date controls the download label. Its file hash and
+the source/export fingerprints bind review and detect stale inputs; no private
+canonical TeX/PDF is copied into the website repository. Only the sanitised public
+PDF is retained. The original shared generated-CV route remains for datasets
+without `cv_document`.
+
 ## Ownership and precedence
 
 `content/site.json` version 2 is a reviewed public derivative, never a second
