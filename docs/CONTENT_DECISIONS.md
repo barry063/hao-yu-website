@@ -79,3 +79,40 @@ specific scope is documented in current canonical records, while detailed method
 and performance remain outside this page update. Optional software-brand,
 frame-averaging and cleanroom detail remains in the selected CV without making
 the homepage an instrument inventory.
+
+## 12 November 2026 — content and discovery candidate
+
+The user requested implementation of the [content and discovery plan](2026-11-12_CONTENT_AND_DISCOVERY_PLAN.md),
+including a refreshed public CV and verification, with review before publication.
+The [dated proposal](../content/proposals/2026-11-12.json) is separate from the
+released root dataset. Five source fingerprints were rechecked against the
+current evidence bank, publication records, profile wording and export record.
+
+| Item | Candidate disposition | Evidence and limit |
+| --- | --- | --- |
+| S2 tutorial | Separate Submitted group; title, target journal and bounded personal contribution | EB §§3.9,5.2,13.2; PUB/CONTRIB S2. Submitted-manuscript title/sample attribution is distinct from the applicant-confirmed growth recipes and Raman-analysis workflow. No exact submission date, external-review, acceptance, DOI or publication-year claim. |
+| Published inventory | Retain four published research articles, S1 under review, P1 in preparation and SW1 software | S2 is an additional submitted tutorial, not a fifth published article. Existing records retain their original evidence-review dates. |
+| Photonics project | Replace the general concluding sentence with personally performed fibre-to-chip alignment and polarisation optimisation | EB §§3.6,7.2, applicant-confirmed 9 November. Keep the earlier published measurements/design/simulations wording and J3's correction link; no complete test-bed construction, automation or wider cleanroom/performance expansion. |
+| Cambridge identity link | Add the official personal profile to the visible profile links and generated Person sameAs | EB §§1.1,2.1 identity plus the official Cambridge profile. This manually reviewed link is separate from canonical auto-sync and does not establish a reverse link from Cambridge. |
+| Search title | Hao Yu, materials growth/spectroscopy and Cambridge in one concise title | Names and institution use existing shared tokens. Title, OG title and Twitter title use the same generator input; the visible H1 remains the person's name. |
+| Public CV | Reviewed four-page derivative of the 12 November master, with Cambridge profile link and bounded Oxford alignment sentence | Retain earlier mobile/header removal and neutral metadata; remove private submission references and abbreviate the newly added S2 author list. All four pages and extracted text/hyperlinks checked; source/export/shared-fact bindings refreshed. Canonical master files remain unchanged. |
+
+S2's displayed description includes the journal because non-published outputs
+render their contribution text rather than their nullable venue field. Its
+status is a shared token, preventing a later status change from leaving a
+hard-coded submitted label in the description. Unpublished full author lists,
+submission correspondence/references, manuscript files and source archives stay
+outside the public proposal. No independent ellipsometry operation or modelling,
+RamanPL_2D adoption, figure ownership, tutorial leadership or metrology performance
+is inferred. The existing five selected project cards and research emphasis remain.
+
+The photonics narrative carries APPLICANT_CONFIRMED provenance for the added
+personal activity; the field register preserves the distinct published basis for
+the existing contribution sentence. The pending-doctorate status is unchanged.
+No external-account update, institutional outreach, indexing confirmation or
+publication is implied by this candidate.
+
+The official Cambridge profile was fetched directly during implementation on
+12 November: HTTP 200, with matching name and Cambridge email. It did not contain
+the exact canonical website URL at that check; the new outbound identity link
+does not imply that an institutional backlink has been added.

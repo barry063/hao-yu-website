@@ -19,10 +19,29 @@ for (const [, id] of html.matchAll(/href="#([^"<>]*)"/g)) {
 const local = [...html.matchAll(/(?:href|src)="([^"<>]+)"/g)].map(m => decode(m[1])).filter(x => !/^(?:https?:|mailto:|#)/.test(x));
 for (const file of local) assert.ok(fs.existsSync(path.join(root, file)), `Missing asset ${file}`);
 assert.ok(!/(?:TODO|\[VERIFY\]|mirainthehub|Advance Article|top 5%|Chartered Engineer|CB2 9GR|tel:)/i.test(html), 'Stale or unapproved visitor content');
-assert.ok(!html.includes('nn-2026-'), 'Private submission reference exposed');
+assert.ok(!/\b(?:MQT-\d+|nn-\d{4}-[a-z0-9-]+)/i.test(html), 'Private submission reference exposed');
 const jsonld = JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
 assert.equal(jsonld.url, data.site.url);
-assert.equal(jsonld.jobTitle, data.site.role);
+// Retain validation of the released flat-Person page until candidate promotion.
+assert.ok(['Person','ProfilePage'].includes(jsonld['@type']));
+const person = jsonld['@type'] === 'ProfilePage' ? jsonld.mainEntity : jsonld;
+if (jsonld['@type'] === 'ProfilePage') {
+  assert.equal(jsonld['@id'], data.site.url + '#profile-page');
+  assert.equal(jsonld.name, data.site.title);
+  assert.equal(person['@id'], data.site.url + '#person');
+}
+assert.equal(person['@type'], 'Person');
+assert.equal(person.url, data.site.url);
+assert.equal(person.name, data.site.name);
+assert.equal(person.jobTitle, data.site.role);
+assert.equal(person.affiliation.name, data.site.institution);
+assert.deepEqual(person.sameAs, data.profiles.filter(l => l.id !== 'EMAIL').map(l => l.url));
+assert.equal(decode(html.match(/<title>(.*?)<\/title>/)[1]), data.site.title);
+for (const key of ['og:title','twitter:title']) {
+  const value = html.match(new RegExp(`(?:property|name)="${key}" content="([^"]*)"`));
+  assert.ok(value, `Missing ${key}`);
+  assert.equal(decode(value[1]), data.site.title);
+}
 assert.ok(html.includes(`rel="canonical" href="${data.site.url}"`));
 for (const meta of ['og:url', 'og:image', 'twitter:image']) {
   assert.ok(html.includes(`"${meta}" content="${data.site.url}${meta.endsWith('image') ? 'assets/og-image.png' : ''}"`), `${meta} mismatch`);

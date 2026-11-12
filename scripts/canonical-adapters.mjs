@@ -4,6 +4,12 @@ import { unchanged } from './workflow-core.mjs';
 
 const normal = text => text.replaceAll('\r\n','\n').replace(/[₂₃]/g,c=>c==='₂'?'2':'3').replace(/[–−]/g,'-').replace(/\*|"|“|”/g,'').toLowerCase().replace(/\s+/g,' ').trim();
 const statusMap={published:'PUBLISHED',accepted:'ACCEPTED',submitted:'SUBMITTED',under_review:'UNDER_REVIEW',in_preparation:'IN_PREPARATION',active_development:'RESEARCH_SOFTWARE'};
+// The evidence bank uses this exact label for a tutorial's submission status.
+// Do not accept arbitrary qualifiers or infer review/acceptance from submission.
+function mirrorStatus(text) {
+  const label=normal(text).replaceAll(' ','_');
+  return label==='submitted_tutorial'?'SUBMITTED':statusMap[label];
+}
 function section(text,id) {
   const lines=text.replaceAll('\r\n','\n').split('\n'),start=lines.findIndex(l=>new RegExp('^#{1,3} '+id.replaceAll('.','\\.')+'(?:\\. | |$)').test(l));
   if(start<0)return '';
@@ -21,7 +27,7 @@ const contactMapped=new Set([...Object.keys(contactFields),...Object.keys(linkFi
 const eventFields={'Thesis submitted':'THESIS_SUBMITTED','Viva completed':'VIVA_COMPLETED','Degree awarded':'DEGREE_AWARDED'};
 function checked(entry){return entry&&entry.state.startsWith('CHECKED')&&!/VERIFY|SUPPORTED|REJECT|HOLD|PRIVATE/.test(entry.state)&&!/\[VERIFY/.test(entry.value);}
 function guardEB(text) {
-  const sections=['1.1','1.2','2.1','2.2','3.1','3.2','3.3','3.4','3.5','3.6','4.1','4.2','4.3','5.1','5.2','5.3','10'];
+  const sections=['1.1','1.2','2.1','2.2','3.1','3.2','3.3','3.4','3.5','3.6','3.9','4.1','4.2','4.3','5.1','5.2','5.3','10'];
   return Object.fromEntries(sections.map(id=>[id,section(text,id).split('\n').filter(l=>{
     if(l.startsWith('|')){const r=l.split('|').slice(1,-1).map(v=>v.trim());
       if(id==='1.1'&&contactMapped.has(r[0]))return false;
@@ -38,17 +44,17 @@ function mirrors(eb,pub,record) {
   const row=relevant[0];
   if(row[1]!=='CONTRIB') {
     const label=normal(row[1]).replaceAll(' ','_');
-    const got=label.startsWith('active_development')||id==='SW1'? 'RESEARCH_SOFTWARE':statusMap[label];
+    const got=label.startsWith('active_development')||id==='SW1'? 'RESEARCH_SOFTWARE':mirrorStatus(row[1]);
     if(got!==expected)throw new Error('SOURCE_STATUS_CONFLICT');
   }
   const declared=rows(pub).find(r=>r[0]===id);
   if(declared) {
-    if(declared[1]!=='CONTRIB'&&statusMap[declared[1].toLowerCase().replaceAll(' ','_')]!==expected)throw new Error('SOURCE_STATUS_CONFLICT');
+    if(declared[1]!=='CONTRIB'&&mirrorStatus(declared[1])!==expected)throw new Error('SOURCE_STATUS_CONFLICT');
     return;
   }
   const title=normal(record.title);let group=null,found=null;
   for(const line of pub.replaceAll('\r\n','\n').split('\n')) {
-    if(line.startsWith('## '))group=/peer reviewed journal/i.test(line)?'PUBLISHED':/under review/i.test(line)?'UNDER_REVIEW':/in preparation/i.test(line)?'IN_PREPARATION':/research software/i.test(line)?'RESEARCH_SOFTWARE':null;
+    if(line.startsWith('## '))group=/peer reviewed journal/i.test(line)?'PUBLISHED':/^## Submitted tutorial\s*$/i.test(line)?'SUBMITTED':/under review/i.test(line)?'UNDER_REVIEW':/in preparation/i.test(line)?'IN_PREPARATION':/research software/i.test(line)?'RESEARCH_SOFTWARE':null;
     if(group&&normal(line).includes(title)) {if(found)throw new Error('MIRROR_AMBIGUOUS');found=group;}
   }
   if(found!==expected)throw new Error('SOURCE_STATUS_CONFLICT');

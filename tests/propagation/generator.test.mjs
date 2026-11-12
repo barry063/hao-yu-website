@@ -49,7 +49,36 @@ test('authored text, attributes and JSON-LD are escaped without executing inject
   const html=renderSite(data);
   assert.ok(html.includes('&lt;img src=x onerror=alert(1)&gt; &amp; text'));
   const ld=JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
-  assert.equal(ld.name,data.profile.name);assert.equal((html.match(/<script\b/g)||[]).length,2);
+  assert.equal(ld.mainEntity.name,data.profile.name);assert.equal((html.match(/<script\b/g)||[]).length,2);
+});
+
+test('profile metadata identifies one person and matches title and visible profile links', () => {
+  const data=loadPublic();
+  data.presentation.title='{{profile.name}} | Materials Growth & Spectroscopy | {{profile.institution_short}}';
+  const cambridge={id:'CAMBRIDGE',label:'Cambridge profile',url:'https://www.eng.cam.ac.uk/profiles/hy377',selected:true,provenance:structuredClone(data.links[0].provenance)};
+  const existing=data.links.find(l=>l.id==='CAMBRIDGE');
+  if(existing)Object.assign(existing,cambridge);else data.links.push(cambridge);
+  const html=renderSite(data), ld=JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
+  assert.equal(ld['@type'],'ProfilePage');
+  assert.equal(ld['@id'],data.presentation.url+'#profile-page');
+  assert.equal(ld.mainEntity['@type'],'Person');
+  assert.equal(ld.mainEntity['@id'],data.presentation.url+'#person');
+  assert.equal(ld.mainEntity.jobTitle,data.profile.role);
+  assert.equal(ld.mainEntity.url,ld.url);
+  assert.deepEqual(ld.mainEntity.sameAs,data.links.filter(l=>l.selected&&l.id!=='GROUP').map(l=>l.url));
+  assert.ok(html.includes('>Cambridge profile</a>'));
+  const escaped='Hao Yu | Materials Growth &amp; Spectroscopy | Cambridge';
+  assert.ok(html.includes(`<title>${escaped}</title>`));
+  for(const property of ['og:title','twitter:title'])assert.ok(html.includes(`"${property}" content="${escaped}"`));
+  assert.ok(html.includes('<h1 id="hero-heading">Hao Yu</h1>'));
+  assert.ok(!('dateCreated' in ld));
+});
+
+test('private manuscript references are rejected before public rendering', () => {
+  for(const reference of ['MQT-123456','nn-2099-12345x']) {
+    const data=loadPublic();data.outputs.find(o=>o.id==='S1').contribution+=' Reference: '+reference;
+    assert.throws(()=>validatePublic(data),/Private submission reference/);
+  }
 });
 test('root files and nonempty/symlink output are protected', () => {
   assert.throws(()=>outputDirectory(ROOT));assert.throws(()=>outputDirectory(path.join(ROOT,'assets')));
@@ -73,6 +102,8 @@ test('two complete builds, including regenerated social cards and PDFs, have ide
     assert.deepEqual(a.hashes,b.hashes);assert.equal(a.social_card,'REUSED');
     assert.throws(()=>buildSite({out:path.join(work,'a')}));
     const data=loadPublic();data.presentation.social.topic='Synthetic spectroscopy test';
+    // This fixture exercises generated-PDF propagation, not a frozen reviewed PDF.
+    delete data.presentation.cv_document;
     data.outputs.find(o=>o.id==='S1').status='ACCEPTED';
     data.outputs.find(o=>o.id==='P1').status='UNDER_REVIEW';
     data.profile.email='example@example.org';
@@ -81,7 +112,7 @@ test('two complete builds, including regenerated social cards and PDFs, have ide
     assert.deepEqual(c.hashes,d.hashes);assert.equal(c.social_card,'GENERATED');
     assert.notEqual(c.hashes['assets/og-image.png'],a.hashes['assets/og-image.png']);
     const pdfCheck=spawnSync(process.env.SITE_PYTHON,['-c',
-      "import pdfplumber,sys; p=pdfplumber.open(sys.argv[1]); t=' '.join(' '.join(x.extract_text().split()) for x in p.pages); assert 'Accepted: Closed-loop' in t; assert 'example@example.org' in t; assert 'a first-author manuscript is under review.' in t; assert 'Under review: Salt-assisted' in t; assert 'In preparation:' not in t",
+      "import pdfplumber,sys; p=pdfplumber.open(sys.argv[1]); t=' '.join(' '.join(x.extract_text().split()) for x in p.pages); assert 'Accepted: Closed-loop' in t; assert 'example@example.org' in t; assert 'a first-author manuscript is under review.' in t; assert 'Under review: Resolving source' in t; assert 'In preparation:' not in t",
       path.join(work,'c/assets/Hao_Yu_CV.pdf')],{encoding:'utf8'});
     assert.equal(pdfCheck.status,0,'Actual PDF status/contact propagation failed');
     assert.deepEqual(before,Object.fromEntries(Object.keys(before).map(f=>[f,hash(fs.readFileSync(path.join(ROOT,f)))])));

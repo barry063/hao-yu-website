@@ -27,6 +27,29 @@ canonical TeX/PDF is copied into the website repository. Only the sanitised publ
 PDF is retained. The original shared generated-CV route remains for datasets
 without `cv_document`.
 
+12 November 2026 candidate: `content/proposals/2026-11-12.json` and its companion
+`2026-11-12-field-ownership.json` map 242 fields and 31 rendered records. They are
+not promoted into the root dataset/register. New S2 adds a submitted tutorial;
+PROJECT-PHOTONICS gains bounded applicant-confirmed optical-alignment wording;
+CAMBRIDGE adds a manually reviewed institutional identity link. All five source
+fingerprints are refreshed. Existing claims retain their dated provenance unless
+their wording or evidence disposition changes.
+
+| Candidate record / field | Source owner | Public dependants and maintenance |
+| --- | --- | --- |
+| S2 title/status/contribution | EB §§3.9,5.2,13.2; PUB/CONTRIB S2; submitted-manuscript title/attribution and separate applicant confirmation | Submitted output group and public CV. Journal/contribution text is editorial; status token resolves the shared S2 state. No private manuscript file/reference or inferred submission date. |
+| PROJECT-PHOTONICS.text.2 | EB §§3.6,7.2; applicant-confirmed 9 November | Project card and manually compared public CV; APPLICANT_CONFIRMED. Existing published contribution sentence remains separately grounded in J3. |
+| CAMBRIDGE label/URL | EB §§1.1,2.1 identity; official Cambridge personal profile | Hero profile links, Person.sameAs and required public-CV hyperlink. EDITORIAL maintenance; no automatic canonical-link mapping or reciprocal-link claim. |
+| presentation.title | Website search-title policy; EB identity/institution tokens | HTML title, og:title and twitter:title. No change to the CV title or visible page H1. |
+| presentation.cv_document | Separately reviewed 12 November public master derivative and EXPORT | Versioned public PDF, exact copied visitor PDF, source/export/shared-fact hashes and actual document date; four-page visual/text/link review completed and bindings refreshed. |
+
+The new record does not change the published-paper count or qualify S2 as under
+external review. Cambridge identity is evaluated independently from future
+Search Console indexing/canonical checks. The expanded field register preserves
+the exact published versus applicant-confirmed boundaries within the photonics
+project. The existing released dataset/register and visitor files remain the
+baseline until a separately authorised promotion.
+
 ## Ownership and precedence
 
 `content/site.json` version 2 is a reviewed public derivative, never a second

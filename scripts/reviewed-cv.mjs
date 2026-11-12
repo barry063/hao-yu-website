@@ -14,7 +14,7 @@ export function cvFactsHash(data) {
 export function reviewedCV(data) {
   const document = data.presentation.cv_document;
   if (!document) return null;
-  if (document.file !== PUBLIC_CV_SOURCE) throw new Error('CV_SOURCE_LOCATION');
+  if (!/^build-resources\/public-cv\/(?:\d{4}-\d{2}-\d{2}\/)?Hao_Yu_CV\.pdf$/.test(document.file)) throw new Error('CV_SOURCE_LOCATION');
   const file = path.join(ROOT, document.file);
   if (fs.realpathSync(file) !== file) throw new Error('CV_SOURCE_LOCATION');
   const bytes = fs.readFileSync(file);

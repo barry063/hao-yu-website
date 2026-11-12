@@ -13,11 +13,25 @@ import { renderSite } from '../../scripts/render-site.mjs';
 const input = path.join(ROOT, 'content/proposals/2026-11-06.json');
 const data = loadPublic(input);
 
+test('legacy and dated reviewed PDFs retain independent hashes and candidate input bindings', () => {
+  const dated=loadPublic(path.join(ROOT,'content/proposals/2026-11-12.json'));
+  assert.notEqual(dated.presentation.cv_document.file,data.presentation.cv_document.file);
+  for(const value of [data,dated]) {
+    validatePublic(value);
+    const document=value.presentation.cv_document;
+    assert.equal(crypto.createHash('sha256').update(reviewedCV(value)).digest('hex'),document.sha256);
+    assert.equal(inputHashes()[document.file],document.sha256);
+  }
+  const replaced=structuredClone(dated);replaced.presentation.cv_document.file=data.presentation.cv_document.file;
+  assert.throws(()=>reviewedCV(replaced),/CV_SOURCE_HASH/);
+});
+
 test('reviewed master PDF refuses changed bytes, export drift, unsafe paths and invalid dates', () => {
   assert.ok(reviewedCV(data).subarray(0, 5).equals(Buffer.from('%PDF-')));
   for (const [field, value, error] of [['sha256', '0'.repeat(64), /CV_SOURCE_HASH/],
     ['export_sha256', '0'.repeat(64), /CV_EXPORT_REVIEW_REQUIRED/],
-    ['file', '../private-master.pdf', /CV_SOURCE_LOCATION/]]) {
+    ['file', '../private-master.pdf', /CV_SOURCE_LOCATION/],
+    ['file', 'build-resources/public-cv/2026-11-12/../Hao_Yu_CV.pdf', /CV_SOURCE_LOCATION/]]) {
     const changed = structuredClone(data); changed.presentation.cv_document[field] = value;
     assert.throws(() => reviewedCV(changed), error);
   }

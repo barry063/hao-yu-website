@@ -98,6 +98,7 @@ export function validatePublic(data) {
   // Resolve every authored token, including unselected records, before building anything.
   const walk = x => { if (typeof x === 'string') {
     if (/\[VERIFY\]|TODO/.test(x)) throw new Error('Unresolved public wording');
+    if (/\b(?:MQT-\d+|nn-\d{4}-[a-z0-9-]+)/i.test(x)) throw new Error('Private submission reference');
     resolveText(x, data);
   } else if (Array.isArray(x)) x.forEach(walk);
     else if (x && typeof x === 'object') Object.values(x).forEach(walk); };
