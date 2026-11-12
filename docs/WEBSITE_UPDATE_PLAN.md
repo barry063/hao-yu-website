@@ -1,12 +1,32 @@
 # Website update plan and verification contract
 
 Created: 5 October 2026. Baseline: website commit `2c3ba49`.
-Plan version: 1.7. Release-1 milestone: `LIVE_CONTENT_VERIFIED_BROWSER_QA_DEFERRED`.
+Plan version: 1.10. Release-1 milestone: `LIVE_CONTENT_VERIFIED_BROWSER_QA_DEFERRED`.
 Workflow milestone: `P01_P06_COMPLETE_LIVE_VERIFIED`.
 Watcher milestone: `P07_COMPLETE_INSTALLED_VERIFIED`.
 November content milestone: `LIVE_VERIFIED`; N01–N04 DONE.
 
-Current release instruction, 6 November 2026: after delivery of the checked
+12 November release milestone: local `READY_TO_PUBLISH`;
+U01–U04 DONE; U05 IN_PROGRESS; U06 IN_PROGRESS for public checks.
+After reviewing the candidate, the user explicitly instructed: “Looks good.
+Please publish the website updates and refreshed CV, then verify the live site.”
+This authorises exact-candidate approval, promotion, commit, push, PR/merge,
+publication through the existing GitHub Pages main/root route and live verification.
+The previous instruction required implementation and preview before publication;
+that review step is complete. Live verification is pending the actual deployment.
+See the [12 November candidate review](releases/2026-11-12-content-seo-review.md)
+and [verification checks](releases/2026-11-12-content-seo-review-checks.json).
+
+Previous planning instruction: the user reported an updated evidence bank and requested a change
+plan plus assessment of external search-discovery suggestions. That session
+reconciled evidence, proposed content/CV and metadata changes,
+and recorded the implementation and verification sequence. See
+[the 12 November plan](2026-11-12_CONTENT_AND_DISCOVERY_PLAN.md) and
+[planning checks](2026-11-12-planning-checks.json). Prior release authority and
+LIVE_VERIFIED statements below apply to their dated candidates. Search Console
+and external profile work are separate from website release verification.
+
+Previous release instruction, 6 November 2026: after delivery of the checked
 candidate and identification of N04 as the remaining publication step, the user
 said “ok, now let's proceed to the next round”. Proceed with exact-candidate
 approval, PR delivery, merge/publication and live verification through the existing
@@ -198,6 +218,12 @@ decision. `DONE` requires every listed acceptance criterion to pass with evidenc
 | N02 | Prepare November public content candidate | N01; instruction to implement | DONE | November proposal; source/claim/privacy review PASS; latest Oxford/poster evidence and 232-field coverage |
 | N03 | Generate and verify November website and public CV | N02 | DONE | W06/W08/P05-D checks PASS; four-page master derivative, 58 regressions plus 18 affected checks; November verification report |
 | N04 | Deliver/publish and verify November candidate | N03; applicable release authority | DONE | W09-A–C and P06 exact-release checks PASS; PR #5 merged at b14bb3e; Pages run 42274214563; November deployment report/checks |
+| U01 | Review 12 November evidence and search-discovery suggestions; prepare plan | Current sources and released dataset | DONE | U01-A–D; 12 November content/discovery plan and planning-checks JSON |
+| U02 | Prepare refreshed records, S2 adapter support and public master CV | Implementation instruction | DONE | W01/W02/W04/W06 PASS; submitted-only S2, bounded photonics, 242 fields and reviewed four-page PDF; 12 November report |
+| U03 | Implement title, ProfilePage and Cambridge identity link | Implementation instruction; U02 CV/link coordination | DONE | Title/social parity, nested Person, stable IDs, escaping, verified Cambridge identity and CV link PASS |
+| U04 | Verify final content/discovery candidate | U02, U03 | DONE | 68/68 regressions; W08/P05 HTTP/PDF/browser checks and exact candidate gate PASS; 12 November report/checks |
+| U05 | Deliver/publish and verify candidate | U04; applicable release authority | IN_PROGRESS | User approved publication of reviewed candidate; exact release and live checks pending |
+| U06 | Confirm indexing and external-profile backlinks | Search Console/property and external editor access | IN_PROGRESS | Cambridge identity HTTP200 and exact homepage-link absence checked; host robots HTTP404; Search Console and external edits NOT RUN |
 
 ## Acceptance criteria
 
@@ -866,6 +892,82 @@ completes at W08. Release 2 completes at W11 with its readiness/live status stat
   DEFERRED; unchanged external destinations NOT RUN. No dependency blocks this
   release. Commit/push this documentation-only follow-up, then verify its Pages
   deployment against the same exact candidate before the final handoff.
+
+### 12 November 2026 — evidence and search-discovery planning
+
+- Started with clean main at `d0d2ddd`; read both workspaces' instructions and
+  current canonical sources. User requested a change plan and assessment of
+  supplied recommendations. No visitor-content implementation in this session.
+- U01-A: five declared-source hashes all changed; current export/master hashes
+  match. U01-B: C12-01–04 map S2 submitted-only, bounded photonics alignment and
+  public-CV refresh, preserving qualification/publication/contribution boundaries.
+- Search suggestions checked against official Google guidance. Prioritise
+  indexing diagnosis and relevant institutional/profile links alongside content
+  work; include Cambridge title and optional ProfilePage semantics. Project-path
+  robots is not host-root crawl policy. Search Console status remains UNKNOWN.
+- U01-C: renderer/schema/CV/link and adapter inspection identifies submitted-label
+  handling, EB §3.9 protection, nested-Person tests, Cambridge-link/PDF coupling,
+  fresh reviewed-CV bindings and explicit test-fixture maintenance.
+- U01-D: documentation scope, hash/JSON/link/exposure and whitespace checks PASS;
+  exact methods/results in `2026-11-12-planning-checks.json`. Current public
+  contract/CV binding checked read-only. Canonical and released visitor files
+  unchanged. No watcher/calibration edits or commit/push/publication.
+- Live HTTP/share-page attempts failed; no outage or non-indexing inference.
+  New candidate/PDF/browser, Rich Results and Search Console checks NOT RUN.
+  U01 DONE; U02–U06 NOT_STARTED. Next implementation tasks U02/U03; account/editor
+  access affects U06 only. W07/P08 remain DEFERRED. Planning milestone is
+  PLAN_READY_FOR_REVIEW, separate from the prior LIVE_VERIFIED release.
+
+### 12 November 2026 — implemented and verified local review candidate
+
+- User explicitly requested planned implementation, public-CV refresh and checks,
+  with the result shown before publishing. Preserved earlier planning edits and
+  created `content/evidence-seo-refresh-2026-11-12`; no commit/push/promotion.
+- U02: W01-A–D/W02-C,D/W04-C,E/W06-A,B PASS. Added submitted-only S2, bounded
+  photonics alignment, exact source fingerprints and 242-field coverage. Four-page
+  public master derivative visually/textually checked; privacy edits, new profile
+  link and documented content changes are distinct from the untouched master.
+- U03: title/OG/Twitter and ProfilePage/Person identity, role, sameAs, stable IDs,
+  escaping and canonical consistency PASS. Cambridge profile directly verified.
+- U04: W08-A/B/D/E and P05-D PASS. Final 68/68 regressions with zero skips;
+  ten-file project-path/HTTP allowlist, PDF, 375/768/1440 px browser, keyboard,
+  native 200% zoom, reduced motion and no-JS checks PASS. Failed interim runs and
+  fixture/privacy-check fixes are retained in the report, not reported as passing.
+- Candidate `105d7ba1740d9c325aa8f5e55675792271282bd13b53a1534c0fb7747197bc83`:
+  READY_FOR_REVIEW / local READY_TO_PUBLISH. All ten outputs match the reviewed
+  preview build byte for byte. Source/runtime/input/policy/baseline gate PASS
+  with `requireApproval:false`; no user approval invented.
+- Canonical sources/master and released root dataset/register/visitor files
+  unchanged. Historical public PDF retained through dated asset storage. Separate
+  manual private state used; installed watcher history/configuration untouched.
+- Evidence: `releases/2026-11-12-content-seo-review.md` and checks JSON; browser
+  captures in ignored `tmp/qa/`; raw master/TeX/PDF QA in private workspace.
+- U02–U04 DONE; U05 NOT_STARTED pending user review/release instruction. U06
+  IN_PROGRESS: Cambridge identity and host robots checked; Search Console,
+  external-profile edits and outreach NOT RUN. External Rich Results Test/full
+  W07 audit/deployment NOT RUN; W07/P08 deferrals retained. No LIVE_VERIFIED claim.
+
+### 12 November 2026 — approved publication session
+
+- User reviewed the shown candidate and explicitly requested publication of the
+  website and refreshed CV, followed by live verification. U05 IN_PROGRESS.
+- Candidate `105d7ba1740d9c325aa8f5e55675792271282bd13b53a1534c0fb7747197bc83`
+  remains the release target. Fresh source/runtime/input checks, public exposure
+  audit, exact-byte promotion, deployment and live results will be recorded below.
+  No deployment success is assumed before the checks complete.
+- Exact approval and two immediate promotion gates PASS. Promoted the existing
+  package and matching 242-field register; retained private rollback snapshot
+  `1871da04401b1a5f362543dd18c87e9199bcdcf2e2146c4e37baf517ad8e9789`.
+- W08-A/B/D/E: post-promotion `npm run check` PASS (31 records, 24 anchors,
+  seven navigation tests); `npm run test:propagation` PASS (68/68, zero skips).
+  Log: ignored `tmp/qa/2026-11-12/propagation-promoted.log`.
+- W06-A/B: independent public PDF check PASS (four pages, exact reviewed bytes,
+  shared facts/statuses, links, privacy and bounds). All ten promoted visitor
+  hashes and dataset/register equality PASS. Five source/two master hashes
+  unchanged. Public exposure and `git diff --check` PASS.
+- P06-D: actual backup restoration dry-run returned ROLLBACK_CHECKED. GitHub
+  confirms existing main/root Pages route and baseline `d0d2ddd`. W09-A–C and
+  P06-A–C remain pending the merged revision and live verification.
 
 ## Reusable continuation prompt
 

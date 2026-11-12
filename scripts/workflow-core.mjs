@@ -87,7 +87,17 @@ export const INPUT_FILES = Object.freeze(['scripts/workflow-core.mjs','scripts/c
   'scripts/preview.mjs','templates/index.html','schemas/public-content.schema.json','.htmlvalidate.json','requirements-build.txt',
   'package.json','package-lock.json','build-resources/fonts/Vera.ttf','build-resources/fonts/VeraBd.ttf','build-resources/fonts/hashes.json',
   'build-resources/social-baseline.json','.nojekyll','styles.css','script.js','favicon.svg','assets/hao-yu-portrait.jpg','assets/og-image.png']);
-export function inputHashes() {return Object.fromEntries(INPUT_FILES.map(f=>[f,sha(fs.readFileSync(path.join(ROOT,f)))]));}
+export function inputHashes() {
+  // Preserve previous reviewed PDFs while binding every dated public derivative.
+  // A new/replaced version invalidates candidate approval just like code changes.
+  const versions=fs.readdirSync(path.join(ROOT,'build-resources/public-cv'),{withFileTypes:true})
+    .filter(e=>/^\d{4}-\d{2}-\d{2}$/.test(e.name)).map(e=>{
+      const file=`build-resources/public-cv/${e.name}/Hao_Yu_CV.pdf`,absolute=path.join(ROOT,file);
+      if(!e.isDirectory()||e.isSymbolicLink()||fs.realpathSync(absolute)!==absolute)throw new Error('CV_SOURCE_LOCATION');
+      return file;
+    }).sort();
+  return Object.fromEntries([...INPUT_FILES,...versions].map(f=>[f,sha(fs.readFileSync(path.join(ROOT,f)))]));
+}
 export function removeOwnedDirectory(parent,dir) {
   if(!inside(parent,dir)||path.resolve(parent)===path.resolve(dir)||!inside(parent,resolved(dir)))throw new Error('CLEANUP_LOCATION');
   fs.rmSync(dir,{recursive:true,force:true});

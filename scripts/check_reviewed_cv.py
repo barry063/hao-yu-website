@@ -72,7 +72,7 @@ def check_reviewed_cv(filename, data):
         assert all(link_identity(url) in links for url in required_links), 'Missing shared public hyperlink'
         d = date.fromisoformat(document['date'])
         assert compact(f'Updated {d.day} {d:%B %Y}') in text, 'Incorrect CV update date'
-        assert not re.search(r'verify|todo|ceng|cb2|07529|7529|nn-2026|academiccv|top5%', text), 'Private or unsupported content'
+        assert not re.search(r'verify|todo|ceng|cb2|07529|7529|nn-\d{4}-|mqt-\d+|academiccv|top5%', text), 'Private or unsupported content'
         for page in pdf.pages:
             for word in page.extract_words():
                 assert 44 <= word['x0'] < word['x1'] <= page.width - 44, 'Text exceeds horizontal margins'

@@ -15,9 +15,11 @@ export function renderSite(data) {
   if (!group) throw new Error('Missing group link');
   const contactLinks = profileLinks.filter(l => ['LINKEDIN','SCHOLAR','ORCID'].includes(l.id));
   const event = n.events.find(e => e.kind === 'THESIS_SUBMITTED');
-  const ld = { '@context':'https://schema.org', '@type':'Person', name:s.name, url:s.url,
+  const person = { '@type':'Person', '@id':s.url+'#person', name:s.name, url:s.url,
     email:`mailto:${s.email}`, jobTitle:s.role, affiliation:{'@type':'Organization',name:s.institution},
     sameAs:profileLinks.filter(l => l.id !== 'EMAIL').map(l => l.url) };
+  const ld = { '@context':'https://schema.org', '@type':'ProfilePage', '@id':s.url+'#profile-page',
+    url:s.url, name:s.title, mainEntity:person };
   const metadata = [['property','og:type','website'],['property','og:site_name',s.name],['property','og:title',s.title],
     ['property','og:description',s.description],['property','og:url',s.url],['property','og:image',s.url+'assets/og-image.png'],
     ['property','og:image:width','1200'],['property','og:image:height','630'],['property','og:image:alt',n.social.alt],

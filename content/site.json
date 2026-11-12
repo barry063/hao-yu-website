@@ -1,31 +1,31 @@
 {
   "schema_version": 2,
-  "release_date": "2026-11-06",
+  "release_date": "2026-11-12",
   "sources": [
     {
       "id": "EB",
       "path": "1 Master Academic CV/Evidence_Bank.md",
-      "sha256": "1df8c61235c3238ac50e985588f7c6d94caa49c96194878e835b5e65304eb4d8"
+      "sha256": "468659e2b67be2df82f9e6feadc57f16a0819f91a1c1cc3c1f057db2c387a5b5"
     },
     {
       "id": "PUB",
       "path": "4 Publication list/Master_Publication_List.md",
-      "sha256": "ac01de99f3ebf343b36dc11b4416c34748332283a0ecc56731941b15542f8a72"
+      "sha256": "7c13311a55b85ca700e4f59ccd88f46ecdd67e1a40a9630259f3624cfc42deb1"
     },
     {
       "id": "CONTRIB",
       "path": "4 Publication list/Publication_Contributions.json",
-      "sha256": "8f0015b0774d94dc3769a68c2b64cbbdf1654b19aa1f4a4543c7e0950ab9f74a"
+      "sha256": "11bdafd8c39e0aa78c8ae384daade584fbacc7a9a653c8109a01e42a2c54ffd6"
     },
     {
       "id": "PROFILE",
       "path": "3 Research Profile/Hao_Yu_Application_Evidence_Wording.md",
-      "sha256": "5fd5823bb0585b563563acc9cac325d2ae375746eef2ccb15113c02d5d603ff0"
+      "sha256": "983c142838d4edb700b89e6b7980203b49fd748df5ef5bd78cc035fc077eb51a"
     },
     {
       "id": "EXPORT",
       "path": "1 Master Academic CV/Current_Export_Record.json",
-      "sha256": "16fe126b7a5ff784f02e9d08a2109c0557097bba278efa3682f24ac5ef7472d3"
+      "sha256": "5ec125b11a738bf4200e9ea6330d3e2c8b4aaea76b03ec131254ede6f1bf0215"
     }
   ],
   "profile": {
@@ -108,6 +108,18 @@
         "evidence_status": "APPLICANT_CONFIRMED",
         "visibility": "PUBLIC",
         "reviewed": "2026-10-05"
+      }
+    },
+    {
+      "id": "CAMBRIDGE",
+      "label": "Cambridge profile",
+      "url": "https://www.eng.cam.ac.uk/profiles/hy377",
+      "selected": true,
+      "provenance": {
+        "source": "EB §§1.1,2.1 identity; official Cambridge profile https://www.eng.cam.ac.uk/profiles/hy377",
+        "evidence_status": "VERIFIED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-11-12"
       }
     },
     {
@@ -240,6 +252,25 @@
       "authors": null,
       "venue": null,
       "contribution": "Co-authored manuscript. Contribution: Raman/PL measurements and analysis.",
+      "links": [],
+      "cv_authors": null
+    },
+    {
+      "id": "S2",
+      "selected": true,
+      "provenance": {
+        "source": "EB §§3.9,5.2,13.2; PUB/CONTRIB S2; submitted-manuscript title and attribution; applicant-confirmed recipes and workflow",
+        "evidence_status": "APPLICANT_CONFIRMED",
+        "visibility": "PUBLIC",
+        "reviewed": "2026-11-12"
+      },
+      "kind": "ARTICLE",
+      "status": "SUBMITTED",
+      "title": "Imaging Spectroscopic Ellipsometry of Van der Waals Quantum Materials: A Practical Tutorial",
+      "year": null,
+      "authors": null,
+      "venue": null,
+      "contribution": "Co-authored tutorial for Materials for Quantum Technology ({{status:S2:lower}}). Contributed WS₂ and MoS₂ samples, growth recipes and a Raman spectral-analysis workflow.",
       "links": [],
       "cv_authors": null
     },
@@ -620,10 +651,10 @@
       "id": "PROJECT-PHOTONICS",
       "selected": true,
       "provenance": {
-        "source": "EB §3.6; PUB J3",
-        "evidence_status": "VERIFIED",
+        "source": "EB §§3.6,7.2 (alignment/polarisation applicant-confirmed 9 November 2026); PUB J3 (published measurements, design and simulations)",
+        "evidence_status": "APPLICANT_CONFIRMED",
         "visibility": "PUBLIC",
-        "reviewed": "2026-10-05"
+        "reviewed": "2026-11-12"
       },
       "destination": "projects",
       "title": "Photonic resonance trimming",
@@ -631,7 +662,7 @@
       "text": [
         "Earlier research · University of Oxford",
         "My MEng research concerned micro-ring resonator tuning. I contributed measurements, design and simulations to the subsequent Nano Letters paper on photonic-resonance trimming.",
-        "This work connects my materials background with photonic-device analysis."
+        "I aligned fibre-to-chip coupling and optimised polarisation for optical transmission measurements in the Oxford micro-ring resonator project."
       ],
       "links": [
         {
@@ -706,7 +737,7 @@
   "presentation": {
     "url": "https://barry063.github.io/hao-yu-website/",
     "repository": "https://github.com/barry063/hao-yu-website",
-    "title": "{{profile.name}} — Low-dimensional materials & spectroscopy",
+    "title": "{{profile.name}} | Materials Growth & Spectroscopy | {{profile.institution_short}}",
     "description": "{{profile.name}}, {{profile.role}} at {{profile.institution_short}}. Low-dimensional materials growth, transport modelling, microscopy, spectroscopy and Python analysis. {{event:THESIS-SUBMITTED:sentence}}",
     "cv": "assets/Hao_Yu_CV.pdf",
     "portrait": "assets/hao-yu-portrait.jpg",
@@ -715,14 +746,14 @@
       "alt": "{{profile.name}}. {{profile.role_short}} at {{profile.institution_short}}. Low-dimensional materials, synthesis and spectroscopy."
     },
     "cv_document": {
-      "file": "build-resources/public-cv/Hao_Yu_CV.pdf",
-      "sha256": "5c3f21f01a544daa8e9b78a07a25d7561c3f0f9ebfbed1fe3680c76a1eccff02",
-      "date": "2026-11-06",
+      "file": "build-resources/public-cv/2026-11-12/Hao_Yu_CV.pdf",
+      "sha256": "01ffd1e6bd5bb189ed975cad8e9144ba4dae6f5ab3443a15fb86ed2b5cb509b5",
+      "date": "2026-11-12",
       "pages": 4,
-      "source_tex_sha256": "436531be81345baaa5b0a5a63d2f8cf484c512f12ba4eed3a8d8b66227985087",
-      "source_pdf_sha256": "1e086cc931a0bc622643c923a016084429d2a87acc3b5010e11b0cdbde80b53f",
-      "export_sha256": "16fe126b7a5ff784f02e9d08a2109c0557097bba278efa3682f24ac5ef7472d3",
-      "facts_sha256": "f5c79c91979aa76133b365806a53096246ffda076bf3608739c30a3b28e73335"
+      "source_tex_sha256": "22864b7090428ed6c82388bb98c5a7670274e623b4674a14c0343a4003f99c08",
+      "source_pdf_sha256": "97fdb3d5b450c6d39ccd5e5235e084b5e766a31c684008627bcfc496d6a5ea66",
+      "export_sha256": "5ec125b11a738bf4200e9ea6330d3e2c8b4aaea76b03ec131254ede6f1bf0215",
+      "facts_sha256": "3c12b95601980351641ff460c5529bcb4f1386a7f1b634e5caf1e743dac457c7"
     }
   }
 }

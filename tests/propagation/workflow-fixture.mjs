@@ -7,6 +7,9 @@ export const SENTINEL='SYNTHETIC_PRIVATE_SENTINEL_9b46';
 export function fixture(){
   const base=fs.mkdtempSync(path.join(os.tmpdir(),'hao-canonical-fixture-')),sourceRoot=path.join(base,'canonical'),stateRoot=path.join(base,'private-state');
   fs.mkdirSync(sourceRoot);const data=loadPublic(),p=data.profile;
+  // These synthetic scenarios change shared facts and must generate their own PDF.
+  // Frozen master-derived PDF integrity is covered separately by reviewed-cv tests.
+  delete data.presentation.cv_document;
   const contact={'Full professional name':p.name,Email:p.email,Location:p.location,Institution:p.institution};
   for(const [label,id] of Object.entries({LinkedIn:'LINKEDIN',GitHub:'GITHUB',ORCID:'ORCID','Google Scholar':'SCHOLAR','Research group':'GROUP'})){
     const url=data.links.find(l=>l.id===id).url;contact[label]=id==='GROUP'?`[${p.group}](${url})`:url;}
@@ -24,6 +27,11 @@ export function fixture(){
   for(const s of data.sources){const file=path.join(sourceRoot,s.path);fs.mkdirSync(path.dirname(file),{recursive:true});fs.writeFileSync(file,texts[s.id]);}
   data.sources=readSources(sourceRoot,data.sources).fingerprints;const input=path.join(base,'reviewed-public.json');writeJSON(input,data);
   calibrate({sourceRoot,stateRoot,input});
+  // Seed only this fixture's known, unchanged generated-CV publication baseline.
+  // Do this before exposing edit helpers; pending test edits are never published.
+  // Fresh production calibrations still start from the real released inventory,
+  // as exercised by the separate new-private-state baseline test.
+  writeJSON(path.join(stateRoot,'published.json'),data);
   const edit=(id,fn)=>{const file=path.join(sourceRoot,data.sources.find(s=>s.id===id).path);fs.writeFileSync(file,fn(fs.readFileSync(file,'utf8')));};
   const editRecords=fn=>edit('CONTRIB',text=>{const value=JSON.parse(text);fn(value.records);return JSON.stringify(value);});
   const clean=()=>{if(path.dirname(base)!==path.resolve(os.tmpdir()))throw new Error('FIXTURE_LOCATION');fs.rmSync(base,{recursive:true,force:true});};

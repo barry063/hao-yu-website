@@ -1,0 +1,155 @@
+{
+  "date": "2026-11-12",
+  "task": "U01",
+  "milestone": "PLAN_READY_FOR_REVIEW",
+  "baseline_commit": "d0d2dddab011cdf3777e278404ae3e64e2f1cef6",
+  "initial_worktree": "CLEAN",
+  "comparison": "Current source fingerprints and claim-level review against released dataset; not a full historical evidence-bank text diff",
+  "sources": [
+    {
+      "id": "EB",
+      "path": "1 Master Academic CV/Evidence_Bank.md",
+      "baseline_sha256": "1df8c61235c3238ac50e985588f7c6d94caa49c96194878e835b5e65304eb4d8",
+      "current_sha256": "468659e2b67be2df82f9e6feadc57f16a0819f91a1c1cc3c1f057db2c387a5b5",
+      "changed": true
+    },
+    {
+      "id": "PUB",
+      "path": "4 Publication list/Master_Publication_List.md",
+      "baseline_sha256": "ac01de99f3ebf343b36dc11b4416c34748332283a0ecc56731941b15542f8a72",
+      "current_sha256": "7c13311a55b85ca700e4f59ccd88f46ecdd67e1a40a9630259f3624cfc42deb1",
+      "changed": true
+    },
+    {
+      "id": "CONTRIB",
+      "path": "4 Publication list/Publication_Contributions.json",
+      "baseline_sha256": "8f0015b0774d94dc3769a68c2b64cbbdf1654b19aa1f4a4543c7e0950ab9f74a",
+      "current_sha256": "11bdafd8c39e0aa78c8ae384daade584fbacc7a9a653c8109a01e42a2c54ffd6",
+      "changed": true
+    },
+    {
+      "id": "PROFILE",
+      "path": "3 Research Profile/Hao_Yu_Application_Evidence_Wording.md",
+      "baseline_sha256": "5fd5823bb0585b563563acc9cac325d2ae375746eef2ccb15113c02d5d603ff0",
+      "current_sha256": "983c142838d4edb700b89e6b7980203b49fd748df5ef5bd78cc035fc077eb51a",
+      "changed": true
+    },
+    {
+      "id": "EXPORT",
+      "path": "1 Master Academic CV/Current_Export_Record.json",
+      "baseline_sha256": "16fe126b7a5ff784f02e9d08a2109c0557097bba278efa3682f24ac5ef7472d3",
+      "current_sha256": "5ec125b11a738bf4200e9ea6330d3e2c8b4aaea76b03ec131254ede6f1bf0215",
+      "changed": true
+    }
+  ],
+  "master_export": {
+    "date": "2026-11-12",
+    "pages": 4,
+    "source_sha256": "22864b7090428ed6c82388bb98c5a7670274e623b4674a14c0343a4003f99c08",
+    "pdf_sha256": "97fdb3d5b450c6d39ccd5e5235e084b5e766a31c684008627bcfc496d6a5ea66",
+    "export_and_evidence_hashes_match": true
+  },
+  "changes": [
+    "C12-01",
+    "C12-02",
+    "C12-03",
+    "C12-04"
+  ],
+  "checks": [
+    {
+      "id": "U01-A",
+      "result": "PASS",
+      "method": "PowerShell Get-FileHash; independent Node SHA-256; export/master comparison; read-only source and publication-record review",
+      "actual": "All five sources changed; all five end-of-session hashes match review fingerprints. Master TeX/PDF and evidence bank match current export. Four published articles remain four; seven prior contribution records unchanged against preserved baseline."
+    },
+    {
+      "id": "U01-B",
+      "result": "PASS",
+      "method": "Editorial comparison plus primary manuscript title/attribution pages 1 and 20, fresh Oxford confirmation and official Google documentation",
+      "actual": "S2 submitted-only and bounded applicant-confirmed contribution; optical alignment/polarisation addition; public CV refresh; four SEO suggestions assessed with indexing/ranking limits."
+    },
+    {
+      "id": "U01-C",
+      "result": "PASS",
+      "method": "Read-only generator/schema/CV inspection and in-memory technical probes",
+      "actual": "Root contract and reviewed-PDF binding pass. Cambridge link changes CV facts and correctly requires review; title-only change does not. Current S2 source parsing rejects documented label/heading; section 3.9 is not guarded. Required fixes and fixtures are explicitly planned."
+    },
+    {
+      "id": "U01-D",
+      "result": "PASS",
+      "method": "Git scope and whitespace checks; local Markdown-link/JSON checks; privacy scan; repeated SHA-256 comparison",
+      "actual": "Exactly three planning documents changed/added; canonical/master inputs and tracked visitor/data/code files unchanged. No private evidence or submission references copied."
+    }
+  ],
+  "technical_probes": [
+    {
+      "probe": "Existing released contract and reviewed CV",
+      "result": "PASS",
+      "actual": "Valid root public contract; 93918-byte PDF matches bound hash and shared facts"
+    },
+    {
+      "probe": "Selected CAMBRIDGE link added in memory",
+      "result": "EXPECTED_REFUSAL",
+      "actual": "Schema accepts link; reviewed CV raises CV_FACTS_REVIEW_REQUIRED"
+    },
+    {
+      "probe": "Synthetic shared-fact mutation with frozen PDF",
+      "result": "EXPECTED_REFUSAL",
+      "actual": "CV_FACTS_REVIEW_REQUIRED; test fixture separation required"
+    },
+    {
+      "probe": "S2 with current canonical labels",
+      "result": "ISSUE_CONFIRMED",
+      "actual": "SOURCE_STATUS_CONFLICT at S2/status"
+    },
+    {
+      "probe": "S2 with EB label normalised in memory only",
+      "result": "ISSUE_CONFIRMED",
+      "actual": "SOURCE_STATUS_CONFLICT remains, isolating additional PUB heading issue"
+    },
+    {
+      "probe": "S2 with EB and PUB mirrors normalised in memory",
+      "result": "PASS",
+      "actual": "Calibration succeeds without disk/canonical changes"
+    },
+    {
+      "probe": "Section 3.9-only editorial change after synthetic mirror fixes",
+      "result": "ISSUE_CONFIRMED",
+      "actual": "Not rejected by current adapter; add protected section and negative regression"
+    }
+  ],
+  "external_review": {
+    "official_google_documents": "RETRIEVED",
+    "cambridge_identity": "Official-domain search result matches name, Research Student role and Cambridge email; cached result does not verify current backlinks",
+    "share_link": "FETCH_FAILED; user-pasted text used; original title suggestion truncated",
+    "live_home_sitemap_robots_and_cambridge": "FETCH_FAILED through web and shell HTTP; DNS failure in shell; no outage inference",
+    "search_console_indexing": "UNKNOWN",
+    "google_selected_canonical": "UNKNOWN",
+    "external_profile_backlinks": "NOT_VERIFIED"
+  },
+  "not_run": [
+    "candidate build",
+    "new public CV generation or visual QA",
+    "browser QA",
+    "full regression suite",
+    "Rich Results Test",
+    "Search Console/account operations",
+    "external profile edits or editor messages",
+    "commit",
+    "push",
+    "deployment"
+  ],
+  "next_tasks": [
+    "U02",
+    "U03"
+  ],
+  "independent_external_task": "U06",
+  "preserved": [
+    "canonical evidence",
+    "canonical master source/PDF",
+    "root dataset and visitor files",
+    "installed watcher",
+    "private calibration",
+    "published baseline"
+  ]
+}

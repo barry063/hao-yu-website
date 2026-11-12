@@ -33,7 +33,9 @@ with pdfplumber.open(Path(sys.argv[1]) if len(sys.argv) > 1 else root / "assets/
         assert plain(required) in folded, 'Missing selected public CV content'
     actual_links = {link['uri'] for page in pdf.pages for link in page.hyperlinks}
     assert all(url in actual_links for url in expected_links), 'Missing selected public CV hyperlinks'
-    assert not re.search(r"VERIFY|TODO|CEng|CB2|07529|7529|nn-2026|top 5%", text), "Private or unsupported claim"
+    # Review markers are forbidden; the ordinary verb "verify" is valid prose.
+    assert not re.search(r"\[\s*(?i:VERIFY|TODO)\s*\]|\b(?:VERIFY|TODO)\b", text), "Unresolved review marker"
+    assert not re.search(r"CEng|CB2|07529|7529|nn-\d{4}-|MQT-\d+|top 5%", text, re.I), "Private or unsupported claim"
     for page in pdf.pages:
         for word in page.extract_words():
             assert 45 <= word['x0'] < word['x1'] <= page.width - 45, f"Text exceeds horizontal margin: {word['text']}"

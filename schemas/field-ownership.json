@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "reviewed": "2026-11-06",
-  "note": "Proposed field coverage; promote with matching dataset. PDF is a user-selected master derivative, not automatically regenerated from page prose.",
+  "reviewed": "2026-11-12",
+  "note": "Proposed field coverage; promote with matching dataset. PDF is a separately reviewed four-page master derivative. Cambridge profile link is manually reviewed, not canonical auto-sync.",
   "fields": [
     {
       "id": "release_date",
@@ -238,6 +238,30 @@
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "SHARED",
+      "outputs": [
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+      ]
+    },
+    {
+      "id": "CAMBRIDGE.label",
+      "owner": "EB §§1.1,2.1 identity; official Cambridge profile https://www.eng.cam.ac.uk/profiles/hy377",
+      "type": "string",
+      "evidence_status": "VERIFIED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+      ]
+    },
+    {
+      "id": "CAMBRIDGE.url",
+      "owner": "EB §§1.1,2.1 identity; official Cambridge profile https://www.eng.cam.ac.uk/profiles/hy377",
+      "type": "string",
+      "evidence_status": "VERIFIED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
       "outputs": [
         "index.html",
         "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
@@ -858,6 +882,102 @@
     {
       "id": "S1.cv_authors",
       "owner": "EB §§3.5,5.2; PUB S1",
+      "type": "null",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "SHARED",
+      "outputs": [
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+      ]
+    },
+    {
+      "id": "S2.kind",
+      "owner": "EB §§3.9,5.2,13.2; PUB/CONTRIB S2; submitted-manuscript title and attribution; applicant-confirmed recipes and workflow",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "SHARED",
+      "outputs": [
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+      ]
+    },
+    {
+      "id": "S2.status",
+      "owner": "EB §§3.9,5.2,13.2; PUB/CONTRIB S2; submitted-manuscript title and attribution; applicant-confirmed recipes and workflow",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "SHARED",
+      "outputs": [
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+      ]
+    },
+    {
+      "id": "S2.title",
+      "owner": "EB §§3.9,5.2,13.2; PUB/CONTRIB S2; submitted-manuscript title and attribution; applicant-confirmed recipes and workflow",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "SHARED",
+      "outputs": [
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+      ]
+    },
+    {
+      "id": "S2.year",
+      "owner": "EB §§3.9,5.2,13.2; PUB/CONTRIB S2; submitted-manuscript title and attribution; applicant-confirmed recipes and workflow",
+      "type": "null",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "SHARED",
+      "outputs": [
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+      ]
+    },
+    {
+      "id": "S2.authors",
+      "owner": "EB §§3.9,5.2,13.2; PUB/CONTRIB S2; submitted-manuscript title and attribution; applicant-confirmed recipes and workflow",
+      "type": "null",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "SHARED",
+      "outputs": [
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+      ]
+    },
+    {
+      "id": "S2.venue",
+      "owner": "EB §§3.9,5.2,13.2; PUB/CONTRIB S2; submitted-manuscript title and attribution; applicant-confirmed recipes and workflow",
+      "type": "null",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "SHARED",
+      "outputs": [
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+      ]
+    },
+    {
+      "id": "S2.contribution",
+      "owner": "EB §§3.9,5.2,13.2; PUB/CONTRIB S2; submitted-manuscript title and attribution; applicant-confirmed recipes and workflow",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "SHARED",
+      "outputs": [
+        "index.html",
+        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+      ]
+    },
+    {
+      "id": "S2.cv_authors",
+      "owner": "EB §§3.9,5.2,13.2; PUB/CONTRIB S2; submitted-manuscript title and attribution; applicant-confirmed recipes and workflow",
       "type": "null",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
@@ -2249,7 +2369,7 @@
     },
     {
       "id": "PROJECT-PHOTONICS.destination",
-      "owner": "EB §3.6; PUB J3",
+      "owner": "EB §§3.6,7.2 (alignment/polarisation applicant-confirmed 9 November 2026); PUB J3 (published measurements, design and simulations)",
       "type": "string",
       "evidence_status": "VERIFIED",
       "visibility": "PUBLIC",
@@ -2261,7 +2381,7 @@
     },
     {
       "id": "PROJECT-PHOTONICS.title",
-      "owner": "EB §3.6; PUB J3",
+      "owner": "EB §§3.6,7.2 (alignment/polarisation applicant-confirmed 9 November 2026); PUB J3 (published measurements, design and simulations)",
       "type": "string",
       "evidence_status": "VERIFIED",
       "visibility": "PUBLIC",
@@ -2273,7 +2393,7 @@
     },
     {
       "id": "PROJECT-PHOTONICS.dates",
-      "owner": "EB §3.6; PUB J3",
+      "owner": "EB §§3.6,7.2 (alignment/polarisation applicant-confirmed 9 November 2026); PUB J3 (published measurements, design and simulations)",
       "type": "string",
       "evidence_status": "VERIFIED",
       "visibility": "PUBLIC",
@@ -2285,7 +2405,7 @@
     },
     {
       "id": "PROJECT-PHOTONICS.text.0",
-      "owner": "EB §3.6; PUB J3",
+      "owner": "EB §§3.6,7.2 (alignment/polarisation applicant-confirmed 9 November 2026); PUB J3 (published measurements, design and simulations)",
       "type": "string",
       "evidence_status": "VERIFIED",
       "visibility": "PUBLIC",
@@ -2297,7 +2417,7 @@
     },
     {
       "id": "PROJECT-PHOTONICS.text.1",
-      "owner": "EB §3.6; PUB J3",
+      "owner": "EB §§3.6,7.2 (alignment/polarisation applicant-confirmed 9 November 2026); PUB J3 (published measurements, design and simulations)",
       "type": "string",
       "evidence_status": "VERIFIED",
       "visibility": "PUBLIC",
@@ -2309,9 +2429,9 @@
     },
     {
       "id": "PROJECT-PHOTONICS.text.2",
-      "owner": "EB §3.6; PUB J3",
+      "owner": "EB §§3.6,7.2 (alignment/polarisation applicant-confirmed 9 November 2026); PUB J3 (published measurements, design and simulations)",
       "type": "string",
-      "evidence_status": "VERIFIED",
+      "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
@@ -2321,7 +2441,7 @@
     },
     {
       "id": "PROJECT-PHOTONICS.links.0.label",
-      "owner": "EB §3.6; PUB J3",
+      "owner": "EB §§3.6,7.2 (alignment/polarisation applicant-confirmed 9 November 2026); PUB J3 (published measurements, design and simulations)",
       "type": "string",
       "evidence_status": "VERIFIED",
       "visibility": "PUBLIC",
@@ -2333,7 +2453,7 @@
     },
     {
       "id": "PROJECT-PHOTONICS.links.0.output_link_index",
-      "owner": "EB §3.6; PUB J3",
+      "owner": "EB §§3.6,7.2 (alignment/polarisation applicant-confirmed 9 November 2026); PUB J3 (published measurements, design and simulations)",
       "type": "number",
       "evidence_status": "VERIFIED",
       "visibility": "PUBLIC",
@@ -2345,7 +2465,7 @@
     },
     {
       "id": "PROJECT-PHOTONICS.links.1.label",
-      "owner": "EB §3.6; PUB J3",
+      "owner": "EB §§3.6,7.2 (alignment/polarisation applicant-confirmed 9 November 2026); PUB J3 (published measurements, design and simulations)",
       "type": "string",
       "evidence_status": "VERIFIED",
       "visibility": "PUBLIC",
@@ -2357,7 +2477,7 @@
     },
     {
       "id": "PROJECT-PHOTONICS.links.1.output_link_index",
-      "owner": "EB §3.6; PUB J3",
+      "owner": "EB §§3.6,7.2 (alignment/polarisation applicant-confirmed 9 November 2026); PUB J3 (published measurements, design and simulations)",
       "type": "number",
       "evidence_status": "VERIFIED",
       "visibility": "PUBLIC",
@@ -2369,7 +2489,7 @@
     },
     {
       "id": "PROJECT-PHOTONICS.output_id",
-      "owner": "EB §3.6; PUB J3",
+      "owner": "EB §§3.6,7.2 (alignment/polarisation applicant-confirmed 9 November 2026); PUB J3 (published measurements, design and simulations)",
       "type": "string",
       "evidence_status": "VERIFIED",
       "visibility": "PUBLIC",
@@ -2621,14 +2741,13 @@
     },
     {
       "id": "presentation.title",
-      "owner": "Website presentation policy; user-selected public CV (EXPORT)",
+      "owner": "Website search-title policy; EB §§1.1,2.1 identity",
       "type": "string",
       "evidence_status": "APPLICANT_CONFIRMED",
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "index.html (title, og:title and twitter:title)"
       ]
     },
     {

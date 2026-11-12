@@ -548,7 +548,8 @@
           "type": "object",
           "properties": {
             "file": {
-              "const": "build-resources/public-cv/Hao_Yu_CV.pdf"
+              "type": "string",
+              "pattern": "^build-resources/public-cv/(?:\\d{4}-\\d{2}-\\d{2}/)?Hao_Yu_CV\\.pdf$"
             },
             "sha256": {
               "type": "string",

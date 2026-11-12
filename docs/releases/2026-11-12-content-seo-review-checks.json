@@ -1,0 +1,230 @@
+{
+  "date": "2026-11-12",
+  "tasks_completed": [
+    "U02",
+    "U03",
+    "U04"
+  ],
+  "milestone": "READY_TO_PUBLISH",
+  "workflow_state": "READY_FOR_REVIEW",
+  "candidate": "105d7ba1740d9c325aa8f5e55675792271282bd13b53a1534c0fb7747197bc83",
+  "publication": "NOT_RUN; user requested review before publishing",
+  "approval": "NOT_REQUESTED_OR_RECORDED",
+  "branch": "content/evidence-seo-refresh-2026-11-12",
+  "baseline_commit": "d0d2dddab011cdf3777e278404ae3e64e2f1cef6",
+  "sources": [
+    {
+      "id": "EB",
+      "path": "1 Master Academic CV/Evidence_Bank.md",
+      "sha256": "468659e2b67be2df82f9e6feadc57f16a0819f91a1c1cc3c1f057db2c387a5b5"
+    },
+    {
+      "id": "PUB",
+      "path": "4 Publication list/Master_Publication_List.md",
+      "sha256": "7c13311a55b85ca700e4f59ccd88f46ecdd67e1a40a9630259f3624cfc42deb1"
+    },
+    {
+      "id": "CONTRIB",
+      "path": "4 Publication list/Publication_Contributions.json",
+      "sha256": "11bdafd8c39e0aa78c8ae384daade584fbacc7a9a653c8109a01e42a2c54ffd6"
+    },
+    {
+      "id": "PROFILE",
+      "path": "3 Research Profile/Hao_Yu_Application_Evidence_Wording.md",
+      "sha256": "983c142838d4edb700b89e6b7980203b49fd748df5ef5bd78cc035fc077eb51a"
+    },
+    {
+      "id": "EXPORT",
+      "path": "1 Master Academic CV/Current_Export_Record.json",
+      "sha256": "5ec125b11a738bf4200e9ea6330d3e2c8b4aaea76b03ec131254ede6f1bf0215"
+    }
+  ],
+  "public_cv": {
+    "file": "build-resources/public-cv/2026-11-12/Hao_Yu_CV.pdf",
+    "sha256": "01ffd1e6bd5bb189ed975cad8e9144ba4dae6f5ab3443a15fb86ed2b5cb509b5",
+    "date": "2026-11-12",
+    "pages": 4,
+    "source_tex_sha256": "22864b7090428ed6c82388bb98c5a7670274e623b4674a14c0343a4003f99c08",
+    "source_pdf_sha256": "97fdb3d5b450c6d39ccd5e5235e084b5e766a31c684008627bcfc496d6a5ea66",
+    "export_sha256": "5ec125b11a738bf4200e9ea6330d3e2c8b4aaea76b03ec131254ede6f1bf0215",
+    "facts_sha256": "3c12b95601980351641ff460c5529bcb4f1386a7f1b634e5caf1e743dac457c7"
+  },
+  "outputs": {
+    ".nojekyll": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "index.html": "c101b35d2b6384220249cc6d28de2df9e4612e1b4e8f92db8f894b1e2b8db827",
+    "styles.css": "ca8344bf6244aba31ca0c6211e9fa3e0cadf2a0cb53c4b9ba5f16de063e8b5d7",
+    "script.js": "30be027c19866039d11ef3d3fe04c49b5d2df1f38b053cf92911f3eb0804cfdb",
+    "favicon.svg": "0ed347d5da206ffa193f82c372d6e9abc5d2be1813744cbbfa0211da4e17bd37",
+    "robots.txt": "5f76f3d777d3616e02b73917ce737d9f130097ef96be6deeb6aa9c11f5c9eb38",
+    "sitemap.xml": "89c8c1e449e6ad9900e7fae7acedc55a3465d6428e6a243431d787210eb5d671",
+    "assets/Hao_Yu_CV.pdf": "01ffd1e6bd5bb189ed975cad8e9144ba4dae6f5ab3443a15fb86ed2b5cb509b5",
+    "assets/hao-yu-portrait.jpg": "46303d6d9724e6a39504ec0d3cf4a1333e5bc2d6a98d7ae527c4bc0d25326280",
+    "assets/og-image.png": "19d42cc64c0751580ad51c7b0b2d9e846701010524d097918ffb401837dd0801"
+  },
+  "runtime": {
+    "node": "v24.14.1",
+    "python": "3.12.14",
+    "reportlab": "4.4.9",
+    "pillow": "12.3.0"
+  },
+  "field_count": 242,
+  "rendered_records": 31,
+  "published_articles": 4,
+  "checks": [
+    {
+      "id": "W01-A–D/W02-C,D/W04-C,E",
+      "result": "PASS",
+      "actual": "Current hashes, bounded S2/photonics claims, distinct publication/qualification status, 242 fields and public-only proposal reviewed"
+    },
+    {
+      "id": "U03 metadata",
+      "result": "PASS",
+      "actual": "ProfilePage/Person stable IDs, canonical/name/role/sameAs parity, title/OG/Twitter equality, escaping and Cambridge profile checked"
+    },
+    {
+      "id": "W06-A/B",
+      "result": "PASS",
+      "actual": "Four pages, exact reviewed PDF bytes, master/export/shared-fact provenance, text/link/privacy/bounds and all-page visual checks"
+    },
+    {
+      "id": "Regression suite",
+      "result": "PASS",
+      "tests": 68,
+      "skipped": 0,
+      "evidence": "tmp/qa/2026-11-12/propagation-verified.log"
+    },
+    {
+      "id": "HTML_CONTENT_NAVIGATION_HTTP",
+      "result": "PASS"
+    },
+    {
+      "id": "PUBLIC_PDF",
+      "result": "PASS"
+    },
+    {
+      "id": "BROWSER_KEYBOARD_ZOOM_MOTION",
+      "result": "PASS",
+      "evidence": {
+        "browser": "157.0.8103.51",
+        "checks": [
+          {
+            "width": 375,
+            "result": "PASS",
+            "keyboard": "PASS",
+            "reduced_motion": "PASS"
+          },
+          {
+            "width": 768,
+            "result": "PASS",
+            "keyboard": "PASS",
+            "reduced_motion": "PASS"
+          },
+          {
+            "width": 1440,
+            "result": "PASS",
+            "keyboard": "PASS",
+            "reduced_motion": "PASS"
+          },
+          {
+            "width": 1440,
+            "zoom_200_percent": "PASS",
+            "result": "PASS",
+            "keyboard": "PASS",
+            "reduced_motion": "PASS",
+            "anchors": "PASS",
+            "dimensions": {
+              "inner": 711,
+              "outer": 1440,
+              "dpr": 2,
+              "cssZoom": "1",
+              "overflow": false
+            },
+            "capture_method": "Physical viewport via CDP after keyboard navigation and paint; CSS zoom remains 1"
+          }
+        ],
+        "no_js": "PASS",
+        "full_accessibility_audit": "NOT RUN"
+      }
+    },
+    {
+      "id": "W08-A,D/P05-D",
+      "result": "PASS",
+      "actual": "Ten-file public allowlist; GitHub Pages project-path HTTP byte equality and non-visitor 404; 31 records and 24 HTML IDs"
+    },
+    {
+      "id": "Determinism and preview parity",
+      "result": "PASS",
+      "actual": "All ten final candidate outputs match independent preview build byte for byte; PDF copied exactly"
+    },
+    {
+      "id": "Candidate gate without approval",
+      "result": "PASS",
+      "actual": "Current sources/runtime/code/policy/baseline/assets match immutable package; no approval record"
+    },
+    {
+      "id": "Preservation and exposure",
+      "result": "PASS",
+      "actual": "Canonical/master fingerprints unchanged; Git reports released dataset/register/visitor files and prior public PDF unchanged; new public files contain no actual private submission references"
+    },
+    {
+      "id": "W08-E final handoff",
+      "result": "PASS",
+      "actual": "Report/task tracker/checks JSON saved; local document links and whitespace validated; preview HTTP200 contains S2 and ProfilePage"
+    }
+  ],
+  "visual_evidence": {
+    "pdf": "Four pages inspected; raw QA retained in private review workspace",
+    "browser": "tmp/qa/105d7ba1740d9c325aa8f5e55675792271282bd13b53a1534c0fb7747197bc83/",
+    "focused": "tmp/qa/2026-11-12/preview/",
+    "result": "PASS: desktop/mobile hero, tutorial and photonics plus native 200% publications inspected"
+  },
+  "external_checks": {
+    "cambridge": {
+      "url": "https://www.eng.cam.ac.uk/profiles/hy377",
+      "status": 200,
+      "identity": "Matching name and Cambridge email",
+      "exact_canonical_homepage_backlink": false
+    },
+    "host_root_robots": {
+      "url": "https://barry063.github.io/robots.txt",
+      "status": 404,
+      "interpretation": "No robots restrictions from this response under Google documented handling; not proof of indexing"
+    },
+    "search_console": "NOT_RUN",
+    "rich_results_test": "NOT_RUN",
+    "unchanged_external_destinations": "NOT_RUN"
+  },
+  "retries": [
+    {
+      "run": "Initial sandbox suite",
+      "passed": 59,
+      "total": 66,
+      "issues": "Three restricted filesystem operations and four synthetic frozen-CV fixture failures"
+    },
+    {
+      "run": "Second complete suite",
+      "passed": 63,
+      "total": 67,
+      "issues": "Migration fixture baseline mismatch and three generated-PDF privacy false positives on ordinary verify prose"
+    },
+    {
+      "resolution": "Separated generated/frozen fixtures, restored migration contract test baseline, corrected review-marker matching and added actual-PDF privacy regression; final 68/68 PASS"
+    }
+  ],
+  "not_run": [
+    "Search Console indexing/Google canonical",
+    "external Rich Results Test",
+    "full accessibility audit W07",
+    "external account edits/outreach",
+    "commit",
+    "push",
+    "promotion",
+    "deployment",
+    "live verification"
+  ],
+  "next": {
+    "U05": "Await user review and release instruction",
+    "U06": "Public identity/robots checks completed; Search Console property access/verification and authorised external-profile work remain"
+  },
+  "preview": "http://localhost:4173/hao-yu-website/"
+}

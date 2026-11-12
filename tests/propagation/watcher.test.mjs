@@ -7,7 +7,7 @@ import {WatcherEngine,londonDate} from '../../scripts/watcher-core.mjs';
 import {acquireLock,withWorkflowLock} from '../../scripts/workflow-lock.mjs';
 import {currentSnapshot,validateReady} from '../../scripts/watch-workflow.mjs';
 import {migrate,inventory} from '../../scripts/migrate-watcher-state.mjs';
-import {ROOT} from '../../scripts/public-content.mjs';
+import {ROOT,loadPublic} from '../../scripts/public-content.mjs';
 import {writeJSON,json,digest,readSources} from '../../scripts/workflow-core.mjs';
 import {prepare} from '../../scripts/prepare-update.mjs';
 import {PACKAGES} from '../../scripts/review-workflow.mjs';
@@ -109,6 +109,8 @@ test('actual manual CLI refuses an active operation lock without modifying workf
 });
 test('migration copies and verifies all private history, preserves original and refuses replacement',()=>{
   const f=fixture();try{
+    // Migration verifies the real released baseline, unlike generated-PDF scenarios.
+    writeJSON(path.join(f.stateRoot,'published.json'),loadPublic());
     const before=digest(inventory(f.stateRoot)),to=path.join(f.base,'local-app-data','workflow');
     const result=migrate({from:f.stateRoot,to,sourceRoot:f.sourceRoot,localRoot:f.base});assert.equal(result.state,'MIGRATED_VERIFIED');
     assert.equal(digest(inventory(f.stateRoot)),before);assert.equal(digest(inventory(to)),before);
