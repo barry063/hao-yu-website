@@ -1,0 +1,195 @@
+{
+  "date": "2026-11-12",
+  "verified_at_utc": "2026-11-12T18:26:42.139Z",
+  "tasks": {
+    "U01": "DONE",
+    "U02": "DONE",
+    "U03": "DONE",
+    "U04": "DONE",
+    "U05": "DONE",
+    "U06": "IN_PROGRESS"
+  },
+  "state": "LIVE_VERIFIED",
+  "candidate": "105d7ba1740d9c325aa8f5e55675792271282bd13b53a1534c0fb7747197bc83",
+  "commit": "159f8509cfdfc6a1e5afaa3d00dad87af9bf6ea7",
+  "run_id": 43279729491,
+  "run_url": "https://github.com/barry063/hao-yu-website/actions/runs/43279729491",
+  "target": "https://barry063.github.io/hao-yu-website/",
+  "checks": [
+    {
+      "file": ".nojekyll",
+      "result": "PASS",
+      "method": "COMMIT"
+    },
+    {
+      "file": "index.html",
+      "result": "PASS",
+      "method": "COMMIT_AND_LIVE"
+    },
+    {
+      "file": "styles.css",
+      "result": "PASS",
+      "method": "COMMIT_AND_LIVE"
+    },
+    {
+      "file": "script.js",
+      "result": "PASS",
+      "method": "COMMIT_AND_LIVE"
+    },
+    {
+      "file": "favicon.svg",
+      "result": "PASS",
+      "method": "COMMIT_AND_LIVE"
+    },
+    {
+      "file": "robots.txt",
+      "result": "PASS",
+      "method": "COMMIT_AND_LIVE"
+    },
+    {
+      "file": "sitemap.xml",
+      "result": "PASS",
+      "method": "COMMIT_AND_LIVE"
+    },
+    {
+      "file": "assets/Hao_Yu_CV.pdf",
+      "result": "PASS",
+      "method": "COMMIT_AND_LIVE"
+    },
+    {
+      "file": "assets/hao-yu-portrait.jpg",
+      "result": "PASS",
+      "method": "COMMIT_AND_LIVE"
+    },
+    {
+      "file": "assets/og-image.png",
+      "result": "PASS",
+      "method": "COMMIT_AND_LIVE"
+    }
+  ],
+  "browser": {
+    "browser": "157.0.8103.51",
+    "checks": [
+      {
+        "width": 375,
+        "result": "PASS",
+        "keyboard": "PASS",
+        "reduced_motion": "PASS"
+      },
+      {
+        "width": 768,
+        "result": "PASS",
+        "keyboard": "PASS",
+        "reduced_motion": "PASS"
+      },
+      {
+        "width": 1440,
+        "result": "PASS",
+        "keyboard": "PASS",
+        "reduced_motion": "PASS"
+      },
+      {
+        "width": 1440,
+        "zoom_200_percent": "PASS",
+        "result": "PASS",
+        "keyboard": "PASS",
+        "reduced_motion": "PASS",
+        "anchors": "PASS",
+        "dimensions": {
+          "inner": 711,
+          "outer": 1440,
+          "dpr": 2,
+          "cssZoom": "1",
+          "overflow": false
+        },
+        "capture_method": "Physical viewport via CDP after keyboard navigation and paint; CSS zoom remains 1"
+      }
+    ],
+    "no_js": "PASS",
+    "full_accessibility_audit": "NOT RUN"
+  },
+  "pr": "https://github.com/barry063/hao-yu-website/pull/6",
+  "content_commit": "5f53acfc7d546d8153b9920b202c93d397c0dfc7",
+  "acceptance": [
+    "W06-A",
+    "W06-B",
+    "W08-A",
+    "W08-B",
+    "W08-D",
+    "W08-E",
+    "W09-A",
+    "W09-B",
+    "W09-C",
+    "P06-A",
+    "P06-B",
+    "P06-C",
+    "P06-D"
+  ],
+  "sources": [
+    {
+      "id": "EB",
+      "path": "1 Master Academic CV/Evidence_Bank.md",
+      "sha256": "468659e2b67be2df82f9e6feadc57f16a0819f91a1c1cc3c1f057db2c387a5b5"
+    },
+    {
+      "id": "PUB",
+      "path": "4 Publication list/Master_Publication_List.md",
+      "sha256": "7c13311a55b85ca700e4f59ccd88f46ecdd67e1a40a9630259f3624cfc42deb1"
+    },
+    {
+      "id": "CONTRIB",
+      "path": "4 Publication list/Publication_Contributions.json",
+      "sha256": "11bdafd8c39e0aa78c8ae384daade584fbacc7a9a653c8109a01e42a2c54ffd6"
+    },
+    {
+      "id": "PROFILE",
+      "path": "3 Research Profile/Hao_Yu_Application_Evidence_Wording.md",
+      "sha256": "983c142838d4edb700b89e6b7980203b49fd748df5ef5bd78cc035fc077eb51a"
+    },
+    {
+      "id": "EXPORT",
+      "path": "1 Master Academic CV/Current_Export_Record.json",
+      "sha256": "5ec125b11a738bf4200e9ea6330d3e2c8b4aaea76b03ec131254ede6f1bf0215"
+    }
+  ],
+  "outputs": {
+    ".nojekyll": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "index.html": "c101b35d2b6384220249cc6d28de2df9e4612e1b4e8f92db8f894b1e2b8db827",
+    "styles.css": "ca8344bf6244aba31ca0c6211e9fa3e0cadf2a0cb53c4b9ba5f16de063e8b5d7",
+    "script.js": "30be027c19866039d11ef3d3fe04c49b5d2df1f38b053cf92911f3eb0804cfdb",
+    "favicon.svg": "0ed347d5da206ffa193f82c372d6e9abc5d2be1813744cbbfa0211da4e17bd37",
+    "robots.txt": "5f76f3d777d3616e02b73917ce737d9f130097ef96be6deeb6aa9c11f5c9eb38",
+    "sitemap.xml": "89c8c1e449e6ad9900e7fae7acedc55a3465d6428e6a243431d787210eb5d671",
+    "assets/Hao_Yu_CV.pdf": "01ffd1e6bd5bb189ed975cad8e9144ba4dae6f5ab3443a15fb86ed2b5cb509b5",
+    "assets/hao-yu-portrait.jpg": "46303d6d9724e6a39504ec0d3cf4a1333e5bc2d6a98d7ae527c4bc0d25326280",
+    "assets/og-image.png": "19d42cc64c0751580ad51c7b0b2d9e846701010524d097918ffb401837dd0801"
+  },
+  "additional_checks": {
+    "post_promotion_content": "PASS: 31 records, 24 anchors",
+    "navigation": "PASS: 7/7",
+    "propagation": "PASS: 68/68, zero skips",
+    "field_ownership": "PASS: 242/242",
+    "public_cv": "PASS: four pages, exact reviewed bytes, shared facts/statuses, links, privacy and bounds",
+    "visual_live": "PASS: native 200% hero/publications screenshots inspected",
+    "source_master_hash_preservation": "PASS",
+    "exposure_and_whitespace": "PASS",
+    "rollback_dry_run": "PASS: ROLLBACK_CHECKED",
+    "unqueried_live_urls": "PASS: homepage and public CV returned HTTP200 and matched the approved candidate without cache-busting query strings"
+  },
+  "rollback": "1871da04401b1a5f362543dd18c87e9199bcdcf2e2146c4e37baf517ad8e9789",
+  "not_run": [
+    "Search Console indexing and Google-selected canonical",
+    "external profile edits and outreach",
+    "external Rich Results Test",
+    "full accessibility audit (W07 deferred)",
+    "optional P08",
+    "unchanged external destination checks",
+    "installed watcher revalidation"
+  ],
+  "evidence": {
+    "screenshots": "tmp/qa/live-105d7ba1740d9c325aa8f5e55675792271282bd13b53a1534c0fb7747197bc83",
+    "propagation": "tmp/qa/2026-11-12/propagation-promoted.log",
+    "candidate_report": "docs/releases/2026-11-12-content-seo-review.md",
+    "direct_urls": "tmp/qa/2026-11-12/live-direct.json"
+  }
+}

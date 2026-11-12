@@ -6,14 +6,15 @@ Workflow milestone: `P01_P06_COMPLETE_LIVE_VERIFIED`.
 Watcher milestone: `P07_COMPLETE_INSTALLED_VERIFIED`.
 November content milestone: `LIVE_VERIFIED`; N01–N04 DONE.
 
-12 November release milestone: local `READY_TO_PUBLISH`;
-U01–U04 DONE; U05 IN_PROGRESS; U06 IN_PROGRESS for public checks.
+12 November release milestone: `LIVE_VERIFIED`;
+U01–U05 DONE; U06 IN_PROGRESS for public checks.
 After reviewing the candidate, the user explicitly instructed: “Looks good.
 Please publish the website updates and refreshed CV, then verify the live site.”
 This authorises exact-candidate approval, promotion, commit, push, PR/merge,
 publication through the existing GitHub Pages main/root route and live verification.
 The previous instruction required implementation and preview before publication;
-that review step is complete. Live verification is pending the actual deployment.
+that review step is complete. PR #6 is merged, deployed and live verified. See
+the [12 November deployment report](releases/2026-11-12-deployment.md).
 See the [12 November candidate review](releases/2026-11-12-content-seo-review.md)
 and [verification checks](releases/2026-11-12-content-seo-review-checks.json).
 
@@ -222,7 +223,7 @@ decision. `DONE` requires every listed acceptance criterion to pass with evidenc
 | U02 | Prepare refreshed records, S2 adapter support and public master CV | Implementation instruction | DONE | W01/W02/W04/W06 PASS; submitted-only S2, bounded photonics, 242 fields and reviewed four-page PDF; 12 November report |
 | U03 | Implement title, ProfilePage and Cambridge identity link | Implementation instruction; U02 CV/link coordination | DONE | Title/social parity, nested Person, stable IDs, escaping, verified Cambridge identity and CV link PASS |
 | U04 | Verify final content/discovery candidate | U02, U03 | DONE | 68/68 regressions; W08/P05 HTTP/PDF/browser checks and exact candidate gate PASS; 12 November report/checks |
-| U05 | Deliver/publish and verify candidate | U04; applicable release authority | IN_PROGRESS | User approved publication of reviewed candidate; exact release and live checks pending |
+| U05 | Deliver/publish and verify candidate | U04; applicable release authority | DONE | PR #6 merged; Pages run 43279729491; exact-candidate LIVE_VERIFIED; deployment report/checks |
 | U06 | Confirm indexing and external-profile backlinks | Search Console/property and external editor access | IN_PROGRESS | Cambridge identity HTTP200 and exact homepage-link absence checked; host robots HTTP404; Search Console and external edits NOT RUN |
 
 ## Acceptance criteria
@@ -968,6 +969,27 @@ completes at W08. Release 2 completes at W11 with its readiness/live status stat
 - P06-D: actual backup restoration dry-run returned ROLLBACK_CHECKED. GitHub
   confirms existing main/root Pages route and baseline `d0d2ddd`. W09-A–C and
   P06-A–C remain pending the merged revision and live verification.
+
+### 12 November 2026 — U05 merged and live verified
+
+- PR #6 delivered `5f53acfc7d546d8153b9920b202c93d397c0dfc7`; normal exact-head
+  merge produced `159f8509cfdfc6a1e5afaa3d00dad87af9bf6ea7` at 18:25:44 UTC.
+  Readiness CLEAN/MERGEABLE, no pending checks, no admin bypass. Connector write
+  permission unavailable; used existing Git credentials in memory via GitHub CLI.
+- W09-A–C/P06-A–C: `workflow-cli.mjs verify-live` returned LIVE_VERIFIED after
+  successful Pages run `43279729491`. Nine live assets, committed `.nojekyll`
+  and public dataset match the approved candidate. PDF bytes exact; text line
+  endings normalised. Main/root hosting retained; main/deployment checked again
+  after browser/network checks before advancing the private published baseline.
+- W09-B/C: live Chrome 157.0.8103.51 at 375/768/1440 px, keyboard/skip/menu,
+  anchor placement, reduced motion, no-JS and native 200% zoom PASS. Zoomed
+  hero/publications screenshots visually inspected. Evidence: release report and
+  `releases/2026-11-12-deployment-checks.json`; ignored `tmp/qa/live-<candidate>/`.
+- U01–U05 DONE/LIVE_VERIFIED. U06 indexing/external-profile work remains separate,
+  requiring Search Console/property or profile editor access. W07/P08 remain
+  DEFERRED. No release dependency remains. Installed watcher unchanged. Publish
+  this documentation-only follow-up and verify its deployment against the same
+  candidate before handoff.
 
 ## Reusable continuation prompt
 
