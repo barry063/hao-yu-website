@@ -4,15 +4,15 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
+import { loadPublic, visitorFiles } from './public-content.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const base = 'https://barry063.github.io/hao-yu-website/';
-const files = ['index.html', 'styles.css', 'script.js', 'favicon.svg', 'robots.txt', 'sitemap.xml',
-  'assets/Hao_Yu_CV.pdf', 'assets/hao-yu-portrait.jpg', 'assets/og-image.png'];
+const data=loadPublic(),files=visitorFiles(data).filter(f=>f!=='.nojekyll');
 const sha = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
 const results = await Promise.all(files.map(async file => {
-  const url = new URL(file === 'index.html' ? '' : file, base);
-  url.searchParams.set('release-check', '2026-10-05-static-refresh');
+  const url = new URL(file.endsWith('index.html') ? file.slice(0,-10) : file, base);
+  url.searchParams.set('release-check', data.release_date);
   const response = await fetch(url, { signal: AbortSignal.timeout(20000), cache: 'no-store' });
   assert.equal(response.status, 200, `${file}: HTTP status`);
   const remote = Buffer.from(await response.arrayBuffer());

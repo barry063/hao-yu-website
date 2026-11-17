@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "reviewed": "2026-11-12",
-  "note": "Proposed field coverage; promote with matching dataset. PDF is a separately reviewed four-page master derivative. Cambridge profile link is manually reviewed, not canonical auto-sync.",
+  "reviewed": "2026-11-17",
+  "note": "Proposed bilingual field coverage; promote with matching dataset. English and Chinese public PDFs are independently reviewed derivatives; language-specific coverage may differ. Locale text is bound to shared factual records.",
   "fields": [
     {
       "id": "release_date",
@@ -12,7 +12,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -24,7 +26,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -36,7 +40,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -48,7 +54,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -60,7 +68,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -72,7 +82,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -84,7 +96,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -96,7 +110,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -108,7 +124,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -120,7 +138,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -132,7 +152,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -144,7 +166,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -156,7 +180,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -168,7 +194,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -180,7 +208,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -192,7 +222,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -204,7 +236,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -216,7 +250,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -228,7 +264,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -240,7 +278,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -252,7 +292,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -264,7 +306,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -276,7 +320,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -288,7 +334,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -300,7 +348,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -312,7 +362,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -324,7 +376,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -336,7 +390,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -348,7 +404,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -360,7 +418,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -372,7 +432,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -384,7 +446,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -396,7 +460,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -408,7 +474,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -420,7 +488,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -432,7 +502,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -444,7 +516,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -456,7 +530,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -468,7 +544,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -480,7 +558,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -492,7 +572,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -504,7 +586,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -516,7 +600,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -528,7 +614,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -540,7 +628,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -552,7 +642,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -564,7 +656,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -576,7 +670,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -588,7 +684,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -600,7 +698,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -612,7 +712,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -624,7 +726,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -636,7 +740,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -648,7 +754,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -660,7 +768,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -672,7 +782,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -684,7 +796,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -696,7 +810,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -708,7 +824,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -720,7 +838,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -732,7 +852,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -744,7 +866,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -756,7 +880,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -768,7 +894,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -780,7 +908,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -792,7 +922,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -804,7 +936,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -816,7 +950,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -828,7 +964,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -840,7 +978,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -852,7 +992,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -864,7 +1006,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -876,7 +1020,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -888,7 +1034,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -900,7 +1048,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -912,7 +1062,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -924,7 +1076,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -936,7 +1090,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -948,7 +1104,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -960,7 +1118,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -972,7 +1132,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -984,7 +1146,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -996,7 +1160,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1008,7 +1174,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1020,7 +1188,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1032,7 +1202,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1044,7 +1216,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1056,7 +1230,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1068,7 +1244,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1080,7 +1258,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1092,7 +1272,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1104,7 +1286,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1116,7 +1300,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1128,7 +1314,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1140,7 +1328,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1152,7 +1342,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1164,7 +1356,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1176,7 +1370,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1188,7 +1384,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1200,7 +1398,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1212,7 +1412,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1224,7 +1426,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1236,7 +1440,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1248,7 +1454,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1260,7 +1468,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1272,7 +1482,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1284,7 +1496,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1296,7 +1510,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1308,7 +1524,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1320,7 +1538,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1332,7 +1552,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1344,7 +1566,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1356,7 +1580,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1368,7 +1594,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1380,7 +1608,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1392,7 +1622,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1404,7 +1636,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1416,7 +1650,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1428,7 +1664,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1440,7 +1678,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1452,7 +1692,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1464,7 +1706,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1476,7 +1720,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1488,7 +1734,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1500,7 +1748,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1512,7 +1762,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1524,7 +1776,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1536,7 +1790,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1548,7 +1804,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1560,7 +1818,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1572,7 +1832,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1584,7 +1846,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1596,7 +1860,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1608,7 +1874,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1620,7 +1888,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1632,7 +1902,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1644,7 +1916,9 @@
       "mode": "SHARED",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1656,7 +1930,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1668,7 +1944,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1680,7 +1958,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1692,7 +1972,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1704,7 +1986,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1716,7 +2000,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1728,7 +2014,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1740,7 +2028,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1752,7 +2042,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1764,7 +2056,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1776,7 +2070,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1788,7 +2084,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1800,7 +2098,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1812,7 +2112,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1824,7 +2126,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1836,7 +2140,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1848,7 +2154,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1860,7 +2168,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1872,7 +2182,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1884,7 +2196,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1896,7 +2210,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1908,7 +2224,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1920,7 +2238,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1932,7 +2252,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1944,7 +2266,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1956,7 +2280,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1968,7 +2294,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1980,7 +2308,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -1992,7 +2322,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2004,7 +2336,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2016,7 +2350,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2028,7 +2364,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2040,7 +2378,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2052,7 +2392,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2064,7 +2406,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2076,7 +2420,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2088,7 +2434,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2100,7 +2448,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2112,7 +2462,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2124,7 +2476,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2136,7 +2490,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2148,7 +2504,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2160,7 +2518,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2172,7 +2532,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2184,7 +2546,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2196,7 +2560,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2208,7 +2574,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2220,7 +2588,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2232,7 +2602,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2244,7 +2616,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2256,7 +2630,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2268,7 +2644,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2280,7 +2658,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2292,7 +2672,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2304,7 +2686,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2316,7 +2700,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2328,7 +2714,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2340,7 +2728,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2352,7 +2742,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2364,7 +2756,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2376,7 +2770,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2388,7 +2784,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2400,7 +2798,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2412,7 +2812,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2424,7 +2826,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2436,7 +2840,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2448,7 +2854,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2460,7 +2868,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2472,7 +2882,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2484,7 +2896,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2496,7 +2910,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2508,7 +2924,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2520,7 +2938,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2532,7 +2952,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2544,7 +2966,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2556,7 +2980,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2568,7 +2994,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2580,7 +3008,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2592,7 +3022,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2604,7 +3036,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2616,7 +3050,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2628,7 +3064,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2640,7 +3078,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2652,7 +3092,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2664,7 +3106,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2676,7 +3120,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2688,7 +3134,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2700,7 +3148,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2712,7 +3162,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2724,7 +3176,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2736,7 +3190,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2747,7 +3203,10 @@
       "visibility": "PUBLIC",
       "mode": "EDITORIAL",
       "outputs": [
-        "index.html (title, og:title and twitter:title)"
+        "index.html",
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2759,7 +3218,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2771,7 +3232,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2783,7 +3246,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2795,7 +3260,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2807,7 +3274,9 @@
       "mode": "EDITORIAL",
       "outputs": [
         "index.html",
-        "assets/Hao_Yu_CV.pdf (separately reviewed master; shared-fact validation)"
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2818,8 +3287,10 @@
       "visibility": "PUBLIC",
       "mode": "REVIEWED_ASSET",
       "outputs": [
-        "assets/Hao_Yu_CV.pdf (reviewed file; hash-checked copy)",
-        "index.html (CV date/link)"
+        "index.html",
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2830,8 +3301,10 @@
       "visibility": "PUBLIC",
       "mode": "REVIEWED_ASSET",
       "outputs": [
-        "assets/Hao_Yu_CV.pdf (reviewed file; hash-checked copy)",
-        "index.html (CV date/link)"
+        "index.html",
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2842,8 +3315,10 @@
       "visibility": "PUBLIC",
       "mode": "REVIEWED_ASSET",
       "outputs": [
-        "assets/Hao_Yu_CV.pdf (reviewed file; hash-checked copy)",
-        "index.html (CV date/link)"
+        "index.html",
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2854,8 +3329,10 @@
       "visibility": "PUBLIC",
       "mode": "REVIEWED_ASSET",
       "outputs": [
-        "assets/Hao_Yu_CV.pdf (reviewed file; hash-checked copy)",
-        "index.html (CV date/link)"
+        "index.html",
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2866,8 +3343,10 @@
       "visibility": "PUBLIC",
       "mode": "REVIEWED_ASSET",
       "outputs": [
-        "assets/Hao_Yu_CV.pdf (reviewed file; hash-checked copy)",
-        "index.html (CV date/link)"
+        "index.html",
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2878,8 +3357,10 @@
       "visibility": "PUBLIC",
       "mode": "REVIEWED_ASSET",
       "outputs": [
-        "assets/Hao_Yu_CV.pdf (reviewed file; hash-checked copy)",
-        "index.html (CV date/link)"
+        "index.html",
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2890,8 +3371,10 @@
       "visibility": "PUBLIC",
       "mode": "REVIEWED_ASSET",
       "outputs": [
-        "assets/Hao_Yu_CV.pdf (reviewed file; hash-checked copy)",
-        "index.html (CV date/link)"
+        "index.html",
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     },
     {
@@ -2902,8 +3385,2146 @@
       "visibility": "PUBLIC",
       "mode": "REVIEWED_ASSET",
       "outputs": [
-        "assets/Hao_Yu_CV.pdf (reviewed file; hash-checked copy)",
-        "index.html (CV date/link)"
+        "index.html",
+        "zh/index.html",
+        "assets/Hao_Yu_CV.pdf (independent reviewed selection)",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "presentation.cv_zh",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "presentation.cv_document_zh.file",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "presentation.cv_document_zh.sha256",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "presentation.cv_document_zh.date",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "presentation.cv_document_zh.pages",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "number",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "presentation.cv_document_zh.source_tex_sha256",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "presentation.cv_document_zh.source_pdf_sha256",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "presentation.cv_document_zh.export_sha256",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "presentation.cv_document_zh.facts_sha256",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "presentation.cv_document_zh.selected_output_ids.0",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "presentation.cv_document_zh.selected_output_ids.1",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "presentation.cv_document_zh.selected_output_ids.2",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "presentation.cv_document_zh.selected_output_ids.3",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "presentation.cv_document_zh.selected_output_ids.4",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "presentation.cv_document_zh.selected_output_ids.5",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "presentation.cv_document_zh.selected_output_ids.6",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "presentation.cv_document_zh.selected_link_ids.0",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "presentation.cv_document_zh.selected_link_ids.1",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "presentation.cv_document_zh.selected_link_ids.2",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.locale",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.reviewed",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.0.source_sha256",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.0.fields.name",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.0.fields.role",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.0.fields.institution",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.0.fields.institution_short",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.0.fields.discipline",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.0.fields.group",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.0.fields.location",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.1.source_sha256",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.1.fields.label",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.2.source_sha256",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.2.fields.label",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.3.source_sha256",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.3.fields.label",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.4.source_sha256",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.4.fields.label",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.5.source_sha256",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.5.fields.label",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.6.source_sha256",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.6.fields.label",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.7.source_sha256",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.7.fields.contribution",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.7.fields.link_labels.0",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.8.source_sha256",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.8.fields.contribution",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.8.fields.link_labels.0",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.9.source_sha256",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.9.fields.contribution",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.9.fields.link_labels.0",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.9.fields.link_labels.1",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.10.source_sha256",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.10.fields.contribution",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.10.fields.link_labels.0",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.11.source_sha256",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.11.fields.contribution",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.12.source_sha256",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.12.fields.contribution",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.13.source_sha256",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.13.fields.contribution",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.14.source_sha256",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.14.fields.contribution",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.14.fields.link_labels.0",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.15.source_sha256",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.15.fields.role",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.15.fields.organisation",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.15.fields.text.0",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.16.source_sha256",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.16.fields.role",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.16.fields.organisation",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.16.fields.text.0",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.16.fields.text.1",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.17.source_sha256",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.17.fields.role",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.17.fields.organisation",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.17.fields.text.0",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.17.fields.text.1",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.18.source_sha256",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.18.fields.role",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.18.fields.organisation",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.18.fields.text.0",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.18.fields.text.1",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.19.source_sha256",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.19.fields.title",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.19.fields.dates",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.19.fields.text.0",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.19.fields.text.1",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.19.fields.text.2",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.20.source_sha256",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.20.fields.title",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.20.fields.dates",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.20.fields.text.0",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.21.source_sha256",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.21.fields.title",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.21.fields.dates",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.22.source_sha256",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.22.fields.title",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.22.fields.dates",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.23.source_sha256",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.23.fields.title",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.23.fields.dates",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.24.source_sha256",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.24.fields.title",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.24.fields.dates",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.24.fields.text.0",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.25.source_sha256",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.25.fields.title",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.25.fields.dates",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.25.fields.text.0",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.25.fields.text.1",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.25.fields.text.2",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.26.source_sha256",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.26.fields.title",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.26.fields.dates",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.26.fields.text.0",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.27.source_sha256",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.27.fields.title",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.27.fields.dates",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.27.fields.text.0",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.28.source_sha256",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.28.fields.title",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.28.fields.dates",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.28.fields.text.0",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.29.source_sha256",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.29.fields.title",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.29.fields.dates",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.29.fields.text.0",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.29.fields.text.1",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.29.fields.text.2",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.29.fields.link_labels.0",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.30.source_sha256",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.30.fields.title",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.30.fields.dates",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.30.fields.text.0",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.30.fields.text.1",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.30.fields.text.2",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.30.fields.text.3",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.31.source_sha256",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.31.fields.title",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.31.fields.dates",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.31.fields.text.0",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.31.fields.text.1",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.31.fields.text.2",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.32.source_sha256",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.32.fields.title",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.32.fields.dates",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.32.fields.text.0",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.32.fields.text.1",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.32.fields.text.2",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.32.fields.link_labels.0",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.33.source_sha256",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.33.fields.title",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.33.fields.dates",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.33.fields.text.0",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.33.fields.text.1",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.33.fields.text.2",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.33.fields.link_labels.0",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.33.fields.link_labels.1",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.34.source_sha256",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.34.fields.title",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.34.fields.dates",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.34.fields.text.0",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.34.fields.text.1",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.35.source_sha256",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.35.fields.title",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.35.fields.dates",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.35.fields.text.0",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.35.fields.text.1",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.36.source_sha256",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.36.fields.title",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.36.fields.dates",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.36.fields.text.0",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.records.36.fields.text.1",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.presentation.source_sha256",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.presentation.title",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.presentation.description",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.presentation.social.topic",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
+      ]
+    },
+    {
+      "id": "localisation.presentation.social.alt",
+      "owner": "Reviewed Chinese public presentation; shared record and CN_CV/CN_WORDING bindings",
+      "type": "string",
+      "evidence_status": "APPLICANT_CONFIRMED",
+      "visibility": "PUBLIC",
+      "mode": "EDITORIAL",
+      "outputs": [
+        "zh/index.html",
+        "assets/Hao_Yu_CV_CN.pdf (independent reviewed selection)"
       ]
     }
   ]

@@ -81,20 +81,25 @@ export const INPUT_FILES = Object.freeze(['scripts/workflow-core.mjs','scripts/c
   'scripts/workflow-lock.mjs',
   'scripts/durable-json.mjs',
   'scripts/prepare-update.mjs','scripts/release-workflow.mjs','scripts/workflow-cli.mjs','scripts/browser-qa.mjs',
-  'scripts/build-site.mjs','scripts/render-site.mjs','scripts/public-content.mjs','scripts/build_public_cv.py','scripts/build_social_card.py',
+  'scripts/build-site.mjs','scripts/render-site.mjs','scripts/public-content.mjs','scripts/localisation.mjs','scripts/build_public_cv.py','scripts/build_social_card.py',
   'scripts/reviewed-cv.mjs','scripts/check_reviewed_cv.py','build-resources/public-cv/Hao_Yu_CV.pdf',
-  'scripts/check-candidate.mjs','scripts/check-site.mjs','scripts/check-preview.mjs','scripts/navigation.test.mjs','scripts/check_public_cv.py',
+  'scripts/check-candidate.mjs','scripts/check-site.mjs','scripts/check-preview.mjs','scripts/check-html.mjs','scripts/check-links.mjs','scripts/check-live.mjs','scripts/navigation.test.mjs','scripts/check_public_cv.py',
   'scripts/preview.mjs','templates/index.html','schemas/public-content.schema.json','.htmlvalidate.json','requirements-build.txt',
-  'package.json','package-lock.json','build-resources/fonts/Vera.ttf','build-resources/fonts/VeraBd.ttf','build-resources/fonts/hashes.json',
+  'package.json','package-lock.json','build-resources/fonts/Vera.ttf','build-resources/fonts/VeraBd.ttf','build-resources/fonts/FandolHei-Regular.otf','build-resources/fonts/hashes.json',
   'build-resources/social-baseline.json','.nojekyll','styles.css','script.js','favicon.svg','assets/hao-yu-portrait.jpg','assets/og-image.png']);
 export function inputHashes() {
   // Preserve previous reviewed PDFs while binding every dated public derivative.
   // A new/replaced version invalidates candidate approval just like code changes.
   const versions=fs.readdirSync(path.join(ROOT,'build-resources/public-cv'),{withFileTypes:true})
-    .filter(e=>/^\d{4}-\d{2}-\d{2}$/.test(e.name)).map(e=>{
-      const file=`build-resources/public-cv/${e.name}/Hao_Yu_CV.pdf`,absolute=path.join(ROOT,file);
-      if(!e.isDirectory()||e.isSymbolicLink()||fs.realpathSync(absolute)!==absolute)throw new Error('CV_SOURCE_LOCATION');
-      return file;
+    .filter(e=>/^\d{4}-\d{2}-\d{2}$/.test(e.name)).flatMap(e=>{
+      const folder=path.join(ROOT,'build-resources/public-cv',e.name);
+      if(!e.isDirectory()||e.isSymbolicLink()||fs.realpathSync(folder)!==folder)throw new Error('CV_SOURCE_LOCATION');
+      return fs.readdirSync(folder,{withFileTypes:true}).map(pdf=>{
+        if(!/^Hao_Yu_CV(?:_CN)?\.pdf$/.test(pdf.name)||!pdf.isFile()||pdf.isSymbolicLink())throw new Error('CV_SOURCE_LOCATION');
+        const file=`build-resources/public-cv/${e.name}/${pdf.name}`,absolute=path.join(ROOT,file);
+        if(fs.realpathSync(absolute)!==absolute)throw new Error('CV_SOURCE_LOCATION');
+        return file;
+      });
     }).sort();
   return Object.fromEntries([...INPUT_FILES,...versions].map(f=>[f,sha(fs.readFileSync(path.join(ROOT,f)))]));
 }

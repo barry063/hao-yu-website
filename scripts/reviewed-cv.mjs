@@ -11,17 +11,31 @@ export function cvFactsHash(data) {
   const fields = ['awards','experience','links','outputs','profile','qualification_events','qualifications'];
   return crypto.createHash('sha256').update(JSON.stringify(Object.fromEntries(fields.map(k => [k, clean(data[k])])))).digest('hex');
 }
-export function reviewedCV(data) {
-  const document = data.presentation.cv_document;
+export function reviewedCV(data, locale = 'en') {
+  if (!['en', 'zh'].includes(locale)) throw new Error('CV_LOCALE');
+  const document = data.presentation[locale === 'zh' ? 'cv_document_zh' : 'cv_document'];
   if (!document) return null;
-  if (!/^build-resources\/public-cv\/(?:\d{4}-\d{2}-\d{2}\/)?Hao_Yu_CV\.pdf$/.test(document.file)) throw new Error('CV_SOURCE_LOCATION');
+  const pattern = locale === 'zh'
+    ? /^build-resources\/public-cv\/(?:\d{4}-\d{2}-\d{2}\/)?Hao_Yu_CV_CN\.pdf$/
+    : /^build-resources\/public-cv\/(?:\d{4}-\d{2}-\d{2}\/)?Hao_Yu_CV\.pdf$/;
+  if (!pattern.test(document.file)) throw new Error('CV_SOURCE_LOCATION');
   const file = path.join(ROOT, document.file);
   if (fs.realpathSync(file) !== file) throw new Error('CV_SOURCE_LOCATION');
   const bytes = fs.readFileSync(file);
   if (crypto.createHash('sha256').update(bytes).digest('hex') !== document.sha256)
     throw new Error('CV_SOURCE_HASH');
-  if (document.export_sha256 !== data.sources.find(s => s.id === 'EXPORT')?.sha256)
+  const source = data.sources.find(s => s.id === (locale === 'zh' ? 'CN_CV' : 'EXPORT'));
+  if (!source || document.export_sha256 !== source.sha256)
     throw new Error('CV_EXPORT_REVIEW_REQUIRED');
+  if (locale === 'zh') {
+    if (document.source_tex_sha256 !== source.sha256) throw new Error('CV_EXPORT_REVIEW_REQUIRED');
+    for (const [field, records] of [['selected_output_ids', data.outputs], ['selected_link_ids', data.links]]) {
+      const ids = document[field];
+      if (!Array.isArray(ids) || !ids.length || new Set(ids).size !== ids.length ||
+          ids.some(id => !records.some(r => r.id === id && r.selected && r.provenance.visibility === 'PUBLIC')))
+        throw new Error('CV_SELECTION_REVIEW_REQUIRED');
+    }
+  }
   // Clearance loss/deletion must not leave a withdrawn output visible in the PDF.
   if (document.facts_sha256 !== cvFactsHash(data)) throw new Error('CV_FACTS_REVIEW_REQUIRED');
   return bytes;

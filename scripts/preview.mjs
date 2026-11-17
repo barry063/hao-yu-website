@@ -6,7 +6,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { VISITOR_FILES } from './public-content.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const files = new Set(VISITOR_FILES);
+const files = new Set([...VISITOR_FILES,'zh/index.html','assets/Hao_Yu_CV_CN.pdf','assets/og-image-zh.png']);
 const types = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8',
   '.js': 'text/javascript; charset=utf-8', '.svg': 'image/svg+xml', '.png': 'image/png',
   '.jpg': 'image/jpeg', '.pdf': 'application/pdf', '.xml': 'application/xml', '.txt': 'text/plain' };
@@ -15,6 +15,7 @@ export function createPreviewServer(candidateRoot = root) { return http.createSe
     const url = new URL(req.url, 'http://localhost');
     let name = decodeURIComponent(url.pathname).replace(/^\/hao-yu-website(?=\/|$)/, '').replace(/^\//, '');
     if (!name) name = 'index.html';
+    if (name === 'zh/') name = 'zh/index.html';
     if (!files.has(name) || !['GET', 'HEAD'].includes(req.method)) {
       res.writeHead(404); res.end('Not found'); return;
     }

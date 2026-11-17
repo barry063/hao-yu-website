@@ -23,8 +23,8 @@ try {
   else if(command==='gate'){gate(options);result={state:'APPROVED',candidate:options.id};}
   else if(command==='promote')result=promote(options);
   else if(command==='rollback')result=rollback(options);
-  else if(command==='qa'){const p=packageFor(options.id);result=await browserQA({visitor:path.join(p.dir,'visitor'),evidence:path.join(ROOT,'tmp/qa',options.id)});}
-  else if(command==='verify-live')result=await verifyLive({...options,browserCheck:target=>browserQA({target,evidence:path.join(ROOT,'tmp/qa/live-'+options.id)})});
+  else if(command==='qa'){const p=packageFor(options.id);result=await browserQA({visitor:path.join(p.dir,'visitor'),data:p.data,evidence:path.join(ROOT,'tmp/qa',options.id)});}
+  else if(command==='verify-live')result=await verifyLive({...options,browserCheck:(target,data)=>browserQA({target,data,evidence:path.join(ROOT,'tmp/qa/live-'+options.id)})});
   else throw new Error('COMMAND_REQUIRED');
   console.log(JSON.stringify(result,null,2));if(['FAILED','NEEDS_RECONCILIATION'].includes(result.state))process.exitCode=1;
 } catch(error){console.error(JSON.stringify({state:/^STALE/.test(error.message)?'STALE':'FAILED',code:/^[A-Z_]+$/.test(error.message)?error.message:'WORKFLOW_REFUSED'}));process.exitCode=1;}

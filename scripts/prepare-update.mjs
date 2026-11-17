@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { spawnSync } from 'node:child_process';
-import { ROOT, loadPublic, validatePublic, VISITOR_FILES } from './public-content.mjs';
+import { ROOT, loadPublic, validatePublic, visitorFiles } from './public-content.mjs';
 import { privateState, readSources, readState, unchanged, writeJSON, publicChanges, sha, digest, inputHashes, runtimeInfo, issue, removeOwnedDirectory, privateRecordHash } from './workflow-core.mjs';
 import { derivePublic } from './canonical-adapters.mjs';
 import { buildSite } from './build-site.mjs';
@@ -30,11 +30,14 @@ export function calibrate({sourceRoot,stateRoot,input=path.join(ROOT,'content/si
   return {state:'PREPARED',operation:'CALIBRATED',sources:snapshot.fingerprints};
 }
 export async function structuralChecks(visitor,data) {
+  const publicData=loadPublic(data);
   const commands=[['HTML_CONTENT_NAVIGATION_HTTP',process.execPath,[path.join(ROOT,'scripts/check-candidate.mjs'),visitor,data]],
     ['PUBLIC_PDF',process.env.SITE_PYTHON||'python',[path.join(ROOT,'scripts/check_public_cv.py'),path.join(visitor,'assets/Hao_Yu_CV.pdf'),data]]];
+  if(publicData.localisation)commands.push(['PUBLIC_PDF_ZH',process.env.SITE_PYTHON||'python',
+    [path.join(ROOT,'scripts/check_public_cv.py'),path.join(visitor,'assets/Hao_Yu_CV_CN.pdf'),data,'--locale','zh']]);
   const checks=commands.map(([id,exe,args])=>{const r=spawnSync(exe,args,{encoding:'utf8',cwd:ROOT});
     if(r.error||r.status!==0)throw new Error('VALIDATION_'+id);return {id,result:'PASS'};});
-  let browser;try{browser=await browserQA({visitor,evidence:path.join(ROOT,'tmp/qa',path.basename(path.dirname(visitor)))});}
+  let browser;try{browser=await browserQA({visitor,data:publicData,evidence:path.join(ROOT,'tmp/qa',path.basename(path.dirname(visitor)))});}
   catch(error){if(/^[A-Z_]+$/.test(error.message))throw error;throw new Error('VALIDATION_BROWSER_KEYBOARD_ZOOM_MOTION');}
   checks.push({id:'BROWSER_KEYBOARD_ZOOM_MOTION',result:'PASS',evidence:browser});return checks;
 }
@@ -57,9 +60,9 @@ export async function prepare({sourceRoot,stateRoot,releaseDate,force=false,chec
     if(afterBuild)await afterBuild();
     if(!unchanged(snapshot.fingerprints,readSources(state.source,state.config.sources).fingerprints)||!unchanged(inputs,inputHashes()))throw new Error('CONCURRENT_INPUT_EDIT');
     if(bindings.policy!==privateRecordHash(state.policyFile)||bindings.published!==privateRecordHash(state.publishedFile)||bindings.repository_dataset!==sha(fs.readFileSync(path.join(ROOT,'content/site.json')))||!unchanged(runtime,runtimeInfo())||!unchanged(state.config,readState(stateRoot,sourceRoot).config))throw new Error('CONCURRENT_DATASET_EDIT');
-    const affected=VISITOR_FILES.filter(f=>!fs.existsSync(path.join(ROOT,f))||sha(fs.readFileSync(path.join(ROOT,f)))!==built.hashes[f]);
+    const affected=visitorFiles(data).filter(f=>!fs.existsSync(path.join(ROOT,f))||sha(fs.readFileSync(path.join(ROOT,f)))!==built.hashes[f]);
     const review={state:'READY_FOR_REVIEW',changes,affected_files:affected,
-      affected_sections:changes.length?['profile','research','projects','publications','education','metadata','public CV']:['update labels','generated public CV','sitemap'],
+      affected_sections:changes.length?['profile','research','projects','publications','education','metadata','public CV',...(data.localisation?['Chinese page','Chinese public CV']:[])]:['update labels','generated public CV','sitemap'],
       holds:state.policy.outputs.filter(o=>!data.outputs.some(n=>n.id===o.id)).map(o=>({id:o.id,reason:'Removed from the public selection; reconcile privately.'})),checks:results,publication:'Requires explicit approval of this exact candidate and current authority; preparation never publishes.'};
     writeJSON(path.join(stage,'review.json'),review);
     const manifest={version:1,sources:snapshot.fingerprints,dataset:sha(fs.readFileSync(dataset)),inputs,runtime,
@@ -73,7 +76,7 @@ export async function prepare({sourceRoot,stateRoot,releaseDate,force=false,chec
   } catch(error) {
     if(stage&&fs.existsSync(stage))removeOwnedDirectory(PACKAGES,stage);
     const code=/^[A-Z_]+$/.test(error.message)?error.message:/^[A-Z_]+$/.test(error.code||'')?'FILESYSTEM_'+error.code:'SOURCE_OR_BUILD_FAILURE';
-    if(state)return issue(state.state,code,{locator:error.locator||{sources:['EB','PUB','CONTRIB','PROFILE','EXPORT'],action:'Check declared-source availability/format, evidence/clearance and the reported validation stage.'},
+    if(state)return issue(state.state,code,{locator:error.locator||{sources:state.config.sources.map(s=>s.id),action:'Check declared-source availability/format, evidence/clearance and the reported validation stage.'},
       diagnostic:error.message,stack:error.stack});
     return {state:'FAILED',code};
   }

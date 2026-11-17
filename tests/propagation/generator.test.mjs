@@ -3,12 +3,13 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
-import { ROOT, loadPublic, normalise, validatePublic } from '../../scripts/public-content.mjs';
+import { ROOT, normalise, validatePublic } from '../../scripts/public-content.mjs';
+import { loadEnglishFixture } from './english-fixture.mjs';
 import { renderSite } from '../../scripts/render-site.mjs';
 import { buildSite, outputDirectory, hash } from '../../scripts/build-site.mjs';
 
 test('status is shared by project wording, output grouping and normalised CV data', () => {
-  const data=loadPublic(); data.outputs.find(o=>o.id==='S1').status='ACCEPTED';
+  const data=loadEnglishFixture(); data.outputs.find(o=>o.id==='S1').status='ACCEPTED';
   data.outputs.find(o=>o.id==='P1').status='UNDER_REVIEW';
   const n=normalise(data), html=renderSite(data);
   assert.ok(html.includes('The co-authored manuscript is accepted.'));
@@ -20,7 +21,7 @@ test('status is shared by project wording, output grouping and normalised CV dat
   assert.ok(n.records.find(r=>r.id==='P1').text.join(' ').includes('under review'));
 });
 test('links follow output IDs and shared contact fields reach real dependent outputs', () => {
-  const data=loadPublic();data.profile.email='example@example.org';
+  const data=loadEnglishFixture();data.profile.email='example@example.org';
   data.links.find(l=>l.id==='ORCID').url='https://orcid.org/0000-0000-0000-0000';
   data.outputs.find(o=>o.id==='J1').links[0].url='https://doi.org/10.0000/synthetic';
   const n=normalise(data),html=renderSite(data);
@@ -29,7 +30,7 @@ test('links follow output IDs and shared contact fields reach real dependent out
   assert.ok(n.records.find(r=>r.id==='PROJECT-CSS').links[0].url.endsWith('/synthetic'));
 });
 test('output additions change count and deletion preserves remaining stable IDs', () => {
-  const data=loadPublic(), copy=structuredClone(data.outputs[0]);copy.id='J5';data.outputs.push(copy);
+  const data=loadEnglishFixture(), copy=structuredClone(data.outputs[0]);copy.id='J5';data.outputs.push(copy);
   assert.ok(renderSite(data).includes('Published journal articles <span>5</span>'));
   data.outputs=data.outputs.filter(o=>o.id!=='J2');
   assert.ok(renderSite(data).includes('Published journal articles <span>4</span>'));
@@ -39,12 +40,12 @@ test('unsafe URLs, duplicates, missing required records, references and clearanc
   for(const change of [d=>d.links[0].url='javascript:alert(1)',d=>d.outputs.push(structuredClone(d.outputs[0])),
     d=>d.narratives.find(r=>r.id==='PROJECT-CSS').output_id='MISSING',
     d=>d.outputs.find(r=>r.id==='J1').selected=false]) {
-    const data=loadPublic();change(data);assert.throws(()=>validatePublic(data));
+    const data=loadEnglishFixture();change(data);assert.throws(()=>validatePublic(data));
   }
-  const data=loadPublic();data.narratives=data.narratives.filter(r=>r.id!=='PROFILE');assert.throws(()=>renderSite(data));
+  const data=loadEnglishFixture();data.narratives=data.narratives.filter(r=>r.id!=='PROFILE');assert.throws(()=>renderSite(data));
 });
 test('authored text, attributes and JSON-LD are escaped without executing injected markup', () => {
-  const data=loadPublic();data.profile.name='Example </script><script>alert(1)</script> & "name"';
+  const data=loadEnglishFixture();data.profile.name='Example </script><script>alert(1)</script> & "name"';
   data.outputs[0].title='<img src=x onerror=alert(1)> & text';
   const html=renderSite(data);
   assert.ok(html.includes('&lt;img src=x onerror=alert(1)&gt; &amp; text'));
@@ -53,7 +54,7 @@ test('authored text, attributes and JSON-LD are escaped without executing inject
 });
 
 test('profile metadata identifies one person and matches title and visible profile links', () => {
-  const data=loadPublic();
+  const data=loadEnglishFixture();
   data.presentation.title='{{profile.name}} | Materials Growth & Spectroscopy | {{profile.institution_short}}';
   const cambridge={id:'CAMBRIDGE',label:'Cambridge profile',url:'https://www.eng.cam.ac.uk/profiles/hy377',selected:true,provenance:structuredClone(data.links[0].provenance)};
   const existing=data.links.find(l=>l.id==='CAMBRIDGE');
@@ -76,7 +77,7 @@ test('profile metadata identifies one person and matches title and visible profi
 
 test('private manuscript references are rejected before public rendering', () => {
   for(const reference of ['MQT-123456','nn-2099-12345x']) {
-    const data=loadPublic();data.outputs.find(o=>o.id==='S1').contribution+=' Reference: '+reference;
+    const data=loadEnglishFixture();data.outputs.find(o=>o.id==='S1').contribution+=' Reference: '+reference;
     assert.throws(()=>validatePublic(data),/Private submission reference/);
   }
 });
@@ -101,7 +102,7 @@ test('two complete builds, including regenerated social cards and PDFs, have ide
     const a=buildSite({out:path.join(work,'a')}),b=buildSite({out:path.join(work,'b')});
     assert.deepEqual(a.hashes,b.hashes);assert.equal(a.social_card,'REUSED');
     assert.throws(()=>buildSite({out:path.join(work,'a')}));
-    const data=loadPublic();data.presentation.social.topic='Synthetic spectroscopy test';
+    const data=loadEnglishFixture();data.presentation.social.topic='Synthetic spectroscopy test';
     // This fixture exercises generated-PDF propagation, not a frozen reviewed PDF.
     delete data.presentation.cv_document;
     data.outputs.find(o=>o.id==='S1').status='ACCEPTED';

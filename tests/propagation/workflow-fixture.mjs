@@ -1,12 +1,12 @@
 /** Construct canonical-format fixtures from public facts, never private originals. */
 import fs from 'node:fs';import path from 'node:path';import os from 'node:os';
-import { loadPublic } from '../../scripts/public-content.mjs';
+import { loadEnglishFixture } from './english-fixture.mjs';
 import { readSources, writeJSON } from '../../scripts/workflow-core.mjs';
 import { calibrate } from '../../scripts/prepare-update.mjs';
 export const SENTINEL='SYNTHETIC_PRIVATE_SENTINEL_9b46';
 export function fixture(){
   const base=fs.mkdtempSync(path.join(os.tmpdir(),'hao-canonical-fixture-')),sourceRoot=path.join(base,'canonical'),stateRoot=path.join(base,'private-state');
-  fs.mkdirSync(sourceRoot);const data=loadPublic(),p=data.profile;
+  fs.mkdirSync(sourceRoot);const data=loadEnglishFixture(),p=data.profile;
   // These synthetic scenarios change shared facts and must generate their own PDF.
   // Frozen master-derived PDF integrity is covered separately by reviewed-cv tests.
   delete data.presentation.cv_document;

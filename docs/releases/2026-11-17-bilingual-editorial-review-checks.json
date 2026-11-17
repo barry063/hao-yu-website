@@ -1,0 +1,262 @@
+{
+  "date": "2026-11-17",
+  "tasks_reverified": [
+    "L02",
+    "L04",
+    "L06"
+  ],
+  "milestone": "READY_TO_PUBLISH",
+  "workflow_state": "READY_FOR_REVIEW",
+  "candidate": "16ed68b83b58b8899e5c618ca6a90e04701a8efbb9f2f08830f12452ce5cf45b",
+  "supersedes": "af490bafbb86822fa856f1292b825b01cd1cfae11dabcc14b194df801a923089",
+  "authority": "Website wording revision only; user accepted both CVs; publication not authorised",
+  "sources": [
+    {
+      "id": "EB",
+      "path": "1 Master Academic CV/Evidence_Bank.md",
+      "sha256": "d931cb0a1deb0279d8fda158736b87048ee44eb1d1ba7ac7b7e02316e803c4fb"
+    },
+    {
+      "id": "PUB",
+      "path": "4 Publication list/Master_Publication_List.md",
+      "sha256": "7c13311a55b85ca700e4f59ccd88f46ecdd67e1a40a9630259f3624cfc42deb1"
+    },
+    {
+      "id": "CONTRIB",
+      "path": "4 Publication list/Publication_Contributions.json",
+      "sha256": "11bdafd8c39e0aa78c8ae384daade584fbacc7a9a653c8109a01e42a2c54ffd6"
+    },
+    {
+      "id": "PROFILE",
+      "path": "3 Research Profile/Hao_Yu_Application_Evidence_Wording.md",
+      "sha256": "983c142838d4edb700b89e6b7980203b49fd748df5ef5bd78cc035fc077eb51a"
+    },
+    {
+      "id": "EXPORT",
+      "path": "1 Master Academic CV/Current_Export_Record.json",
+      "sha256": "1c5f117c072568590643a1c2ec3a5932888965a3101ee5f7813473308f48e325"
+    },
+    {
+      "id": "CN_CV",
+      "path": "9 Chinese CV/hao_CN_CV/resume.tex",
+      "sha256": "49c07d87e81ccba0ea33939151d8e97091970c5f0ecdf96fecef8f6671e90701"
+    },
+    {
+      "id": "CN_WORDING",
+      "path": "9 Chinese CV/Chinese_Application_Evidence_Wording.md",
+      "sha256": "07c1a7b029f4776d6abf75c0799ffb8052dd6a91bb96c17b4927298b5061086d"
+    }
+  ],
+  "outputs": {
+    ".nojekyll": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "index.html": "3c7be0c47d77ef1a0c16abe8959123bed71607d1f21da264ba9215a3fc3caf92",
+    "styles.css": "a3bbb6e3d082726396e30ea8277f92eea8cada19babe4a9c4bffca5707690c6e",
+    "script.js": "865e390b18ea63f0f31740c047b20ae1f8ee82be45adc017d6a33beba6371f7a",
+    "favicon.svg": "0ed347d5da206ffa193f82c372d6e9abc5d2be1813744cbbfa0211da4e17bd37",
+    "robots.txt": "5f76f3d777d3616e02b73917ce737d9f130097ef96be6deeb6aa9c11f5c9eb38",
+    "sitemap.xml": "429492b8ad591ab4cb10db0d5bf2672cf78f3ef571ca1b974d90217c67d7f818",
+    "assets/Hao_Yu_CV.pdf": "ba3b75abe31446ab50aa72fb347fb4ca029af308e3a33b801b7906ac420759e9",
+    "assets/hao-yu-portrait.jpg": "46303d6d9724e6a39504ec0d3cf4a1333e5bc2d6a98d7ae527c4bc0d25326280",
+    "assets/og-image.png": "19d42cc64c0751580ad51c7b0b2d9e846701010524d097918ffb401837dd0801",
+    "zh/index.html": "07ca07ed6432323bd568913a33a7308d06e6f8c557e9c809937d38cf514adbf7",
+    "assets/Hao_Yu_CV_CN.pdf": "4deb8087516d64f9e184f1cfe9d519f5f26bba1e0bcdcc95c9d19399d916846d",
+    "assets/og-image-zh.png": "e58f259bca085cf4467deeb2061f292afdf51d9b598c55774acd0e9c6cc63c2e"
+  },
+  "changed_outputs": [
+    "index.html",
+    "zh/index.html"
+  ],
+  "shared_data_unchanged": true,
+  "cv_facts_unchanged": true,
+  "accepted_pdf_bytes_unchanged": true,
+  "english_changes": "Portrait caption and alternative text only",
+  "chinese_review": {
+    "records": 37,
+    "rewritten": 26,
+    "changed_records": [
+      "J2",
+      "J3",
+      "J4",
+      "S1",
+      "S2",
+      "P1",
+      "SW1",
+      "EXP-REP",
+      "EXP-INNO",
+      "EXP-JUDGE",
+      "EXP-BOE",
+      "EDU-OX",
+      "A2",
+      "PROFILE",
+      "ABOUT",
+      "THEME-1",
+      "THEME-2",
+      "THEME-3",
+      "PROJECT-CSS",
+      "PROJECT-WS2",
+      "PROJECT-MOS2",
+      "PROJECT-SOFTWARE",
+      "PROJECT-PHOTONICS",
+      "PRACTICE",
+      "POSTER-TMD",
+      "POSTER-IWEPNM"
+    ]
+  },
+  "field_count": 420,
+  "field_coverage": "PASS",
+  "checks": [
+    {
+      "id": "HTML_CONTENT_NAVIGATION_HTTP",
+      "result": "PASS"
+    },
+    {
+      "id": "PUBLIC_PDF",
+      "result": "PASS"
+    },
+    {
+      "id": "PUBLIC_PDF_ZH",
+      "result": "PASS"
+    },
+    {
+      "id": "BROWSER_KEYBOARD_ZOOM_MOTION",
+      "result": "PASS",
+      "evidence": {
+        "browser": "157.0.8103.79",
+        "locales": {
+          "en": {
+            "browser": "157.0.8103.79",
+            "checks": [
+              {
+                "width": 375,
+                "result": "PASS",
+                "keyboard": "PASS",
+                "reduced_motion": "PASS",
+                "language_switch": "PASS",
+                "cv_download": "PASS",
+                "refresh_history": "PASS"
+              },
+              {
+                "width": 768,
+                "result": "PASS",
+                "keyboard": "PASS",
+                "reduced_motion": "PASS",
+                "language_switch": "PASS",
+                "cv_download": "PASS",
+                "refresh_history": "PASS"
+              },
+              {
+                "width": 1440,
+                "result": "PASS",
+                "keyboard": "PASS",
+                "reduced_motion": "PASS",
+                "language_switch": "PASS",
+                "cv_download": "PASS",
+                "refresh_history": "PASS"
+              },
+              {
+                "width": 1440,
+                "zoom_200_percent": "PASS",
+                "result": "PASS",
+                "keyboard": "PASS",
+                "reduced_motion": "PASS",
+                "anchors": "PASS",
+                "dimensions": {
+                  "inner": 711,
+                  "outer": 1440,
+                  "dpr": 2,
+                  "cssZoom": "1",
+                  "overflow": false
+                },
+                "capture_method": "Physical viewport via CDP after keyboard navigation and paint; CSS zoom remains 1"
+              }
+            ],
+            "no_js": "PASS",
+            "full_accessibility_audit": "NOT RUN"
+          },
+          "zh": {
+            "browser": "157.0.8103.79",
+            "checks": [
+              {
+                "width": 375,
+                "result": "PASS",
+                "keyboard": "PASS",
+                "reduced_motion": "PASS",
+                "language_switch": "PASS",
+                "cv_download": "PASS",
+                "refresh_history": "PASS"
+              },
+              {
+                "width": 768,
+                "result": "PASS",
+                "keyboard": "PASS",
+                "reduced_motion": "PASS",
+                "language_switch": "PASS",
+                "cv_download": "PASS",
+                "refresh_history": "PASS"
+              },
+              {
+                "width": 1440,
+                "result": "PASS",
+                "keyboard": "PASS",
+                "reduced_motion": "PASS",
+                "language_switch": "PASS",
+                "cv_download": "PASS",
+                "refresh_history": "PASS"
+              },
+              {
+                "width": 1440,
+                "zoom_200_percent": "PASS",
+                "result": "PASS",
+                "keyboard": "PASS",
+                "reduced_motion": "PASS",
+                "anchors": "PASS",
+                "dimensions": {
+                  "inner": 711,
+                  "outer": 1440,
+                  "dpr": 2,
+                  "cssZoom": "1",
+                  "overflow": false
+                },
+                "capture_method": "Physical viewport via CDP after keyboard navigation and paint; CSS zoom remains 1"
+              }
+            ],
+            "no_js": "PASS",
+            "full_accessibility_audit": "NOT RUN"
+          }
+        },
+        "result": "PASS",
+        "full_accessibility_audit": "NOT RUN"
+      }
+    }
+  ],
+  "affected_regressions": {
+    "passed": 22,
+    "failed": 0,
+    "skipped": 0,
+    "initial_run": "21/22; old literal-sentence expectation revised to test actual project status propagation"
+  },
+  "visual_review": "PASS: both captions, hero and Chinese CV/contact sections at desktop/mobile; long headings wrap without clipping",
+  "gate": {
+    "requireApproval": false,
+    "result": "PASS"
+  },
+  "publication": "NOT RUN",
+  "not_run": [
+    "New PDF editing/rendering (accepted bytes unchanged)",
+    "Full regression-suite repeat (affected suite run)",
+    "Full accessibility audit",
+    "Commit/push/publication",
+    "Live deployment verification"
+  ],
+  "final_preview": {
+    "result": "PASS",
+    "files": 13,
+    "candidate": "16ed68b83b58b8899e5c618ca6a90e04701a8efbb9f2f08830f12452ce5cf45b"
+  },
+  "documentation_validation": {
+    "json": "PASS",
+    "local_links": "PASS",
+    "public_exposure": "PASS",
+    "git_diff_check": "PASS"
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "date": "2026-11-17",
+  "task": "L01",
+  "milestone": "PLAN_READY_FOR_REVIEW",
+  "baseline_commit": "2f81878d596bf91d3fa2d1e7868910f554066e1c",
+  "initial_worktree": "CLEAN",
+  "initial_chinese_checkout": "CLEAN",
+  "scope": "Planning only; no implementation, canonical edits, commit, push or publication",
+  "comparison": "Current source fingerprints and targeted claim/source-selection review against the released dataset; not a full historical evidence-bank diff or new external publication-status audit",
+  "sources": [
+    {
+      "id": "EB",
+      "path": "1 Master Academic CV/Evidence_Bank.md",
+      "baseline_sha256": "468659e2b67be2df82f9e6feadc57f16a0819f91a1c1cc3c1f057db2c387a5b5",
+      "current_sha256": "d931cb0a1deb0279d8fda158736b87048ee44eb1d1ba7ac7b7e02316e803c4fb",
+      "changed": true
+    },
+    {
+      "id": "PUB",
+      "path": "4 Publication list/Master_Publication_List.md",
+      "baseline_sha256": "7c13311a55b85ca700e4f59ccd88f46ecdd67e1a40a9630259f3624cfc42deb1",
+      "current_sha256": "7c13311a55b85ca700e4f59ccd88f46ecdd67e1a40a9630259f3624cfc42deb1",
+      "changed": false
+    },
+    {
+      "id": "CONTRIB",
+      "path": "4 Publication list/Publication_Contributions.json",
+      "baseline_sha256": "11bdafd8c39e0aa78c8ae384daade584fbacc7a9a653c8109a01e42a2c54ffd6",
+      "current_sha256": "11bdafd8c39e0aa78c8ae384daade584fbacc7a9a653c8109a01e42a2c54ffd6",
+      "changed": false
+    },
+    {
+      "id": "PROFILE",
+      "path": "3 Research Profile/Hao_Yu_Application_Evidence_Wording.md",
+      "baseline_sha256": "983c142838d4edb700b89e6b7980203b49fd748df5ef5bd78cc035fc077eb51a",
+      "current_sha256": "983c142838d4edb700b89e6b7980203b49fd748df5ef5bd78cc035fc077eb51a",
+      "changed": false
+    },
+    {
+      "id": "EXPORT",
+      "path": "1 Master Academic CV/Current_Export_Record.json",
+      "baseline_sha256": "5ec125b11a738bf4200e9ea6330d3e2c8b4aaea76b03ec131254ede6f1bf0215",
+      "current_sha256": "1c5f117c072568590643a1c2ec3a5932888965a3101ee5f7813473308f48e325",
+      "changed": true
+    },
+    {
+      "id": "EN-TEX",
+      "path": "1 Master Academic CV/main.tex",
+      "current_sha256": "653a544d62505afc5d56b7b0f78537daad51c763c4cac911d0e31fe3a9929d84"
+    },
+    {
+      "id": "EN-PDF",
+      "path": "1 Master Academic CV/main_CV_Hao Yu.pdf",
+      "current_sha256": "3d855702fd0640ea7996af010384073095a2a626b5138d757bd6bea93b5cd968"
+    },
+    {
+      "id": "CN-README",
+      "path": "9 Chinese CV/README.md",
+      "current_sha256": "d9b5a5100814b118706df8afce0fff96d3dbfea4160794526954c330766b2c55"
+    },
+    {
+      "id": "CN-WORDING",
+      "path": "9 Chinese CV/Chinese_Application_Evidence_Wording.md",
+      "current_sha256": "07c1a7b029f4776d6abf75c0799ffb8052dd6a91bb96c17b4927298b5061086d"
+    },
+    {
+      "id": "CN-TEX",
+      "path": "9 Chinese CV/hao_CN_CV/resume.tex",
+      "current_sha256": "49c07d87e81ccba0ea33939151d8e97091970c5f0ecdf96fecef8f6671e90701"
+    },
+    {
+      "id": "CN-PDF",
+      "current_sha256": "d8ee037111949a9ee156713adace4a13920a23835779ea9ebaa1092c6988d4c9"
+    }
+  ],
+  "english_export": {
+    "date": "2026-11-17",
+    "pages": 4,
+    "source_match": true,
+    "pdf_match": true,
+    "evidence_match": true
+  },
+  "chinese_export": {
+    "matches_recorded_sha256": true,
+    "pages_in_existing_provenance": 2,
+    "new_pdf_render_or_visual_review": "NOT RUN",
+    "public_release_clearance": "NOT YET REVIEWED",
+    "private_export_location": "Retained in canonical workspace; application-specific filename omitted from this public record"
+  },
+  "decisions": {
+    "english_route": "/hao-yu-website/",
+    "chinese_route": "/hao-yu-website/zh/",
+    "chinese_language": "Simplified Chinese (zh-Hans)",
+    "selector": "English | 中文; ordinary links; English default; no forced redirect",
+    "english_public_cv": "assets/Hao_Yu_CV.pdf",
+    "chinese_public_cv": "assets/Hao_Yu_CV_CN.pdf",
+    "contacts": "Continue existing public email/profile-link policy; omit telephone numbers and postcodes",
+    "facts": "One shared factual record; reviewed locale text and independently selected CV content",
+    "watcher": "Explicit manual bilingual preparation for initial release; installed watcher migration deferred unless requested"
+  },
+  "official_references": [
+    {
+      "url": "https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites",
+      "accessed": "2026-11-17",
+      "supports": "Separate language URLs and visitor language links; avoid automatic language redirects"
+    },
+    {
+      "url": "https://developers.google.com/search/docs/specialty/international/localized-versions",
+      "accessed": "2026-11-17",
+      "supports": "Reciprocal fully qualified hreflang, explicit zh-Hans script and x-default fallback"
+    }
+  ],
+  "checks": [
+    {
+      "id": "L01-A",
+      "result": "PASS",
+      "method": "git status --short; targeted PowerShell Get-Content/rg; Node filesystem SHA-256 and current export comparison",
+      "actual": "Website and Chinese checkout clean at inspection; EN TeX/PDF/EB match current export; CN PDF matches recorded fingerprint; EB and EXPORT changed, PUB/CONTRIB/PROFILE unchanged"
+    },
+    {
+      "id": "L01-B",
+      "result": "PASS",
+      "method": "Read-only source and architecture review, including independent agent inspection of generator/schema/PDF/review/preview/release paths; official Google documentation retrieved",
+      "actual": "Seven ordered tasks with acceptance criteria and deliverables cover shared facts, complete translation, per-language PDFs, UI/SEO, exact candidate gates, initial rollback, browser QA and authorised release"
+    },
+    {
+      "id": "L01-C",
+      "result": "PASS",
+      "method": "Documentation/JSON/reference/task checks; repository exposure scan; repeated source and tracked-file SHA-256; git diff --check",
+      "actual": "Seven tasks and 28 unique acceptance IDs; all local Markdown links resolve; JSON parses; changed-file public exposure review and pattern scan pass; git diff --check passes. Rechecked all 126 tracked-file hashes: only the master planning document changed. All 11 inspected canonical/source/export hashes are unchanged. Exactly three planning documents are modified or added. Independent final plan review found no material omissions."
+    }
+  ],
+  "not_run": [
+    "Bilingual implementation",
+    "New public PDFs or PDF visual review",
+    "Candidate build or regression tests",
+    "Browser/viewport/accessibility QA",
+    "Installed watcher migration",
+    "Commit/push/publication",
+    "Live deployment checks",
+    "New external publication-status verification"
+  ],
+  "next_tasks": [
+    "L02 after implementation instruction",
+    "L03 after implementation instruction"
+  ]
+}
