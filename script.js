@@ -9,6 +9,21 @@
   const mobile = window.matchMedia("(max-width: 880px)");
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
+  // Plain language links work without JS; carry a shared section when enhanced.
+  const languageLinks = [...document.querySelectorAll("a[data-language-link]")]
+    .filter(link => link.hasAttribute("data-language-link"));
+  const languageDestinations = languageLinks.map(link => [link, link.getAttribute("href")]);
+  function syncLanguageLinks() {
+    const fragment = window.location?.hash || "";
+    const valid = /^#[a-z][a-z0-9-]*$/.test(fragment) && document.getElementById(fragment.slice(1));
+    languageDestinations.forEach(([link, base]) => link.setAttribute("href", base + (valid ? fragment : "")));
+  }
+  if (languageLinks.length) {
+    syncLanguageLinks();
+    window.addEventListener("hashchange", syncLanguageLinks);
+    window.addEventListener("popstate", syncLanguageLinks);
+  }
+
   if (toggle && nav) {
     function setOpen(open, restoreFocus = false) {
       toggle.setAttribute("aria-expanded", String(open));
@@ -53,6 +68,7 @@
       target.focus({ preventScroll: true });
       target.scrollIntoView({ behavior: reducedMotion.matches ? "instant" : "smooth", block: "start" });
       window.history.pushState(null, "", hash);
+      if (languageLinks.length) syncLanguageLinks();
     });
   });
 

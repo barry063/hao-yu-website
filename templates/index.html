@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="{{LANG}}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {{HEAD}}
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
+<a class="skip-link" href="#main">{{UI_SKIP}}</a>
 <header class="site-header">
 <div class="header-inner">
-<a class="brand" href="#top">{{NAME}}<span>Research &amp; work</span></a>
-<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" hidden><span>Menu</span><span class="nav-toggle-mark" aria-hidden="true">+</span></button>
-<nav id="site-nav" class="site-nav" aria-label="Primary">
-<a href="#about">Profile</a><a href="#projects">Research</a><a href="#publications">Outputs</a><a href="#experience">Experience</a><a href="#cv">CV</a><a href="#contact">Contact</a>
+<a class="brand" href="#top">{{NAME}}<span>{{UI_BRAND}}</span></a>
+{{LANGUAGE}}
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" hidden><span>{{UI_MENU}}</span><span class="nav-toggle-mark" aria-hidden="true">+</span></button>
+<nav id="site-nav" class="site-nav" aria-label="{{UI_PRIMARY}}">
+{{NAV}}
 </nav>
 </div>
 </header>
@@ -24,36 +25,36 @@
 {{PORTRAIT}}
 </section>
 <section id="about" class="section section-split" aria-labelledby="about-heading">
-<div class="section-intro"><p class="eyebrow">01 / Profile</p><h2 id="about-heading">Connecting growth,<br>structure and response.</h2></div>
+<div class="section-intro"><p class="eyebrow">01 / {{UI_PROFILE}}</p><h2 id="about-heading">{{UI_ABOUTTITLE}}</h2></div>
 {{ABOUT}}
 </section>
 <section id="research" class="section" aria-labelledby="research-heading">
-<p class="eyebrow">02 / Research approach</p><h2 id="research-heading">Synthesis, measurement, analysis.</h2>
+<p class="eyebrow">02 / {{UI_APPROACH}}</p><h2 id="research-heading">{{UI_APPROACHTITLE}}</h2>
 {{THEMES}}
-<div id="skills" class="anchor-alias" tabindex="-1" aria-label="Research capabilities"></div>
+<div id="skills" class="anchor-alias" tabindex="-1" aria-label="{{UI_CAPABILITIES}}"></div>
 </section>
 <section id="projects" class="section" aria-labelledby="projects-heading">
-<div class="section-heading"><div><p class="eyebrow">03 / Selected research</p><h2 id="projects-heading">From materials growth to optical data.</h2></div><p>Current doctoral work, research software<br>and earlier photonic-device research.</p></div>
+<div class="section-heading"><div><p class="eyebrow">03 / {{UI_RESEARCH}}</p><h2 id="projects-heading">{{UI_RESEARCHTITLE}}</h2></div><p>{{UI_RESEARCHINTRO}}</p></div>
 {{PROJECTS}}
 </section>
 <section id="publications" class="section" aria-labelledby="publications-heading">
-<p class="eyebrow">04 / Research outputs</p><h2 id="publications-heading">Publications &amp; software</h2>
+<p class="eyebrow">04 / {{UI_OUTPUTS}}</p><h2 id="publications-heading">{{UI_OUTPUTSTITLE}}</h2>
 {{OUTPUTS}}
 </section>
 <section id="experience" class="section section-split" aria-labelledby="experience-heading">
-<div class="section-intro"><p class="eyebrow">05 / Experience</p><h2 id="experience-heading">Research in a<br>wider context.</h2><p>Researcher training, academic service<br>and industry engagement.</p></div>
+<div class="section-intro"><p class="eyebrow">05 / {{UI_EXPERIENCE}}</p><h2 id="experience-heading">{{UI_EXPERIENCETITLE}}</h2><p>{{UI_EXPERIENCEINTRO}}</p></div>
 {{EXPERIENCE}}
-<div id="leadership" class="anchor-alias" tabindex="-1" aria-label="University engagement"></div>
+<div id="leadership" class="anchor-alias" tabindex="-1" aria-label="{{UI_ENGAGEMENT}}"></div>
 </section>
 <section id="education" class="section section-split" aria-labelledby="education-heading">
-<div class="section-intro"><p class="eyebrow">06 / Education</p><h2 id="education-heading">Academic background</h2></div>
+<div class="section-intro"><p class="eyebrow">06 / {{UI_EDUCATION}}</p><h2 id="education-heading">{{UI_EDUCATIONTITLE}}</h2></div>
 {{EDUCATION}}
 </section>
 <section id="cv" class="section" aria-labelledby="cv-heading">
 {{CV}}
 </section>
 <section id="contact" class="section section-split" aria-labelledby="contact-heading">
-<div class="section-intro"><p class="eyebrow">07 / Contact</p><h2 id="contact-heading">Let's compare notes.</h2></div>
+<div class="section-intro"><p class="eyebrow">07 / {{UI_CONTACT}}</p><h2 id="contact-heading">{{UI_CONTACTTITLE}}</h2></div>
 {{CONTACT}}
 </section>
 </main>

@@ -27,7 +27,7 @@ const contactMapped=new Set([...Object.keys(contactFields),...Object.keys(linkFi
 const eventFields={'Thesis submitted':'THESIS_SUBMITTED','Viva completed':'VIVA_COMPLETED','Degree awarded':'DEGREE_AWARDED'};
 function checked(entry){return entry&&entry.state.startsWith('CHECKED')&&!/VERIFY|SUPPORTED|REJECT|HOLD|PRIVATE/.test(entry.state)&&!/\[VERIFY/.test(entry.value);}
 function guardEB(text) {
-  const sections=['1.1','1.2','2.1','2.2','3.1','3.2','3.3','3.4','3.5','3.6','3.9','4.1','4.2','4.3','5.1','5.2','5.3','10'];
+  const sections=['1.1','1.2','1.4','2.1','2.2','3.1','3.2','3.3','3.4','3.5','3.6','3.9','4.1','4.2','4.3','5.1','5.2','5.3','10'];
   return Object.fromEntries(sections.map(id=>[id,section(text,id).split('\n').filter(l=>{
     if(l.startsWith('|')){const r=l.split('|').slice(1,-1).map(v=>v.trim());
       if(id==='1.1'&&contactMapped.has(r[0]))return false;
@@ -68,6 +68,15 @@ function venue(r){if(!r.journal||!r.volume||!r.pages_or_article_number)throw new
 function sourceRecords(text){let x;try{x=JSON.parse(text);}catch{throw new Error('CONTRIB_FORMAT');}if(x.schema_version!=='1.0'||!Array.isArray(x.records))throw new Error('CONTRIB_FORMAT');
   if(new Set(x.records.map(r=>r.id)).size!==x.records.length)throw new Error('DUPLICATE_SOURCE_ID');return x.records;}
 export function derivePublic(policy,current,baseline) {
+  // These are separately authored derivatives, never automatically translated.
+  // A fresh reviewed calibration is needed after either Chinese source changes.
+  for(const id of ['CN_CV','CN_WORDING'])if(policy.sources.some(s=>s.id===id)) {
+    if(typeof current[id]!=='string'||typeof baseline[id]!=='string')throw new Error('CHINESE_SOURCE_REQUIRED');
+    if(current[id].replaceAll('\r\n','\n')!==baseline[id].replaceAll('\r\n','\n')) {
+      const error=new Error(id==='CN_CV'?'EDITORIAL_CHINESE_CV_CHANGE':'EDITORIAL_CHINESE_WORDING_CHANGE');
+      error.locator={source:id,action:'Review the affected Chinese wording and public PDF, then refresh the explicit bilingual calibration.'};throw error;
+    }
+  }
   const result=structuredClone(policy),old=sourceRecords(baseline.CONTRIB),records=sourceRecords(current.CONTRIB);
   const currentGuard=guardEB(current.EB),baselineGuard=guardEB(baseline.EB);
   if(!unchanged(currentGuard,baselineGuard)){const error=new Error('EDITORIAL_EB_CHANGE');error.locator={source:'EB',sections:Object.keys(currentGuard).filter(id=>currentGuard[id]!==baselineGuard[id])};throw error;}

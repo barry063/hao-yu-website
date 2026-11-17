@@ -2,7 +2,7 @@
   "name": "hao-yu-academic-site",
   "private": true,
   "scripts": {
-    "check": "html-validate index.html && node scripts/check-site.mjs && node --test scripts/navigation.test.mjs",
+    "check": "node scripts/check-html.mjs && node scripts/check-site.mjs && node --test scripts/navigation.test.mjs",
     "preview": "node scripts/preview.mjs",
     "check:links": "node scripts/check-links.mjs",
     "build": "node scripts/build-site.mjs",

@@ -1,7 +1,7 @@
 /** Immutable public packages; explicit operator decision kept in private state. */
 import fs from 'node:fs';
 import path from 'node:path';
-import { ROOT, loadPublic, VISITOR_FILES } from './public-content.mjs';
+import { ROOT, loadPublic, visitorFiles } from './public-content.mjs';
 import { digest, json, sha, stable, readState, readSources, inputHashes, runtimeInfo, writeJSON, privateRecordHash } from './workflow-core.mjs';
 export const PACKAGES=path.join(ROOT,'tmp/candidates');
 export function packageFor(id) {
@@ -15,12 +15,14 @@ export function packageFor(id) {
     if(e.isSymbolicLink())throw new Error('STALE_OUTPUT_LOCATION');const name=prefix+e.name;
     if(e.isDirectory())walk(path.join(base,e.name),name+'/');else files.push(name);}}
   walk(path.join(dir,'visitor'));
-  if(stable(files.sort())!==stable([...VISITOR_FILES].sort()))throw new Error('STALE_OUTPUT_SET');
-  for(const f of VISITOR_FILES)if(sha(fs.readFileSync(path.join(dir,'visitor',f)))!==manifest.outputs[f])throw new Error('STALE_OUTPUT');
+  const expected=visitorFiles(data);
+  if(stable(files.sort())!==stable([...expected].sort())||stable(Object.keys(manifest.outputs).sort())!==stable([...expected].sort()))throw new Error('STALE_OUTPUT_SET');
+  for(const f of expected)if(sha(fs.readFileSync(path.join(dir,'visitor',f)))!==manifest.outputs[f])throw new Error('STALE_OUTPUT');
   if(sha(fs.readFileSync(path.join(dir,'review.json')))!==manifest.review)throw new Error('STALE_REVIEW');
   const review=json(path.join(dir,'review.json'));
   if(review.state!=='READY_FOR_REVIEW'||review.checks.some(c=>c.result!=='PASS'))throw new Error('FAILED_REVIEW');
   for(const id of ['HTML_CONTENT_NAVIGATION_HTTP','PUBLIC_PDF','BROWSER_KEYBOARD_ZOOM_MOTION'])if(!review.checks.some(c=>c.id===id))throw new Error('FAILED_REVIEW');
+  if(data.localisation&&!review.checks.some(c=>c.id==='PUBLIC_PDF_ZH'))throw new Error('FAILED_REVIEW');
   return {dir,manifest,data,review};
 }
 export function gate({id,sourceRoot,stateRoot,target,requireApproval=true}) {

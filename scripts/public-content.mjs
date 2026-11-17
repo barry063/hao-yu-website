@@ -3,17 +3,21 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import Ajv from 'ajv';
+import { STATUS_ZH, UI, validateLocalisation, localise } from './localisation.mjs';
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const SOURCE_PATHS = Object.freeze({ EB:'1 Master Academic CV/Evidence_Bank.md',
   PUB:'4 Publication list/Master_Publication_List.md', CONTRIB:'4 Publication list/Publication_Contributions.json',
-  PROFILE:'3 Research Profile/Hao_Yu_Application_Evidence_Wording.md', EXPORT:'1 Master Academic CV/Current_Export_Record.json' });
+  PROFILE:'3 Research Profile/Hao_Yu_Application_Evidence_Wording.md', EXPORT:'1 Master Academic CV/Current_Export_Record.json',
+  CN_CV:'9 Chinese CV/hao_CN_CV/resume.tex', CN_WORDING:'9 Chinese CV/Chinese_Application_Evidence_Wording.md' });
 const schema = JSON.parse(fs.readFileSync(path.join(ROOT, 'schemas/public-content.schema.json')));
 const checkSchema = new Ajv({ allErrors: true, strict: true }).compile(schema);
 export const STATUS = Object.freeze({ PUBLISHED: 'Published journal articles', ACCEPTED: 'Accepted',
   SUBMITTED: 'Submitted', UNDER_REVIEW: 'Under review', IN_PREPARATION: 'In preparation', RESEARCH_SOFTWARE: 'Research software' });
 export const VISITOR_FILES = Object.freeze(['.nojekyll', 'index.html', 'styles.css', 'script.js', 'favicon.svg',
   'robots.txt', 'sitemap.xml', 'assets/Hao_Yu_CV.pdf', 'assets/hao-yu-portrait.jpg', 'assets/og-image.png']);
+export const ALL_VISITOR_FILES = Object.freeze([...VISITOR_FILES,'zh/index.html','assets/Hao_Yu_CV_CN.pdf','assets/og-image-zh.png']);
+export const visitorFiles = data => data.localisation ? ALL_VISITOR_FILES : VISITOR_FILES;
 export const escapeHTML = value => String(value).replaceAll('&', '&amp;').replaceAll('<', '&lt;')
   .replaceAll('>', '&gt;').replaceAll('"', '&quot;').replaceAll("'", '&#39;');
 export function safeURL(value, { mail = false } = {}) {
@@ -27,8 +31,9 @@ export function safeURL(value, { mail = false } = {}) {
 function validDate(value) {
   return /^\d{4}-\d{2}-\d{2}$/.test(value) && new Date(value).toISOString().slice(0, 10) === value;
 }
-export function formatDate(value) {
+export function formatDate(value, locale='en') {
   const [y, m, d] = value.split('-').map(Number);
+  if(locale==='zh')return `${y}年${m}月${d}日`;
   return `${d} ${['January','February','March','April','May','June','July','August','September','October','November','December'][m - 1]} ${y}`;
 }
 export function entities(data) {
@@ -60,6 +65,8 @@ export function validatePublic(data) {
   if (all.length !== ids.size) throw new Error('Duplicate public ID');
   if (!data.profile.selected || !validDate(data.release_date)) throw new Error('Missing profile or invalid release date');
   if (data.presentation.cv_document && !validDate(data.presentation.cv_document.date)) throw new Error('Invalid reviewed CV date');
+  if (data.presentation.cv_document_zh && !validDate(data.presentation.cv_document_zh.date)) throw new Error('Invalid reviewed CV date');
+  if (data.localisation && !validDate(data.localisation.reviewed)) throw new Error('Invalid localisation review date');
   if (new Set(data.sources.map(s => s.id)).size !== data.sources.length) throw new Error('Duplicate source ID');
   for (const s of data.sources) {
     if (SOURCE_PATHS[s.id] !== s.path) throw new Error('Source outside public provenance allowlist');
@@ -103,29 +110,30 @@ export function validatePublic(data) {
   } else if (Array.isArray(x)) x.forEach(walk);
     else if (x && typeof x === 'object') Object.values(x).forEach(walk); };
   walk(data);
+  validateLocalisation(data);
   return data;
 }
-export function resolveText(text, data) {
+export function resolveText(text, data, locale='en') {
   const resolved = text.replace(/\{\{([^{}]+)\}\}/g, (_, key) => {
     if (key.startsWith('profile.')) {
       const field = key.slice(8);
-      if (field === 'role_short') return data.profile.role.replace(/ in .*/, '');
+      if (field === 'role_short') return locale==='zh' ? data.profile.role : data.profile.role.replace(/ in .*/, '');
       if (typeof data.profile[field] === 'string' && field !== 'id') return data.profile[field];
     }
     const [kind, id, form] = key.split(':');
     if (kind === 'status' && form === 'lower') {
       const o = data.outputs.find(o => o.id === id && o.selected);
-      if (o) return o.status === 'PUBLISHED' ? 'published' : STATUS[o.status].toLowerCase();
+      if (o) return locale==='zh' ? (o.status==='PUBLISHED'?'已发表':STATUS_ZH[o.status]) : o.status === 'PUBLISHED' ? 'published' : STATUS[o.status].toLowerCase();
     }
     if (kind === 'event') {
       const e = data.qualification_events.find(e => e.id === id && e.selected);
       if (e) {
-        const label = {THESIS_SUBMITTED:'Thesis submitted',VIVA_COMPLETED:'Viva completed',DEGREE_AWARDED:'Degree awarded'}[e.kind];
-        if (form === 'sentence') return `${label} ${formatDate(e.date)}.`;
+        const label = (locale==='zh'?{THESIS_SUBMITTED:'博士论文已提交',VIVA_COMPLETED:'已完成答辩',DEGREE_AWARDED:'学位已授予'}:{THESIS_SUBMITTED:'Thesis submitted',VIVA_COMPLETED:'Viva completed',DEGREE_AWARDED:'Degree awarded'})[e.kind];
+        if (form === 'sentence') return locale==='zh' ? `${label}（${formatDate(e.date,locale)}）。` : `${label} ${formatDate(e.date)}.`;
       }
     }
     if (kind === 'qualification' && form === 'thesis') {
-      if (data.qualification_events.some(e => e.selected && e.qualification_id === id && e.kind === 'THESIS_SUBMITTED')) return 'submitted thesis';
+      if (data.qualification_events.some(e => e.selected && e.qualification_id === id && e.kind === 'THESIS_SUBMITTED')) return locale==='zh'?'已提交的博士论文':'submitted thesis';
     }
     throw new Error('Unsupported or missing authored reference');
   });
@@ -135,9 +143,12 @@ export function resolveText(text, data) {
 export function loadPublic(filename = path.join(ROOT, 'content/site.json')) {
   return validatePublic(JSON.parse(fs.readFileSync(filename, 'utf8')));
 }
-export function normalise(data) {
+export function normalise(data, locale='en') {
   validatePublic(data);
-  const render = value => resolveText(value, data), p = data.profile, config = data.presentation;
+  const original=data;
+  data=localise(data,locale);
+  const render = value => resolveText(value, data,locale), p = data.profile, config = data.presentation;
+  const statuses=locale==='zh'?STATUS_ZH:STATUS;
   const record = (r, destination, text = r.text || []) => {
     let links = r.links || [];
     if (r.output_id) {
@@ -149,26 +160,29 @@ export function normalise(data) {
   };
   const event = data.qualification_events.find(e => e.selected && e.kind === 'THESIS_SUBMITTED');
   const records = data.narratives.filter(r => r.selected).map(r => record(r, r.destination));
-  if (event) records.splice(1, 0, {id:'STATUS',destination:'top',title:'Thesis submitted',dates:formatDate(event.date),
-    text:[`${p.role} at the ${p.institution}. Thesis submitted on ${formatDate(event.date)}.`],links:[],...event.provenance});
-  records.push(...data.outputs.filter(o => o.selected).map(o => record({...o,dates:o.year ? String(o.year) : STATUS[o.status]}, 'publications',
+  if (event) records.splice(1, 0, {id:'STATUS',destination:'top',title:UI[locale].thesis,dates:formatDate(event.date,locale),
+    text:[locale==='zh'?`${p.institution}${p.role}。博士论文于${formatDate(event.date,locale)}提交。`:`${p.role} at the ${p.institution}. Thesis submitted on ${formatDate(event.date)}.`],links:[],...event.provenance});
+  records.push(...data.outputs.filter(o => o.selected).map(o => record({...o,dates:o.year ? String(o.year) : statuses[o.status]}, 'publications',
     o.status === 'PUBLISHED' ? [o.authors,o.venue,o.contribution] : [o.contribution])));
   const monthLabel = (month, includeYear=true) => {
+    if(locale==='zh')return `${includeYear?month.slice(0,4)+'年':''}${Number(month.slice(5))}月`;
     const label = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][Number(month.slice(5)) - 1];
     return label + (includeYear ? ' ' + month.slice(0,4) : '');
   };
   for (const key of ['experience','qualifications','awards']) records.push(...data[key].filter(r => r.selected).map(r => {
     if (key === 'experience') r = {...r,title:r.role + ' · ' + r.organisation,
-      dates:monthLabel(r.start_month,r.start_month.slice(0,4)!==r.end_month.slice(0,4)) + ' – ' + monthLabel(r.end_month)};
+      dates:locale==='zh'?monthLabel(r.start_month)+' – '+monthLabel(r.end_month):monthLabel(r.start_month,r.start_month.slice(0,4)!==r.end_month.slice(0,4)) + ' – ' + monthLabel(r.end_month)};
     const item=record(r,{experience:'experience',qualifications:'education',awards:'awards'}[key]);
     if(key==='qualifications')for(const event of data.qualification_events.filter(e=>e.selected&&e.qualification_id===r.id&&e.kind!=='THESIS_SUBMITTED'))
-      item.text.push(`${{VIVA_COMPLETED:'Viva completed',DEGREE_AWARDED:'Degree awarded'}[event.kind]} ${formatDate(event.date)}.`);
+      item.text.push(locale==='zh'?`${{VIVA_COMPLETED:'已完成答辩',DEGREE_AWARDED:'学位已授予'}[event.kind]}（${formatDate(event.date,locale)}）。`:`${{VIVA_COMPLETED:'Viva completed',DEGREE_AWARDED:'Degree awarded'}[event.kind]} ${formatDate(event.date)}.`);
     return item;
   }));
-  return {reviewed:data.release_date,site:{...p,...config,title:render(config.title),description:render(config.description)},
-    profiles:[{id:'EMAIL',label:'Email',url:`mailto:${p.email}`},...data.links.filter(l => l.selected && l.id !== 'GROUP')],
+  return {reviewed:data.release_date,locale,site:{...p,...config,title:render(config.title),description:render(config.description),
+      base_url:original.presentation.url,url:original.presentation.url+(locale==='zh'?'zh/':''),bibliographic_name:original.profile.name,
+      image:locale==='zh'?'assets/og-image-zh.png':'assets/og-image.png'},
+    profiles:[{id:'EMAIL',label:UI[locale].email,url:`mailto:${p.email}`},...data.links.filter(l => l.selected && l.id !== 'GROUP')],
     records, outputs:data.outputs.filter(o => o.selected), events:data.qualification_events.filter(e => e.selected),
     cv_authors:Object.fromEntries(data.outputs.filter(o => o.cv_authors).map(o => [o.id,render(o.cv_authors)])),
     social:{name:p.name,role:p.role,institution:p.institution,topic:config.social.topic,
-      status:event ? `Thesis submitted ${formatDate(event.date)}` : '',alt:render(config.social.alt)}};
+      status:event ? `${UI[locale].thesis} ${formatDate(event.date,locale)}` : '',alt:render(config.social.alt)}};
 }

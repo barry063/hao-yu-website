@@ -1,10 +1,36 @@
 # Website update plan and verification contract
 
 Created: 5 October 2026. Baseline: website commit `2c3ba49`.
-Plan version: 1.10. Release-1 milestone: `LIVE_CONTENT_VERIFIED_BROWSER_QA_DEFERRED`.
+Plan version: 1.13. Release-1 milestone: `LIVE_CONTENT_VERIFIED_BROWSER_QA_DEFERRED`.
 Workflow milestone: `P01_P06_COMPLETE_LIVE_VERIFIED`.
 Watcher milestone: `P07_COMPLETE_INSTALLED_VERIFIED`.
 November content milestone: `LIVE_VERIFIED`; N01–N04 DONE.
+
+17 November bilingual milestone: `READY_TO_PUBLISH` locally / `READY_FOR_REVIEW`;
+L01–L06 DONE (L02/L04/L06 reverified after editorial feedback); L07 IN_PROGRESS.
+Current release instruction: the user accepted the revised previews and said,
+“Looks good now. Please publish both language versions and verify that the live
+website switches languages correctly and offers the right CV download for each
+version.” This authorises exact-candidate approval, promotion, commit, push,
+PR/merge and publication through the existing GitHub Pages main/root route.
+The earlier preview-only boundary below is historical; the review is complete.
+The user accepted both CVs and requested descriptive photo captions in both
+languages and natural, professional, friendly Chinese writing across the page,
+instead of literal translation. Preserve the accepted PDF bytes, revise the
+website wording and repeat affected checks before presenting a new candidate.
+The user requested a tangible plan first for English and
+Chinese website versions, with each page offering only its matching-language CV.
+See [the bilingual plan and checklist](2026-11-17_BILINGUAL_WEBSITE_PLAN.md) and
+[planning checks](2026-11-17-bilingual-planning-checks.json). Proposed defaults:
+Current editorial candidate: `16ed68b83b58b8899e5c618ca6a90e04701a8efbb9f2f08830f12452ce5cf45b`.
+See [the editorial review](releases/2026-11-17-bilingual-editorial-review.md) and
+[checks](releases/2026-11-17-bilingual-editorial-review-checks.json).
+English at the existing root, Simplified Chinese at `/zh/`, an English/中文
+selector, and separately reviewed public CV derivatives. The user subsequently
+approved implementation with proper verification and requested both language
+previews and CV downloads before publishing. Local implementation and candidate
+review are authorised; publication awaits that review. Previous publication
+instructions apply to their dated releases.
 
 12 November release milestone: `LIVE_VERIFIED`;
 U01–U05 DONE; U06 IN_PROGRESS for public checks.
@@ -225,6 +251,13 @@ decision. `DONE` requires every listed acceptance criterion to pass with evidenc
 | U04 | Verify final content/discovery candidate | U02, U03 | DONE | 68/68 regressions; W08/P05 HTTP/PDF/browser checks and exact candidate gate PASS; 12 November report/checks |
 | U05 | Deliver/publish and verify candidate | U04; applicable release authority | DONE | PR #6 merged; Pages run 43279729491; exact-candidate LIVE_VERIFIED; deployment report/checks |
 | U06 | Confirm indexing and external-profile backlinks | Search Console/property and external editor access | IN_PROGRESS | Cambridge identity HTTP200 and exact homepage-link absence checked; host robots HTTP404; Search Console and external edits NOT RUN |
+| L01 | Review current EN/CN sources and prepare bilingual checklist | Current sources and existing workflow | DONE | L01-A–C PASS; 17 November bilingual plan and planning-checks JSON; planning only |
+| L02 | Prepare reviewed bilingual public content and locale contract | L01; implementation instruction | DONE | L02-A–D PASS: 37 translations, shared facts, 420 fields; bilingual review report/checks |
+| L03 | Prepare independently reviewed EN/CN public CVs | L01; implementation instruction; L02 fact coordination | DONE | L03-A–D PASS: four-page EN/two-page CN; six pages visually reviewed; exact PDF checks |
+| L04 | Generate both pages, language switch and metadata | L02 contract; L03 final download bindings | DONE | L04-A–E PASS: both routes, selector/downloads, localised metadata and social cards |
+| L05 | Extend bilingual candidate, validation and release workflow | L02 contract; L03/L04 interfaces | DONE | L05-A–E PASS: both PDFs/pages, exact gate, first-release rollback, seven-source manual preparation |
+| L06 | Verify and present bilingual candidate | L02–L05 | DONE | L06-A–D PASS: 90/90 full plus 22/22 affected tests, both-locale browser/PDF/project-path checks; bilingual report |
+| L07 | Publish and verify both versions | L06; applicable release authority | IN_PROGRESS | User approved publication; exact candidate promoted; deployment/live checks pending; L07-A–C |
 
 ## Acceptance criteria
 
@@ -990,6 +1023,93 @@ completes at W08. Release 2 completes at W11 with its readiness/live status stat
   DEFERRED. No release dependency remains. Installed watcher unchanged. Publish
   this documentation-only follow-up and verify its deployment against the same
   candidate before handoff.
+
+### 17 November 2026 — bilingual website planning
+
+- User requested English/Chinese versions, visitor language choice and a CV
+  download matching each page's language, with a tangible checklist first.
+  This changes the next planned feature; implementation/publication is not yet
+  requested. Prior release authority remains tied to its reviewed candidate.
+- Started clean at `2f81878`; read current website/core instructions, decisions,
+  tracker and latest session. Rechecked canonical sources, current English
+  master/export and Chinese source/export/wording entry points.
+- L01-A: current hashes and source review PASS. EB/EXPORT changed since the
+  released dataset; PUB/CONTRIB/PROFILE unchanged. English export matches its
+  TeX/PDF/EB hashes; Chinese PDF matches its recorded export fingerprint. Fresh
+  PDF visual review and new publication-status verification NOT RUN.
+- L01-B: architecture/source-selection/acceptance review PASS. Plan retains
+  static GitHub Pages, English root and Chinese `/zh/`, ordinary language links,
+  distinct public PDFs, shared facts and reviewed locale text. It covers nested
+  preview routing, per-language PDF checks, candidate bindings and rollback for
+  newly introduced files. Official Google multilingual guidance was checked.
+- L01-C: documentation scope, task/acceptance coverage, links/JSON, exposure,
+  source/visitor hash preservation and `git diff --check` PASS. Evidence:
+  `2026-11-17_BILINGUAL_WEBSITE_PLAN.md` and
+  `2026-11-17-bilingual-planning-checks.json` in this directory.
+- L01 DONE; L02–L07 NOT_STARTED. Milestone PLAN_READY_FOR_REVIEW. No canonical,
+  visitor, dataset, PDF, implementation or installed-watcher edits; no commit,
+  push or deployment. Candidate/browser/live checks NOT RUN. After implementation
+  is requested, L02/L03 can proceed; manual bilingual source preparation avoids
+  an installed-watcher dependency. U06 and W07/P08 retain their separate states.
+
+### 17 November 2026 — implemented bilingual review candidate
+
+- User accepted the plan and requested implementation with proper verification,
+  showing both language versions and their CV downloads before publishing.
+  Preserved planning changes and created local content/bilingual-2026-11-17.
+- L02-A–D: seven current declared sources, shared facts and 37 reviewed Chinese
+  presentation records; exact 420-field proposed ownership and translation
+  freshness/completeness tests PASS. Canonical inputs unchanged.
+- L03-A–D: four-page EN and two-page CN public derivatives PASS. All six PDF
+  pages visually inspected; embedded fonts, links, milestone/status, coverage,
+  privacy, source/fact hashes, dates and bounds checked independently.
+- L04-A–E/L05-A–E: both static routes, accessible language choice, exclusive CV
+  downloads, metadata/sitemap/social cards, exact candidate bindings and first
+  bilingual promotion/rollback fixture PASS. Installed watcher inspected read-only
+  and unchanged; five original sources. Manual review state reads all seven.
+- L06-A–D: 90/90 full regressions and 22/22 final affected tests PASS, zero skips.
+  Final candidate repeats two-page HTML/XML, thirteen-file HTTP, both PDF and
+  both-locale browser checks at 375/768/1440 px, keyboard/visible focus, section
+  switching/history, no JS, reduced motion and native 200% zoom; all PASS.
+- Candidate `af490bafbb86822fa856f1292b825b01cd1cfae11dabcc14b194df801a923089`: exact
+  source/input/runtime/policy/baseline gate PASS with requireApproval:false.
+  No user approval invented. Both pages/PDFs are served for local review.
+- Evidence: releases/2026-11-17-bilingual-review.md and checks JSON. Original
+  eleven source/master fingerprints and nine protected generated/data files
+  unchanged. Proposed dataset/register remain separate from released root files.
+- L02–L06 DONE; L07 NOT_STARTED pending review/release instruction. Local
+  READY_TO_PUBLISH / workflow READY_FOR_REVIEW. No real promotion, commit, push
+  or publication. Live checks, full W07 audit and unchanged external destinations
+  NOT RUN; W07/P08 and U06 remain separate. No technical candidate blocker.
+
+### 17 November 2026 — photo captions and natural Chinese revision
+
+- User accepted both CVs and requested descriptive photo captions plus natural,
+  clear, professional and friendly Chinese website writing, rather than literal
+  translation. L02/L04/L06 reopened and are now reverified; L03 bytes preserved.
+- Captions now read Hao Yu in a suit / 我的正装照. Alternative text describes
+  the photo; location stays in contact details. Adopted the requested Chinese
+  download/contact headings and reviewed all 37 Chinese records; rewrote 26,
+  along with UI labels/headings and two metadata fields. Preserve factual meaning
+  without requiring English sentence structure in future Chinese edits.
+- L02-A–D/L04-A–E: shared facts, statuses, citations, seven source hashes and
+  420-field ownership PASS. English differs only within the portrait figure.
+  Both user-accepted PDF hashes are identical. Only the two generated HTML files
+  differ from the previous candidate.
+- L06-A–D: affected suite 22/22 PASS, zero skips. An initial 21/22 result was an
+  old literal Chinese-sentence assertion; updated it to verify status propagation
+  within the correct project. Fresh candidate HTML/XML, thirteen-file HTTP, both
+  PDF validators and both-locale browser matrix PASS, including 200% zoom/no JS.
+  Final caption/hero/CV/contact screenshots inspected; no layout defects.
+- New candidate `16ed68b83b58b8899e5c618ca6a90e04701a8efbb9f2f08830f12452ce5cf45b`
+  supersedes af490baf. Separate calibration refreshed, published baseline retained;
+  gate with requireApproval:false PASS. No site approval or publication inferred
+  from the user accepting the CVs. Revised previews are served on port 8080.
+- Evidence: releases/2026-11-17-bilingual-editorial-review.md and checks JSON;
+  ignored tmp/qa/2026-11-17-editorial/. Local READY_TO_PUBLISH / READY_FOR_REVIEW.
+  L01–L06 DONE; L07 pending revised-website review and release authority. No
+  canonical/PDF edits, promotion, commit, push, watcher change or publication.
+  Full accessibility and live checks NOT RUN; prior deferrals remain separate.
 
 ## Reusable continuation prompt
 

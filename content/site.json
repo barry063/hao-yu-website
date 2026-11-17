@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "release_date": "2026-11-12",
+  "release_date": "2026-11-17",
   "sources": [
     {
       "id": "EB",
       "path": "1 Master Academic CV/Evidence_Bank.md",
-      "sha256": "468659e2b67be2df82f9e6feadc57f16a0819f91a1c1cc3c1f057db2c387a5b5"
+      "sha256": "d931cb0a1deb0279d8fda158736b87048ee44eb1d1ba7ac7b7e02316e803c4fb"
     },
     {
       "id": "PUB",
@@ -25,7 +25,17 @@
     {
       "id": "EXPORT",
       "path": "1 Master Academic CV/Current_Export_Record.json",
-      "sha256": "5ec125b11a738bf4200e9ea6330d3e2c8b4aaea76b03ec131254ede6f1bf0215"
+      "sha256": "1c5f117c072568590643a1c2ec3a5932888965a3101ee5f7813473308f48e325"
+    },
+    {
+      "id": "CN_CV",
+      "path": "9 Chinese CV/hao_CN_CV/resume.tex",
+      "sha256": "49c07d87e81ccba0ea33939151d8e97091970c5f0ecdf96fecef8f6671e90701"
+    },
+    {
+      "id": "CN_WORDING",
+      "path": "9 Chinese CV/Chinese_Application_Evidence_Wording.md",
+      "sha256": "07c1a7b029f4776d6abf75c0799ffb8052dd6a91bb96c17b4927298b5061086d"
     }
   ],
   "profile": {
@@ -746,14 +756,458 @@
       "alt": "{{profile.name}}. {{profile.role_short}} at {{profile.institution_short}}. Low-dimensional materials, synthesis and spectroscopy."
     },
     "cv_document": {
-      "file": "build-resources/public-cv/2026-11-12/Hao_Yu_CV.pdf",
-      "sha256": "01ffd1e6bd5bb189ed975cad8e9144ba4dae6f5ab3443a15fb86ed2b5cb509b5",
-      "date": "2026-11-12",
+      "file": "build-resources/public-cv/2026-11-17/Hao_Yu_CV.pdf",
+      "sha256": "ba3b75abe31446ab50aa72fb347fb4ca029af308e3a33b801b7906ac420759e9",
+      "date": "2026-11-17",
       "pages": 4,
-      "source_tex_sha256": "22864b7090428ed6c82388bb98c5a7670274e623b4674a14c0343a4003f99c08",
-      "source_pdf_sha256": "97fdb3d5b450c6d39ccd5e5235e084b5e766a31c684008627bcfc496d6a5ea66",
-      "export_sha256": "5ec125b11a738bf4200e9ea6330d3e2c8b4aaea76b03ec131254ede6f1bf0215",
+      "source_tex_sha256": "653a544d62505afc5d56b7b0f78537daad51c763c4cac911d0e31fe3a9929d84",
+      "source_pdf_sha256": "3d855702fd0640ea7996af010384073095a2a626b5138d757bd6bea93b5cd968",
+      "export_sha256": "1c5f117c072568590643a1c2ec3a5932888965a3101ee5f7813473308f48e325",
       "facts_sha256": "3c12b95601980351641ff460c5529bcb4f1386a7f1b634e5caf1e743dac457c7"
+    },
+    "cv_zh": "assets/Hao_Yu_CV_CN.pdf",
+    "cv_document_zh": {
+      "file": "build-resources/public-cv/2026-11-17/Hao_Yu_CV_CN.pdf",
+      "sha256": "4deb8087516d64f9e184f1cfe9d519f5f26bba1e0bcdcc95c9d19399d916846d",
+      "date": "2026-11-17",
+      "pages": 2,
+      "source_tex_sha256": "49c07d87e81ccba0ea33939151d8e97091970c5f0ecdf96fecef8f6671e90701",
+      "source_pdf_sha256": "d8ee037111949a9ee156713adace4a13920a23835779ea9ebaa1092c6988d4c9",
+      "export_sha256": "49c07d87e81ccba0ea33939151d8e97091970c5f0ecdf96fecef8f6671e90701",
+      "facts_sha256": "3c12b95601980351641ff460c5529bcb4f1386a7f1b634e5caf1e743dac457c7",
+      "selected_output_ids": [
+        "J1",
+        "J2",
+        "J3",
+        "P1",
+        "S1",
+        "S2",
+        "SW1"
+      ],
+      "selected_link_ids": [
+        "LINKEDIN",
+        "SCHOLAR",
+        "GITHUB"
+      ]
+    }
+  },
+  "localisation": {
+    "locale": "zh-Hans",
+    "reviewed": "2026-11-17",
+    "records": [
+      {
+        "id": "PERSON",
+        "source_sha256": "dc4cad212eb6df8c9913e911cb6a261307ebf897d6ebab63a518735f7adc89af",
+        "fields": {
+          "name": "余豪 Hao Yu",
+          "role": "工程学博士研究生",
+          "institution": "剑桥大学",
+          "institution_short": "剑桥大学",
+          "discipline": "工程学",
+          "group": "Hofmann 课题组",
+          "location": "英国剑桥"
+        }
+      },
+      {
+        "id": "LINKEDIN",
+        "source_sha256": "d0f2685b29c5af84691663a30fb261115ea274c74e80b08a180f1170c1e2ee8a",
+        "fields": {
+          "label": "LinkedIn"
+        }
+      },
+      {
+        "id": "SCHOLAR",
+        "source_sha256": "623169d38a77d646d705f3baea1fbed227e7b46b8ef4b710b69f7e95c40be428",
+        "fields": {
+          "label": "Google Scholar"
+        }
+      },
+      {
+        "id": "ORCID",
+        "source_sha256": "aa5493a17944e597fe2f2227955ba2f3b9a8a82461091f27558ab29125ec191e",
+        "fields": {
+          "label": "ORCID"
+        }
+      },
+      {
+        "id": "GITHUB",
+        "source_sha256": "1330733fd7be9b683101818cf2d884eab52e5f4cb818b8600e705850f801c89b",
+        "fields": {
+          "label": "GitHub"
+        }
+      },
+      {
+        "id": "CAMBRIDGE",
+        "source_sha256": "e6c9a3a35a203a9b5d297d0f4e3160830df6482715207512e9e5e25119135ba1",
+        "fields": {
+          "label": "剑桥大学个人主页"
+        }
+      },
+      {
+        "id": "GROUP",
+        "source_sha256": "b4e733049c5d7b0c9756a33d61183774a5670eb9d8e2b78e40d8006d2face1ed",
+        "fields": {
+          "label": "Hofmann 课题组"
+        }
+      },
+      {
+        "id": "J1",
+        "source_sha256": "5e10f898353cd25cf55a8ba31e62d8c86120b2767d6f3a26113c525190d06fa5",
+        "fields": {
+          "contribution": "第一作者。设计并开展 CSS-CVD 生长和拉曼／PL 测量；与 Stephan Hofmann 共同撰写论文。",
+          "link_labels": [
+            "DOI"
+          ]
+        }
+      },
+      {
+        "id": "J2",
+        "source_sha256": "f6310d4ca0385e5bf2db4d2ab8d12a4f44d4b961ea6722dcd7e3ccfcdce53023",
+        "fields": {
+          "contribution": "作为共同作者，开展拉曼及 SEM 数据采集与分析，包括在易产生充电效应的衬底上进行 SEM 成像。",
+          "link_labels": [
+            "DOI"
+          ]
+        }
+      },
+      {
+        "id": "J3",
+        "source_sha256": "98e975c2b3541c727be5f0a030c56aef75d617cd9cdddf84f2f9ae5b3d8a4e76",
+        "fields": {
+          "contribution": "第二作者，参与测量、设计与模拟。论文更正见 Nano Letters 24(41), 13103–13104（2024）。",
+          "link_labels": [
+            "DOI",
+            "更正"
+          ]
+        }
+      },
+      {
+        "id": "J4",
+        "source_sha256": "9e8b4e01f4478f3506de5cb67a12de1c182702e88cf1c9cadd53e8f7ba346927",
+        "fields": {
+          "contribution": "共同作者。论文中的 CRediT 贡献声明列明我的工作为数据分析。",
+          "link_labels": [
+            "DOI"
+          ]
+        }
+      },
+      {
+        "id": "S1",
+        "source_sha256": "b23a380a6f5dff1b2d04f8998808e15f2cc41fca0287a4540fc78e65e131d777",
+        "fields": {
+          "contribution": "合作论文；我承担拉曼／PL 测量与数据分析。",
+          "link_labels": []
+        }
+      },
+      {
+        "id": "S2",
+        "source_sha256": "fe581cd09920d8e581fe9a200725851be99c5cbbc9899ad2cab6b40478b51dec",
+        "fields": {
+          "contribution": "以共同作者身份参与教程稿件（Materials for Quantum Technology，{{status:S2:lower}}），提供 WS₂、MoS₂ 样品、生长配方和拉曼光谱分析流程。",
+          "link_labels": []
+        }
+      },
+      {
+        "id": "P1",
+        "source_sha256": "a730945a19040cd044bb922828850a299c0557b6466dfa7bc82fdcbe0736b7db",
+        "fields": {
+          "contribution": "第一作者稿件（{{status:P1:lower}}），题目暂定。",
+          "link_labels": []
+        }
+      },
+      {
+        "id": "SW1",
+        "source_sha256": "0f9c4d845a00c3aecf47ff24562984d4b54d04b0294e826183910d87ef291918",
+        "fields": {
+          "contribution": "用于拉曼与光致发光（PL）数据分析的 Python 工具包，支持预处理、峰拟合、空间映射和批量处理，导出时保留相关元数据。采用 BSD 3-Clause 许可证。",
+          "link_labels": [
+            "GitHub 代码仓库"
+          ]
+        }
+      },
+      {
+        "id": "EXP-REP",
+        "source_sha256": "7132cb57f58443a8785cff7a7d8ce8a3d71f23585513f925ea72c7af8f4c149b",
+        "fields": {
+          "role": "研究生学术代表",
+          "organisation": "剑桥大学工程系",
+          "text": [
+            "代表研究生参与院系讨论，议题包括教学与考试、AI 工具、学生福利及包容性，并向同学传达院系信息与决定。"
+          ]
+        }
+      },
+      {
+        "id": "EXP-INNO",
+        "source_sha256": "620da092f09d1b3572a826855364644d03e144353216415fbcd2781033592f84",
+        "fields": {
+          "role": "投资分析实习生",
+          "organisation": "英诺天使基金",
+          "text": [
+            "完成“小天使计划”，参与早期硬科技投资相关的行业研究与技术评估。",
+            "开展存算一体芯片行业研究，梳理技术路线、产业链和应用场景。"
+          ]
+        }
+      },
+      {
+        "id": "EXP-JUDGE",
+        "source_sha256": "f67331b3bd519914f685c64283c3af3f189d39b58887daf2a625021b7db11a55",
+        "fields": {
+          "role": "EnterpriseTECH 分析员",
+          "organisation": "剑桥大学嘉治商学院",
+          "text": [
+            "围绕用于室内光伏和 Ambient IoT 的光子光伏技术，开展市场规模测算、应用分析与竞品调研。",
+            "参与规划从 TRL 2 向 TRL 4 推进的技术路线和知识产权许可方案，并讨论最小可行产品（MVP）与规模化问题。"
+          ]
+        }
+      },
+      {
+        "id": "EXP-BOE",
+        "source_sha256": "4d4d13103b8be8cd689fcaaaaea28cac682c227ab529dc87024a833b4863a026",
+        "fields": {
+          "role": "校园大使",
+          "organisation": "京东方科技集团",
+          "text": [
+            "在英国高校组织线上、线下职业发展活动，并寻找 MicroLED 技术领域的潜在科研合作伙伴。",
+            "主动建立并维护高校与产业界的联系，推动相关研究人员与企业交流下一代显示技术的需求。"
+          ]
+        }
+      },
+      {
+        "id": "EDU-CAM",
+        "source_sha256": "ce626bdd70c15044df7daaf4d5037f5192740e6fb74e19d13b8196d755516737",
+        "fields": {
+          "title": "{{profile.institution}} · {{profile.discipline}}博士研究生",
+          "dates": "2022年10月 – 至今",
+          "text": [
+            "{{event:THESIS-SUBMITTED:sentence}}学位待授予。",
+            "博士论文：Close-space sublimation as a platform for accelerated process discovery in low-dimensional material growth.",
+            "工程系 Hofmann 课题组。导师：Stephan Hofmann 教授。"
+          ]
+        }
+      },
+      {
+        "id": "EDU-OX",
+        "source_sha256": "ef83a146442ec840afbd8bebd44b4e26118ba8ed08ca0fb27f1eac72e335de04",
+        "fields": {
+          "title": "牛津大学 · 材料科学本硕连读（MEng）",
+          "dates": "2018年10月 – 2022年7月",
+          "text": [
+            "就读于 Trinity College，获二等一级荣誉学位（2:1）。研究项目为光子微环谐振器调谐。"
+          ]
+        }
+      },
+      {
+        "id": "A1",
+        "source_sha256": "d064ec9a32bd659c416c8fe0347e86e67bc44b861f0c0af3f8dba96c6301145a",
+        "fields": {
+          "title": "剑桥哲学学会博士研究资助",
+          "dates": "2025–2026"
+        }
+      },
+      {
+        "id": "A2",
+        "source_sha256": "325e0dbee2e75d3fa212d5923c5f9ecde843e99f53c9a93a3d6711b4ae5205ab",
+        "fields": {
+          "title": "牛津大学 Trinity College · Exhibition Scholar",
+          "dates": "2020–2022"
+        }
+      },
+      {
+        "id": "A3",
+        "source_sha256": "060014e9fe9eb555d6587757791834f5993c17290da2991cbf885b1c4fa53c27",
+        "fields": {
+          "title": "新加坡教育部 SM1 奖学金",
+          "dates": "2014–2017"
+        }
+      },
+      {
+        "id": "PROFILE",
+        "source_sha256": "caa7a77519357515963cfdfa7c88b274d669417588474094fc2d4a39578681d4",
+        "fields": {
+          "title": "低维材料生长与光谱表征",
+          "dates": "",
+          "text": [
+            "我研究前驱体的化学性质及其在受限空间内的气相输运如何影响低维材料生长。通过生长实验、输运模拟、显微与光谱表征，并结合可复现的 Python 数据分析，研究工艺条件与材料结构、光学响应之间的关系。"
+          ],
+          "link_labels": []
+        }
+      },
+      {
+        "id": "ABOUT",
+        "source_sha256": "d62b04db208452607961ea3da4569114f470afabb478a7eb2ab34ed66b3539f7",
+        "fields": {
+          "title": "研究简介",
+          "dates": "",
+          "text": [
+            "我是{{profile.institution_short}}{{profile.group}}的{{profile.role_short}}，主要研究钨氧化物和过渡金属二硫属化合物。博士研究关注源材料的化学性质、源材料与衬底的布置方式，以及工艺条件对材料生长的影响。",
+            "我独立开展 SEM／EDS 和拉曼／PL 测量，也使用 Bruker XRD 采集和分析钨氧化物及亚氧化物的数据，结合参考图谱匹配，开展物相鉴定与晶格参数分析。",
+            "我将实验表征与局部输运模拟相结合，并分析合作者采集的 operando SEM 图像。我开发的 RamanPL_2D 可用于光谱拟合、空间映射和结果整理。在牛津期间，我还参与了光子器件的测量、设计与模拟。"
+          ],
+          "link_labels": []
+        }
+      },
+      {
+        "id": "THEME-1",
+        "source_sha256": "636671931b2ed704621c172fc897c983213c4c177da2b9ccbfd10e509fe478e0",
+        "fields": {
+          "title": "材料生长与前驱体输运",
+          "dates": "",
+          "text": [
+            "通过近空间 CVD 实验和局部输运模拟，研究前驱体化学及源材料与衬底的布置方式如何影响低维氧化物和硫化物的形成。"
+          ],
+          "link_labels": []
+        }
+      },
+      {
+        "id": "THEME-2",
+        "source_sha256": "1c996455fcec1ae9eb7fdc90a8a1bfa94c89a5577b9dab9822bec271d76507e9",
+        "fields": {
+          "title": "显微、光谱与结构表征",
+          "dates": "",
+          "text": [
+            "独立开展 SEM／EDS、拉曼／PL 和 Bruker XRD 测量，分析不同工艺条件下材料的形貌、元素组成、晶体结构与光学响应。"
+          ],
+          "link_labels": []
+        }
+      },
+      {
+        "id": "THEME-3",
+        "source_sha256": "be6ab5a173c58f7f567763f1701ddd90d728bae64398a81535c6117602604236",
+        "fields": {
+          "title": "科研软件与数据分析",
+          "dates": "",
+          "text": [
+            "针对材料实验中的光谱分析需求，开发 Python 工具，用于数据预处理、峰拟合、空间映射与批量导出。"
+          ],
+          "link_labels": []
+        }
+      },
+      {
+        "id": "PROJECT-CSS",
+        "source_sha256": "f0271727e7d5e3c2eff635cbb0dead6e90f9e64c06c871c728a95b1ac63cebc8",
+        "fields": {
+          "title": "钨氧化物与硫化物纳米结构的近空间生长",
+          "dates": "2023年2月 – 2025年1月",
+          "text": [
+            "研究受限空间中的气相输运及生长结构对氧化物、硫化物纳米结构形成的影响。",
+            "我设计并开展 CSS 辅助 CVD 生长实验和拉曼／PL 测量，与 Stephan Hofmann 共同撰写了第一作者论文。博士论文还包括我的非原位 SEM 测量，以及对合作者采集的 operando SEM 图像的分析。",
+            "Operando SEM、TEM／EDX 和 XPS 数据由合作者采集。结合生长实验与表征结果，我们研究前驱体供给和生长条件与材料形成之间的关系。"
+          ],
+          "link_labels": [
+            "第一作者论文 · Nanoscale"
+          ]
+        }
+      },
+      {
+        "id": "PROJECT-WS2",
+        "source_sha256": "cf3170e602b16c576026d8a6dc59e6fbbaeeeff971f51ca2ec930019825a2c84",
+        "fields": {
+          "title": "NaCl 辅助的 WS₂ 近空间生长",
+          "dates": "2025年6月 – 2026年4月",
+          "text": [
+            "研究源材料处理方法及源材料与衬底的布置方式对平面 WS₂ 生长的影响。",
+            "我设计了近空间生长结构，结合 COMSOL 局部流动模拟与 CVD 对比实验，评估前驱体供给及源材料与衬底之间的交叉污染。",
+            "通过对源材料和衬底进行配对表征，并结合拉曼／PL 测量，分析生长条件与材料形成的关系。我还独立采集了 NaCl 处理后的 SiO₂／Si 对照样品的 SEM-EDS 光谱和元素分布图，确认生长前的盐沉积。",
+            "这项研究是我{{qualification:EDU-CAM:thesis}}的一部分；相关第一作者稿件仍在{{status:P1:lower}}。"
+          ],
+          "link_labels": []
+        }
+      },
+      {
+        "id": "PROJECT-MOS2",
+        "source_sha256": "83bd021c909acdaae35f94b67f31114ef028816781fa7d35af7f722aac26110a",
+        "fields": {
+          "title": "直接写入 MoS₂ 的光学表征",
+          "dates": "2025年6月 – 8月",
+          "text": [
+            "利用光谱表征分析直接写入二维材料的层结构和光学响应。",
+            "在闭环 MoS₂ 写入的合作研究中，我开展拉曼／PL 测量和空间映射，分析不同位置的层结构及光学响应差异。生长平台和其他配套测量由其他共同作者主导。",
+            "合作论文状态：{{status:S1:lower}}。"
+          ],
+          "link_labels": []
+        }
+      },
+      {
+        "id": "PROJECT-SOFTWARE",
+        "source_sha256": "9d769d06012d170e177411dbf012ac8279aa5237c62fb909492e8d541fbf02c0",
+        "fields": {
+          "title": "RamanPL_2D",
+          "dates": "科研软件",
+          "text": [
+            "用于光谱拟合与空间映射的 Python 分析工具。",
+            "我开发了 RamanPL_2D，用于拉曼与光致发光光谱的预处理、峰拟合、空间映射和批量分析，支持将结果与相关元数据一并导出。",
+            "该工具提供可重复使用的分析流程，方便处理实验光谱数据。"
+          ],
+          "link_labels": [
+            "查看 GitHub 代码"
+          ]
+        }
+      },
+      {
+        "id": "PROJECT-PHOTONICS",
+        "source_sha256": "fe8061ef2f29965f0144d6919c3dcd6cdf57e5d81503df66e25d0d40005299b4",
+        "fields": {
+          "title": "光子共振调谐",
+          "dates": "2021年9月 – 2022年6月",
+          "text": [
+            "牛津大学 MEng 期间的研究",
+            "我的 MEng 研究项目是微环谐振器调谐。相关成果随后发表于 Nano Letters，我参与了其中的测量、设计与模拟工作。",
+            "在该项目中，我进行光纤与芯片的耦合对准，并优化偏振条件以开展光学透射测量。"
+          ],
+          "link_labels": [
+            "论文 · Nano Letters",
+            "相关更正 · 2024"
+          ]
+        }
+      },
+      {
+        "id": "PRACTICE",
+        "source_sha256": "b83902758f796e674266297f2d053222d5f7c5395543258b146a8de41a053856",
+        "fields": {
+          "title": "科研培训与实验室工作",
+          "dates": "科研实践",
+          "text": [
+            "我编写了课题组的拉曼表征与分析标准操作规程（SOP），并为研究人员提供 SEM 和拉曼实验培训。我也协助学生开展成像项目，曾为两届 NanoDTC 学员演示二维 MoS₂ 的 SEM 成像。",
+            "此外，我参与 CVD 反应器维护，使用质量流量控制器和针阀检查压力与前驱体供给，并编写院系安全评估。"
+          ],
+          "link_labels": []
+        }
+      },
+      {
+        "id": "POSTER-TMD",
+        "source_sha256": "b0578f0992fadd5d40919b41ac3ba198a6c12089a753f9b4a32b1c4400a430d7",
+        "fields": {
+          "title": "2D TMDs 2026 · 新加坡",
+          "dates": "2026年6月28日 – 7月2日",
+          "text": [
+            "海报：Flux-Resolved Growth Exploration in Close-Space CVD: From WO₃₋ₓ–WS₂ Core–Shell Nanotubes to WS₂–MoS₂ Heterostructures.",
+            "会议地点为新加坡国立大学，上方日期为会议会期。"
+          ],
+          "link_labels": []
+        }
+      },
+      {
+        "id": "POSTER-IWEPNM",
+        "source_sha256": "e6eea3a90d4235dbeacab88bf1fb67830025b85159c6674e18dbd146a9127e63",
+        "fields": {
+          "title": "IWEPNM 2026 · 奥地利蒂罗尔州基希贝格",
+          "dates": "2026年3月1日",
+          "text": [
+            "海报：Direct Fabrication of WS₂–WO₃₋ₓ Nanotube Devices on Si Substrate via a Close-space Sublimation Approach.",
+            "海报题目为最终版本；按会议日程，展示时间为2026年3月1日。"
+          ],
+          "link_labels": []
+        }
+      }
+    ],
+    "presentation": {
+      "source_sha256": "b24c9774adddbced03007b87e66e4b62fcc0df1d01cc29e8fa900a293f1fd6e9",
+      "title": "{{profile.name}} | 材料生长与光谱表征 | {{profile.institution_short}}",
+      "description": "{{profile.name}}，{{profile.institution_short}}{{profile.role}}。研究低维材料生长、输运模拟、显微与光谱表征，并开发 Python 数据分析工具。{{event:THESIS-SUBMITTED:sentence}}",
+      "social": {
+        "topic": "低维材料 | 合成 | 光谱表征",
+        "alt": "{{profile.name}}，{{profile.institution_short}}{{profile.role_short}}，研究低维材料生长与光谱表征。"
+      }
     }
   }
 }

@@ -7,13 +7,25 @@ import pdfplumber
 from check_reviewed_cv import check_reviewed_cv
 
 root = Path(__file__).resolve().parents[1]
-data = json.loads((Path(sys.argv[2]) if len(sys.argv) > 2 else root / 'content/site.json').read_text(encoding='utf-8'))
-if data['presentation'].get('cv_document'):
-    check_reviewed_cv(Path(sys.argv[1]) if len(sys.argv) > 1 else root / 'assets/Hao_Yu_CV.pdf', data)
+args = sys.argv[1:]
+locale = 'en'
+if '--locale' in args:
+    at = args.index('--locale')
+    assert at + 1 < len(args) and args[at + 1] in ['en', 'zh'], 'Unsupported CV locale'
+    locale = args[at + 1]
+    del args[at:at + 2]
+assert len(args) <= 2, 'Usage: check_public_cv.py [pdf] [data-json] [--locale en|zh]'
+data = json.loads((Path(args[1]) if len(args) > 1 else root / 'content/site.json').read_text(encoding='utf-8'))
+filename = Path(args[0]) if args else root / ('assets/Hao_Yu_CV_CN.pdf' if locale == 'zh' else 'assets/Hao_Yu_CV.pdf')
+descriptor = 'cv_document_zh' if locale == 'zh' else 'cv_document'
+if locale == 'zh':
+    assert data['presentation'].get(descriptor), 'Chinese PDF requires an independently reviewed document'
+if data['presentation'].get(descriptor):
+    check_reviewed_cv(filename, data, locale)
     sys.exit(0)
 def plain(value):
     return str(value).replace('–', '-').replace('—', '-').replace('−', '-').replace('₂', '2').replace('₃', '3')
-with pdfplumber.open(Path(sys.argv[1]) if len(sys.argv) > 1 else root / "assets/Hao_Yu_CV.pdf") as pdf:
+with pdfplumber.open(filename) as pdf:
     assert len(pdf.pages) >= 1, 'Empty public PDF'
     text = "\n".join(page.extract_text() for page in pdf.pages)
     folded = re.sub(r'\s+', ' ', text)

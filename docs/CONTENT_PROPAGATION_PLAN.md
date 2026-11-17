@@ -601,6 +601,36 @@ Parent W10/W11 remain complete; this local extension does not publish a release.
 - P07 remains DONE; P08/W07 DEFERRED. No private state or raw evidence enters the
   PR, and no academic source or released visitor bytes change.
 
+## Bilingual extension — 17 November 2026
+
+The user requested local implementation of
+[L02–L06](2026-11-17_BILINGUAL_WEBSITE_PLAN.md), with both language pages and CV
+downloads shown before publication. L07 still requires the subsequent applicable
+release instruction. This extends the existing workflow; historical P01–P07
+results are not evidence that bilingual acceptance checks have passed.
+
+The public contract retains shared facts and adds reviewed Chinese presentation.
+The manual preparation route declares the Chinese TeX and wording-library sources
+alongside the existing five sources. A Chinese source edit needs renewed editorial
+review and explicit calibration; it is not an automatic translation instruction.
+Shared-fact changes invalidate the affected translation/PDF review. Both reviewed
+PDFs, the locale helper, source hashes and all generated locale outputs are bound
+to the immutable candidate. A bilingual review must include the Chinese PDF check
+as well as HTML, English PDF and browser checks.
+
+Preparation and preview remain local. Promotion/rollback support absence in the
+previous release so that adding a Chinese page/PDF/card can be reversed precisely.
+Rollback validates every backup byte and destination before modifying files,
+restores the old release and removes only the introduced allowlisted files.
+Old version-1 rollback manifests remain supported.
+
+The installed watcher is unchanged. Its private source list and input hashes
+require a separate migration and verification before Chinese-source coverage can
+be claimed. The explicit manual bilingual preparation route is sufficient for
+this release. It does not approve or publish automatically. Record actual L05/L06
+checks in the bilingual release report and parent task tracker, retaining failed
+attempts and unavailable checks.
+
 ## Continuation prompt
 
 > Read both repositories' AGENTS.md, docs/WEBSITE_UPDATE_PLAN.md and

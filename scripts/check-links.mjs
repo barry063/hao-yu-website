@@ -2,10 +2,12 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
+import { loadPublic, visitorFiles } from './public-content.mjs';
+const root = process.argv[2]?path.resolve(process.argv[2]):path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const data=loadPublic(process.argv[3]?path.resolve(process.argv[3]):undefined);
+const html = visitorFiles(data).filter(f=>f.endsWith('.html')).map(f=>fs.readFileSync(path.join(root,f),'utf8')).join('\n');
 const urls = [...new Set([...html.matchAll(/href="(https:\/\/[^"<>]+)"/g)].map(m => m[1].replaceAll('&amp;', '&')))]
-  .filter(url => !url.startsWith('https://fonts.'));
+  .filter(url => !url.startsWith('https://fonts.')&&!url.startsWith(data.presentation.url));
 const results = await Promise.all(urls.map(async url => {
   try {
     const response = await fetch(url, { signal: AbortSignal.timeout(15000), headers: { 'User-Agent': 'HaoYuWebsiteLinkCheck/1.0' } });

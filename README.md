@@ -54,9 +54,10 @@ Vera fonts in `build-resources/fonts/`, invariant PDF metadata and an explicit
 `release_date` in the dataset. JavaScript check dependencies are pinned in the
 lockfile. No canonical workspace, credentials or network access is needed to build.
 
-The November proposal supports a user-selected master-derived PDF through
-`presentation.cv_document`. The only allowed source is the reviewed public file
-`build-resources/public-cv/Hao_Yu_CV.pdf`. Its SHA-256, page count, actual CV date,
+Reviewed public PDFs are selected through `presentation.cv_document` (English)
+and, for bilingual candidates, `presentation.cv_document_zh` (Chinese). Sources
+are limited to the reviewed public PDF names under `build-resources/public-cv/`
+and its dated subdirectories. Each SHA-256, page count, actual CV date,
 master source/PDF hashes and export-record hash are recorded in the proposal.
 The selected shared facts are also fingerprinted: additions, removals, visibility
 changes and changes to publication contributions require renewed CV review, so a
@@ -84,8 +85,8 @@ node scripts/preview.mjs 8080 tmp/candidates/my-review
 ```
 
 Use a new empty child of `tmp/candidates/` for each build. The command refuses
-root/asset paths, nonempty output and symlinks. It emits only ten allowlisted
-visitor files, with hashes on stdout; planning docs, datasets and scripts are
+root/asset paths, nonempty output and symlinks. It emits only the dataset's
+allowlisted visitor files, with hashes on stdout; planning docs, datasets and scripts are
 excluded. A failed candidate carries a failure marker and fails validation.
 It does not approve, stage, commit, publish, watch sources or change the master CV.
 
@@ -134,7 +135,7 @@ npm --silent run workflow -- calibrate --source-root <canonical-root> --state-ro
 npm --silent run workflow -- prepare --source-root <canonical-root> --state-root <private-state> --release-date YYYY-MM-DD
 ```
 
-Calibration requires the five hashes in an explicitly reviewed public dataset to
+Calibration requires every declared hash in an explicitly reviewed public dataset to
 match current sources, and the adapters to reproduce that dataset exactly. To
 initialise state, verify that the root `content/site.json` is the last published
 inventory; it seeds the published comparison baseline, independently of any
@@ -155,12 +156,12 @@ Unchanged/private-only edits return `NO_CHANGE`. For an intentional generator
 release with unchanged facts, add `--force-candidate` and a fixed release date.
 Failed/ambiguous inputs produce private `reconciliation.json` instructions and
 safe error codes; no partial dataset becomes a candidate. Preparation reads only
-five declared canonical files and performs no canonical writes or network calls.
+the declared canonical files and performs no canonical writes or network calls.
 
 Successful preparation returns a full SHA-256 candidate ID. Its public package is
 `tmp/candidates/<id>/`: `data.json`, `manifest.json`, `review.json` and `visitor/`.
 The manifest binds source hashes, reviewed/published/repository datasets, generator
-inputs, dependencies/runtime versions, date, target, checks and all ten outputs.
+inputs, dependencies/runtime versions, date, target, checks and all expected outputs.
 The package contains public facts only and is ignored by Git. Preview exposes
 only the visitor allowlist, including at the GitHub Pages project path:
 
@@ -168,6 +169,43 @@ only the visitor allowlist, including at the GitHub Pages project path:
 node scripts/preview.mjs 4173 tmp/candidates/<id>/visitor
 npm --silent run workflow -- qa --candidate <full-id>
 ```
+
+### Bilingual content and CV updates
+
+The [bilingual checklist](docs/2026-11-17_BILINGUAL_WEBSITE_PLAN.md) extends the
+same workflow to English at `/hao-yu-website/` and Simplified Chinese at
+`/hao-yu-website/zh/`. The language switch uses ordinary links. English offers
+only `assets/Hao_Yu_CV.pdf`; Chinese offers only `assets/Hao_Yu_CV_CN.pdf`.
+Both PDFs are public resources; this is a per-page download choice.
+
+Keep shared record IDs, dates, statuses and contribution facts in one public
+dataset. Chinese text is reviewed against that shared revision; changed facts
+require renewed translation review. Do not fill missing Chinese paragraphs with
+English or translate an entire application CV into the other language. Each CV
+has its own reviewed coverage, source/export fingerprint and actual update date.
+The Chinese public derivative is prepared privately from `9 Chinese CV/`; only
+the reviewed public PDF enters this repository.
+
+For a bilingual update, explicitly recheck all seven declared sources, including
+`CN_CV` (Chinese TeX) and `CN_WORDING` (the Chinese wording library). Changes to
+either stop preparation for editorial reconciliation. Review the affected
+Chinese text and PDF before refreshing the private calibration from the reviewed
+bilingual proposal. Then prepare one candidate containing both pages, both CVs
+and both social cards. Any locale text, PDF, source or generator change invalidates
+an earlier candidate's approval. Review both preview pages and both PDFs before
+publication; an English-only validation record is insufficient.
+
+The initial bilingual release uses this explicit manual preparation route. The
+installed watcher retains its independently calibrated source list and runtime
+bindings; repository edits do not migrate its configuration or establish Chinese
+source coverage. Watcher migration is a separately requested and verified task.
+The manual workflow does not depend on it and never publishes automatically.
+
+On the first bilingual promotion, the rollback snapshot records the Chinese files
+as absent from the previous release. Restoration reinstates prior files and
+removes only those newly introduced release files. It preserves unrelated files
+and never recursively removes directories. Existing single-language backup
+manifests remain readable.
 
 The actual approval action is a user's explicit decision identifying the candidate
 and target, either directly or through unambiguous conversation context. The

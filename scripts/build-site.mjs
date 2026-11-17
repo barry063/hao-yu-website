@@ -5,7 +5,7 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import { spawnSync } from 'node:child_process';
 import { pathToFileURL } from 'node:url';
-import { ROOT, loadPublic, normalise, formatDate, escapeHTML, VISITOR_FILES } from './public-content.mjs';
+import { ROOT, loadPublic, normalise, formatDate, escapeHTML, visitorFiles } from './public-content.mjs';
 import { renderSite } from './render-site.mjs';
 import { reviewedCV } from './reviewed-cv.mjs';
 
@@ -29,10 +29,15 @@ function python(executable, args) {
 export function buildSite({ out, input = path.join(ROOT,'content/site.json'), pythonExecutable = process.env.SITE_PYTHON || 'python' }) {
   out = outputDirectory(out);
   const data = loadPublic(input), n = normalise(data), html = renderSite(data);
-  const suppliedCV = reviewedCV(data);
-  const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(m => m[1]);
-  if (ids.length !== new Set(ids).size || /\{\{|\}\}/.test(html)) throw new Error('Invalid generated HTML');
-  for (const [,id] of html.matchAll(/href="#([^"]*)"/g)) if (!ids.includes(id)) throw new Error('Missing fragment target');
+  const suppliedCV = reviewedCV(data), chinese = data.localisation ? normalise(data,'zh') : null;
+  const chineseHTML = chinese ? renderSite(data,'zh') : null;
+  const chineseCV = chinese ? reviewedCV(data,'zh') : null;
+  if (chinese && !chineseCV) throw new Error('Reviewed Chinese CV required');
+  for (const page of [html,chineseHTML].filter(Boolean)) {
+    const ids = [...page.matchAll(/\bid="([^"]+)"/g)].map(m => m[1]);
+    if (ids.length !== new Set(ids).size || /\{\{|\}\}/.test(page)) throw new Error('Invalid generated HTML');
+    for (const [,id] of page.matchAll(/href="#([^"]*)"/g)) if (!ids.includes(id)) throw new Error('Missing fragment target');
+  }
   const inputs = {dataset:hash(fs.readFileSync(input)),template:hash(fs.readFileSync(path.join(ROOT,'templates/index.html')))};
   const social = Object.fromEntries(['name','role','institution','topic','status'].map(k => [k,n.social[k]]));
   const baseline = JSON.parse(fs.readFileSync(path.join(ROOT,'build-resources/social-baseline.json')));
@@ -44,16 +49,26 @@ export function buildSite({ out, input = path.join(ROOT,'content/site.json'), py
     const normalised = path.join(work,'public.json');
     fs.writeFileSync(normalised,JSON.stringify({...n,release_label:formatDate(data.release_date)}));
     fs.writeFileSync(path.join(out,'index.html'),html);
-    fs.writeFileSync(path.join(out,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>${escapeHTML(n.site.url)}</loc><lastmod>${data.release_date}</lastmod></url></urlset>\n`);
+    const urls=[n.site.url,...(chinese?[chinese.site.url]:[])];
+    fs.writeFileSync(path.join(out,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls.map(url=>`<url><loc>${escapeHTML(url)}</loc><lastmod>${data.release_date}</lastmod></url>`).join('')}</urlset>\n`);
     fs.writeFileSync(path.join(out,'robots.txt'),`User-agent: *\nAllow: /\nSitemap: ${n.site.url}sitemap.xml\n`);
     for (const file of ['.nojekyll','styles.css','script.js','favicon.svg','assets/hao-yu-portrait.jpg']) fs.copyFileSync(path.join(ROOT,file),path.join(out,file));
     if (suppliedCV) fs.writeFileSync(path.join(out,n.site.cv),suppliedCV);
     else python(pythonExecutable,[path.join(ROOT,'scripts/build_public_cv.py'),'--data',normalised,'--output',path.join(out,n.site.cv)]);
     if (reuseCard) fs.copyFileSync(path.join(ROOT,'assets/og-image.png'),path.join(out,'assets/og-image.png'));
     else python(pythonExecutable,[path.join(ROOT,'scripts/build_social_card.py'),'--data',normalised,'--output',path.join(out,'assets/og-image.png')]);
+    if (chinese) {
+      fs.mkdirSync(path.join(out,'zh'),{recursive:true});
+      fs.writeFileSync(path.join(out,'zh/index.html'),chineseHTML);
+      fs.writeFileSync(path.join(out,data.presentation.cv_zh),chineseCV);
+      const chineseData=path.join(work,'public-zh.json');
+      fs.writeFileSync(chineseData,JSON.stringify({...chinese,locale:'zh'}));
+      python(pythonExecutable,[path.join(ROOT,'scripts/build_social_card.py'),'--data',chineseData,'--output',path.join(out,'assets/og-image-zh.png')]);
+    }
     if (inputs.dataset !== hash(fs.readFileSync(input)) || inputs.template !== hash(fs.readFileSync(path.join(ROOT,'templates/index.html')))) throw new Error('Build inputs changed during preparation');
     if (suppliedCV && !suppliedCV.equals(reviewedCV(data))) throw new Error('CV_SOURCE_CHANGED');
-    const hashes = Object.fromEntries(VISITOR_FILES.map(f => [f,hash(fs.readFileSync(path.join(out,f)))]));
+    if (chineseCV && !chineseCV.equals(reviewedCV(data,'zh'))) throw new Error('CV_SOURCE_CHANGED');
+    const hashes = Object.fromEntries(visitorFiles(data).map(f => [f,hash(fs.readFileSync(path.join(out,f)))]));
     return {inputs,hashes,social_card:reuseCard ? 'REUSED' : 'GENERATED',release_date:data.release_date};
   } catch (error) {
     // A failed partial output cannot masquerade as a completed candidate. No approval exists at P02.

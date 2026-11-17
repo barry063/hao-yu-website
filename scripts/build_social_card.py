@@ -17,13 +17,16 @@ fonts = root / 'build-resources/fonts'
 for name, expected in json.loads((fonts / 'hashes.json').read_text()).items():
     if hashlib.sha256((fonts / name).read_bytes()).hexdigest() != expected:
         raise ValueError('Pinned font hash mismatch')
-data = json.loads(Path(args.data).read_text(encoding='utf-8'))['social']
+normalised = json.loads(Path(args.data).read_text(encoding='utf-8'))
+data = normalised['social']
+chinese = normalised.get('locale') == 'zh'
 image = Image.new('RGB', (1200, 630), '#fafaf8')
 draw = ImageDraw.Draw(image)
 draw.rectangle((70, 80, 142, 85), fill='#1b514b')
 for field, y, size, colour, bold in [('name',130,80,'#172322',True), ('role',280,32,'#172322',False),
     ('institution',330,32,'#526160',False), ('topic',445,23,'#1b514b',False), ('status',505,23,'#526160',False)]:
-    font = ImageFont.truetype(str(fonts / ('VeraBd.ttf' if bold else 'Vera.ttf')), size)
+    face = 'FandolHei-Regular.otf' if chinese else ('VeraBd.ttf' if bold else 'Vera.ttf')
+    font = ImageFont.truetype(str(fonts / face), size)
     if draw.textbbox((70, y), data[field], font=font)[2] > 1130:
         raise ValueError('Social card wording exceeds layout; editorial review needed')
     draw.text((70, y), data[field], font=font, fill=colour)
