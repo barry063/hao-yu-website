@@ -1,15 +1,16 @@
 # English and Chinese website plan
 
-Date: 17 November 2026. Milestone: `READY_TO_PUBLISH` (local); `READY_FOR_REVIEW` (workflow).
-L01–L06 are complete; L02/L04/L06 reverified after editorial feedback; L07 is in progress.
+Date: 17 November 2026. Milestone: `LIVE_VERIFIED`.
+L01–L07 are complete. Both live versions, language switching and actual
+matching-language CV downloads passed verification.
 The user subsequently accepted the revised website and explicitly requested
 publication of both versions with live language-switch and CV verification.
 That instruction authorises approval, promotion, commit/push, PR/merge and the
 existing GitHub Pages deployment. Earlier preview-only boundaries are historical.
 After reviewing the plan, the user requested implementation with proper
 verification and both language versions/CV downloads shown before publishing.
-Local candidate preparation is authorised. Commit, push and publication await
-the review of this candidate; historical approvals apply to dated releases.
+That candidate review is complete, and the subsequent publication instruction
+has been fulfilled; historical approvals apply to their dated releases.
 
 ## Proposed visitor experience
 
@@ -210,16 +211,16 @@ Dependency: L02–L05.
 Deliverable: one reviewable bilingual candidate, screenshots kept in ignored QA
 storage, public-safe verification report and exact candidate hash.
 
-### L07 — Publish and verify both versions — IN_PROGRESS
+### L07 — Publish and verify both versions — DONE
 
 Dependency: L06 and applicable user publication authority for that candidate.
 
-- [ ] **L07-A:** Recheck the exact candidate and current GitHub Pages main/root
+- [x] **L07-A:** Recheck the exact candidate and current GitHub Pages main/root
   route; commit/push/PR/merge only within the release instruction supplied then.
-- [ ] **L07-B:** Confirm successful deployment and check both public pages,
+- [x] **L07-B:** Confirm successful deployment and check both public pages,
   language switch, metadata, shared assets and PDF byte hashes against the
   reviewed candidate. Record revision, date, URLs and actual live browser results.
-- [ ] **L07-C:** Mark `LIVE_VERIFIED` only after live checks pass; update this
+- [x] **L07-C:** Mark `LIVE_VERIFIED` only after live checks pass; update this
   checklist, master tracker and continuation notes with remaining work.
 
 Deliverable: verified live bilingual website and two correct public downloads.
@@ -299,3 +300,17 @@ audience, preserving evidence and meaning without copying English syntax. Use
 clear topic descriptions, concrete verbs and natural invitations; avoid abstract
 slogans and literal rhetorical questions. Use photo descriptions as captions,
 with location in contact details. L07 remains pending review/release authority.
+
+## Publication handoff — 17 November 2026
+
+L07-A–C PASS; L01–L07 DONE, LIVE_VERIFIED. PR #7 merged the reviewed content
+and both approved CVs, and Pages deployed successfully. Both live versions
+switch correctly at desktop/mobile sizes, retain valid sections and language
+on refresh/history, and work without JavaScript. Actual CV buttons download
+the correct filenames and exact accepted PDF bytes; all live assets match.
+
+See the [deployment report](releases/2026-11-17-bilingual-deployment.md) and
+[checks JSON](releases/2026-11-17-bilingual-deployment-checks.json) for revision,
+run, hashes, browser matrix, 90/90 regressions and the tested large-PDF verifier
+correction. No remaining bilingual-release dependency. Canonical records and
+installed watcher unchanged; manual preparation remains the bilingual update route.

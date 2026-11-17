@@ -88,18 +88,29 @@ async function deployment(commit,target) {
   const run=runs.workflow_runs.find(r=>r.name==='pages build and deployment'&&r.head_sha===commit&&r.conclusion==='success'&&r.status==='completed');
   if(!run)throw new Error('SUCCESSFUL_PAGES_DEPLOYMENT_REQUIRED');return {commit,run_id:run.id,run_url:run.html_url,target};
 }
+/** Read exact committed bytes, including PDFs larger than Node's 1 MiB default. */
+export function readCommittedFile(commit,file,{cwd=ROOT}={}) {
+  if(!/^[a-f0-9]{40}$/.test(commit||''))throw new Error('EXACT_COMMIT_REQUIRED');
+  if(!ownedFiles.has(file))throw new Error('COMMIT_ARTIFACT_PATH');
+  const object=commit+':'+file;
+  const size=Number(execFileSync('git',['cat-file','-s',object],{cwd,encoding:'utf8'}).trim());
+  if(!Number.isSafeInteger(size)||size<0)throw new Error('COMMIT_ARTIFACT_SIZE');
+  const bytes=execFileSync('git',['cat-file','blob',object],{cwd,maxBuffer:Math.max(1024*1024,size+65536)});
+  if(bytes.length!==size)throw new Error('COMMIT_ARTIFACT_SIZE');
+  return bytes;
+}
 export async function verifyLive({id,sourceRoot,stateRoot,target,commit,browserCheck}) {
   const p=packageFor(id),roots=privateState(stateRoot,sourceRoot);
   if(target!==p.manifest.target)throw new Error('TARGET_MISMATCH');
   const approval=json(path.join(roots.state,'approvals',id+'.json'));
   if(approval.decision!=='APPROVE'||approval.candidate!==id||approval.target!==target)throw new Error('APPROVAL_REQUIRED');
   const deployed=await deployment(commit,target),checks=[];
-  const committedData=execFileSync('git',['show',commit+':content/site.json'],{cwd:ROOT});
+  const committedData=readCommittedFile(commit,'content/site.json');
   if(sha(Buffer.from(committedData.toString('utf8').replaceAll('\r\n','\n')))!==sha(Buffer.from(fs.readFileSync(path.join(p.dir,'data.json'),'utf8').replaceAll('\r\n','\n'))))throw new Error('COMMIT_DATASET_MISMATCH');
   writeJSON(path.join(roots.state,'release.json'),{state:'PUBLISHED_PENDING_VERIFICATION',candidate:id,...deployed});
   for(const f of visitorFiles(p.data)){
     // The dotfile configures Pages and may not be served. Verify it in the commit instead.
-    const committed=execFileSync('git',['show',commit+':'+f],{cwd:ROOT});
+    const committed=readCommittedFile(commit,f);
     const expected=fs.readFileSync(path.join(p.dir,'visitor',f));
     const binary=/\.(pdf|png|jpg)$/.test(f),norm=b=>binary?b:Buffer.from(b.toString('utf8').replaceAll('\r\n','\n'));
     if(sha(norm(committed))!==sha(norm(expected)))throw new Error('COMMIT_ARTIFACT_MISMATCH');

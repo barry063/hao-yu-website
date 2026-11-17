@@ -1,13 +1,15 @@
 # Website update plan and verification contract
 
 Created: 5 October 2026. Baseline: website commit `2c3ba49`.
-Plan version: 1.13. Release-1 milestone: `LIVE_CONTENT_VERIFIED_BROWSER_QA_DEFERRED`.
+Plan version: 1.14. Release-1 milestone: `LIVE_CONTENT_VERIFIED_BROWSER_QA_DEFERRED`.
 Workflow milestone: `P01_P06_COMPLETE_LIVE_VERIFIED`.
 Watcher milestone: `P07_COMPLETE_INSTALLED_VERIFIED`.
 November content milestone: `LIVE_VERIFIED`; N01–N04 DONE.
 
-17 November bilingual milestone: `READY_TO_PUBLISH` locally / `READY_FOR_REVIEW`;
-L01–L06 DONE (L02/L04/L06 reverified after editorial feedback); L07 IN_PROGRESS.
+17 November bilingual milestone: `LIVE_VERIFIED`; L01–L07 DONE.
+Both language versions and their matching CV downloads passed live verification.
+See [the deployment report](releases/2026-11-17-bilingual-deployment.md) and
+[checks](releases/2026-11-17-bilingual-deployment-checks.json).
 Current release instruction: the user accepted the revised previews and said,
 “Looks good now. Please publish both language versions and verify that the live
 website switches languages correctly and offers the right CV download for each
@@ -28,8 +30,8 @@ See [the editorial review](releases/2026-11-17-bilingual-editorial-review.md) an
 English at the existing root, Simplified Chinese at `/zh/`, an English/中文
 selector, and separately reviewed public CV derivatives. The user subsequently
 approved implementation with proper verification and requested both language
-previews and CV downloads before publishing. Local implementation and candidate
-review are authorised; publication awaits that review. Previous publication
+previews and CV downloads before publishing. That review is complete and the
+current publication instruction has been fulfilled. Previous publication
 instructions apply to their dated releases.
 
 12 November release milestone: `LIVE_VERIFIED`;
@@ -257,7 +259,7 @@ decision. `DONE` requires every listed acceptance criterion to pass with evidenc
 | L04 | Generate both pages, language switch and metadata | L02 contract; L03 final download bindings | DONE | L04-A–E PASS: both routes, selector/downloads, localised metadata and social cards |
 | L05 | Extend bilingual candidate, validation and release workflow | L02 contract; L03/L04 interfaces | DONE | L05-A–E PASS: both PDFs/pages, exact gate, first-release rollback, seven-source manual preparation |
 | L06 | Verify and present bilingual candidate | L02–L05 | DONE | L06-A–D PASS: 90/90 full plus 22/22 affected tests, both-locale browser/PDF/project-path checks; bilingual report |
-| L07 | Publish and verify both versions | L06; applicable release authority | IN_PROGRESS | User approved publication; exact candidate promoted; deployment/live checks pending; L07-A–C |
+| L07 | Publish and verify both versions | L06; applicable release authority | DONE | L07-A–C PASS; PR #7, successful Pages deployment, both live languages and actual matching CV downloads; 17 November deployment report |
 
 ## Acceptance criteria
 
@@ -1110,6 +1112,37 @@ completes at W08. Release 2 completes at W11 with its readiness/live status stat
   L01–L06 DONE; L07 pending revised-website review and release authority. No
   canonical/PDF edits, promotion, commit, push, watcher change or publication.
   Full accessibility and live checks NOT RUN; prior deferrals remain separate.
+
+### 17 November 2026 — bilingual publication and live verification
+
+- User accepted both revised pages and explicitly requested publication plus live
+  language-switch/CV checks. Recorded the exact decision; L07-A–C now PASS.
+- Seven source hashes, 47 bound inputs, thirteen visitor outputs and promoted
+  dataset checked at release; public exposure/420-field ownership PASS. Copied
+  the approved candidate without rebuilding; private rollback dry-run PASS.
+- Post-promotion checks PASS: both HTML pages/metadata/XML; seven navigation tests;
+  full suite 90/90, zero skips. Corrected legacy English fixtures after an initial
+  59/90 run; production/content bytes unchanged by that fixture fix.
+- PR #7 merged exact head f18428a into main f7ee737; Pages run 44137660885
+  successful. Existing main/root hosting retained. Connector write permission
+  unavailable; authorised GitHub CLI fallback used with credentials only in memory.
+- Live verifier initially hit its 1 MiB Git-output buffer limit on the Chinese PDF.
+  Corrected committed-blob reads; >2 MiB regression and nine bilingual workflow
+  tests PASS (10/10). Only verification tooling changed; original candidate and
+  approved visitor/dataset content preserved. Complete live verifier then returned
+  LIVE_VERIFIED against candidate 16ed68b8 and deployed main f7ee737.
+- Both live languages PASS at 375/768/1440, keyboard/skip/menu/focus, valid section
+  switching, refresh/Back/Forward, no JS, reduced motion and 200% zoom. Actual
+  download-button clicks and ordinary page/PDF URLs PASS; accepted PDF hashes exact.
+  Twelve live visitor resources plus committed .nojekyll/dataset match. Zoomed
+  hero screenshots inspected. Browser plugin connection unavailable; isolated
+  fresh-profile browser QA passed. Full accessibility audit NOT RUN.
+- Evidence: releases/2026-11-17-bilingual-deployment.md and checks JSON; ignored
+  tmp/qa/2026-11-17-release/. Documentation/tooling follow-up retains visitor bytes
+  and receives a final deployment check. Canonical sources and watcher unchanged.
+- L01–L07 DONE; bilingual milestone LIVE_VERIFIED. No bilingual-release dependency
+  remains. U06 external indexing/profile access, W07/P08 and watcher migration
+  remain separate; manual bilingual preparation reads seven sources.
 
 ## Reusable continuation prompt
 

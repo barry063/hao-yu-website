@@ -1,0 +1,285 @@
+{
+  "date": "2026-11-17",
+  "state": "LIVE_VERIFIED",
+  "tasks_completed": [
+    "L07-A",
+    "L07-B",
+    "L07-C"
+  ],
+  "candidate": "16ed68b83b58b8899e5c618ca6a90e04701a8efbb9f2f08830f12452ce5cf45b",
+  "pr": "https://github.com/barry063/hao-yu-website/pull/7",
+  "release_commit": "f18428a4f453371b6f414ae533ada1a7b8e7b88c",
+  "initial_verified_deployment": {
+    "state": "LIVE_VERIFIED",
+    "candidate": "16ed68b83b58b8899e5c618ca6a90e04701a8efbb9f2f08830f12452ce5cf45b",
+    "commit": "f7ee7371d41115a40a84b2e7c34e3f76f6926469",
+    "run_id": 44137660885,
+    "run_url": "https://github.com/barry063/hao-yu-website/actions/runs/44137660885",
+    "target": "https://barry063.github.io/hao-yu-website/",
+    "checks": [
+      {
+        "file": ".nojekyll",
+        "result": "PASS",
+        "method": "COMMIT"
+      },
+      {
+        "file": "index.html",
+        "result": "PASS",
+        "method": "COMMIT_AND_LIVE"
+      },
+      {
+        "file": "styles.css",
+        "result": "PASS",
+        "method": "COMMIT_AND_LIVE"
+      },
+      {
+        "file": "script.js",
+        "result": "PASS",
+        "method": "COMMIT_AND_LIVE"
+      },
+      {
+        "file": "favicon.svg",
+        "result": "PASS",
+        "method": "COMMIT_AND_LIVE"
+      },
+      {
+        "file": "robots.txt",
+        "result": "PASS",
+        "method": "COMMIT_AND_LIVE"
+      },
+      {
+        "file": "sitemap.xml",
+        "result": "PASS",
+        "method": "COMMIT_AND_LIVE"
+      },
+      {
+        "file": "assets/Hao_Yu_CV.pdf",
+        "result": "PASS",
+        "method": "COMMIT_AND_LIVE"
+      },
+      {
+        "file": "assets/hao-yu-portrait.jpg",
+        "result": "PASS",
+        "method": "COMMIT_AND_LIVE"
+      },
+      {
+        "file": "assets/og-image.png",
+        "result": "PASS",
+        "method": "COMMIT_AND_LIVE"
+      },
+      {
+        "file": "zh/index.html",
+        "result": "PASS",
+        "method": "COMMIT_AND_LIVE"
+      },
+      {
+        "file": "assets/Hao_Yu_CV_CN.pdf",
+        "result": "PASS",
+        "method": "COMMIT_AND_LIVE"
+      },
+      {
+        "file": "assets/og-image-zh.png",
+        "result": "PASS",
+        "method": "COMMIT_AND_LIVE"
+      }
+    ],
+    "browser": {
+      "browser": "157.0.8103.79",
+      "locales": {
+        "en": {
+          "browser": "157.0.8103.79",
+          "checks": [
+            {
+              "width": 375,
+              "result": "PASS",
+              "keyboard": "PASS",
+              "reduced_motion": "PASS",
+              "language_switch": "PASS",
+              "cv_download": "PASS",
+              "refresh_history": "PASS"
+            },
+            {
+              "width": 768,
+              "result": "PASS",
+              "keyboard": "PASS",
+              "reduced_motion": "PASS",
+              "language_switch": "PASS",
+              "cv_download": "PASS",
+              "refresh_history": "PASS"
+            },
+            {
+              "width": 1440,
+              "result": "PASS",
+              "keyboard": "PASS",
+              "reduced_motion": "PASS",
+              "language_switch": "PASS",
+              "cv_download": "PASS",
+              "refresh_history": "PASS"
+            },
+            {
+              "width": 1440,
+              "zoom_200_percent": "PASS",
+              "result": "PASS",
+              "keyboard": "PASS",
+              "reduced_motion": "PASS",
+              "anchors": "PASS",
+              "dimensions": {
+                "inner": 711,
+                "outer": 1440,
+                "dpr": 2,
+                "cssZoom": "1",
+                "overflow": false
+              },
+              "capture_method": "Physical viewport via CDP after keyboard navigation and paint; CSS zoom remains 1"
+            }
+          ],
+          "no_js": "PASS",
+          "full_accessibility_audit": "NOT RUN"
+        },
+        "zh": {
+          "browser": "157.0.8103.79",
+          "checks": [
+            {
+              "width": 375,
+              "result": "PASS",
+              "keyboard": "PASS",
+              "reduced_motion": "PASS",
+              "language_switch": "PASS",
+              "cv_download": "PASS",
+              "refresh_history": "PASS"
+            },
+            {
+              "width": 768,
+              "result": "PASS",
+              "keyboard": "PASS",
+              "reduced_motion": "PASS",
+              "language_switch": "PASS",
+              "cv_download": "PASS",
+              "refresh_history": "PASS"
+            },
+            {
+              "width": 1440,
+              "result": "PASS",
+              "keyboard": "PASS",
+              "reduced_motion": "PASS",
+              "language_switch": "PASS",
+              "cv_download": "PASS",
+              "refresh_history": "PASS"
+            },
+            {
+              "width": 1440,
+              "zoom_200_percent": "PASS",
+              "result": "PASS",
+              "keyboard": "PASS",
+              "reduced_motion": "PASS",
+              "anchors": "PASS",
+              "dimensions": {
+                "inner": 711,
+                "outer": 1440,
+                "dpr": 2,
+                "cssZoom": "1",
+                "overflow": false
+              },
+              "capture_method": "Physical viewport via CDP after keyboard navigation and paint; CSS zoom remains 1"
+            }
+          ],
+          "no_js": "PASS",
+          "full_accessibility_audit": "NOT RUN"
+        }
+      },
+      "result": "PASS",
+      "full_accessibility_audit": "NOT RUN"
+    }
+  },
+  "actual_downloads": {
+    "checked_at": "2026-11-17T17:30:58.626Z",
+    "candidate": "16ed68b83b58b8899e5c618ca6a90e04701a8efbb9f2f08830f12452ce5cf45b",
+    "cache_busting": false,
+    "result": "PASS",
+    "results": [
+      {
+        "locale": "en",
+        "page": "https://barry063.github.io/hao-yu-website/",
+        "page_status": 200,
+        "page_matches_candidate": true,
+        "pdf_links": 2,
+        "download_filename": "Hao_Yu_CV.pdf",
+        "download_sha256": "ba3b75abe31446ab50aa72fb347fb4ca029af308e3a33b801b7906ac420759e9",
+        "actual_browser_download": "PASS",
+        "direct_pdf_http": 200,
+        "language_switch_at_cv": "PASS"
+      },
+      {
+        "locale": "zh",
+        "page": "https://barry063.github.io/hao-yu-website/zh/",
+        "page_status": 200,
+        "page_matches_candidate": true,
+        "pdf_links": 2,
+        "download_filename": "Hao_Yu_CV_CN.pdf",
+        "download_sha256": "4deb8087516d64f9e184f1cfe9d519f5f26bba1e0bcdcc95c9d19399d916846d",
+        "actual_browser_download": "PASS",
+        "direct_pdf_http": 200,
+        "language_switch_at_cv": "PASS"
+      }
+    ]
+  },
+  "pre_commit_integrity": {
+    "candidate": "16ed68b83b58b8899e5c618ca6a90e04701a8efbb9f2f08830f12452ce5cf45b",
+    "result": "PASS",
+    "source_hashes": 7,
+    "visitor_files": 13,
+    "dataset": "PASS",
+    "build_inputs": "PASS",
+    "runtime": "PASS",
+    "policy": "PASS",
+    "field_ownership": 420,
+    "approved_pdf_bytes": "UNCHANGED"
+  },
+  "regressions": {
+    "full_suite": {
+      "passed": 90,
+      "failed": 0,
+      "skipped": 0
+    },
+    "navigation": {
+      "passed": 7,
+      "failed": 0
+    },
+    "large_pdf_reader_affected": {
+      "passed": 10,
+      "failed": 0,
+      "skipped": 0
+    },
+    "initial_post_promotion_run": {
+      "passed": 59,
+      "failed": 31,
+      "cause": "Legacy English fixtures inherited frozen Chinese content after promotion; fixture-only correction; full rerun passed."
+    }
+  },
+  "rollback": {
+    "state": "PREPARED",
+    "operation": "ROLLBACK_CHECKED",
+    "rollback": "453d1d44426feb8c7186b341609656a71dc698843d9d568dd867ee5a7d020fcc",
+    "remote_publication": "NOT_PERFORMED"
+  },
+  "verification_tool_correction": {
+    "file": "scripts/release-workflow.mjs",
+    "reason": "Default 1 MiB child-process buffer was too small for the 1,941,313-byte Chinese PDF.",
+    "change": "Read Git blob size first; read exact committed binary bytes with sufficient buffer and validate byte count.",
+    "visitor_or_dataset_change": false,
+    "candidate_rebuilt": false
+  },
+  "review": {
+    "privacy": "PASS",
+    "seven_canonical_sources": "UNCHANGED",
+    "approved_pdfs": "BYTE_IDENTICAL",
+    "native_zoom_screenshots": "VISUALLY_REVIEWED",
+    "whitespace": "PASS except preserved upstream font-licence trailing spaces"
+  },
+  "not_run": [
+    "Full accessibility audit",
+    "External indexing/profile edits",
+    "Installed watcher migration"
+  ],
+  "follow_up": "Verification-tool and documentation commit preserves approved visitor/data content; final deployment reverified before handoff."
+}
